@@ -1,0 +1,45 @@
+.cat-text{
+    font-size: 30px;
+    font-weight: bold;
+}
+.main-cat{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.product-cat{
+    margin-top: 30px;
+    margin-left: 35px;
+    margin-right: 45px;
+    margin-bottom: 50px;
+    position: relative;
+    box-shadow: 2px 2px 5px rgb(131, 124, 124);
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.img{
+    height: 200px;
+    width: 220px;
+}
+
+.product-cat-text{
+position: absolute;
+bottom: -40px;
+left: 50px;
+}
+
+.product-cat:hover{
+    margin-top: 10px;
+    margin-left: 15px;
+    margin-right: 25px;
+    margin-bottom: 10px;
+    box-shadow: 5px 5px 15px rgb(131, 124, 124);
+    border-radius: 10px;
+    .img{
+        height: 250px;
+        width: 270px;
+    }
+}
