@@ -111,6 +111,23 @@ button a:hover {
     height: auto;
     border-radius: 10px;
 }
+.head1{
+    text-align: center;
+    color: rgb(71, 69, 69);
+}
+.video-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    overflow-x: auto; 
+    margin-top: 20px;
+}
+
+.video-container iframe {
+    width: 300px; 
+    height: 200px; 
+    margin-right: 10px; 
+}
 
 footer {
     background-color: whitesmoke;
