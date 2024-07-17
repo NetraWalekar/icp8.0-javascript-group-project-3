@@ -17,6 +17,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .logo img {
@@ -62,6 +63,32 @@ button:hover {
 
 button a:hover {
     color: rgb(242, 55, 23);
+}
+
+.search-form {
+    display: flex;
+    align-items: center;
+    margin: 0 20px;
+}
+
+.search-form input {
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-right: 10px;
+}
+
+.search-form button {
+    padding: 5px 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+
+.search-form button:hover {
+    background-color: darkgray;
 }
 
 .card-container {
