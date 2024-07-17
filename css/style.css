@@ -113,21 +113,30 @@ button a:hover {
 }
 .head1{
     text-align: center;
-    color: rgb(71, 69, 69);
+    color: rgb(36, 35, 35);
 }
 .video-container {
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    overflow-x: auto; 
+    align-items: flex-start;
     margin-top: 20px;
 }
 
-.video-container iframe {
-    width: 300px; 
-    height: 200px; 
-    margin-right: 10px; 
+.video-wrapper {
+    flex: 0 0 auto;
+    text-align: center;
 }
+
+.video-wrapper iframe {
+    width: 300px;
+    height: 200px;
+}
+
+.video-title {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
 
 footer {
     background-color: whitesmoke;
