@@ -63,6 +63,14 @@ button:hover {
 button a:hover {
     color: rgb(242, 55, 23);
 }
+.card-container{
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+}
+.card{
+    border-radius: 20;
+}
 
 footer {
     background-color: whitesmoke;
