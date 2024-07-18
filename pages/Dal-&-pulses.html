@@ -63,6 +63,7 @@
 
     .button{
     position: absolute;
+    left:52px;
     bottom: 15px;
     border: 1px solid gray;
     padding: 3px auto;
@@ -86,7 +87,7 @@
 
      .quantity-btn-container{
             display: flex;
-            justify-content: center;
+            justify-content: space-evenly;
             align-items: center;
         }
 
@@ -109,9 +110,11 @@
       <div class="product-card"><img src="../images/dal-&-pulses/toor-dal.jpg" class="product-img">
           <span class="product-name">Tata Sampann Toor Dal 2 Kg
           </span>
+      <div class="quantity-btn-container">
           <img src="./../images/icons/minus.png "  class="btn-quantity" onclick="plusminus('decrement')"/>
          <span class="quantity-size"  id="quantity-text">1</span> 
             <img src="./../images/icons/plus.png" class="btn-quantity" onclick="plusminus('increment')"/>
+      </div>
           <span class="price"> ₹499 </span>
           <span class="mrp"> ₹580 <button class="off">-14%</button></span>
           <button class="button">Add Cart</button>
@@ -119,19 +122,23 @@
       <div class="product-card">
           <img src="../images/dal-&-pulses/black-urad-dal.jpg" class="product-img">
           <span class="product-name">HAZBE Noon Black Urad Dal, Split (1 kg)</span>
+      <div class="quantity-btn-container">
           <img src="./../images/icons/minus.png "  class="btn-quantity" onclick="plusminus('decrement')"/>
          <span class="quantity-size"  id="quantity-text">1</span> 
             <img src="./../images/icons/plus.png" class="btn-quantity" onclick="plusminus('increment')"/>
+      </div>
           <span class="price">₹217</span>
           <span class="mrp"> ₹239 <button class="off">-9%</button></span>
           <button class="button">Add Cart</button>
       </div>
       <div class="product-card">
          <img src="../images/dal-&-pulses/kabuli-chana.jpg"class="product-img">
-         <span class="product-name">Tata Sampann Unpolished Kabuli Chana (Big Size), 500g<br></span>
+         <span class="product-name">Tata Sampann Unpolished Kabuli Chana 500g<br></span>
+      <div class="quantity-btn-container">
          <img src="./../images/icons/minus.png "  class="btn-quantity" onclick="plusminus('decrement')"/>
          <span class="quantity-size"  id="quantity-text">1</span> 
             <img src="./../images/icons/plus.png" class="btn-quantity" onclick="plusminus('increment')"/>
+      </div>
           <span class="price">₹145
           </span>
           <span class="mrp"> ₹239 <button class="off">-14%</button></span>
@@ -139,10 +146,12 @@
       </div>
       <div class="product-card">
          <img src="../images/dal-&-pulses/kala-chana.jpg" class="product-img">
-         <span class="product-name">DeHaat Honest Farms Pesticide Free Unpolished Kala Chana 1 KG</span>
+         <span class="product-name">DeHaat Honest Farms Pesticide Free  Kala Chana 1 KG</span>
+      <div class="quantity-btn-container">
          <img src="./../images/icons/minus.png "  class="btn-quantity" onclick="plusminus('decrement')"/>
          <span class="quantity-size"  id="quantity-text">1</span> 
             <img src="./../images/icons/plus.png" class="btn-quantity" onclick="plusminus('increment')"/>
+      </div>
             <span class="price">₹160</span>
             <span class="mrp"> ₹249 <button class="off">-15%</button></span>
          <button class="button">Add Cart</button>
@@ -150,60 +159,72 @@
       <div class="product-card">
           <img src="../images/dal-&-pulses/mix-dal.jpg" class="product-img">
           <span class="product-name"> Patanjali Pulses - Mix Dal, 1kg Pouch</span>
+      <div class="quantity-btn-container">
           <img src="./../images/icons/minus.png "  class="btn-quantity" onclick="plusminus('decrement')"/>
          <span class="quantity-size"  id="quantity-text">1</span> 
             <img src="./../images/icons/plus.png" class="btn-quantity" onclick="plusminus('increment')"/>
-          <span class="price">₹160</span>
+      </div>
+            <span class="price">₹160</span>
           <span class="mrp"> ₹230 <button class="off">-12%</button></span>
           <button class="button">Add Cart</button>
       </div>
       <div class="product-card">
          <img src="../images/dal-&-pulses/organic-panchratna-dal.jpg" class="product-img">
-         <span class="product-name"> Pro Nature 100% Organic Panchratna Dal, 500g</span>
+         <span class="product-name"> Pro Nature 100% Organic  Dal, 500g</span>
+      <div class="quantity-btn-container">
          <img src="./../images/icons/minus.png "  class="btn-quantity" onclick="plusminus('decrement')"/>
          <span class="quantity-size"  id="quantity-text">1</span> 
             <img src="./../images/icons/plus.png" class="btn-quantity" onclick="plusminus('increment')"/>
-         <span class="price">₹144.</span>
+      </div>
+            <span class="price">₹144.</span>
          <span class="mrp"> ₹152 <button class="off">-5%</button></span>
          <button class="button">Add Cart</button>
       </div>
       <div class="product-card">
         <img src="../images/dal-&-pulses/pancharatna-dal.jpg" class="product-img">
-        <span class="product-name"> Pure & Sure Organic Pancharatna (Mix) Dal 500G </span>
+        <span class="product-name"> Pure & Sure Organic  Dal 500G </span>
+      <div class="quantity-btn-container">
         <img src="./../images/icons/minus.png "  class="btn-quantity" onclick="plusminus('decrement')"/>
          <span class="quantity-size"  id="quantity-text">1</span> 
             <img src="./../images/icons/plus.png" class="btn-quantity" onclick="plusminus('increment')"/>
-        <span class="price">₹128</span>
+      </div>
+            <span class="price">₹128</span>
         <span class="mrp"> ₹130 <button class="off">-2%</button></span>
         <button class="button">Add Cart</button>
      </div>
      <div class="product-card">
         <img src="../images/dal-&-pulses/panchrangi-dal.jpg" class="product-img">
-        <span class="product-name"> Natureland Organics Panchrangi Dal/Mix Dal 1 Kg - </span>
+        <span class="product-name"> Natureland Organics  Dal/Mix Dal 1 Kg - </span>
+     <div class="quantity-btn-container">
         <img src="./../images/icons/minus.png "  class="btn-quantity" onclick="plusminus('decrement')"/>
          <span class="quantity-size"  id="quantity-text">1</span> 
             <img src="./../images/icons/plus.png" class="btn-quantity" onclick="plusminus('increment')"/>
-        <span class="price"> ₹234</span>
+     </div>
+            <span class="price"> ₹234</span>
         <span class="mrp">₹245 <button class="off">-4%</button></span>
         <button class="button">Add Cart</button>
      </div>
      <div class="product-card">
         <img src="../images/dal-&-pulses/kali-urad.jpg" class="product-img">
         <span class="product-name"> Tata Sampann Unpolished Urad Kali, 500g</span>
+     <div class="quantity-btn-container">
         <img src="./../images/icons/minus.png "  class="btn-quantity" onclick="plusminus('decrement')"/>
          <span class="quantity-size"  id="quantity-text">1</span> 
             <img src="./../images/icons/plus.png" class="btn-quantity" onclick="plusminus('increment')"/>
-        <span class="price"> ₹53</span>
+     </div>
+            <span class="price"> ₹53</span>
         <span class="mrp">₹112 <button class="off">-53%</button></span>
         <button class="button">Add Cart</button>
      </div>
      <div class="product-card">
         <img src="../images/dal-&-pulses/urad-dal.jpg" class="product-img">
         <span class="product-name"> Tata Sampann Unpolished Urad Dal (Split), 1kg</span>
+     <div class="quantity-btn-container">
         <img src="./../images/icons/minus.png "  class="btn-quantity" onclick="plusminus('decrement')"/>
          <span class="quantity-size"  id="quantity-text">1</span> 
             <img src="./../images/icons/plus.png" class="btn-quantity" onclick="plusminus('increment')"/>
-        <span class="price">₹236.</span>
+     </div>
+            <span class="price">₹236.</span>
         <span class="mrp">₹249<button class="off">-5%</button></span>
         <button class="button">Add Cart</button>
      </div>
