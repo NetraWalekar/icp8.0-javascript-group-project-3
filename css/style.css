@@ -122,9 +122,23 @@ button a:hover {
     margin: 0 10px;
     flex: 1;
     transition: transform 0.3s ease-in-out;
+    text-align: center; /* Center align text */
 }
+
 .card:hover {
     transform: translateY(-5px);
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.card-caption {
+    margin-top: 10px;
+    font-size: 16px;
+    font-weight: bold;
 }
 
 .card img {
