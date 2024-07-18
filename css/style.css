@@ -185,8 +185,8 @@ button a:hover {
 
 
 footer {
-    background-color: whitesmoke;
-    color: black;
+    background-color:#0C1844;
+    color:white;
     padding: 10px 0;
     text-align: center;
 }
@@ -213,6 +213,7 @@ footer {
     width: 180px;
     height: auto;
     margin-bottom: 5px;
+    color: aliceblue;
 }
 
 .contact-details, .payment-methods, .quick-links {
@@ -225,7 +226,7 @@ footer {
 
 .payment-icons {
     display: flex;
-    justify-content: center;
+    text-align: left;
     align-items: center;
 }
 
@@ -238,14 +239,18 @@ footer {
 
 .social-media-icons {
     display: flex;
-    justify-content: center;
+   
     align-items: center;
+    text-align: left;
 }
 
 .social-media-icons img {
     margin: 5px;
     width: 25px;
     height: auto;
+}
+.connect{
+    text-align: left;
 }
 
 .footer-links {
