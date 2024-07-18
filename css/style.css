@@ -1,3 +1,4 @@
+
 * {
     text-decoration: none;
 }
@@ -89,6 +90,22 @@ button a:hover {
 
 .search-form button:hover {
     background-color: darkgray;
+}
+
+.offer-strip {
+    background-color: yellow;
+    color: red;
+    text-align: center;
+    padding: 5px 0;
+    font-size: 12px;
+    font-weight: bold;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+@keyframes slide {
+    0% { transform: translateX(100%); }
+    100% { transform: translateX(-100%); }
 }
 
 .card-container {
@@ -227,3 +244,4 @@ footer {
     text-align: center;
     padding: 5px 0;
 }
+
