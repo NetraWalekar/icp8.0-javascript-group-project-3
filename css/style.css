@@ -185,8 +185,8 @@ button a:hover {
 
 
 footer {
-    background-color: whitesmoke;
-    color: black;
+    background-color:#0C1844;
+    color:white;
     padding: 10px 0;
     text-align: center;
 }
@@ -213,6 +213,7 @@ footer {
     width: 180px;
     height: auto;
     margin-bottom: 5px;
+    color: aliceblue;
 }
 
 .contact-details, .payment-methods, .quick-links {
@@ -225,7 +226,7 @@ footer {
 
 .payment-icons {
     display: flex;
-    justify-content: center;
+    text-align: left;
     align-items: center;
 }
 
@@ -238,8 +239,9 @@ footer {
 
 .social-media-icons {
     display: flex;
-    justify-content: center;
+   
     align-items: center;
+    text-align: left;
 }
 
 .social-media-icons img {
@@ -247,30 +249,26 @@ footer {
     width: 25px;
     height: auto;
 }
-
-.quick-links ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
+.connect{
+    text-align: left;
 }
 
-.quick-links li {
-    margin: 5px 0;
+.footer-links {
+    display: flex;
+    flex-direction: column;
 }
 
-.quick-links a {
-    color: black;
+.footer-links a {
     text-decoration: none;
+    color: #333;
+    padding: 5px 0;
 }
 
-.quick-links a:hover {
+.footer-links a:hover {
     text-decoration: underline;
 }
 
-.footer-bottom {
-    background-color: #f1f1f1;
-    padding: 5px 0;
-}
+
 
 .copyright {
     background-color: #4c1a1a;
