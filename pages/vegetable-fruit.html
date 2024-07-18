@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vegetable And Fruits</title>
+    <style>
+    .body{
+            padding: 0%;
+            margin: 0%;
+        }
+    .product-container{
+     display: flex;
+     flex-direction: row;
+     flex-wrap: wrap;
+     justify-content: center;
+
+     }
+
+   .product-card {
+    height: 380px;
+    width: 220px;
+    margin: 10px;
+    border: 1px solid gray;
+    border-radius: 15px;
+    position: relative;
+   
+    }
+
+   .product-img {
+    height:180px;
+    width: 190px;
+    border-radius: 25px;
+    margin-top: 10px;
+    object-fit: cover;
+    padding-left: 13px;
+    }
+
+   .product-name{
+    position: absolute;
+    top: 220px;
+    left: 10px;
+    font-weight: bold;
+    text-align: center;
+     }
+
+   .price{
+    margin-top:10px;
+    font-weight: bold;
+    position: absolute;
+    top: 250px;
+    left: 10px;
+    }
+   .mrp{
+    text-decoration: line-through;
+    margin-top: 10px;
+    position: absolute;
+    top: 270px;
+    left: 10px;
+    color: rgb(140, 139, 139);
+    }
+
+    .button{
+    position: absolute;
+    bottom: 15px;
+    border: 1px solid gray;
+    padding: 3px auto;
+    border-radius: 20px;
+    width: 150px;
+    height: 50px;
+    color: #0c5273;
+    background-color: white;
+    font-size: 16px;
+    text-align: center;
+     } 
+
+    .off{
+    color:#03753c;
+    background-color: #e5f7ee;
+    border: none;
+    font-weight: bold;
+    margin-left: 5px;
+     }
+        </style>
+</head>
+<body>
+    <h1>Vegetable And Fruits</h1>
+    <div class="product-container">
+      <div class="product-card"><img src="../images/vegetable/ladyfinger.jpeg" class="product-img">
+          <span class="product-name">Fresh bhendi 500gm
+          </span>
+          <img src="../images/categories/veg.png" height="20">
+          <span class="price">₹49.00 </span>
+          <span class="mrp">₹80.00 <button class="off">15 % Off</button></span>
+          <button class="button">Add Cart</button>
+      </div>
+      <div class="product-card">
+          <img src="../images/vegetable/cabbage.jpeg" class="product-img">
+          <span class="product-name">Fresh Organic Cabbage,1 Piece Pack(500gm-800gm)</span>
+          <img src="../images/categories/veg.png" height="20">
+          <span class="price">₹43.00</span>
+          <span class="mrp">₹55.00 <button class="off">25 % Off</button></span>
+          <button class="button">Add Cart</button>
+      </div>
+      <div class="product-card">
+         <img src="../images/vegetable/cauliflower.jpeg"class="product-img">
+         <span class="product-name">Fresh Cauliflower 1pc<br>(400gm-600gm)</span>
+          <img src="../images/categories/veg.png" height="20">
+          <span class="price">₹49.00
+          </span>
+          <span class="mrp">₹80.00 <button class="off">39 % Off</button></span>
+          <button class="button">Add Cart</button>
+      </div>
+      <div class="product-card">
+         <img src="../images/vegetable/ginger.jpeg" class="product-img">
+         <span class="product-name">Fresh Ginger,100g</span>
+         <img src="../images/categories/veg.png" height="20"><span class="price">₹20.00</span>
+         <span class="mrp">₹50.00 <button class="off">55 % Off</button></span>
+         <button class="button">Add Cart</button>
+      </div>
+      <div class="product-card">
+          <img src="../images/vegetable/tomato.jpeg" class="product-img">
+          <span class="product-name"> Fresh Organic Tomatto,1kg</span>
+          <img src="../images/categories/veg.png" height="20">
+          <span class="price">₹99.00</span>
+          <span class="mrp">₹150.00 <button class="off">37 % Off</button></span>
+          <button class="button">Add Cart</button>
+      </div>
+      <div class="product-card">
+         <img src="../images/vegetable/onion.jpeg" class="product-img">
+         <span class="product-name"> Fresh Onion,1kg</span>
+         <img src="../images/categories/veg.png" height="20">
+         <span class="price">₹47.00</span>
+         <span class="mrp">₹67.00 <button class="off">30 % Off</button></span>
+         <button class="button">Add Cart</button>
+      </div>
+  </div>
+</body>
+</html>
