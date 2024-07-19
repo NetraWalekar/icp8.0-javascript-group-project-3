@@ -38,33 +38,51 @@
     flex-wrap: wrap;
     padding: 20px;
     width: auto;
-    background-color: rgb(243, 243, 243);
     padding-bottom: 50px;
 }
   .container {
     height: 370px;
     width: 270px;
-    background-color: #ecf3f2;
-    border: 2px solid rgb(103, 172, 160);
+    border: 2px solid rgb(127, 157, 180);
     margin: 10px;
 }
 .container:hover {
-    box-shadow: 0 0 7px 4px rgb(173, 193, 198);
+    box-shadow: 0 0 10px 0px rgb(173, 193, 198);
+    transform: translateY(-5px);
 }
 .feature-img {
-    height: 110px;
-    width: 120px;
-    padding-left: 70px;
+    height: 90px;
+    width: 110px;
+    padding-left: 90px;
     padding-top: 20px;
 }
 .container h1 {
     padding-top: 7px;
-    color: rgb(156, 89, 203);
+    color: rgb(68, 108, 134);
     text-align: center;
 }
 .container p {
     text-align: center;
     padding: 25px;
     font-size: 17px;
-    color: rgb(132, 124, 12);
+    color: rgb(97, 94, 58);
+}
+.heading {
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    font-size: 25px;
+    font-style: oblique;
+    color: rgb(156, 109, 190);
+}
+.heading:hover {
+    color: palevioletred;
+}
+.heading span {
+    background-color:rgb(252, 202, 39);
+    color: rgb(255, 255, 255);
+    display: inline-block;
+    padding: 10px;
+    border-radius: 15px 0px 15px 0px;
+
 }
