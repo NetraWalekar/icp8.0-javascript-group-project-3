@@ -34,7 +34,7 @@ button {
 }
 
 button:hover {
-    background-color: darkred;
+    background-color: darkgray;
 }
 
 p {
@@ -50,7 +50,41 @@ p a {
 }
 
 p a:hover {
-    color: darkred;
+    color: darkgray;
     text-decoration: underline;
 }
 
+.google-login-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 12px;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.google-login-button img {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+
+.google-login-button:hover {
+    background-color: darkgray;
+}
+
+.container {
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    /* border: 1px solid black; */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    width: 350px;
+    box-sizing: border-box;
+}
