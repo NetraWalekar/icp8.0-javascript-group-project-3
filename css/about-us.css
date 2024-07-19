@@ -68,3 +68,21 @@
     font-size: 17px;
     color: rgb(132, 124, 12);
 }
+.heading {
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    font-size: 30px;
+    font-style: oblique;
+    color: rgb(156, 109, 190);
+}
+.heading:hover {
+    color: palevioletred;
+}
+.heading span {
+    background-color: rgb(250, 166, 56);
+    color: rgb(255, 255, 255);
+    display: inline-block;
+    padding: 8px;
+    border-radius: 4px;
+}
