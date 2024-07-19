@@ -222,6 +222,9 @@ footer {
 .footer-logo-description {
     margin-bottom: 10px;
 }
+.logo-info{
+    color: white;
+}
 
 .footer-logo {
     width: 150px;
@@ -232,7 +235,7 @@ footer {
 
 
 
-.contact-details h3, .payment-methods h3, .quick-links h3,p {
+.contact-details h3, .payment-methods h3, .quick-links h3 {
     margin-bottom: 5px;
     color: white;
 }
@@ -268,10 +271,16 @@ footer {
     text-align: left;
     color: white;
 }
+.contact-details{
+    color: white;
+}
 
-.footer-links ,h3{
+.footer-links {
     display: flex;
     flex-direction: column;
+    color: white;
+}
+.quick-link{
     color: white;
 }
 
