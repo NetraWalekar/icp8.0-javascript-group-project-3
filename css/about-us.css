@@ -50,6 +50,7 @@
 }
 .container:hover {
     box-shadow: 0 0 7px 4px rgb(173, 193, 198);
+    transform: translateY(-5px);
 }
 .feature-img {
     height: 110px;
@@ -72,7 +73,7 @@
     text-align: center;
     padding-top: 30px;
     padding-bottom: 30px;
-    font-size: 30px;
+    font-size: 25px;
     font-style: oblique;
     color: rgb(156, 109, 190);
 }
@@ -80,9 +81,10 @@
     color: palevioletred;
 }
 .heading span {
-    background-color: rgb(250, 166, 56);
+    background-color:rgb(252, 202, 39);
     color: rgb(255, 255, 255);
     display: inline-block;
-    padding: 8px;
-    border-radius: 4px;
+    padding: 10px;
+    border-radius: 15px 0px 15px 0px;
+
 }
