@@ -10,164 +10,80 @@ body {
 
 .navbar {
     background-color: #C80036;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    padding: 10px 15px;
+    overflow: hidden;
 }
 
 .navdiv {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    flex-wrap: wrap;
-}
-.navbar {
-    width: 100%;
-   
+    padding: 0 20px;
 }
 
-.navdiv {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    padding: 10px 20px; /* Adjust as needed */
-}
-
-.logo {
-    margin-right: auto; /* Pushes the logo to the left */
+.logo img {
+    height: 50px;
 }
 
 .nav-links {
-    display: flex;
     list-style: none;
-    padding: 0;
+    display: flex;
     margin: 0;
+    padding: 0;
 }
 
 .nav-links li {
-    margin-left: 20px; /* Adjust spacing between nav items */
+    margin: 0 15px;
 }
 
 .nav-links a {
-    text-decoration: none;
-    color: #000; /* Add your desired text color */
-    padding: 8px 16px; /* Adjust padding for clickable area */
-}
-
-.profile-menu {
-    position: relative;
-    display: inline-block;
-   
-}
-
-.profile-dropdown {
-    display: none;
-    position: absolute;
-    left: 0;
-    background-color: white;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-}
-
-.profile-dropdown a {
-    color: black;
-    padding: 20px 25px;
-    text-decoration: none;
-    display: block;
-}
-
-.profile-dropdown a:hover {
-    background-color: #ddd;
-}
-
-.profile-menu:hover .profile-dropdown {
-    display: block;
-}
-
-.navdiv > a {
-    margin-left: 20px; /* Adjust spacing for the cart icon */
-}
-
-
-.logo img {
-    width: 180px; 
-    height: auto;
-}
-
-.nav-links {
-    display: flex;
-    align-items: center;
-    margin: 0;
-    padding: 0;
-    list-style: none;
-}
-
-.nav-links li {
-    margin-left: 20px;
-}
-
-.nav-links li a {
     color: white;
-    font-size: 18px;
-    font-weight: bold;
     text-decoration: none;
-}
-
-.nav-links li a:hover {
-    color: darkgray;
-}
-
-.profile-menu {
-    position: relative;
-}
-
-.profile-menu img {
-    cursor: pointer;
-}
-
-.profile-dropdown {
-    display: none;
-    position: absolute;
-    top: 50px;
-    right: 0;
-    background-color: #ffffff;
-    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
-    z-index: 1;
-    text-align: left;
-}
-
-.profile-dropdown a {
+    padding: 14px 20px;
     display: block;
-    padding: 10px 20px;
-    color: black;
-    text-decoration: none;
 }
 
-.profile-dropdown a:hover {
-    background-color: #f1f1f1;
+.nav-links a:hover {
+    background-color: #575757;
+    border-radius: 5px;
 }
 
-button {
+.signin-button {
     background-color: #FF6969;
     border: none;
-    border-radius: 5px;
+    color: white;
     padding: 10px 20px;
     cursor: pointer;
+    margin-right: 15px;
+    border-radius: 5px;
 }
 
-button a {
+.signin-button a {
     color: white;
-    font-weight: bold;
-    font-size: 15px;
+    text-decoration: none;
 }
 
-button:hover {
-    background-color: darkgray;
+.signin-button:hover {
+    background-color: #45a049;
 }
 
-button a:hover {
-    color: rgb(231, 47, 14);
+.profile-container, .cart-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 15px;
 }
 
+.profile-text, .cart-text {
+    display: none;
+    position: absolute;
+    top: 50px; 
+    color: white;
+    font-size: 12px;
+    background-color: #333;
+    padding: 5px;
+    border-radius: 3px;
+}
 .card-container {
     display: flex;
     justify-content: space-between;
@@ -269,7 +185,7 @@ button a:hover {
 
 .shop-now {
     display: block;
-    background-color: #28a745;
+    background-color: #FF6969;
     color: #fff;
     text-decoration: none;
     padding: 10px 0;
@@ -281,7 +197,7 @@ button a:hover {
 }
 
 .shop-now:hover {
-    background-color: #218838;
+    background-color: #ee2626;
 }
 
 

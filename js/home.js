@@ -1,20 +1,23 @@
-document.addEventListener("DOMContentLoaded", function() {
-    const profileMenu = document.querySelector('.profile-menu');
-    const profileDropdown = document.querySelector('.profile-dropdown');
 
-    profileMenu.addEventListener('mouseenter', function() {
-        profileDropdown.style.display = 'block';
-    });
+const profileIcon = document.getElementById('profile-icon');
+const profileText = document.getElementById('profile-text');
 
-    profileMenu.addEventListener('mouseleave', function() {
-        profileDropdown.style.display = 'none';
-    });
+profileIcon.addEventListener('mouseover', () => {
+    profileText.style.display = 'User Account';
+});
 
-    profileDropdown.addEventListener('mouseenter', function() {
-        profileDropdown.style.display = 'block';
-    });
+profileIcon.addEventListener('mouseout', () => {
+    profileText.style.display = 'none';
+});
 
-    profileDropdown.addEventListener('mouseleave', function() {
-        profileDropdown.style.display = 'none';
-    });
+
+const cartIcon = document.getElementById('cart-icon');
+const cartText = document.getElementById('cart-text');
+
+cartIcon.addEventListener('mouseover', () => {
+    cartText.style.display = 'block';
+});
+
+cartIcon.addEventListener('mouseout', () => {
+    cartText.style.display = 'none';
 });
