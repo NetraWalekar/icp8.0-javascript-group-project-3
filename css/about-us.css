@@ -32,3 +32,39 @@
     max-width: 100%;
     margin-right: 20px;
   }
+  .feature {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    padding: 20px;
+    width: auto;
+    background-color: rgb(243, 243, 243);
+    padding-bottom: 50px;
+}
+  .container {
+    height: 370px;
+    width: 270px;
+    background-color: #ecf3f2;
+    border: 2px solid rgb(103, 172, 160);
+    margin: 10px;
+}
+.container:hover {
+    box-shadow: 0 0 7px 4px rgb(173, 193, 198);
+}
+.feature-img {
+    height: 110px;
+    width: 120px;
+    padding-left: 70px;
+    padding-top: 20px;
+}
+.container h1 {
+    padding-top: 7px;
+    color: rgb(156, 89, 203);
+    text-align: center;
+}
+.container p {
+    text-align: center;
+    padding: 25px;
+    font-size: 17px;
+    color: rgb(132, 124, 12);
+}
