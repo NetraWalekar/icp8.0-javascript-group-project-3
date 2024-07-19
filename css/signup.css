@@ -35,7 +35,7 @@ button {
 }
 
 button:hover {
-    background-color: darkred;
+    background-color: darkgray;
 }
 
 p {
@@ -51,7 +51,7 @@ p a {
 }
 
 p a:hover {
-    color: darkred;
+    color: darkgray;
     text-decoration: underline;
 }
 
