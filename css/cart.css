@@ -19,3 +19,13 @@
     font-size: 1rem;
     text-transform: uppercase;
 }
+.cart-price{
+    font-weight: 500;
+}
+.cart-quantity {
+    border: 1p solid var(--text-color);
+    outline-color: var(--main-color);
+    width: 2.4rem;
+    text-align: center;
+    font-size: 1rem;
+}
