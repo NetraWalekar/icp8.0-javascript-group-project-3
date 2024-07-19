@@ -43,7 +43,7 @@ body {
 }
 
 .nav-links a:hover {
-    background-color: #575757;
+    background-color: #0c0c0c;
     border-radius: 5px;
 }
 
@@ -68,7 +68,7 @@ body {
 }
 
 .signin-button:hover {
-    background-color: #45a049;
+    background-color: #f81a1a;
 }
 
 .profile-container, .cart-container {
