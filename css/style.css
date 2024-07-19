@@ -138,6 +138,9 @@ body {
     height: auto;
     border-radius: 10px;
 }
+.top-deals{
+    text-align: center;
+}
 .discount-card-container {
     display: flex;
     flex-wrap: wrap;
