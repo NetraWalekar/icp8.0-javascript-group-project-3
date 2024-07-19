@@ -332,8 +332,12 @@ footer {
 
 
 .copyright {
-    background-color: #4c1a1a;
-    color: white;
-    text-align: center;
-    padding: 5px 0;
-}
+
+        background: #333;
+        color: #fff;
+        text-align: center;
+        padding: 10px 0;
+        margin-top: 20px;
+    }
+
+    
