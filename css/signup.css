@@ -37,3 +37,20 @@ button {
 button:hover {
     background-color: darkred;
 }
+
+p {
+    text-align: center;
+    color: black;
+    margin: 12px 0;
+}
+
+p a {
+    color: tomato;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+p a:hover {
+    color: darkred;
+    text-decoration: underline;
+}
