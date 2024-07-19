@@ -10,7 +10,7 @@ body {
 
 .navbar {
     background-color: #C80036;
-    overflow: hidden;
+    
 }
 
 .navdiv {
@@ -60,6 +60,11 @@ body {
 .signin-button a {
     color: white;
     text-decoration: none;
+}
+.sign{
+    display: flex;
+    justify-content: space-between;
+
 }
 
 .signin-button:hover {
