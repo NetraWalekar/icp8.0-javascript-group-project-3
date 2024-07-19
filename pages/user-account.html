@@ -17,10 +17,11 @@
     </div>
     <div class="content">
         <h1>Welcome, <span id="displayName"></span>!</h1>
-        <img id="userImage" src="/images/user account/user.png" alt="User Image">
+        <img id="userImage" src="/images/user account/profile.png" alt="User Image">
         <p>Full Name: <span id="fullName"></span></p>
         <p>Username: <span id="username"></span></p>
         <p>Email: <span id="email"></span></p>
+        
         <div id="changeInfoForm" style="display: none;">
             <h2>Change Information</h2>
             <input type="text" id="newFullName" placeholder="New Full Name"><br>
@@ -28,12 +29,21 @@
             <input type="email" id="newEmail" placeholder="New Email"><br>
             <button id="saveInfoButton">Save Changes</button>
         </div>
+
+        <div id="changePasswordForm" style="display: none;">
+            <h2>Change Password</h2>
+            <input type="password" id="oldPassword" placeholder="Old Password"><br>
+            <input type="password" id="newPassword" placeholder="New Password"><br>
+            <input type="password" id="confirmNewPassword" placeholder="Confirm New Password"><br>
+            <button id="savePasswordButton">Change Password</button>
+        </div>
     </div>
     <script>
         document.addEventListener('DOMContentLoaded', function() {
             const fullName = localStorage.getItem('userFullName');
             const username = localStorage.getItem('username');
             const email = localStorage.getItem('userEmail');
+            const storedPassword = localStorage.getItem('userPassword');
 
             document.getElementById('displayName').textContent = username;
             document.getElementById('fullName').textContent = fullName;
@@ -55,6 +65,7 @@
             if (changeInfoLink) {
                 changeInfoLink.addEventListener('click', function() {
                     changeInfoForm.style.display = 'block';
+                    document.getElementById('changePasswordForm').style.display = 'none';
                 });
             }
 
@@ -79,6 +90,38 @@
                     }
 
                     changeInfoForm.style.display = 'none';
+                });
+            }
+
+            const changePasswordLink = document.getElementById('changePasswordLink');
+            const changePasswordForm = document.getElementById('changePasswordForm');
+            const savePasswordButton = document.getElementById('savePasswordButton');
+
+            if (changePasswordLink) {
+                changePasswordLink.addEventListener('click', function() {
+                    changePasswordForm.style.display = 'block';
+                    document.getElementById('changeInfoForm').style.display = 'none';
+                });
+            }
+
+            if (savePasswordButton) {
+                savePasswordButton.addEventListener('click', function() {
+                    const oldPassword = document.getElementById('oldPassword').value;
+                    const newPassword = document.getElementById('newPassword').value;
+                    const confirmNewPassword = document.getElementById('confirmNewPassword').value;
+
+                    if (oldPassword !== storedPassword) {
+                        alert('Old password is incorrect!');
+                        return;
+                    }
+                    if (newPassword !== confirmNewPassword) {
+                        alert('New passwords do not match!');
+                        return;
+                    }
+
+                    localStorage.setItem('userPassword', newPassword);
+                    alert('Password changed successfully!');
+                    changePasswordForm.style.display = 'none';
                 });
             }
         });
