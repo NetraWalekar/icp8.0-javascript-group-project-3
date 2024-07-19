@@ -197,3 +197,103 @@ p, ul {
 ul {
     padding-left: 20px;
 }
+footer {
+    background-color:#0C1844;
+    color:white;
+    padding: 10px 0;
+    text-align: center;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    padding: 10px 20px;
+}
+
+.footer-section {
+    flex: 1;
+    margin: 10px;
+    text-align: left;
+    
+}
+
+.footer-logo-description {
+    margin-bottom: 10px;
+}
+
+.footer-logo {
+    width: 150px;
+   
+    margin-bottom: 2px;
+    
+}
+
+
+
+.contact-details h3, .payment-methods h3, .quick-links h3,p {
+    margin-bottom: 5px;
+    color: white;
+}
+
+.payment-icons {
+    display: flex;
+    text-align: left;
+    align-items: center;
+
+
+}
+
+.payment-icons img {
+    margin: 3px;
+    width: 50px;
+    height: auto;
+    vertical-align: middle;
+}
+
+.social-media-icons {
+    display: flex;
+   
+    align-items: center;
+    text-align: left;
+}
+
+.social-media-icons img {
+    margin: 5px;
+    width: 25px;
+    height: auto;
+}
+.connect{
+    text-align: left;
+    color: white;
+}
+
+.footer-links ,h3{
+    display: flex;
+    flex-direction: column;
+    color: white;
+}
+
+.footer-links a {
+    text-decoration: none;
+    color: #ece7e7;
+    padding: 5px 0;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}
+
+
+
+.copyright {
+
+        background: #333;
+        color: #fff;
+        text-align: center;
+        padding: 10px 0;
+        margin-top: 20px;
+    }
+
+    
