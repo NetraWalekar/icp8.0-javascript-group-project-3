@@ -7,11 +7,12 @@ body {
     height: 100vh;
     margin: 0;
 }
+
 h1 {
     color: black;
 }
 
-input[type="email"], input[type="password"] {
+input[type="text"], input[type="password"], input[type="email"] {
     width: 100%;
     padding: 12px;
     margin: 12px 0;
@@ -76,15 +77,14 @@ p a:hover {
 }
 
 .google-login-button:hover {
-    background-color: darkgray;
+    background-color: darkgrey;
 }
 
 .container {
     background-color: white;
     padding: 30px;
     border-radius: 10px;
-    /* border: 1px solid black; */
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     width: 450px;
     box-sizing: border-box;
 }
