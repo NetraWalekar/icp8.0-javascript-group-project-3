@@ -6,3 +6,11 @@
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
+.title h3{
+    color: #7e877b;
+}
+.title img{
+    width: 100%;
+    height: 250px;
+}
+
