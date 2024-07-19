@@ -5,3 +5,9 @@
     gap: 1rem;
     margin-top: 1rem;
 }
+.cart-img{
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+    padding: 10px;
+}
