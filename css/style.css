@@ -26,7 +26,7 @@ body {
     height: auto;
 }
 
-ul {
+.nav-links {
     display: flex;
     align-items: center;
     margin: 0;
@@ -34,14 +34,49 @@ ul {
     list-style: none;
 }
 
-li {
+.nav-links li {
     margin-left: 20px;
 }
 
-li a {
+.nav-links li a {
     color: white;
     font-size: 18px;
     font-weight: bold;
+    text-decoration: none;
+}
+
+.nav-links li a:hover {
+    color: darkgray;
+}
+
+.profile-menu {
+    position: relative;
+}
+
+.profile-menu img {
+    cursor: pointer;
+}
+
+.profile-dropdown {
+    display: none;
+    position: absolute;
+    top: 50px;
+    right: 0;
+    background-color: #ffffff;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+    z-index: 1;
+    text-align: left;
+}
+
+.profile-dropdown a {
+    display: block;
+    padding: 10px 20px;
+    color: black;
+    text-decoration: none;
+}
+
+.profile-dropdown a:hover {
+    background-color: #f1f1f1;
 }
 
 button {
@@ -64,48 +99,6 @@ button:hover {
 
 button a:hover {
     color: rgb(231, 47, 14);
-}
-
-.search-form {
-    display: flex;
-    align-items: center;
-    margin: 0 20px;
-}
-
-.search-form input {
-    padding: 5px;
-    border-radius: 5px;
-    border: 1px solid #ccc;
-    margin-right: 10px;
-}
-
-.search-form button {
-    padding: 5px 10px;
-    border-radius: 5px;
-    border: 1px solid #ccc;
-    background-color: black;
-    color: white;
-    cursor: pointer;
-}
-
-.search-form button:hover {
-    background-color: darkgray;
-}
-
-.offer-strip {
-    background-color: yellow;
-    color: red;
-    text-align: center;
-    padding: 5px 0;
-    font-size: 12px;
-    font-weight: bold;
-    overflow: hidden;
-    white-space: nowrap;
-}
-
-@keyframes slide {
-    0% { transform: translateX(100%); }
-    100% { transform: translateX(-100%); }
 }
 
 .card-container {
@@ -203,6 +196,7 @@ footer {
     flex: 1;
     margin: 10px;
     text-align: left;
+    
 }
 
 .footer-logo-description {
@@ -210,10 +204,10 @@ footer {
 }
 
 .footer-logo {
-    width: 180px;
-    height: auto;
-    margin-bottom: 5px;
-    color: aliceblue;
+    width: 150px;
+   
+    margin-bottom: 2px;
+    
 }
 
 .contact-details, .payment-methods, .quick-links {
@@ -260,7 +254,7 @@ footer {
 
 .footer-links a {
     text-decoration: none;
-    color: #333;
+    color: #ece7e7;
     padding: 5px 0;
 }
 
