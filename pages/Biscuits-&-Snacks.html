@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vegetable And Fruits</title>
+    <style>
+    .body{
+            padding: 0%;
+            margin: 0%;
+        }
+    .product-container{
+     display: flex;
+     flex-direction: row;
+     flex-wrap: wrap;
+     justify-content: center;
+
+     }
+
+   .product-card {
+    height: 390px;
+    width: 230px;
+    margin: 25px;
+    border: 0px solid gray;
+    border-radius: 15px;
+    position: relative;
+    box-shadow: 0px 0px 10px 0px grey;
+
+   
+    }
+
+    
+
+   .product-img {
+    height:180px;
+    width: 190px;
+    border-radius: 25px;
+    margin-top: 10px;
+    object-fit: cover;
+    padding-left: 13px;
+    }
+
+    .product-img:hover {
+    height:170px;
+    width: 180px;
+    }
+
+    
+
+   .product-name{
+    position: absolute;
+    top: 230px;
+    left: 5px;
+    right:5px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 7px;
+     }
+
+     
+
+   .price{
+    margin-top:10px;
+    font-weight: bold;
+    position: absolute;
+    top: 270px;
+    left: 10px;
+    }
+
+    
+
+   .mrp{
+    text-decoration: line-through;
+    margin-top: 10px;
+    position: absolute;
+    top: 290px;
+    left: 10px;
+    color: rgb(140, 139, 139);
+    }
+
+    
+
+    .button{
+    position: absolute;
+    left:52px;
+    bottom: 15px;
+    border: 1px solid gray;
+    padding: 3px auto;
+    border-radius: 19px;
+    width: 120px;
+    height: 40px;
+    color: #0c5273;
+    background-color: white;
+    font-size: 16px;
+    text-align: center;
+    cursor: pointer;
+    
+     } 
+
+    
+
+    .off{
+    color:#03753c;
+    background-color: #e5f7ee;
+    border: none;
+    font-weight: bold;
+    margin-left: 5px;
+     }
+
+     .quantity-btn-container{
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            margin-top: 7px;
+           
+        }
+
+        .quantity-size{
+            font-size:18px ;
+        }
+        .btn-quantity{
+            height: 18px;
+            margin-top: 7px;
+            display: inline-block;
+            cursor: pointer;
+            margin-left: 5px;
+            
+        }
+        </style>
+</head>
+<body>
+    <h1>biscuit & snacks</h1>
+    <div class="product-container">
+      <div class="product-card"><img src="../images/biscuit-snacks/lotte-pie.jpg" class="product-img">
+          <span class="product-name">Lotte Choco Pie - Soft Biscuits coated with Premium Chocolate
+          </span>
+          <div class="quantity-btn-container">
+            <img src="./../images/icons/minus.png "  class="btn-quantity" onclick="plusminus('decrement')"/>
+         <span class="quantity-size"  id="quantity-text">1</span> 
+            <img src="./../images/icons/plus.png" class="btn-quantity" onclick="plusminus('increment')"/>
+          </div>
+          <span class="price"> ₹110 </span>
+          <span class="mrp"> ₹170 <button class="off">-35%</button></span>
+          <button class="button">Add Cart</button>
+      </div>
+      <div class="product-card">
+          <img src="../images/biscuit-snacks/coconut-cookies.jpg" class="product-img">
+          <span class="product-name">Kikibix High Fibre Coconut Cookies | High Fibre, Tasty  </span>
+          <div class="quantity-btn-container">
+          <img src="./../images/icons/minus.png "  class="btn-quantity" onclick="plusminus('decrement')"/>
+         <span class="quantity-size"  id="quantity-text">1</span> 
+            <img src="./../images/icons/plus.png" class="btn-quantity" onclick="plusminus('increment')"/>
+         </div>
+          <span class="price">₹199</span>
+          <span class="mrp">₹255<button class="off">-22%</button></span>
+          <button class="button">Add Cart</button>
+      </div>
+      <div class="product-card">
+         <img src="../images/biscuit-snacks/dark-fantasy.jpg"class="product-img">
+         <span class="product-name">Sunfeast Dark Fantasy Yumfills, 242g/253g<br></span>
+         <div class="quantity-btn-container">
+         <img src="./../images/icons/minus.png "  class="btn-quantity" onclick="plusminus('decrement')"/>
+         <span class="quantity-size"  id="quantity-text">1</span> 
+            <img src="./../images/icons/plus.png" class="btn-quantity" onclick="plusminus('increment')"/>
+         </div>
+            <span class="price">₹102
+          </span>
+          <span class="mrp">  ₹170<button class="off">-40%</button></span>
+          <button class="button">Add Cart</button>
+      </div>
+      <div class="product-card">
+         <img src="../images/biscuit-snacks/farmley-date-bites.jpg" class="product-img">
+         <span class="product-name">Farmley Date Bites I 180 gram I Dates Barfi </span>
+      <div class="quantity-btn-container">
+         <img src="./../images/icons/minus.png "  class="btn-quantity" onclick="plusminus('decrement')"/>
+         <span class="quantity-size"  id="quantity-text">1</span> 
+            <img src="./../images/icons/plus.png" class="btn-quantity" onclick="plusminus('increment')"/>
+      </div>
+            <span class="price"> ₹349</span>
+            <span class="mrp"> ₹400<button class="off">-13%</button></span>
+         <button class="button">Add Cart</button>
+      </div>
+      <div class="product-card">
+          <img src="../images/biscuit-snacks/granamma-crunchy.jpg" class="product-img">
+          <span class="product-name"> Granamma Crunchy Ribbon Pakoda| Pack of 4, 500g|</span>
+          
+      <div class="quantity-btn-container">
+         <img src="./../images/icons/minus.png "  class="btn-quantity" onclick="plusminus('decrement')"/>
+         <span class="quantity-size"  id="quantity-text">1</span> 
+            <img src="./../images/icons/plus.png" class="btn-quantity" onclick="plusminus('increment')"/>
+      </div>
+          <span class="price">₹170</span>
+          <span class="mrp">  ₹232 <button class="off">-27%</button></span>
+          <button class="button">Add Cart</button>
+      </div>
+      <div class="product-card">
+         <img src="../images/biscuit-snacks/karachi-fruit.jpg" class="product-img">
+         <span class="product-name"> Karachi Fruit Biscuit - Premium, 400 g</span>
+      <div class="quantity-btn-container">
+         <img src="./../images/icons/minus.png "  class="btn-quantity" onclick="plusminus('decrement')"/>
+         <span class="quantity-size"  id="quantity-text">1</span> 
+            <img src="./../images/icons/plus.png" class="btn-quantity" onclick="plusminus('increment')"/>
+      </div>
+         <span class="price"> ₹189</span>
+         <span class="mrp">  ₹210 <button class="off">-10%</button></span>
+         <button class="button">Add Cart</button>
+      </div>
+      <div class="product-card">
+        <img src="../images/biscuit-snacks/masala-matri.jpg" class="product-img">
+        <span class="product-name"> HEALTHY MASTER Vision to serve healthy  </span>
+      <div class="quantity-btn-container">
+        <img src="./../images/icons/minus.png "  class="btn-quantity" onclick="plusminus('decrement')"/>
+         <span class="quantity-size"  id="quantity-text">1</span> 
+            <img src="./../images/icons/plus.png" class="btn-quantity" onclick="plusminus('increment')"/>
+      </div>
+        <span class="price">₹351</span>
+        <span class="mrp"> ₹420 <button class="off">-16%</button></span>
+        <button class="button">Add Cart</button>
+     </div>
+     <div class="product-card">
+        <img src="../images/biscuit-snacks/nutri-choice.jpg" class="product-img">
+        <span class="product-name"> 5 Grain Digestive High Fibre Biscuits, 200g </span>
+     <div class="quantity-btn-container">
+        <img src="./../images/icons/minus.png "  class="btn-quantity" onclick="plusminus('decrement')"/>
+         <span class="quantity-size"  id="quantity-text">1</span> 
+            <img src="./../images/icons/plus.png" class="btn-quantity" onclick="plusminus('increment')"/>
+     </div>
+        <span class="price"> ₹298</span>
+        <span class="mrp">₹398 <button class="off">-25%</button></span>
+        <button class="button">Add Cart</button>
+     </div>
+     <div class="product-card">
+        <img src="../images/biscuit-snacks/peri-peri-makhana.jpg" class="product-img">
+        <span class="product-name"> Farmley Peri Peri Roasted Makhana In Olive Oil</span>
+     <div class="quantity-btn-container">
+        <img src="./../images/icons/minus.png "  class="btn-quantity" onclick="plusminus('decrement')"/>
+         <span class="quantity-size"  id="quantity-text">1</span> 
+            <img src="./../images/icons/plus.png" class="btn-quantity" onclick="plusminus('increment')"/>
+     </div>
+        <span class="price"> ₹192</span>
+        <span class="mrp">₹199 <button class="off">-4%</button></span>
+        <button class="button">Add Cart</button>
+     </div>
+     <div class="product-card">
+        <img src="../images/biscuit-snacks/wafer-roll.jpg" class="product-img">
+        <span class="product-name"> Caprice Classic Delicious Wafer Roll Sticks </span>
+     <div class="quantity-btn-container">
+        <img src="./../images/icons/minus.png "  class="btn-quantity" onclick="plusminus('decrement')"/>
+         <span class="quantity-size"  id="quantity-text">1</span> 
+            <img src="./../images/icons/plus.png" class="btn-quantity" onclick="plusminus('increment')"/>
+     </div>
+        <span class="price">₹287</span>
+        <span class="mrp">₹319<button class="off">-10%</button></span>
+        <button class="button">Add Cart</button>
+     </div>
+  </div>
+
+  <script>
+   function plusminus(action)
+   {
+      const quantitytext =document.getElementById("quantity-text")
+      let quantity = parseInt(quantitytext.innerText);
+      if(quantity==1 && action=='decrement')
+      {
+       alert('Quantity cannot be less than 1')
+       return
+      }
+      else if (quantity==5 && action =='increment')
+      {
+        alert('Quantity cannot be greater then 5')
+        return
+       }
+      
+      if (action == 'increment'){
+       quantitytext.innerText =++quantity;
+      }
+      else{
+       quantitytext.innerText =--quantity;
+      }
+      
+   }
+</script>
+</body>
+</html>
