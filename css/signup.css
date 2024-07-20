@@ -81,6 +81,8 @@ p a:hover {
 }
 
 .container {
+    margin-top: 50px;
+    margin-bottom: 100px;
     background-color: white;
     padding: 30px;
     border-radius: 10px;
@@ -131,6 +133,9 @@ p a:hover {
 
 .signin-button {
     background-color: #FF6969;
+    height: 50px;
+    width: 100px;
+    margin-bottom: 10px;
     border: none;
     color: white;
     padding: 10px 20px;
@@ -154,6 +159,7 @@ p a:hover {
 }
 
 .profile-container, .cart-container {
+    margin-top: 10px;
     position: relative;
     display: flex;
     flex-direction: column;
