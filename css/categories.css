@@ -1,5 +1,7 @@
 body{
     background-color: rgb(255, 250, 250);
+    margin: 0;
+    padding: 0;
 }
 .cat-text {
     font-size: 30px;
