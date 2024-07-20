@@ -33,3 +33,8 @@ form {
 .form-group {
     margin-bottom: 15px;
 }
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
