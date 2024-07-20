@@ -131,6 +131,7 @@ body {
     margin-top: 10px;
     font-size: 16px;
     font-weight: bold;
+    color:#FF6969 ;
 }
 
 .card img {
@@ -138,31 +139,35 @@ body {
     height: auto;
     border-radius: 10px;
 }
+.top-deals{
+    text-align: center;
+}
 .discount-card-container {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
-    gap: 20px;
+    justify-content:space-around;
+    gap: 15px;
 }
 
 .discount-card {
     background-color: #fff;
-    border: 1px solid #ddd;
+    border: 1px solid grey;
     border-radius: 8px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    width: calc(25% - 20px);
+    width:250px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 16px;
+    padding: 20px; 
+   
     box-sizing: border-box;
     text-align: center;
-    transition: transform 0.3s, box-shadow 0.3s;
+    transition: transform 0.2s, box-shadow 0.2s; 
 }
 
 .discount-card:hover {
-    transform: scale(1.05);
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transform: scale(1.03); 
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.15); 
 }
 
 .discount-card img {
@@ -193,7 +198,7 @@ body {
     background-color: #FF6969;
     color: #fff;
     text-decoration: none;
-    padding: 10px 0;
+    padding: 12px 0; /* Increased padding for a better button appearance */
     border-radius: 4px;
     margin-top: 16px;
     font-size: 1em;
@@ -212,25 +217,36 @@ body {
 }
 .video-container {
     display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
+    justify-content: space-around; 
+    align-items: center; 
     margin-top: 20px;
+    padding: 20px; 
+    overflow-x: hidden; 
 }
 
 .video-wrapper {
     flex: 0 0 auto;
     text-align: center;
+    padding: 10px; 
 }
 
 .video-wrapper iframe {
     width: 300px;
     height: 200px;
+    border: 1px solid #ddd; 
 }
 
 .video-title {
     margin-top: 10px;
     font-weight: bold;
+    padding: 5px; 
 }
+
+
+.video-container .video-wrapper:last-child {
+    display: none;
+}
+
 
 
 footer {
@@ -320,13 +336,18 @@ footer {
 
 
 
-.copyright {
+footer.copyright {
+    width: 100%; 
+    height: 30px; 
+    text-align: center; 
+    background-color: #f8f8f8; 
+    color: #0c0c0c;
+}
 
-        background: #333;
-        color: #fff;
-        text-align: center;
-        padding: 10px 0;
-        margin-top: 20px;
-    }
+footer.copyright .footer-text {
+    line-height: 30px; 
+    margin-top: -5px; 
+}
+
 
     
