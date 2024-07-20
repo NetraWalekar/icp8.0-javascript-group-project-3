@@ -36,9 +36,9 @@
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
-    padding: 20px;
+    padding: 10px;
     width: auto;
-    padding-bottom: 50px;
+    padding-bottom: 20px;
 }
   .container {
     height: 370px;
@@ -69,7 +69,7 @@
 }
 .heading {
     text-align: center;
-    padding-top: 30px;
+    padding-top: 10px;
     padding-bottom: 30px;
     font-size: 25px;
     font-style: oblique;
@@ -87,17 +87,20 @@
 
 }
 /*CUSTOMRE REVIEW FORM SECTION*/
-.container {
-    width: 50%;
+.form-container {
+    width: 40%;
+    height: 600px;
     margin: 50px auto;
     padding: 20px;
     background-color: #fff;
     border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgb(176, 176, 201);
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
 }
+
 h2 {
     text-align: center;
-    color: #333;
+    color: #3f357a;
 }
 label {
     display: block;
@@ -105,10 +108,10 @@ label {
     color: #333;
 }
 input, select, textarea {
-    width: 100%;
+    width: 95%;
     padding: 10px;
-    margin-top: 5px;
-    margin-bottom: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
     border: 1px solid #ccc;
     border-radius: 4px;
 }
@@ -122,7 +125,7 @@ button {
     font-size: 16px;
 }
 button:hover {
-    background-color: #218838;
+    background-color: #1d6f2f;
 }
 .hidden {
     display: none;
@@ -130,5 +133,5 @@ button:hover {
 #successMessage {
     margin-top: 20px;
     text-align: center;
-    color: #28a745;
+    color: #1f8637;
 }
