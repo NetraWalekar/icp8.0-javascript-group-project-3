@@ -32,6 +32,9 @@ function add_cart(num){
         setTimeout(() => {
         document.getElementById('ac').style.display = 'none';
         }, 2000);
+        setTimeout(function(){
+          location.reload();
+         }, 2000);
        // Example use of num
     } else {
         console.error("Element with id 'ac' not found.");
