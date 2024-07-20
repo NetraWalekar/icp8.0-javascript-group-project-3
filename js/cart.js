@@ -1,8 +1,8 @@
-let cartIcon = document.querySelector("#categories");
+let cartIcon = document.querySelector("#cart-icon");
 let cart = document.querySelector(".cart");
 let closeCart = document.querySelector("#close-cart");
 // open cart
-categories.onclick = () => {
+cartIcon.onclick = () => {
     cart.classList.add("active");
 };
 //close cart

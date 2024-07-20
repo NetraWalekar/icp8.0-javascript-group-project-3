@@ -5,7 +5,7 @@
     width: 360px;
     min-height: 100vh;
     background: var(--bg-color);
-    box-shadow: -4px 0 4px hsl(0 4% 15% / 10%  );
+    box-shadow: -6px 0 4px hsl(0 4% 15% / 10%  );
 }
 .cart-title {
     text-align: center;
@@ -21,8 +21,8 @@
     margin-top: 1rem;
 }
 .cart-img {
-    width: 100px;
-    height: 100px;
+    width: 90px;
+    height: 90px;
     object-fit: contain;
     padding: 10px;
 }
@@ -38,7 +38,7 @@
     font-weight: 500;
 }
 .cart-quantity {
-    border: 1p solid var(--text-color);
+    border: 1p solid gray;
     outline-color: var(--main-color);
     width: 2.4rem;
     text-align: center;
@@ -49,18 +49,23 @@
     color: var(--main-color);
     cursor: pointer;
 }
+.cart-remove:hover {
+    color: red;
+}
 .total {
     display: flex;
     justify-content: flex-end;
-    margin-top: 1.5rem;
-    border-top: 1px solid var(--text-color);
+    margin-top: 1rem;
+    border-top: 2px solid black;
 }
 .total-title {
+    margin-top: 0.5rem;
     margin-right: 5px;
     font-size: 1rem;
     font-weight: 600;
 }
 .total-price {
+    margin-top: 0.5rem;
     margin-right: 20px;
     margin-left: 0.5rem;
 }
@@ -71,7 +76,7 @@
     border-radius: 5px;
     background: var(--bg-color);
     font-size: 1rem;
-    font-weight: 500;
+    font-weight: 600;
     cursor: pointer;
 }
 .btn-buy:hover {
@@ -82,11 +87,16 @@
 }
 #close-cart {
     position: absolute;
-    top: 1rem;
+    top: 0.1rem;
     right: 0.8rem;
     font-size: 2rem;
     color: var(--text-color);
     cursor: pointer;
+}
+#close-cart:hover {
+    border: 1px solid rgb(220, 211, 211);
+    background-color: rgb(241, 238, 238);
+    color: red;
 }
 .cart.active {
     right: 0;
