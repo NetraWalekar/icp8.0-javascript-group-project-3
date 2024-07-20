@@ -135,4 +135,12 @@ button:hover {
     text-align: center;
     color: #1f8637;
 }
+/*CUSTOMER REVIEW CARD*/
 
+.review {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	gap: 20px;
+	padding: 10% 0;
+}
