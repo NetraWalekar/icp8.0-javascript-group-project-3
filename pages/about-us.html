@@ -56,6 +56,31 @@
           <p>Shop with confidence knowing that your transactions are protected by our secure payment system. 
               We prioritize your security and privacy by utilizing the latest encryption technologies.</p>
       </div>
+      <div class="form-container">
+        <h2>Customer Review Form</h2>
+        <form id="reviewForm">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="rating">Rating:</label>
+            <select id="rating" name="rating" required>
+              <option value="5">5 - Excellent</option>
+              <option value="4">4 - Very Good</option>
+              <option value="3">3 - Good</option>
+              <option value="2">2 - Fair</option>
+              <option value="1">1 - Poor</option>
+            </select>
+            <label for="comments">Comments:</label>
+            <textarea id="comments" name="comments" rows="4" required></textarea>
+
+            <button type="submit">Submit Review</button>
+        </form>
+        <div id="successMessage" class="hidden">Thank you for your review!</div>
+    
+      </div>
   </section>
   </section>
 </body>
