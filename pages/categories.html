@@ -89,7 +89,11 @@
         <div class="product-card">
             <img src="../images/categories/top-deals/amul_butter.webp" class="top-deal-img">
             <span class="top-deal-text">Amul Butter 100 (Carton)</span>
-            <img src="../images/categories/veg.png" height="20">
+            <div class="quantity-btn-container">
+                <img src="./../images/icons/minus.png "  class="btn-quantity" onclick="plusminus('decrement')"/>
+               <span class="quantity-size"  id="quantity-text">1</span> 
+                  <img src="./../images/icons/plus.png" class="btn-quantity" onclick="plusminus('increment')"/>
+               </div>
             <span class="price">₹54.00</span>
             <span class="mrp">₹58.00 <button class="off">6 % Off</button></span>
             <button class="button" id="2" onclick="added(2)">Add</button>
@@ -97,7 +101,6 @@
         <div class="product-card"><img src="../images/categories/top-deals/condensed_milk.webp"
                 class="top-deal-img"><span class="top-deal-text">Nestle Milkmaid Condensed Milk 380 g
             </span>
-            <img src="../images/categories/veg.png" height="20">
             <span class="price">₹124.00
             </span>
             <span class="mrp">₹147.00 <button class="off">15 % Off</button></span>
@@ -105,22 +108,19 @@
         </div>
         <div class="product-card"><img src="../images/categories/top-deals/kellogs.webp" class="top-deal-img"><span
                 class="product-name">Kellogg's Fruit, Nut & Seeds Muesli 750 g
-            </span>
-            <img src="../images/categories/veg.png" height="20"><span class="price">₹359.00</span>
+            </span><span class="price">₹359.00</span>
             <span class="mrp">₹499.00 <button class="off">28 % Off</button></span>
             <button class="button" id="4" onclick="added(4)">Add</button>
         </div>
         <div class="product-card"><img src="../images/categories/top-deals/almonds.webp" class="top-deal-img"><span
                 class="product-name">Nutraj Australian Almond Kernels 500g
             </span>
-            <img src="../images/categories/veg.png" height="20">
             <span class="price">₹299.00</span>
             <span class="mrp">₹699.00 <button class="off">57 % Off</button></span>
             <button class="button" id="5" onclick="added(5)">Add</button>
         </div>
         <div class="product-card"><img src="../images/categories/top-deals/lotte_choco_pie.jpg"
                 class="top-deal-img"><span class="product-name"> Lotte Choco Pie 28 g (12 pcs)</span>
-            <img src="../images/categories/veg.png" height="20">
             <span class="price">₹110.00</span>
             <span class="mrp">₹170.00 <button class="off">35 % Off</button></span>
             <button class="button" id="6" onclick="added(6)">Add</button>
