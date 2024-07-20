@@ -234,7 +234,7 @@
           </div>
           <span class="price">₹49.00 </span>
           <span class="mrp">₹80.00 <button class="off">15 % Off</button></span>
-          <button class="button" id="btn" onclick="textChange()">Add Cart</button>
+          <button class="button" id="btn" onclick="textChange()">Add To Cart</button>
       </div>
       <div class="product-card">
           <img src="../images/fruits/apple.jpeg" class="product-img">
@@ -246,7 +246,7 @@
            </div>
           <span class="price">₹47.00</span>
           <span class="mrp">₹58.00 <button class="off">20 % Off</button></span>
-          <button class="button" id="btn1" onclick="textChange1()">Add Cart</button>
+          <button class="button" id="btn1" onclick="textChange1()">Add To Cart</button>
       </div>
       <div class="product-card">
           <img src="../images/vegetable/cauliflower.jpeg"class="product-img">
@@ -259,7 +259,7 @@
           <span class="price">₹49.00
           </span>
           <span class="mrp">₹80.00 <button class="off">39 % Off</button></span>
-          <button class="button" id="btn2" onclick="textChange2()">Add Cart</button>
+          <button class="button" id="btn2" onclick="textChange2()">Add To Cart</button>
       </div>
       <div class="product-card">
          <img src="../images/vegetable/ginger.jpeg" class="product-img">
@@ -271,7 +271,7 @@
          </div>
          <span class="price">₹20.00</span>
          <span class="mrp">₹50.00 <button class="off">55 % Off</button></span>
-         <button class="button" id="btn3" onclick="textChange3()"  >Add Cart</button>
+         <button class="button" id="btn3" onclick="textChange3()">Add To Cart</button>
       </div>
       <div class="product-card">
           <img src="../images/fruits/cherry.jpeg" class="product-img">
@@ -283,7 +283,7 @@
           </div>
           <span class="price">₹159.00</span>
           <span class="mrp">₹190.00 <button class="off">18% Off</button></span>
-          <button class="button" id="btn4" onclick="textChange4()">Add Cart</button>
+          <button class="button" id="btn4" onclick="textChange4()">Add To Cart</button>
       </div>
       <div class="product-card">
          <img src="../images/fruits/banana.jpeg" class="product-img">
@@ -295,7 +295,7 @@
          </div>
          <span class="price">₹105.00</span>
          <span class="mrp">₹112.00 <button class="off">30 % Off</button></span>
-         <button class="button" id="btn5" onclick="textChange5()">Add Cart</button>
+         <button class="button" id="btn5" onclick="textChange5()">Add To Cart</button>
       </div>
       <div class="product-card">
         <img src="../images/vegetable/cabbage.jpeg" class="product-img">
@@ -307,7 +307,7 @@
         </div>
         <span class="price">₹43.00</span>
         <span class="mrp">₹55.00 <button class="off">25 % Off</button></span>
-        <button class="button" id="btn6" onclick="textChange6()">Add Cart</button>
+        <button class="button" id="btn6" onclick="textChange6()">Add To Cart</button>
         </div>
      <div class="product-card">
         <img src="../images/vegetable/tomato.jpeg" class="product-img">
@@ -319,7 +319,7 @@
         </div>
         <span class="price">₹99.00</span>
         <span class="mrp">₹150.00 <button class="off">37 % Off</button></span>
-        <button class="button" id="btn7" onclick="textChange7()">Add Cart</button> 
+        <button class="button" id="btn7" onclick="textChange7()">Add To Cart</button> 
         </div>
     <div class="product-card">
         <img src="../images/vegetable/onion.jpeg" class="product-img">
@@ -331,7 +331,7 @@
         </div>
         <span class="price">₹47.00</span>
         <span class="mrp">₹67.00 <button class="off">30 % Off</button></span>
-        <button class="button" id="btn8" onclick="textChange8()">Add Cart</button>      
+        <button class="button" id="btn8" onclick="textChange8()">Add To Cart</button>      
     </div>
     <div class="product-card">
         <img src="../images/fruits/orange.jpeg" class="product-img">
@@ -343,7 +343,7 @@
         </div>
         <span class="price">₹107.00</span>
         <span class="mrp">₹140.00 <button class="off">28 % Off</button></span>
-        <button class="button" id="btn9" onclick="textChange9()" >Add Cart</button>
+        <button class="button" id="btn9" onclick="textChange9()" >Add To Cart</button>
   </div>
   </div>
   <script>
@@ -516,7 +516,7 @@
        quantityElement.innerText= action=='inc'? ++quantity : --quantity
     }
 
-    //function for changing text of button
+    //function for changing text on button
     function textChange(){
       const textElement=document.getElementById("btn")
       textElement.innerText="Added"; 
@@ -557,8 +557,6 @@
       const textElement=document.getElementById("btn9")
       textElement.innerText="Added"; 
     }
-    
-
-    </script>
+  </script>
 </body>
 </html>
