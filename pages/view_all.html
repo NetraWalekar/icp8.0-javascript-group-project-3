@@ -50,7 +50,7 @@
          </div>
          <span class="price"> ₹359.00</span>
          <span class="mrp"> ₹699.00 <button class="off">75%</button></span>
-         <button class="button">Add</button>
+         <button class="button" id="1" onclick="add_cart(1)">Add</button>
       </div>
       <div class="product-card">
          <img src="../images/categories/top-deals/amul_butter.webp" class="product-img">
@@ -225,27 +225,8 @@
   <footer class="copyright">
       <p id="footer-text">&copy; 2024 Grocery Shopping. All rights reserved.</p>
   </footer>
-   <script>
-      function plusminus(action) {
-         const quantitytext = document.getElementById("quantity-text")
-         let quantity = parseInt(quantitytext.innerText);
-         if (quantity == 1 && action == 'decrement') {
-            alert('Quantity cannot be less than 1')
-            return
-         }
-         else if (quantity == 5 && action == 'increment') {
-            alert('Quantity cannot be greater then 5')
-            return
-         }
-
-         if (action == 'increment') {
-            quantitytext.innerText = ++quantity;
-         }
-         else {
-            quantitytext.innerText = --quantity;
-         }
-
-      }
+   <script src="../js/categories.js">
+     
    </script>
 </body>
 
