@@ -6,45 +6,44 @@
     <title>Vegetable And Fruits</title>
     <style>
   .navbar {
-    background-color:#81A263;
-    
-  }
+    background-color: #81A263;
+   }
 
-  .navdiv {
+.navdiv {
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 0 20px;
-  }
+}
 
-   .logo img {
+.logo img {
     height: 50px;
-  } 
+}
 
-   .nav-links {
+.nav-links {
     list-style: none;
     display: flex;
     margin: 0;
     padding: 0;
-  }
+}
 
-   .nav-links li {
+.nav-links li {
     margin: 0 15px;
-  }
+}
 
-    .nav-links a {
+.nav-links a {
     color: white;
     text-decoration: none;
     padding: 14px 20px;
     display: block;
-  }
+}
 
-   .nav-links a:hover {
+.nav-links a:hover {
     background-color: #0c0c0c;
     border-radius: 5px;
-   }
+}
 
-   .signin-button {
+.signin-button {
     background-color: #365E32;
     border: none;
     color: white;
@@ -67,18 +66,29 @@
     display: flex;
     justify-content: space-between;
 }
-
-   .profile-container, .cart-container {
+profile-container, .cart-container {
     position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-left: 15px;
-   }
+}
+
+.profile-text, .cart-text {
+    display: none;
+    position: absolute;
+    top: 50px; 
+    color: white;
+    font-size: 12px;
+    background-color: #333;
+    padding: 5px;
+    border-radius: 3px;
+}
    
     .body{
-            padding: 0%;
-            margin: 0%;
+        margin: 0;
+         font-family: Arial, sans-serif;
+         background-color: whitesmoke;
         }
     .product-container{
      display: flex;
@@ -195,11 +205,11 @@
             <button class="signin-button"><a href="./pages/signin.html">Sign In</a></button>
             <div class="profile-container" id="profile-container">
                 <a href="/pages/user-account.html"><img src="../images/icons/home-logo/user.png" height="33px" alt="Profile" class="profile-icon" id="profile-icon"></a>
-                <span class="profile-text" id="profile-text">User Account</span>
+                <span class="profile-text" id="profile-text"></span>
             </div>
             <div class="cart-container" id="cart-container">
                 <a href="#"><img src="../images/icons/home-logo/shopping-cart.png" height="33px" alt="Cart" class="cart-icon" id="cart-icon"></a>
-                <span class="cart-text" id="cart-text">Cart</span>
+                <span class="cart-text" id="cart-text"></span>
             </div>
         </div>
         </div>
