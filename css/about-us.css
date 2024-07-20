@@ -58,7 +58,7 @@
 }
 .container h1 {
     padding-top: 7px;
-    color: rgb(68, 108, 134);
+    color: rgb(62, 150, 38);
     text-align: center;
 }
 .container p {
@@ -79,7 +79,7 @@
     color: palevioletred;
 }
 .heading span {
-    background-color:rgb(252, 202, 39);
+    background-color:rgb(62, 125, 17);
     color: rgb(255, 255, 255);
     display: inline-block;
     padding: 10px;
