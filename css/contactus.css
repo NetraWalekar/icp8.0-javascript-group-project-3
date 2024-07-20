@@ -53,6 +53,10 @@ body{
 .signin-button:hover {
     background-color: #093505;
 }
+.sign {
+    display: flex;
+    justify-content: space-between;
+}
 
 .container {
     max-width: 800px;
