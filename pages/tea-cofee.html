@@ -227,9 +227,9 @@
       <div class="product-card"><img src="../images/tea-coffee/cofee.jpg" class="product-img">
           <span class="product-name">Cafe N Tea Instant Cappuccino Coffee- 16G [Pack Of 20]</span>
           <div class="quantity-btn-container">
-          <img src="./../images/icons/minus.png "  class="btn-quantity" onclick="plusminus('decrement')"/>
+          <img src="./../images/icons/minus.png "  class="btn-quantity" onclick="handleQuantityChange('dec')"/>
          <span class="quantity-size"  id="quantity-text">1</span> 
-          <img src="./../images/icons/plus.png" class="btn-quantity" onclick="plusminus('increment')"/>
+          <img src="./../images/icons/plus.png" class="btn-quantity" onclick="handleQuantityChange('inc')"/>
           </div>
           <span class="price">₹400.00 </span>
           <span class="mrp">₹100.00 <button class="off">30 % Off</button></span>
@@ -240,9 +240,9 @@
           <span class="product-name">
             Tata Tea Premium | Desh Ki Chai |  Black Tea | 1.5kg Powder</span>
           <div class="quantity-btn-container">
-          <img src="./../images/icons/minus.png "  class="btn-quantity" onclick="plusminus('decrement')"/>
-          <span class="quantity-size"  id="quantity-text">1</span> 
-          <img src="./../images/icons/plus.png" class="btn-quantity" onclick="plusminus('increment')"/>
+          <img src="./../images/icons/minus.png "  class="btn-quantity" onclick="handleQuantityChange1('dec')"/>
+          <span class="quantity-size"  id="quantity-text1">1</span> 
+          <img src="./../images/icons/plus.png" class="btn-quantity" onclick="handleQuantityChange1('inc')"/>
            </div>
           <span class="price">₹451.00</span>
           <span class="mrp">₹705.00 <button class="off">37% Off</button></span>
@@ -252,9 +252,9 @@
          <img src="../images/tea-coffee/tata-tea.jpg"class="product-img">
          <span class="product-name">Tata Tea Gold Premium Assam & Aromatic Black Tea 1 Kg</span>
          <div class="quantity-btn-container">
-         <img src="./../images/icons/minus.png"  class="btn-quantity" onclick="plusminus('decrement')"/>
-         <span class="quantity-size"  id="quantity-text">1</span> 
-         <img src="./../images/icons/plus.png" class="btn-quantity" onclick="plusminus('increment')"/>
+         <img src="./../images/icons/minus.png"  class="btn-quantity" onclick="handleQuantityChange2('dec')"/>
+         <span class="quantity-size"  id="quantity-text2">1</span> 
+         <img src="./../images/icons/plus.png" class="btn-quantity" onclick="handleQuantityChange2('inc')"/>
          </div>
           <span class="price">₹392.00
           </span>
@@ -266,9 +266,9 @@
          <span class="product-name">
             Bru Instant | Aromatic Coffee From South Indian Plantations| 200g</span>
          <div class="quantity-btn-container">
-        <img src="./../images/icons/minus.png "  class="btn-quantity" onclick="plusminus('decrement')"/>
-        <span class="quantity-size"  id="quantity-text">1</span> 
-        <img src="./../images/icons/plus.png" class="btn-quantity" onclick="plusminus('increment')"/>
+        <img src="./../images/icons/minus.png "  class="btn-quantity" onclick="handleQuantityChange3('dec')"/>
+        <span class="quantity-size"  id="quantity-text3">1</span> 
+        <img src="./../images/icons/plus.png" class="btn-quantity" onclick="handleQuantityChange3('inc')"/>
         </div>
          <span class="price">₹320.00</span>
          <span class="mrp">₹400.00 <button class="off">20% Off</button></span>
@@ -278,9 +278,9 @@
           <img src="../images/tea-coffee/green-tea.jpg" class="product-img">
           <span class="product-name">Girnar Food &  Green Tea - Desi Kahwa  90 gm</span>
         <div class="quantity-btn-container">
-        <img src="./../images/icons/minus.png "  class="btn-quantity" onclick="plusminus('decrement')"/>
-        <span class="quantity-size"  id="quantity-text">1</span> 
-        <img src="./../images/icons/plus.png" class="btn-quantity" onclick="plusminus('increment')"/>
+        <img src="./../images/icons/minus.png "  class="btn-quantity" onclick="handleQuantityChange4('dec')"/>
+        <span class="quantity-size"  id="quantity-text4">1</span> 
+        <img src="./../images/icons/plus.png" class="btn-quantity" onclick="handleQuantityChange4('inc')"/>
         </div>
           <span class="price">₹340.00</span>
           <span class="mrp">₹.370 <button class="off">18% Off</button></span>
@@ -291,9 +291,9 @@
          <span class="product-name">
             NESCAFE Classic Instant Coffee Powder | 45 grams Pouch</span>
          <div class="quantity-btn-container">
-        <img src="./../images/icons/minus.png "  class="btn-quantity" onclick="plusminus('decrement')"/>
-        <span class="quantity-size"  id="quantity-text">1</span> 
-        <img src="./../images/icons/plus.png" class="btn-quantity" onclick="plusminus('increment')"/>
+        <img src="./../images/icons/minus.png "  class="btn-quantity" onclick="handleQuantityChange5('dec')"/>
+        <span class="quantity-size"  id="quantity-text5">1</span> 
+        <img src="./../images/icons/plus.png" class="btn-quantity" onclick="handleQuantityChange5('inc')"/>
         </div>
          <span class="price">₹175.00</span>
          <span class="mrp">₹185.00 <button class="off">5 % Off</button></span>
@@ -304,9 +304,9 @@
         <span class="product-name">
             Lipton Honey Lemon Green Tea Bags, 25 Pieces</span>
         <div class="quantity-btn-container">
-        <img src="./../images/icons/minus.png "  class="btn-quantity" onclick="plusminus('decrement')"/>
-           <span class="quantity-size"  id="quantity-text">1</span> 
-            <img src="./../images/icons/plus.png" class="btn-quantity" onclick="plusminus('increment')"/>
+        <img src="./../images/icons/minus.png "  class="btn-quantity" onclick="handleQuantityChange6('dec')"/>
+           <span class="quantity-size"  id="quantity-text6">1</span> 
+            <img src="./../images/icons/plus.png" class="btn-quantity" onclick="handleQuantityChange6('inc')"/>
             </div>
         <span class="price">₹149.00</span>
         <span class="mrp">₹170.00 <button class="off">17 % Off</button></span>
@@ -316,9 +316,9 @@
         <img src="../images/tea-coffee/red-label-tea.jpg" class="product-img">
         <span class="product-name"> Red Label Tea, With 5 Ayurvedic Ingredients, 500 gm</span>
         <div class="quantity-btn-container">
-        <img src="./../images/icons/minus.png "  class="btn-quantity" onclick="plusminus('decrement')"/>
-        <span class="quantity-size"  id="quantity-text">1</span> 
-        <img src="./../images/icons/plus.png" class="btn-quantity" onclick="plusminus('increment')"/>
+        <img src="./../images/icons/minus.png "  class="btn-quantity" onclick="handleQuantityChange7('dec')"/>
+        <span class="quantity-size"  id="quantity-text7">1</span> 
+        <img src="./../images/icons/plus.png" class="btn-quantity" onclick="handleQuantityChange7('inc')"/>
         </div>
         <span class="price">₹272.00</span>
         <span class="mrp">₹300.00 <button class="off">9 % Off</button></span>
@@ -328,9 +328,9 @@
         <img src="../images/tea-coffee/chai-masala-powder.jpg" class="product-img">
         <span class="product-name">Desire instant premix Chai Masala Tea Powder 1Kg</span>
         <div class="quantity-btn-container">
-        <img src="./../images/icons/minus.png "  class="btn-quantity" onclick="plusminus('decrement')"/>
-        <span class="quantity-size"  id="quantity-text">1</span> 
-        <img src="./../images/icons/plus.png" class="btn-quantity" onclick="plusminus('increment')"/>
+        <img src="./../images/icons/minus.png "  class="btn-quantity" onclick="handleQuantityChange8('dec')"/>
+        <span class="quantity-size"  id="quantity-text8">1</span> 
+        <img src="./../images/icons/plus.png" class="btn-quantity" onclick="handleQuantityChange8('inc')"/>
         </div>
         <span class="price">₹535.00</span>
         <span class="mrp">₹600.00 <button class="off">11 % Off</button></span>
@@ -340,14 +340,184 @@
         <img src="../images/tea-coffee/lemon-tea.jpg" class="product-img">
         <span class="product-name"> Coffee day beverages Zest Lemon Tea - Pack Of 4, 200 gm</span>
         <div class="quantity-btn-container">
-        <img src="./../images/icons/minus.png "  class="btn-quantity" onclick="plusminus('decrement')"/>
-        <span class="quantity-size"  id="quantity-text">1</span> 
-        <img src="./../images/icons/plus.png" class="btn-quantity" onclick="plusminus('increment')"/>
+        <img src="./../images/icons/minus.png "  class="btn-quantity" onclick="handleQuantityChange9('dec')"/>
+        <span class="quantity-size"  id="quantity-text9">1</span> 
+        <img src="./../images/icons/plus.png" class="btn-quantity" onclick="handleQuantityChange9('inc')"/>
         </div>
         <span class="price">₹480.00</span>
         <span class="mrp"> <button class="off">No Offer</button></span>
         <button class="button">Add Cart</button>
   </div>
   </div>
+  <script>
+    function handleQuantityChange(action)
+    {
+       const quantityElement =document.getElementById("quantity-text")
+       let quantity = parseInt(quantityElement.innerText);
+       if(quantity==1 && action=='dec')
+       {
+        alert('Quantity cannot be less than 1')
+        return
+       }
+       else if (quantity==5 && action =='inc')
+       {
+         alert('Quantity cannot be greater then 5')
+         return
+        }
+       quantityElement.innerText= action=='inc'? ++quantity : --quantity
+    }
+ 
+    function handleQuantityChange1(action)
+    {
+       const quantityElement =document.getElementById("quantity-text1")
+       let quantity = parseInt(quantityElement.innerText);
+       if(quantity==1 && action=='dec')
+       {
+        alert('Quantity cannot be less than 1')
+        return
+       }
+       else if (quantity==5 && action =='inc')
+       {
+         alert('Quantity cannot be greater then 5')
+         return
+        }
+       quantityElement.innerText= action=='inc'? ++quantity : --quantity
+    }
+ 
+    function handleQuantityChange2(action)
+    {
+       const quantityElement =document.getElementById("quantity-text2")
+       let quantity = parseInt(quantityElement.innerText);
+       if(quantity==1 && action=='dec')
+       {
+        alert('Quantity cannot be less than 1')
+        return
+       }
+       else if (quantity==5 && action =='inc')
+       {
+         alert('Quantity cannot be greater then 5')
+         return
+        }
+       quantityElement.innerText= action=='inc'? ++quantity : --quantity
+    }
+ 
+    function handleQuantityChange3(action)
+    {
+       const quantityElement =document.getElementById("quantity-text3")
+       let quantity = parseInt(quantityElement.innerText);
+       if(quantity==1 && action=='dec')
+       {
+        alert('Quantity cannot be less than 1')
+        return
+       }
+       else if (quantity==5 && action =='inc')
+       {
+         alert('Quantity cannot be greater then 5')
+         return
+        }
+       quantityElement.innerText= action=='inc'? ++quantity : --quantity
+    }
+ 
+    function handleQuantityChange4(action)
+    {
+       const quantityElement =document.getElementById("quantity-text4")
+       let quantity = parseInt(quantityElement.innerText);
+       if(quantity==1 && action=='dec')
+       {
+        alert('Quantity cannot be less than 1')
+        return
+       }
+       else if (quantity==5 && action =='inc')
+       {
+         alert('Quantity cannot be greater then 5')
+         return
+        }
+       quantityElement.innerText= action=='inc'? ++quantity : --quantity
+    }
+    function handleQuantityChange5(action)
+    {
+       const quantityElement =document.getElementById("quantity-text5")
+       let quantity = parseInt(quantityElement.innerText);
+       if(quantity==1 && action=='dec')
+       {
+        alert('Quantity cannot be less than 1')
+        return
+       }
+       else if (quantity==5 && action =='inc')
+       {
+         alert('Quantity cannot be greater then 5')
+         return
+        }
+       quantityElement.innerText= action=='inc'? ++quantity : --quantity
+    }
+ 
+    function handleQuantityChange6(action)
+    {
+       const quantityElement =document.getElementById("quantity-text6")
+       let quantity = parseInt(quantityElement.innerText);
+       if(quantity==1 && action=='dec')
+       {
+        alert('Quantity cannot be less than 1')
+        return
+       }
+       else if (quantity==5 && action =='inc')
+       {
+         alert('Quantity cannot be greater then 5')
+         return
+        }
+       quantityElement.innerText= action=='inc'? ++quantity : --quantity
+    }
+ 
+    function handleQuantityChange7(action)
+    {
+       const quantityElement =document.getElementById("quantity-text7")
+       let quantity = parseInt(quantityElement.innerText);
+       if(quantity==1 && action=='dec')
+       {
+        alert('Quantity cannot be less than 1')
+        return
+       }
+       else if (quantity==5 && action =='inc')
+       {
+         alert('Quantity cannot be greater then 5')
+         return
+        }
+       quantityElement.innerText= action=='inc'? ++quantity : --quantity
+    }
+ 
+    function handleQuantityChange8(action)
+    {
+       const quantityElement =document.getElementById("quantity-text8")
+       let quantity = parseInt(quantityElement.innerText);
+       if(quantity==1 && action=='dec')
+       {
+        alert('Quantity cannot be less than 1')
+        return
+       }
+       else if (quantity==5 && action =='inc')
+       {
+         alert('Quantity cannot be greater then 5')
+         return
+        }
+       quantityElement.innerText= action=='inc'? ++quantity : --quantity
+    }
+ 
+    function handleQuantityChange9(action)
+    {
+       const quantityElement =document.getElementById("quantity-text9")
+       let quantity = parseInt(quantityElement.innerText);
+       if(quantity==1 && action=='dec')
+       {
+        alert('Quantity cannot be less than 1')
+        return
+       }
+       else if (quantity==5 && action =='inc')
+       {
+         alert('Quantity cannot be greater then 5')
+         return
+        }
+       quantityElement.innerText= action=='inc'? ++quantity : --quantity
+    }
+    </script>
 </body>
 </html>
