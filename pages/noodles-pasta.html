@@ -235,7 +235,7 @@
           </div>
           <span class="price">₹160.00 </span>
           <span class="mrp">₹200.00 <button class="off">20 % Off</button></span>
-          <button class="button">Add Cart</button>
+          <button class="button" id="btn" onclick="textChange()">Add To Cart</button> 
       </div>
       <div class="product-card">
           <img src="../images/noodles-pasta/borgeous-pasta.jpg" class="product-img">
@@ -248,7 +248,7 @@
            </div>
           <span class="price">₹190.00</span>
           <span class="mrp">₹299.00 <button class="off">36% Off</button></span>
-          <button class="button">Add Cart</button>
+          <button class="button" id="btn1" onclick="textChange1()">Add To Cart</button> 
       </div>
       <div class="product-card">
          <img src="../images/noodles-pasta/noodles_pasta.jpeg"class="product-img">
@@ -261,7 +261,7 @@
           <span class="price">₹71.00
           </span>
           <span class="mrp">₹84.00 <button class="off">15 % Off</button></span>
-          <button class="button">Add Cart</button>
+          <button class="button" id="btn2" onclick="textChange2()">Add To Cart</button> 
       </div>
       <div class="product-card">
          <img src="../images/noodles-pasta/maggie.jpg" class="product-img">
@@ -273,7 +273,7 @@
         </div>
          <span class="price">₹97.00</span>
          <span class="mrp">₹112.00 <button class="off">17% Off</button></span>
-         <button class="button">Add Cart</button>
+         <button class="button" id="btn3" onclick="textChange3()">Add To Cart</button> 
       </div>
       <div class="product-card">
           <img src="../images/noodles-pasta/noodles.jpg" class="product-img">
@@ -286,7 +286,7 @@
         </div>
           <span class="price">₹210.00</span>
           <span class="mrp">₹.245 <button class="off">12% Off</button></span>
-          <button class="button">Add Cart</button>
+          <button class="button" id="btn4" onclick="textChange4()">Add To Cart</button> 
       </div>
       <div class="product-card">
          <img src="../images/noodles-pasta/yippe-pasta.jpg" class="product-img">
@@ -298,7 +298,7 @@
         </div>
          <span class="price">₹28.00</span>
          <span class="mrp">₹32.00 <button class="off">5 % Off</button></span>
-         <button class="button">Add Cart</button>
+         <button class="button" id="btn5" onclick="textChange5()">Add To Cart</button> 
       </div>
       <div class="product-card">
         <img src="../images/noodles-pasta/agnesi-pasta.jpg" class="product-img">
@@ -311,7 +311,7 @@
             </div>
         <span class="price">₹368.00</span>
         <span class="mrp">₹375.00 <button class="off">2 % Off</button></span>
-        <button class="button">Add Cart</button>
+        <button class="button" id="btn6" onclick="textChange6()">Add To Cart</button> 
         </div>
      <div class="product-card">
         <img src="../images/noodles-pasta/cup-noodles.jpg" class="product-img">
@@ -323,7 +323,7 @@
         </div>
         <span class="price">₹220.00</span>
         <span class="mrp">₹2500.00 <button class="off">27 % Off</button></span>
-        <button class="button">Add Cart</button> 
+        <button class="button" id="btn7" onclick="textChange7()">Add To Cart</button>  
         </div>
     <div class="product-card">
         <img src="../images/noodles-pasta/damati-pasta.jpg" class="product-img">
@@ -336,7 +336,7 @@
         </div>
         <span class="price">₹295.00</span>
         <span class="mrp">₹310.00 <button class="off">5 % Off</button></span>
-        <button class="button">Add Cart</button>      
+        <button class="button" id="btn8" onclick="textChange8()">Add To Cart</button>     
     </div>
     <div class="product-card">
         <img src="../images/noodles-pasta/pasta.jpg" class="product-img">
@@ -348,7 +348,7 @@
         </div>
         <span class="price">₹197.00</span>
         <span class="mrp">₹219.00  <button class="off">27% Offer</button></span>
-        <button class="button">Add Cart</button>
+        <button class="button" id="btn9" onclick="textChange9()">Add To Cart</button> 
   </div>
   </div>
   <script>
@@ -519,6 +519,47 @@
          return
         }
        quantityElement.innerText= action=='inc'? ++quantity : --quantity
+    }
+    //function for changing text on button
+    function textChange(){
+      const textElement=document.getElementById("btn")
+      textElement.innerText="Added"; 
+    }
+      function textChange1(){
+      const textElement=document.getElementById("btn1")
+      textElement.innerText="Added"; 
+    }
+      function textChange2(){
+      const textElement=document.getElementById("btn2")
+      textElement.innerText="Added"; 
+    }
+      function textChange3(){
+      const textElement=document.getElementById("btn3")
+      textElement.innerText="Added"; 
+    }
+      function textChange4(){
+      const textElement=document.getElementById("btn4")
+      textElement.innerText="Added"; 
+    }
+      function textChange5(){
+      const textElement=document.getElementById("btn5")
+      textElement.innerText="Added"; 
+    }
+      function textChange6(){
+      const textElement=document.getElementById("btn6")
+      textElement.innerText="Added"; 
+    }
+      function textChange7(){
+      const textElement=document.getElementById("btn7")
+      textElement.innerText="Added"; 
+    }
+      function textChange8(){
+      const textElement=document.getElementById("btn8")
+      textElement.innerText="Added"; 
+    }
+      function textChange9(){
+      const textElement=document.getElementById("btn9")
+      textElement.innerText="Added"; 
     }
     </script>
 </body>
