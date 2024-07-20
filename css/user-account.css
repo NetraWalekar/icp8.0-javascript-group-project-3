@@ -131,6 +131,14 @@ body {
     transform: scale(1.05);
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
 }
+/* 
+.content {
+    flex-grow: 1;
+    padding: 20px;
+    text-align: center;
+    margin-left: 250px; 
+    margin-top: 70px; 
+} */
 
 .content {
     flex-grow: 1;
@@ -139,6 +147,25 @@ body {
     margin-left: 250px; /* Adjust margin to account for the fixed sidebar */
     margin-top: 70px; /* Adjust margin to account for the fixed navbar */
 }
+
+.user-info-table {
+    margin: 20px auto;
+    border-collapse: collapse;
+    width: 40%;
+    max-width: 800px;
+    text-align: left;
+    font-size: 19px;
+}
+
+.user-info-table td {
+    padding: 10px 20px;
+    border: 1px solid gray;
+}
+
+.user-info-table b {
+    font-size: 19px;
+}
+
 
 h1 {
     color: #093505;
@@ -179,3 +206,4 @@ h1 {
 #saveInfoButton:hover, #savePasswordButton:hover {
     background-color: #093505;
 }
+
