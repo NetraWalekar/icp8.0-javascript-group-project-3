@@ -7,7 +7,7 @@
 body {
     margin: 0;
     font-family: Arial, sans-serif;
-    background-color: #FFF5E1;
+    background-color: whitesmoke;
     
 }
 
@@ -116,8 +116,10 @@ body {
 
 .head-img img {
     max-width: 100%;
-    height: auto;
+    height: 500px;
     border-radius: 10px; 
+    border: 2px solid #365E32;
+    background-color: #ddd;
 }
 
 
@@ -129,15 +131,17 @@ body {
     width: 100%;
     height: auto;
     border-radius: 10px;
+
 }
 
 .card-caption {
     margin-top: 10px;
     font-size: 16px;
     font-weight: bold;
-    color:#FF6969 ;
+    color:#365E32 ;
     
 }
+
 
 .card img {
     width: 100%;
@@ -155,7 +159,7 @@ body {
 }
 
 .discount-card {
-    background-color: #fff;
+    background-color:rgb(250, 238, 216);
     border: 1px solid grey;
     border-radius: 8px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
@@ -200,10 +204,10 @@ body {
 
 .shop-now {
     display: block;
-    background-color: #FF6969;
+    background-color: #365E32;
     color: #fff;
     text-decoration: none;
-    padding: 12px 0; /* Increased padding for a better button appearance */
+    padding: 12px 0; 
     border-radius: 4px;
     margin-top: 16px;
     font-size: 1em;
@@ -212,7 +216,7 @@ body {
 }
 
 .shop-now:hover {
-    background-color: #ee2626;
+    background-color: #0f480a;
 }
 
 
