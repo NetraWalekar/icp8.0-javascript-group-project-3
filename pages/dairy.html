@@ -235,7 +235,7 @@
           </div>
           <span class="price"> ₹54 </span>
           <span class="mrp"> ₹58 <button class="off">6%</button></span>
-          <button class="button">Add Cart</button>
+          <button class="button" id="btn" onclick="textChange()">Add To Cart</button> 
       </div>
       <div class="product-card">
           <img src="../images/dairy-products/milkmaid.jpg" class="product-img">
@@ -247,7 +247,7 @@
          </div>
           <span class="price">₹124</span>
           <span class="mrp">₹147<button class="off">15%</button></span>
-          <button class="button">Add Cart</button>
+          <button class="button" id="btn1" onclick="textChange1()">Add To Cart</button> 
       </div>
       <div class="product-card">
          <img src="../images/dairy-products/amul.jpg"class="product-img">
@@ -260,7 +260,7 @@
             <span class="price">₹135
           </span>
           <span class="mrp">  ₹140<button class="off">4%</button></span>
-          <button class="button">Add Cart</button>
+          <button class="button" id="btn2" onclick="textChange2()">Add To Cart</button> 
       </div>
       <div class="product-card">
          <img src="../images/dairy-products/cadbury.jpg" class="product-img">
@@ -272,7 +272,7 @@
       </div>
             <span class="price"> ₹560</span>
             <span class="mrp"> ₹570<button class="off">1%</button></span>
-         <button class="button">Add Cart</button>
+            <button class="button" id="btn3" onclick="textChange3()">Add To Cart</button> 
       </div>
       <div class="product-card">
           <img src="../images/dairy-products/carnation-milk.jpg" class="product-img">
@@ -285,7 +285,7 @@
       </div>
           <span class="price">₹345</span>
           <span class="mrp">  ₹390 <button class="off">12%</button></span>
-          <button class="button">Add Cart</button>
+          <button class="button" id="btn4" onclick="textChange4()">Add To Cart</button> 
       </div>
       <div class="product-card">
          <img src="../images/dairy-products/condensed-milk" class="product-img">
@@ -297,7 +297,7 @@
       </div>
          <span class="price"> ₹124</span>
          <span class="mrp">  ₹126<button class="off">1%</button></span>
-         <button class="button">Add Cart</button>
+         <button class="button" id="btn5" onclick="textChange5()">Add To Cart</button> 
       </div>
       <div class="product-card">
         <img src="../images/dairy-products/neste.jpg" class="product-img">
@@ -309,7 +309,7 @@
       </div>
         <span class="price">₹579</span>
         <span class="mrp"> ₹605 <button class="off">4%</button></span>
-        <button class="button">Add Cart</button>
+        <button class="button" id="btn6" onclick="textChange6()">Add To Cart</button> 
      </div>
      <div class="product-card">
         <img src="../images/dairy-products/organic-cow-milk.jpg" class="product-img">
@@ -321,7 +321,7 @@
      </div>
         <span class="price"> ₹474</span>
         <span class="mrp">₹500 <button class="off">-5%</button></span>
-        <button class="button">Add Cart</button>
+        <button class="button" id="btn7" onclick="textChange7()">Add To Cart</button> 
      </div>
      <div class="product-card">
         <img src="../images/dairy-products/pure-ghee.jpg" class="product-img">
@@ -333,7 +333,7 @@
      </div>
         <span class="price"> ₹1,780</span>
         <span class="mrp">₹2,320 <button class="off">23%</button></span>
-        <button class="button">Add Cart</button>
+        <button class="button" id="btn8" onclick="textChange8()">Add To Cart</button> 
      </div>
      <div class="product-card">
         <img src="../images/dairy-products/vegan-creamy.jpg" class="product-img">
@@ -345,7 +345,7 @@
      </div>
         <span class="price">₹313</span>
         <span class="mrp">₹354<button class="off">12%</button></span>
-        <button class="button">Add Cart</button>
+        <button class="button" id="btn9" onclick="textChange9()">Add To Cart</button> 
      </div>
   </div>
 
@@ -518,6 +518,47 @@
        }
       quantityElement.innerText= action=='inc'? ++quantity : --quantity
    }
+   //function for changing text on button
+   function textChange(){
+      const textElement=document.getElementById("btn")
+      textElement.innerText="Added"; 
+    }
+      function textChange1(){
+      const textElement=document.getElementById("btn1")
+      textElement.innerText="Added"; 
+    }
+      function textChange2(){
+      const textElement=document.getElementById("btn2")
+      textElement.innerText="Added"; 
+    }
+      function textChange3(){
+      const textElement=document.getElementById("btn3")
+      textElement.innerText="Added"; 
+    }
+      function textChange4(){
+      const textElement=document.getElementById("btn4")
+      textElement.innerText="Added"; 
+    }
+      function textChange5(){
+      const textElement=document.getElementById("btn5")
+      textElement.innerText="Added"; 
+    }
+      function textChange6(){
+      const textElement=document.getElementById("btn6")
+      textElement.innerText="Added"; 
+    }
+      function textChange7(){
+      const textElement=document.getElementById("btn7")
+      textElement.innerText="Added"; 
+    }
+      function textChange8(){
+      const textElement=document.getElementById("btn8")
+      textElement.innerText="Added"; 
+    }
+      function textChange9(){
+      const textElement=document.getElementById("btn9")
+      textElement.innerText="Added"; 
+    }
    </script>
 </body>
 </html>

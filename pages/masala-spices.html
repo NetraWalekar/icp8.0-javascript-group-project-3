@@ -236,8 +236,8 @@
           </div>
           <span class="price">₹200.00 </span>
           <span class="mrp">₹240.00 <button class="off">17% Off</button></span>
-          <button class="button">Add Cart</button>
-      </div>
+          <button class="button" id="btn" onclick="textChange()">Add To Cart</button>       
+         </div>
       <div class="product-card">
           <img src="../images/masala-spices/achar-masala.jpg" class="product-img">
           <span class="product-name">
@@ -249,7 +249,7 @@
            </div>
           <span class="price">₹199.00</span>
           <span class="mrp">₹210.00 <button class="off">5% Off</button></span>
-          <button class="button">Add Cart</button>
+          <button class="button" id="btn1" onclick="textChange1()">Add To Cart</button> 
       </div>
       <div class="product-card">
          <img src="../images/masala-spices/tumeric-powder.jpg"class="product-img">
@@ -262,7 +262,7 @@
           <span class="price">₹52.00
           </span>
           <span class="mrp">₹72.00 <button class="off">28 % Off</button></span>
-          <button class="button">Add Cart</button>
+          <button class="button" id="btn2" onclick="textChange2()">Add To Cart</button> 
       </div>
       <div class="product-card">
          <img src="../images/masala-spices/garam-masala.jpg" class="product-img">
@@ -274,7 +274,7 @@
         </div>
          <span class="price">₹165.00</span>
          <span class="mrp">₹200.00 <button class="off">18% Off</button></span>
-         <button class="button">Add Cart</button>
+         <button class="button" id="btn3" onclick="textChange3()">Add To Cart</button> 
       </div>
       <div class="product-card">
           <img src="../images/masala-spices/maggi-masala.jpg" class="product-img">
@@ -287,7 +287,7 @@
         </div>
           <span class="price">₹.100.00</span>
           <span class="mrp">₹.170 <button class="off">47% Off</button></span>
-          <button class="button">Add Cart</button>
+          <button class="button" id="btn4" onclick="textChange4()">Add To Cart</button> 
       </div>
       <div class="product-card">
          <img src="../images/masala-spices/vedaka-masala.jpg" class="product-img">
@@ -300,12 +300,11 @@
         </div>
          <span class="price">₹209.00</span>
          <span class="mrp">₹250.00 <button class="off">16% Off</button></span>
-         <button class="button">Add Cart</button>
+         <button class="button" id="btn5" onclick="textChange5()">Add To Cart</button> 
       </div>
       <div class="product-card">
         <img src="../images/masala-spices/everest-masala.jpg" class="product-img">
-        <span class="product-name">
-            Everest Masala Powder - Chicken, 100g Carton</span>
+        <span class="product-name">Everest Masala Powder - Chicken, 100g Carton</span>
         <div class="quantity-btn-container">
         <img src="./../images/icons/minus.png"  class="btn-quantity" onclick="handleQuantityChange6('dec')"/>
            <span class="quantity-size"  id="quantity-text6">1</span> 
@@ -313,7 +312,7 @@
             </div>
         <span class="price">₹92.00</span>
         <span class="mrp">₹140.00 <button class="off">38 % Off</button></span>
-        <button class="button">Add Cart</button>
+        <button class="button" id="btn6" onclick="textChange6()">Add To Cart</button> 
         </div>
      <div class="product-card">
         <img src="../images/masala-spices/chole-masala.jpg" class="product-img">
@@ -325,7 +324,7 @@
         </div>
         <span class="price">₹65.00</span>
         <span class="mrp">₹93.00 <button class="off">3% Off</button></span>
-        <button class="button">Add Cart</button> 
+        <button class="button" id="btn7" onclick="textChange7()">Add To Cart</button> 
         </div>
     <div class="product-card">
         <img src="../images/masala-spices/tamarind-masala.jpg" class="product-img">
@@ -337,7 +336,7 @@
         </div>
         <span class="price">₹123.00</span>
         <span class="mrp">₹135.00 <button class="off">9 % Off</button></span>
-        <button class="button">Add Cart</button>      
+        <button class="button" id="btn8" onclick="textChange8()">Add To Cart</button>     
     </div>
     <div class="product-card">
         <img src="../images/masala-spices/malavani-masala.jpg" class="product-img">
@@ -349,7 +348,7 @@
         </div>
         <span class="price">₹340.00</span>
         <span class="mrp">₹350.00  <button class="off">1% Offer</button></span>
-        <button class="button">Add Cart</button>
+        <button class="button" id="btn9" onclick="textChange9()">Add To Cart</button> 
   </div>
   </div>
   <script>
@@ -520,6 +519,47 @@
          return
         }
        quantityElement.innerText= action=='inc'? ++quantity : --quantity
+    }
+    //function for changing text on button
+      function textChange(){
+      const textElement=document.getElementById("btn")
+      textElement.innerText="Added"; 
+    }
+      function textChange1(){
+      const textElement=document.getElementById("btn1")
+      textElement.innerText="Added"; 
+    }
+      function textChange2(){
+      const textElement=document.getElementById("btn2")
+      textElement.innerText="Added"; 
+    }
+      function textChange3(){
+      const textElement=document.getElementById("btn3")
+      textElement.innerText="Added"; 
+    }
+      function textChange4(){
+      const textElement=document.getElementById("btn4")
+      textElement.innerText="Added"; 
+    }
+      function textChange5(){
+      const textElement=document.getElementById("btn5")
+      textElement.innerText="Added"; 
+    }
+      function textChange6(){
+      const textElement=document.getElementById("btn6")
+      textElement.innerText="Added"; 
+    }
+      function textChange7(){
+      const textElement=document.getElementById("btn7")
+      textElement.innerText="Added"; 
+    }
+      function textChange8(){
+      const textElement=document.getElementById("btn8")
+      textElement.innerText="Added"; 
+    }
+      function textChange9(){
+      const textElement=document.getElementById("btn9")
+      textElement.innerText="Added"; 
     }
     </script>
 </body>
