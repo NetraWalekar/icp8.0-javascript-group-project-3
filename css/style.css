@@ -1,15 +1,18 @@
 
 * {
     text-decoration: none;
+
 }
 
 body {
     margin: 0;
     font-family: Arial, sans-serif;
+    background-color: #FFF5E1;
+    
 }
 
 .navbar {
-    background-color: #C80036;
+    background-color: #81A263;
     
 }
 
@@ -48,7 +51,8 @@ body {
 }
 
 .signin-button {
-    background-color: #FF6969;
+    background-color: #365E32;
+
     border: none;
     color: white;
     padding: 10px 20px;
@@ -68,7 +72,7 @@ body {
 }
 
 .signin-button:hover {
-    background-color: #f81a1a;
+    background-color: #093505;
 }
 
 .profile-container, .cart-container {
@@ -132,6 +136,7 @@ body {
     font-size: 16px;
     font-weight: bold;
     color:#FF6969 ;
+    
 }
 
 .card img {
@@ -250,7 +255,7 @@ body {
 
 
 footer {
-    background-color:#0C1844;
+    background-color:#365E32;
     color:white;
     padding: 10px 0;
     text-align: center;
@@ -348,6 +353,7 @@ footer.copyright .footer-text {
     line-height: 30px; 
     margin-top: -5px; 
 }
+
 
 
     
