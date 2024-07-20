@@ -39,6 +39,7 @@
     .product-img:hover {
     height:170px;
     width: 180px;
+    transition-duration: 0.3s;
     }
 
    .product-name{
@@ -132,9 +133,9 @@
           <img src="../images/atta-flour/beetroot-atta.jpg" class="product-img">
           <span class="product-name">The Better Flour – Iron Rich Beetroot Atta   </span>
           <div class="quantity-btn-container">
-          <img src="./../images/icons/minus.png "  class="btn-quantity" onclick="plusminus('decrement')"/>
-         <span class="quantity-size"  id="quantity-text">1</span> 
-            <img src="./../images/icons/plus.png" class="btn-quantity" onclick="plusminus('increment')"/>
+          <img src="./../images/icons/minus.png "  class="btn-quantity" onclick="plusminus1('decrement')"/>
+         <span class="quantity-size"  id="quantity-text1">1</span> 
+            <img src="./../images/icons/plus.png" class="btn-quantity" onclick="plusminus1('increment')"/>
          </div>
           <span class="price">₹249</span>
           <span class="mrp">₹295<button class="off">-16%</button></span>
@@ -144,9 +145,9 @@
          <img src="../images/atta-flour/chakki-atta.jpg"class="product-img">
          <span class="product-name">Fresh Chakki Atta, 15kg Wheat Flour Sudh Atta<br></span>
          <div class="quantity-btn-container">
-         <img src="./../images/icons/minus.png "  class="btn-quantity" onclick="plusminus('decrement')"/>
-         <span class="quantity-size"  id="quantity-text">1</span> 
-            <img src="./../images/icons/plus.png" class="btn-quantity" onclick="plusminus('increment')"/>
+         <img src="./../images/icons/minus.png "  class="btn-quantity" onclick="plusminus2('decrement')"/>
+         <span class="quantity-size"  id="quantity-text2">1</span> 
+            <img src="./../images/icons/plus.png" class="btn-quantity" onclick="plusminus2('increment')"/>
          </div>
             <span class="price"> ₹925
           </span>
@@ -157,9 +158,9 @@
          <img src="../images/atta-flour/wheafree.jpg" class="product-img">
          <span class="product-name">Wheafree Multigrain Gluten Free Flour (5Kg)  </span>
       <div class="quantity-btn-container">
-         <img src="./../images/icons/minus.png "  class="btn-quantity" onclick="plusminus('decrement')"/>
-         <span class="quantity-size"  id="quantity-text">1</span> 
-            <img src="./../images/icons/plus.png" class="btn-quantity" onclick="plusminus('increment')"/>
+         <img src="./../images/icons/minus.png "  class="btn-quantity" onclick="plusminus3('decrement')"/>
+         <span class="quantity-size"  id="quantity-text3">1</span> 
+            <img src="./../images/icons/plus.png" class="btn-quantity" onclick="plusminus3('increment')"/>
       </div>
             <span class="price">₹790 </span>
             <span class="mrp">  ₹800<button class="off">-1%</button></span>
@@ -170,9 +171,9 @@
           <span class="product-name"> Khapli Wheat Flour (2 kg) | High Dietary Fiber |</span>
           
       <div class="quantity-btn-container">
-         <img src="./../images/icons/minus.png "  class="btn-quantity" onclick="plusminus('decrement')"/>
-         <span class="quantity-size"  id="quantity-text">1</span> 
-            <img src="./../images/icons/plus.png" class="btn-quantity" onclick="plusminus('increment')"/>
+         <img src="./../images/icons/minus.png "  class="btn-quantity" onclick="plusminus4('decrement')"/>
+         <span class="quantity-size"  id="quantity-text4">1</span> 
+            <img src="./../images/icons/plus.png" class="btn-quantity" onclick="plusminus4('increment')"/>
       </div>
           <span class="price"> ₹459</span>
           <span class="mrp">  ₹499 <button class="off">-8%</button></span>
@@ -244,6 +245,222 @@
    function plusminus(action)
    {
       const quantitytext =document.getElementById("quantity-text")
+      let quantity = parseInt(quantitytext.innerText);
+      if(quantity==1 && action=='decrement')
+      {
+       alert('Quantity cannot be less than 1')
+       return
+      }
+      else if (quantity==5 && action =='increment')
+      {
+        alert('Quantity cannot be greater then 5')
+        return
+       }
+      
+      if (action == 'increment'){
+       quantitytext.innerText =++quantity;
+      }
+      else{
+       quantitytext.innerText =--quantity;
+      }
+      
+   }
+
+   function plusminus1(action)
+   {
+      const quantitytext =document.getElementById("quantity-text1")
+      let quantity = parseInt(quantitytext.innerText);
+      if(quantity==1 && action=='decrement')
+      {
+       alert('Quantity cannot be less than 1')
+       return
+      }
+      else if (quantity==5 && action =='increment')
+      {
+        alert('Quantity cannot be greater then 5')
+        return
+       }
+      
+      if (action == 'increment'){
+       quantitytext.innerText =++quantity;
+      }
+      else{
+       quantitytext.innerText =--quantity;
+      }
+      
+   }
+
+   function plusminus2(action)
+   {
+      const quantitytext =document.getElementById("quantity-text2")
+      let quantity = parseInt(quantitytext.innerText);
+      if(quantity==1 && action=='decrement')
+      {
+       alert('Quantity cannot be less than 1')
+       return
+      }
+      else if (quantity==5 && action =='increment')
+      {
+        alert('Quantity cannot be greater then 5')
+        return
+       }
+      
+      if (action == 'increment'){
+       quantitytext.innerText =++quantity;
+      }
+      else{
+       quantitytext.innerText =--quantity;
+      }
+      
+   }
+
+   function plusminus3(action)
+   {
+      const quantitytext =document.getElementById("quantity-text3")
+      let quantity = parseInt(quantitytext.innerText);
+      if(quantity==1 && action=='decrement')
+      {
+       alert('Quantity cannot be less than 1')
+       return
+      }
+      else if (quantity==5 && action =='increment')
+      {
+        alert('Quantity cannot be greater then 5')
+        return
+       }
+      
+      if (action == 'increment'){
+       quantitytext.innerText =++quantity;
+      }
+      else{
+       quantitytext.innerText =--quantity;
+      }
+      
+   }
+
+   function plusminus4(action)
+   {
+      const quantitytext =document.getElementById("quantity-text4")
+      let quantity = parseInt(quantitytext.innerText);
+      if(quantity==1 && action=='decrement')
+      {
+       alert('Quantity cannot be less than 1')
+       return
+      }
+      else if (quantity==5 && action =='increment')
+      {
+        alert('Quantity cannot be greater then 5')
+        return
+       }
+      
+      if (action == 'increment'){
+       quantitytext.innerText =++quantity;
+      }
+      else{
+       quantitytext.innerText =--quantity;
+      }
+      
+   }
+
+   function plusminus5(action)
+   {
+      const quantitytext =document.getElementById("quantity-text5")
+      let quantity = parseInt(quantitytext.innerText);
+      if(quantity==1 && action=='decrement')
+      {
+       alert('Quantity cannot be less than 1')
+       return
+      }
+      else if (quantity==5 && action =='increment')
+      {
+        alert('Quantity cannot be greater then 5')
+        return
+       }
+      
+      if (action == 'increment'){
+       quantitytext.innerText =++quantity;
+      }
+      else{
+       quantitytext.innerText =--quantity;
+      }
+      
+   }
+
+   function plusminus6(action)
+   {
+      const quantitytext =document.getElementById("quantity-text6")
+      let quantity = parseInt(quantitytext.innerText);
+      if(quantity==1 && action=='decrement')
+      {
+       alert('Quantity cannot be less than 1')
+       return
+      }
+      else if (quantity==5 && action =='increment')
+      {
+        alert('Quantity cannot be greater then 5')
+        return
+       }
+      
+      if (action == 'increment'){
+       quantitytext.innerText =++quantity;
+      }
+      else{
+       quantitytext.innerText =--quantity;
+      }
+      
+   }
+
+   function plusminus7(action)
+   {
+      const quantitytext =document.getElementById("quantity-text7")
+      let quantity = parseInt(quantitytext.innerText);
+      if(quantity==1 && action=='decrement')
+      {
+       alert('Quantity cannot be less than 1')
+       return
+      }
+      else if (quantity==5 && action =='increment')
+      {
+        alert('Quantity cannot be greater then 5')
+        return
+       }
+      
+      if (action == 'increment'){
+       quantitytext.innerText =++quantity;
+      }
+      else{
+       quantitytext.innerText =--quantity;
+      }
+      
+   }
+
+   function plusminus8(action)
+   {
+      const quantitytext =document.getElementById("quantity-text8")
+      let quantity = parseInt(quantitytext.innerText);
+      if(quantity==1 && action=='decrement')
+      {
+       alert('Quantity cannot be less than 1')
+       return
+      }
+      else if (quantity==5 && action =='increment')
+      {
+        alert('Quantity cannot be greater then 5')
+        return
+       }
+      
+      if (action == 'increment'){
+       quantitytext.innerText =++quantity;
+      }
+      else{
+       quantitytext.innerText =--quantity;
+      }
+      
+   }
+
+   function plusminus9(action)
+   {
+      const quantitytext =document.getElementById("quantity-text9")
       let quantity = parseInt(quantitytext.innerText);
       if(quantity==1 && action=='decrement')
       {
