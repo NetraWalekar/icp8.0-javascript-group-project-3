@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Top deals</title>
+    <style>
+    .body{
+            padding: 0%;
+            margin: 0%;
+        }
+    .product-container{
+     display: flex;
+     flex-direction: row;
+     flex-wrap: wrap;
+     justify-content: center;
+
+     }
+
+   .product-card {
+    height: 390px;
+    width: 230px;
+    margin: 25px;
+    border: 0px solid gray;
+    border-radius: 15px;
+    position: relative;
+    box-shadow: 0px 0px 10px 0px grey;
+    }
+
+   .product-img {
+    height:180px;
+    width: 190px;
+    border-radius: 25px;
+    margin-top: 10px;
+    object-fit: cover;
+    padding-left: 13px;
+    }
+
+    .product-img:hover {
+    height:170px;
+    width: 180px;
+    }
+
+   .product-name{
+    position: absolute;
+    top: 230px;
+    left: 5px;
+    right:5px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 7px;
+     }
+
+   .price{
+    margin-top:10px;
+    font-weight: bold;
+    position: absolute;
+    top: 270px;
+    left: 10px;
+    }
+   .mrp{
+    text-decoration: line-through;
+    margin-top: 10px;
+    position: absolute;
+    top: 290px;
+    left: 10px;
+    color: rgb(140, 139, 139);
+    }
+
+    .button{
+    position: absolute;
+    left:52px;
+    bottom: 15px;
+    border: 1px solid gray;
+    padding: 3px auto;
+    border-radius: 19px;
+    width: 120px;
+    height: 40px;
+    color: #0c5273;
+    background-color: white;
+    font-size: 16px;
+    text-align: center;
+    cursor: pointer;
+    
+     } 
+
+    .off{
+    color:#03753c;
+    background-color: #e5f7ee;
+    border: none;
+    font-weight: bold;
+    margin-left: 5px;
+     }
+
+     .quantity-btn-container{
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            margin-top: 7px;
+           
+        }
+
+        .quantity-size{
+            font-size:18px ;
+        }
+        .btn-quantity{
+            height: 18px;
+            margin-top: 7px;
+            display: inline-block;
+            cursor: pointer;
+            margin-left: 5px;
+            
+        }
+        </style>
+</head>
+<body>
+    <h1>Top Deals On Grocery </h1>
+    <div class="product-container">
+      <div class="product-card"><img src="../images/categories/top-deals/almonds.webp" class="product-img">
+          <span class="product-name">Elly Nuts 100% Natural and Premium Raw Unroasted Chia Seeds
+          </span>
+          <div class="quantity-btn-container">
+            <img src="./../images/icons/minus.png "  class="btn-quantity" onclick="plusminus('decrement')"/>
+         <span class="quantity-size"  id="quantity-text">1</span> 
+            <img src="./../images/icons/plus.png" class="btn-quantity" onclick="plusminus('increment')"/>
+          </div>
+          <span class="price">  ₹176 </span>
+          <span class="mrp"> ₹499 <button class="off">-65%</button></span>
+          <button class="button">Add Cart</button>
+      </div>
+      <div class="product-card">
+          <img src="../images/categories/top-deals/amul_butter.webp" class="product-img">
+          <span class="product-name"> Farmley Panchmeva Healthy Dry Fruits Mix </span>
+          <div class="quantity-btn-container">
+          <img src="./../images/icons/minus.png "  class="btn-quantity" onclick="plusminus('decrement')"/>
+         <span class="quantity-size"  id="quantity-text">1</span> 
+            <img src="./../images/icons/plus.png" class="btn-quantity" onclick="plusminus('increment')"/>
+         </div>
+          <span class="price">₹413</span>
+          <span class="mrp">₹519<button class="off">-20%</button></span>
+          <button class="button">Add Cart</button>
+      </div>
+      <div class="product-card">
+         <img src="../images/categories/top-deals/condensed_milk.webp"  class="product-img">
+         <span class="product-name">GreenFinity Premium International Healthy Nutmix<br></span>
+         <div class="quantity-btn-container">
+         <img src="./../images/icons/minus.png "  class="btn-quantity" onclick="plusminus('decrement')"/>
+         <span class="quantity-size"  id="quantity-text">1</span> 
+            <img src="./../images/icons/plus.png" class="btn-quantity" onclick="plusminus('increment')"/>
+         </div>
+            <span class="price">  ₹594
+          </span>
+          <span class="mrp">  ₹1,299<button class="off">-54%</button></span>
+          <button class="button">Add Cart</button>
+      </div>
+      <div class="product-card">
+         <img src="../images/categories/top-deals/kellogs.webp" class="product-img">
+         <span class="product-name">Kellogg's Muesli Fruit Nut & Seeds 750G |  </span>
+      <div class="quantity-btn-container">
+         <img src="./../images/icons/minus.png "  class="btn-quantity" onclick="plusminus('decrement')"/>
+         <span class="quantity-size"  id="quantity-text">1</span> 
+            <img src="./../images/icons/plus.png" class="btn-quantity" onclick="plusminus('increment')"/>
+      </div>
+            <span class="price"> ₹359 </span>
+            <span class="mrp">  ₹499<button class="off">-28%</button></span>
+         <button class="button">Add Cart</button>
+      </div>
+      <div class="product-card">
+          <img src="../images/categories/top-deals/lotte_choco_pie.jpg" class="product-img">
+          <span class="product-name"> Nutraj Australian Almonds Kernel 500g |</span>
+          
+      <div class="quantity-btn-container">
+         <img src="./../images/icons/minus.png "  class="btn-quantity" onclick="plusminus('decrement')"/>
+         <span class="quantity-size"  id="quantity-text">1</span> 
+            <img src="./../images/icons/plus.png" class="btn-quantity" onclick="plusminus('increment')"/>
+      </div>
+          <span class="price"> ₹299</span>
+          <span class="mrp">  ₹699 <button class="off">-57%</button></span>
+          <button class="button">Add Cart</button>
+      </div>
+      <div class="product-card">
+         <img src="../images/categories/top-deals/maggi.webp" class="product-img">
+         <span class="product-name">Nutty Gritties Premium Sports Mixed Nuts  </span>
+      <div class="quantity-btn-container">
+         <img src="./../images/icons/minus.png "  class="btn-quantity" onclick="plusminus('decrement')"/>
+         <span class="quantity-size"  id="quantity-text">1</span> 
+            <img src="./../images/icons/plus.png" class="btn-quantity" onclick="plusminus('increment')"/>
+      </div>
+         <span class="price"> ₹350 </span>
+         <span class="mrp"> ₹395 <button class="off">-11%</button></span>
+         <button class="button">Add Cart</button>
+      </div>
+      <div class="product-card">
+        <img src="../images/categories/top-deals/mustard-oil.webp" class="product-img">
+        <span class="product-name"> Organic Box 100% Natural and Premium Healthy    </span>
+      <div class="quantity-btn-container">
+        <img src="./../images/icons/minus.png "  class="btn-quantity" onclick="plusminus('decrement')"/>
+         <span class="quantity-size"  id="quantity-text">1</span> 
+            <img src="./../images/icons/plus.png" class="btn-quantity" onclick="plusminus('increment')"/>
+      </div>
+        <span class="price"> ₹299</span>
+        <span class="mrp"> ₹799 <button class="off">-63%</button></span>
+        <button class="button">Add Cart</button>
+     </div>
+     <div class="product-card">
+        <img src="../images/categories/top-deals/popcorn.webp" class="product-img">
+        <span class="product-name"> Paper Boat Absolute Health Dry Fruits Mix </span>
+     <div class="quantity-btn-container">
+        <img src="./../images/icons/minus.png "  class="btn-quantity" onclick="plusminus('decrement')"/>
+         <span class="quantity-size"  id="quantity-text">1</span> 
+            <img src="./../images/icons/plus.png" class="btn-quantity" onclick="plusminus('increment')"/>
+     </div>
+        <span class="price"> ₹1,098</span>
+        <span class="mrp"> ₹1,800 <button class="off">-39%</button></span>
+        <button class="button">Add Cart</button>
+     </div>
+     <div class="product-card">
+        <img src="../images/categories/top-deals/red_label.webp" class="product-img">
+        <span class="product-name"> Rostaa Being Healthy (Gluten Free, Non-GMO & Vegan) </span>
+     <div class="quantity-btn-container">
+        <img src="./../images/icons/minus.png "  class="btn-quantity" onclick="plusminus('decrement')"/>
+         <span class="quantity-size"  id="quantity-text">1</span> 
+            <img src="./../images/icons/plus.png" class="btn-quantity" onclick="plusminus('increment')"/>
+     </div>
+        <span class="price"> ₹484 </span>
+        <span class="mrp">₹680 <button class="off">-29%</button></span>
+        <button class="button">Add Cart</button>
+     </div>
+     <div class="product-card">
+        <img src="../images/categories/top-deals/taj.webp" class="product-img">
+        <span class="product-name"> VSD Festive Dry Fruits Gift Box/Hamper  </span>
+     <div class="quantity-btn-container">
+        <img src="./../images/icons/minus.png "  class="btn-quantity" onclick="plusminus('decrement')"/>
+         <span class="quantity-size"  id="quantity-text">1</span> 
+            <img src="./../images/icons/plus.png" class="btn-quantity" onclick="plusminus('increment')"/>
+     </div>
+        <span class="price"> ₹1,049</span>
+        <span class="mrp">₹1,099<button class="off">-5%</button></span>
+        <button class="button">Add Cart</button>
+     </div>
+  </div>
+
+  <script>
+   function plusminus(action)
+   {
+      const quantitytext =document.getElementById("quantity-text")
+      let quantity = parseInt(quantitytext.innerText);
+      if(quantity==1 && action=='decrement')
+      {
+       alert('Quantity cannot be less than 1')
+       return
+      }
+      else if (quantity==5 && action =='increment')
+      {
+        alert('Quantity cannot be greater then 5')
+        return
+       }
+      
+      if (action == 'increment'){
+       quantitytext.innerText =++quantity;
+      }
+      else{
+       quantitytext.innerText =--quantity;
+      }
+      
+   }
+</script>
+</body>
+</html>

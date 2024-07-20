@@ -1,0 +1,134 @@
+.title{
+    text-align: center;
+}
+.title h4{
+    background: -webkit-linear-gradient(#f42222, #813df8);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.title h3{
+    color: #7e877b;
+}
+.title img{
+    width: 100%;
+    height: 250px;
+}
+.image-container {
+    display: flex;
+    align-items: center;
+    font-size: 40px;
+    padding-left: 200px;
+  }
+  .image-container img {
+    max-width: 100%;
+    height: 500px;
+  }
+  
+  .info {
+    display: flex;
+    align-items: center;
+  }
+  .info img {
+    max-width: 100%;
+    margin-right: 20px;
+  }
+  .feature {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    padding: 20px;
+    width: auto;
+    padding-bottom: 50px;
+}
+  .container {
+    height: 370px;
+    width: 270px;
+    border: 2px solid rgb(127, 157, 180);
+    margin: 10px;
+}
+.container:hover {
+    box-shadow: 0 0 10px 0px rgb(173, 193, 198);
+    transform: translateY(-5px);
+}
+.feature-img {
+    height: 90px;
+    width: 110px;
+    padding-left: 90px;
+    padding-top: 20px;
+}
+.container h1 {
+    padding-top: 7px;
+    color: rgb(62, 150, 38);
+    text-align: center;
+}
+.container p {
+    text-align: center;
+    padding: 25px;
+    font-size: 17px;
+    color: rgb(97, 94, 58);
+}
+.heading {
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    font-size: 25px;
+    font-style: oblique;
+    color: rgb(156, 109, 190);
+}
+.heading:hover {
+    color: palevioletred;
+}
+.heading span {
+    background-color:rgb(62, 125, 17);
+    color: rgb(255, 255, 255);
+    display: inline-block;
+    padding: 10px;
+    border-radius: 15px 0px 15px 0px;
+
+}
+/*CUSTOMRE REVIEW FORM SECTION*/
+.container {
+    width: 50%;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+h2 {
+    text-align: center;
+    color: #333;
+}
+label {
+    display: block;
+    margin-top: 10px;
+    color: #333;
+}
+input, select, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+}
+button:hover {
+    background-color: #218838;
+}
+.hidden {
+    display: none;
+}
+#successMessage {
+    margin-top: 20px;
+    text-align: center;
+    color: #28a745;
+}
