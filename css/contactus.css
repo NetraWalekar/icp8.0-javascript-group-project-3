@@ -81,3 +81,6 @@ button[type="submit"]:hover {
 .contact-card .email-head {
     margin-bottom: 5px;
 }
+.email-text {
+    color: #007bff;
+}
