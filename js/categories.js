@@ -28,7 +28,11 @@ function add_cart(num){
     const res = document.getElementById("ac");
     if (res) { // Ensure the element exists
         res.style.visibility = 'visible';
-        console.log("Item number " + num + " added to cart."); // Example use of num
+        console.log("Item number " + num + " added to cart."); 
+        setTimeout(() => {
+        document.getElementById('ac').style.display = 'none';
+        }, 2000);
+       // Example use of num
     } else {
         console.error("Element with id 'ac' not found.");
     }
