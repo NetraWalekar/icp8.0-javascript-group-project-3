@@ -7,6 +7,7 @@
     <title>Categories</title>
     <link rel="stylesheet" href="../css/categories.css">
     <link rel="stylesheet" href="../css/nav_footer.css">
+    <link rel="stylesheet" href="../css/view_all.css">
 </head>
 
 <body>
@@ -73,10 +74,15 @@
         <div  class="view_all"><a href="view_all.html">View all</a></div>
     </div>
     <div class="top-deal">
-        <div class="top-deal-product"><img src="../images/categories/top-deals/maggi.webp" class="top-deal-img">
-            <span class="top-deal-text">Maggi 2-Minute Instant Noodles
+        <div class="product-card "><img src="../images/categories/top-deals/maggi.webp" class="product-img ">
+            <span class="product-name">Maggi 2-Minute Instant Noodles
             </span>
-            <img src="../images/categories/veg.png" height="20">
+            <img src="../images/categories/veg.png" height="20" style="">
+            <div class="quantity-btn-container">
+                <img src="./../images/icons/minus.png "  class="btn-quantity" onclick="plusminus('decrement')"/>
+               <span class="quantity-size"  id="quantity-text">1</span> 
+                  <img src="./../images/icons/plus.png" class="btn-quantity" onclick="plusminus('increment')"/>
+               </div>
             <span class="price">₹71.00 </span>
             <span class="mrp">₹84.00 <button class="off">15 % Off</button></span>
             <button class="button" id="1" onclick="added(1)">Add</button>
