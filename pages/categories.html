@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="../css/categories.css">
     <link rel="stylesheet" href="../css/nav_footer.css">
     <link rel="stylesheet" href="../css/view_all.css">
+    <link rel="stylesheet" href="../css/style.css">
 </head>
 
 <body>
@@ -29,7 +30,7 @@
                 <span class="profile-text" id="profile-text">User Account</span>
             </div>
             <div class="cart-container" id="cart-container">
-                <a href="#"><img src="./images/icons/home-logo/shopping-cart.png" height="33px" alt="Cart" class="cart-icon" id="cart-icon"></a>
+                <a href="#"><img src="../images/icons/home-logo/shopping-cart.png" height="33px" alt="Cart" class="cart-icon" id="cart-icon"></a>
                 <span class="cart-text" id="cart-text">Cart</span>
             </div>
         </div>
@@ -70,7 +71,7 @@
         </div></a>
     </div>
     <div class="top-main">
-        <div class="product-name-main1">Top Deals On Grocery</div>
+        <div class="top-deal-text-main1">Top Deals On Grocery</div>
         <div  class="view_all"><a href="view_all.html">View all</a></div>
     </div>
     <div class="top-deal">
@@ -135,14 +136,79 @@
             <span class="mrp">₹699.00 <button class="off">57 % Off</button></span>
             <button class="button" id="5" onclick="added(5)">Add</button>
         </div>
-        <div class="product-card"><img src="../images/categories/top-deals/lotte_choco_pie.jpg"
+        <!-- <div class="product-card"><img src="../images/categories/top-deals/lotte_choco_pie.jpg"
                 class="top-deal-img"><span class="product-name"> Lotte Choco Pie 28 g (12 pcs)</span>
+                <div class="quantity-btn-container">
+                    <img src="./../images/icons/minus.png "  class="btn-quantity" onclick="plusminus('decrement')"/>
+                   <span class="quantity-size"  id="quantity-text">1</span> 
+                      <img src="./../images/icons/plus.png" class="btn-quantity" onclick="plusminus('increment')"/>
+                   </div>
             <span class="price">₹110.00</span>
             <span class="mrp">₹170.00 <button class="off">35 % Off</button></span>
             <button class="button" id="6" onclick="added(6)">Add</button>
-        </div>
+        </div> -->
     </div>
     <script src="../js/categories.js"></script>
+      
+    
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section">
+                <div class="footer-logo-description">
+                    <img src="./images/icons/home-logo/footer-logo.png" alt="Logo" class="footer-logo">
+                    <p>Natures Basket is your online destination for fresh and quality groceries. We provide a wide range of products to meet all your grocery needs.</p>
+                </div> <br> <br>
+                <h3 class="connect">Connect with us</h3>
+                <div class="social-media-icons">
+                    <a href="https://www.facebook.com/NaturesBasket"><img src="./images/icons/home-logo/facebook (4).png" alt="Facebook"></a>
+                    <a href="https://x.com/NaturesBasket"><img src="./images/icons/home-logo/twitter (2).png" alt="Twitter"></a>
+                    <a href="https://youtube.com/@naturesbasketrp-sg?si=geZQ2tTgiUefGg4S"><img src="./images/icons/home-logo/youtube (1).png" alt="YouTube"></a>
+                    <a href="https://www.instagram.com/naturesbasket?igsh=bjcxbXcxdjQ1NGpl"><img src="./images/icons/home-logo/instagram (3).png" alt="Instagram"></a>
+                </div>
+            </div>
+
+            <div class="footer-section">
+                <br> <br>
+                <div class="contact-details">
+                    <h3>Contact Us</h3>
+                    <p><b>Email</b>: cs@naturesbasket.co.in</p>
+                    <p><b>Phone</b>: 8880077745</p>
+                    <p><b>Address</b>: Krishna Curve, Linking Road, Mumbai, India</p>
+                </div> <br> <br>
+            
+                <div class="payment-methods">
+                    <br>
+                    <h3>We Accept</h3>
+                    <div class="payment-icons">
+                        <img src="./images/icons/home-logo/visa.png" alt="Visa">
+                        <img src="./images/icons/home-logo/master card.png" alt="MasterCard">
+                        <img src="./images/icons/home-logo/rupay.png" alt="RuPay">
+                        <img src="./images/icons/home-logo/paytm.png" alt="Paytm">
+                    </div>
+               
+              </div>
+             
+            
+            </div>
+            <div class="footer-section">
+                <br> <br>
+                <div class="footer-links">
+                    <h3>Quick Links</h3>
+                    <a href="./pages/about-us.html">About Us</a>
+                    <a href="#">Contact Us</a>
+                    <a href="./pages/privacy-policy.html">Privacy Policy</a>
+                    <a href="./pages/terms-condition.html">Terms and Conditions</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+          
+        </div>
+    </footer>
+    
+    <footer class="copyright">
+        <p id="footer-text">&copy; 2024 Grocery Shopping. All rights reserved.</p>
+    </footer>
 </body>
 
 </html>
