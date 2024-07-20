@@ -71,7 +71,6 @@
 }
 .btn-buy {
     display: flex;
-    background-color: tomato;
     margin: 0.2rem auto 0 auto;
     padding: 12px 20px;
     border: none;
