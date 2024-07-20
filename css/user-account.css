@@ -2,11 +2,84 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     display: flex;
+    flex-direction: column;
+}
+
+.navbar {
+    background-color: #81A263;
+    width: 100%;
+    padding: 10px 0;
+}
+
+.navdiv {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+
+.logo img {
+    height: 50px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li {
+    margin: 0 15px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    padding: 14px 20px;
+    display: block;
+}
+
+.nav-links a:hover {
+    background-color: #0c0c0c;
+    border-radius: 5px;
+}
+
+.signin-button {
+    background-color: #365E32;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin-right: 15px;
+    border-radius: 5px;
+}
+
+.signin-button a {
+    color: white;
+    text-decoration: none;
+}
+
+.signin-button:hover {
+    background-color: #093505;
+}
+
+.sign {
+    display: flex;
+    justify-content: space-between;
+}
+
+.profile-container, .cart-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 15px;
 }
 
 .sidebar {
     width: 250px;
-    background-color: darkgrey;
+    background-color: #81A263;
     height: 100vh;
     padding-top: 20px;
     box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
@@ -36,7 +109,7 @@ body {
 }
 
 .sidebar ul li a:hover {
-    background-color: tomato;
+    background-color: #093505;
     color: white;
     height: 20px;
     border-radius: 10px;
