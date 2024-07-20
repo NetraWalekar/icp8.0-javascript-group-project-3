@@ -1,12 +1,12 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: white;
+    background-color: rgb(255, 250, 250);
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
-    height: 100vh;
     margin: 0;
 }
+
 h1 {
     color: black;
 }
@@ -23,7 +23,7 @@ input[type="email"], input[type="password"] {
 button {
     width: 100%;
     padding: 12px;
-    background-color: tomato;
+    background-color: #365E32;
     color: white;
     border: none;
     border-radius: 5px;
@@ -34,7 +34,7 @@ button {
 }
 
 button:hover {
-    background-color: darkgray;
+    background-color: #093505;
 }
 
 p {
@@ -44,13 +44,13 @@ p {
 }
 
 p a {
-    color: tomato;
+    color: #365E32;
     text-decoration: none;
     transition: color 0.3s ease;
 }
 
 p a:hover {
-    color: darkgray;
+    color: #093505;
     text-decoration: underline;
 }
 
@@ -79,12 +79,88 @@ p a:hover {
     background-color: darkgray;
 }
 
+.google-login-button a {
+    color: white;
+    text-decoration: none;
+}
+
 .container {
-    background-color: white;
+    background-color: rgb(253, 246, 234);
     padding: 30px;
     border-radius: 10px;
-    /* border: 1px solid black; */
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
     width: 450px;
     box-sizing: border-box;
+}
+
+.navbar {
+    background-color: #81A263;
+    width: 100%;
+    padding: 10px 0;
+}
+
+.navdiv {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+
+.logo img {
+    height: 50px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li {
+    margin: 0 15px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    padding: 14px 20px;
+    display: block;
+}
+
+.nav-links a:hover {
+    background-color: #0c0c0c;
+    border-radius: 5px;
+}
+
+.signin-button {
+    background-color: #365E32;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin-right: 15px;
+    border-radius: 5px;
+}
+
+.signin-button a {
+    color: white;
+    text-decoration: none;
+}
+
+.signin-button:hover {
+    background-color: #093505;
+}
+
+.sign {
+    display: flex;
+    justify-content: space-between;
+}
+
+.profile-container, .cart-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 15px;
 }
