@@ -12,4 +12,10 @@ document.getElementById('reviewForm').addEventListener('submit', function(event)
     console.log(`Email: ${email}`);
     console.log(`Rating: ${rating}`);
     console.log(`Comments: ${comments}`);
-}
+
+     // Show success message
+     document.getElementById('successMessage').classList.remove('hidden');
+
+     // Clear the form
+     document.getElementById('reviewForm').reset();
+});
