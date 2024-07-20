@@ -3,10 +3,11 @@ body {
     margin: 0;
     display: flex;
     flex-direction: column;
+    background-color: rgb(255, 250, 250);
 }
 
 .navbar {
-    background-color: #C80036;
+    background-color: #81A263;
     width: 100%;
 }
 
@@ -45,7 +46,7 @@ body {
 }
 
 .signin-button {
-    background-color: #FF6969;
+    background-color: #365E32;
     height: 50px;
     width: 100px;
     margin-bottom: 10px;
@@ -69,7 +70,7 @@ body {
 }
 
 .signin-button:hover {
-    background-color: #f81a1a;
+    background-color: #093505;
 }
 
 .profile-container, .cart-container {
@@ -83,9 +84,10 @@ body {
 
 .sidebar {
     width: 250px;
-    background-color: darkgrey;
+    background-color: #81A263;
     height: 100vh;
-    padding-top: 20px;
+    margin-top: 0px;
+    padding-top: 100px;
     box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
     position: fixed;
 }
@@ -114,7 +116,7 @@ body {
 }
 
 .sidebar ul li a:hover {
-    background-color: tomato;
+    background-color: #0c0c0c;
     color: white;
     border-radius: 10px;
     padding: 10px;
@@ -125,11 +127,11 @@ body {
 .content {
     flex-grow: 1;
     padding: 20px;
-    margin-left: 250px; /* Adjust margin to account for the fixed sidebar */
+    margin-left: 300px; /* Adjust margin to account for the fixed sidebar */
 }
 
 h1 {
-    color: tomato;
+    color: #093505;
 }
 
 #userImage {
@@ -153,7 +155,7 @@ h1 {
 
 #saveInfoButton, #savePasswordButton {
     padding: 10px 20px;
-    background-color: tomato;
+    background-color: #365E32;
     color: white;
     border: none;
     cursor: pointer;
@@ -161,5 +163,5 @@ h1 {
 }
 
 #saveInfoButton:hover, #savePasswordButton:hover {
-    background-color: darkred;
+    background-color: #093505;
 }
