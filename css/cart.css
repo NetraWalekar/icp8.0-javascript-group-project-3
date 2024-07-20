@@ -71,8 +71,10 @@
 }
 .btn-buy {
     display: flex;
-    margin: 1.5rem auto 0 auto;
+    background-color: tomato;
+    margin: 0.2rem auto 0 auto;
     padding: 12px 20px;
+    border: none;
     border-radius: 5px;
     background: var(--bg-color);
     font-size: 1rem;
@@ -83,7 +85,7 @@
     background: var(--text-color);
     background-color: tomato;
     transition: 0.2s;
-    border-radius: 20px;
+    border-radius: 0 5px 0 5px;
 }
 #close-cart {
     position: absolute;
