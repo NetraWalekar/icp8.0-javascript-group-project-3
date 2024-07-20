@@ -38,7 +38,7 @@
     font-weight: 500;
 }
 .cart-quantity {
-    border: 1p solid var(--text-color);
+    border: 1p solid gray;
     outline-color: var(--main-color);
     width: 2.4rem;
     text-align: center;
