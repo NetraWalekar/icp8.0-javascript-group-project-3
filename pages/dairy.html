@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vegetable And Fruits</title>
     <style>
-     .body {
+   .body {
     margin: 0;
     font-family: Arial, sans-serif;
     background-color: rgb(255,250,250);
@@ -93,23 +93,24 @@
     border-radius: 3px;
      }
 
-    .product-container{
+   .product-container{
      display: flex;
      flex-direction: row;
      flex-wrap: wrap;
      justify-content: center;
-
-     }
+     margin-top: 25px;
+    }
 
    .product-card {
+    background-color:rgb(253,246,234);
     height: 390px;
     width: 230px;
     margin: 25px;
-    border: 0px solid gray;
+    border: 1px solid gray;
+    box-shadow:0px 0px 10px 0px grey;
     border-radius: 15px;
     position: relative;
-    box-shadow: 0px 0px 10px 0px grey;
-    }
+   }
 
    .product-img {
     height:180px;
@@ -117,23 +118,40 @@
     border-radius: 25px;
     margin-top: 10px;
     object-fit: cover;
-    padding-left: 13px;
+    padding-left: 18px ;
+    transition: 0.2s;
+   
     }
 
-    .product-img:hover {
-    height:170px;
-    width: 180px;
+    .product-img:hover{
+        height: 170px;
+        width: 180px;
     }
 
    .product-name{
     position: absolute;
     top: 230px;
-    left: 5px;
-    right:5px;
+    left: 10px;
     font-weight: bold;
     text-align: center;
-    margin-top: 7px;
      }
+
+    .quantity-btn-container{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    }
+
+    .quantity-size{
+    font-size:18px ;
+        }
+    .btn-quantity{
+    height: 18px;
+    margin-top: 5px;
+    display: inline-block;
+    cursor: pointer;
+    margin-left: 5px;      
+    }    
 
    .price{
     margin-top:10px;
@@ -142,6 +160,7 @@
     top: 270px;
     left: 10px;
     }
+
    .mrp{
     text-decoration: line-through;
     margin-top: 10px;
@@ -157,16 +176,20 @@
     bottom: 15px;
     border: 1px solid gray;
     padding: 3px auto;
-    border-radius: 19px;
+    border-radius: 18px;
     width: 120px;
     height: 40px;
-    color: #0c5273;
-    background-color: white;
+    color:white;
+    background-color:#365E32;
     font-size: 16px;
     text-align: center;
     cursor: pointer;
-    
      } 
+
+     .button:hover{
+        background-color: #093505;
+
+     }
 
     .off{
     color:#03753c;
@@ -175,26 +198,6 @@
     font-weight: bold;
     margin-left: 5px;
      }
-
-     .quantity-btn-container{
-            display: flex;
-            justify-content: space-evenly;
-            align-items: center;
-            margin-top: 7px;
-           
-        }
-
-        .quantity-size{
-            font-size:18px ;
-        }
-        .btn-quantity{
-            height: 18px;
-            margin-top: 7px;
-            display: inline-block;
-            cursor: pointer;
-            margin-left: 5px;
-            
-        }
         </style>
 </head>
 <body>
