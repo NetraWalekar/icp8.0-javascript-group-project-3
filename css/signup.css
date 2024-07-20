@@ -1,9 +1,10 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: rgb(255, 250, 250);
+    background-color: white;
     display: flex;
-    flex-direction: column;
+    justify-content: center;
     align-items: center;
+    height: 100vh;
     margin: 0;
 }
 
@@ -23,7 +24,7 @@ input[type="text"], input[type="password"], input[type="email"] {
 button {
     width: 100%;
     padding: 12px;
-    background-color: #365E32;
+    background-color: tomato;
     color: white;
     border: none;
     border-radius: 5px;
@@ -34,7 +35,7 @@ button {
 }
 
 button:hover {
-    background-color: #093505;
+    background-color: darkgray;
 }
 
 p {
@@ -44,13 +45,13 @@ p {
 }
 
 p a {
-    color: #365E32;
+    color: tomato;
     text-decoration: none;
     transition: color 0.3s ease;
 }
 
 p a:hover {
-    color: #093505;
+    color: darkgray;
     text-decoration: underline;
 }
 
@@ -80,84 +81,10 @@ p a:hover {
 }
 
 .container {
-    margin-top: 50px;
-    margin-bottom: 50px;
-    background-color: rgb(253, 246, 234);
+    background-color: white;
     padding: 30px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     width: 450px;
     box-sizing: border-box;
-}
-
-.navbar {
-    background-color: #81A263;
-    width: 100%;
-    padding: 10px 0;
-}
-
-.navdiv {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0 20px;
-}
-
-.logo img {
-    height: 50px;
-}
-
-.nav-links {
-    list-style: none;
-    display: flex;
-    margin: 0;
-    padding: 0;
-}
-
-.nav-links li {
-    margin: 0 15px;
-}
-
-.nav-links a {
-    color: white;
-    text-decoration: none;
-    padding: 14px 20px;
-    display: block;
-}
-
-.nav-links a:hover {
-    background-color: #0c0c0c;
-    border-radius: 5px;
-}
-
-.signin-button {
-    background-color: #365E32;
-    border: none;
-    color: white;
-    padding: 10px 20px;
-    cursor: pointer;
-    margin-right: 15px;
-    border-radius: 5px;
-}
-
-.signin-button a {
-    color: white;
-    text-decoration: none;
-}
-
-.signin-button:hover {
-    background-color: #093505;
-}
-
-.sign {
-    display: flex;
-    justify-content: space-between;
-}
-
-.profile-container, .cart-container {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-left: 15px;
 }
