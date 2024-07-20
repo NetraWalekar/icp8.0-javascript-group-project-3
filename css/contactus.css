@@ -9,6 +9,13 @@ body{
 .navbar {
     background-color: #81A263;
 }
+.navdiv {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+
 .container {
     max-width: 800px;
     margin: 20px auto;
