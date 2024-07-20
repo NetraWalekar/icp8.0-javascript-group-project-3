@@ -67,7 +67,7 @@
     border: 1px solid gray;
     border-radius: 25px;
     position: relative;
-   
+    box-shadow: 5px 5px 10px rgb(131, 124, 124);
 }
 
 .top-deal-img {
