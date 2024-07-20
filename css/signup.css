@@ -1,6 +1,6 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: white;
+    background-color: rgb(255, 250, 250);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -24,7 +24,7 @@ input[type="text"], input[type="password"], input[type="email"] {
 button {
     width: 100%;
     padding: 12px;
-    background-color: tomato;
+    background-color: #365E32;
     color: white;
     border: none;
     border-radius: 5px;
@@ -35,7 +35,7 @@ button {
 }
 
 button:hover {
-    background-color: darkgray;
+    background-color: #093505;
 }
 
 p {
@@ -45,40 +45,16 @@ p {
 }
 
 p a {
-    color: tomato;
+    color: #365E32;
     text-decoration: none;
     transition: color 0.3s ease;
 }
 
 p a:hover {
-    color: darkgray;
+    color: #093505;
     text-decoration: underline;
 }
 
-.google-login-button {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: black;
-    color: white;
-    padding: 12px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    margin-top: 12px;
-    font-size: 16px;
-    transition: background-color 0.3s ease;
-}
-
-.google-login-button img {
-    width: 20px;
-    height: 20px;
-    margin-right: 10px;
-}
-
-.google-login-button:hover {
-    background-color: darkgrey;
-}
 
 .container {
     margin-top: 50px;
@@ -93,7 +69,7 @@ p a:hover {
 
 /* Navbar Styles */
 .navbar {
-    background-color: #C80036;
+    background-color: #81A263;
     width: 100%;
 }
 
@@ -132,9 +108,9 @@ p a:hover {
 }
 
 .signin-button {
-    background-color: #FF6969;
-    height: 50px;
-    width: 100px;
+    background-color: #365E32;
+    height: 40px;
+    width: 90px;
     margin-bottom: 10px;
     border: none;
     color: white;
@@ -155,7 +131,7 @@ p a:hover {
 }
 
 .signin-button:hover {
-    background-color: #f81a1a;
+    background-color: #093505;
 }
 
 .profile-container, .cart-container {

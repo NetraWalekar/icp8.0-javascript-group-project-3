@@ -10,7 +10,7 @@
     <nav class="navbar">
         <div class="navdiv">
             <div class="logo">
-                <a href="./index.html"><img src="/images/icons/home-logo/head-logo.png" alt="Logo"></a>
+                <a href="/index.html"><img src="/images/icons/home-logo/head-logo.png" alt="Logo"></a>
             </div>
             <ul class="nav-links">
                 <li><a href="/index.html">Home</a></li>
@@ -22,29 +22,47 @@
                 <button class="signin-button"><a href="/pages/signin.html">Sign In</a></button>
                 <div class="profile-container" id="profile-container">
                     <a href="/pages/user-account.html"><img src="/images/icons/home-logo/user.png" height="33px" alt="Profile" class="profile-icon" id="profile-icon"></a>
-                    <span class="profile-text" id="profile-text">User Account</span>
+                    <span class="profile-text" id="profile-text"></span>
                 </div>
                 <div class="cart-container" id="cart-container">
                     <a href="#"><img src="/images/icons/home-logo/shopping-cart.png" height="33px" alt="Cart" class="cart-icon" id="cart-icon"></a>
-                    <span class="cart-text" id="cart-text">Cart</span>
+                    <span class="cart-text" id="cart-text"></span>
                 </div>
             </div>
         </div>
     </nav>
     <div class="sidebar">
         <ul>
-            <li><a href="#" id="profileLink"><img src="/images/user account/user.png" alt="Profile Icon"> User Profile</a></li>
-            <li><a href="#" id="changePasswordLink"><img src="/images/user account/password.png" alt="Password Icon"> Change Password</a></li>
-            <li><a href="#" id="changeInfoLink"><img src="/images/user account/info.png" alt="Info Icon"> Change Information</a></li>
-            <li><a href="#" id="logoutButton"><img src="/images/user account/logout.png" alt="Logout Icon"> Logout</a></li>
+            <li><a href="#" id="profileLink"><img src="/images/user account/user-picture.png" alt="Profile Icon"> User Profile</a></li>
+            <li><a href="#" id="changePasswordLink"><img src="/images/user account/reset-password.png" alt="Password Icon"> Change Password</a></li>
+            <li><a href="#" id="changeInfoLink"><img src="/images/user account/information.png" alt="Info Icon"> Change Information</a></li>
+            <li><a href="#" id="logoutButton"><img src="/images/user account/logout (1).png" alt="Logout Icon"> Logout</a></li>
         </ul>
     </div>
-    <div class="content">
+    <!-- <div class="content">
         <h1>Welcome, <span id="displayName"></span>!</h1>
         <img id="userImage" src="/images/user account/profile.png" alt="User Image">
-        <p>Full Name: <span id="fullName"></span></p>
-        <p>Username: <span id="username"></span></p>
-        <p>Email: <span id="email"></span></p>
+        <p><b style="font-size: 19px;">Full Name: </b><span id="fullName"></span></p>
+        <p><b style="font-size: 19px;">Username: </b><span id="username"></span></p>
+        <p><b style="font-size: 19px;">Email: </b><span id="email"></span></p> -->
+
+        <div class="content">
+            <h1>Welcome, <span id="displayName"></span>!</h1>
+            <img id="userImage" src="/images/user account/profile.png" alt="User Image">
+            <table class="user-info-table">
+                <tr>
+                    <td><b>Full Name:</b></td>
+                    <td><span id="fullName"></span></td>
+                </tr>
+                <tr>
+                    <td><b>Username:</b></td>
+                    <td><span id="username"></span></td>
+                </tr>
+                <tr>
+                    <td><b>Email:</b></td>
+                    <td><span id="email"></span></td>
+                </tr>
+            </table>
         
         <div id="changeInfoForm" style="display: none;">
             <h2>Change Information</h2>
@@ -152,3 +170,4 @@
     </script>
 </body>
 </html>
+

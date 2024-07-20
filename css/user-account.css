@@ -3,11 +3,15 @@ body {
     margin: 0;
     display: flex;
     flex-direction: column;
+    background-color: rgb(255, 250, 250);
 }
 
 .navbar {
-    background-color: #C80036;
+    background-color: #81A263;
     width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
 }
 
 .navdiv {
@@ -15,6 +19,11 @@ body {
     align-items: center;
     justify-content: space-between;
     padding: 0 20px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
 }
 
 .logo img {
@@ -40,14 +49,14 @@ body {
 }
 
 .nav-links a:hover {
-    background-color: #0c0c0c;
+    background-color: #093505;
     border-radius: 5px;
 }
 
 .signin-button {
-    background-color: #FF6969;
-    height: 50px;
-    width: 100px;
+    background-color: #365E32;
+    height: 40px;
+    width: 90px;
     margin-bottom: 10px;
     margin-top: 10px;
     border: none;
@@ -69,7 +78,7 @@ body {
 }
 
 .signin-button:hover {
-    background-color: #f81a1a;
+    background-color: #093505;
 }
 
 .profile-container, .cart-container {
@@ -83,11 +92,12 @@ body {
 
 .sidebar {
     width: 250px;
-    background-color: darkgrey;
+    background-color: #365E32;
     height: 100vh;
-    padding-top: 20px;
+    padding-top: 100px;
     box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
     position: fixed;
+    top: 60px; /* Adjusted to be below the navbar */
 }
 
 .sidebar ul {
@@ -101,7 +111,7 @@ body {
 }
 
 .sidebar ul li a {
-    color: black;
+    color: white;
     text-decoration: none;
     display: flex;
     align-items: center;
@@ -114,22 +124,51 @@ body {
 }
 
 .sidebar ul li a:hover {
-    background-color: tomato;
+    background-color: #093505;
     color: white;
     border-radius: 10px;
     padding: 10px;
     transform: scale(1.05);
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
 }
+/* 
+.content {
+    flex-grow: 1;
+    padding: 20px;
+    text-align: center;
+    margin-left: 250px; 
+    margin-top: 70px; 
+} */
 
 .content {
     flex-grow: 1;
     padding: 20px;
+    text-align: center;
     margin-left: 250px; /* Adjust margin to account for the fixed sidebar */
+    margin-top: 70px; /* Adjust margin to account for the fixed navbar */
 }
 
+.user-info-table {
+    margin: 20px auto;
+    border-collapse: collapse;
+    width: 40%;
+    max-width: 800px;
+    text-align: left;
+    font-size: 19px;
+}
+
+.user-info-table td {
+    padding: 10px 20px;
+    border: 1px solid gray;
+}
+
+.user-info-table b {
+    font-size: 19px;
+}
+
+
 h1 {
-    color: tomato;
+    color: #093505;
 }
 
 #userImage {
@@ -141,6 +180,9 @@ h1 {
 
 #changeInfoForm, #changePasswordForm {
     margin-top: 20px;
+    width: 700px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 #changeInfoForm input, #changePasswordForm input {
@@ -151,9 +193,10 @@ h1 {
     box-sizing: border-box;
 }
 
+
 #saveInfoButton, #savePasswordButton {
     padding: 10px 20px;
-    background-color: tomato;
+    background-color: #365E32;
     color: white;
     border: none;
     cursor: pointer;
@@ -161,5 +204,6 @@ h1 {
 }
 
 #saveInfoButton:hover, #savePasswordButton:hover {
-    background-color: darkred;
+    background-color: #093505;
 }
+
