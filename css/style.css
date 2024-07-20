@@ -1,15 +1,18 @@
 
 * {
     text-decoration: none;
+
 }
 
 body {
     margin: 0;
     font-family: Arial, sans-serif;
+    background-color: whitesmoke;
+    
 }
 
 .navbar {
-    background-color: #C80036;
+    background-color: #81A263;
     
 }
 
@@ -48,7 +51,8 @@ body {
 }
 
 .signin-button {
-    background-color: #FF6969;
+    background-color: #365E32;
+
     border: none;
     color: white;
     padding: 10px 20px;
@@ -68,7 +72,7 @@ body {
 }
 
 .signin-button:hover {
-    background-color: #f81a1a;
+    background-color: #093505;
 }
 
 .profile-container, .cart-container {
@@ -112,8 +116,10 @@ body {
 
 .head-img img {
     max-width: 100%;
-    height: auto;
+    height: 500px;
     border-radius: 10px; 
+    border: 2px solid #365E32;
+    background-color: #ddd;
 }
 
 
@@ -125,14 +131,17 @@ body {
     width: 100%;
     height: auto;
     border-radius: 10px;
+
 }
 
 .card-caption {
     margin-top: 10px;
     font-size: 16px;
     font-weight: bold;
-    color:#FF6969 ;
+    color:#365E32 ;
+    
 }
+
 
 .card img {
     width: 100%;
@@ -150,7 +159,7 @@ body {
 }
 
 .discount-card {
-    background-color: #fff;
+    background-color:rgb(253, 246, 234);
     border: 1px solid grey;
     border-radius: 8px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
@@ -195,10 +204,10 @@ body {
 
 .shop-now {
     display: block;
-    background-color: #FF6969;
+    background-color: #365E32;
     color: #fff;
     text-decoration: none;
-    padding: 12px 0; /* Increased padding for a better button appearance */
+    padding: 12px 0; 
     border-radius: 4px;
     margin-top: 16px;
     font-size: 1em;
@@ -207,7 +216,7 @@ body {
 }
 
 .shop-now:hover {
-    background-color: #ee2626;
+    background-color: #0f480a;
 }
 
 
@@ -234,6 +243,8 @@ body {
     width: 300px;
     height: 200px;
     border: 1px solid #ddd; 
+    border-radius: 10px;
+
 }
 
 .video-title {
@@ -250,7 +261,7 @@ body {
 
 
 footer {
-    background-color:#0C1844;
+    background-color:#365E32;
     color:white;
     padding: 10px 0;
     text-align: center;
@@ -348,6 +359,7 @@ footer.copyright .footer-text {
     line-height: 30px; 
     margin-top: -5px; 
 }
+
 
 
     
