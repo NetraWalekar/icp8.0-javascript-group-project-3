@@ -52,15 +52,17 @@
 .total {
     display: flex;
     justify-content: flex-end;
-    margin-top: 1.5rem;
+    margin-top: 1rem;
     border-top: 2px solid black;
 }
 .total-title {
+    margin-top: 0.5rem;
     margin-right: 5px;
     font-size: 1rem;
     font-weight: 600;
 }
 .total-price {
+    margin-top: 0.5rem;
     margin-right: 20px;
     margin-left: 0.5rem;
 }
