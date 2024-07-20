@@ -7,6 +7,7 @@
     <title>Categories</title>
     <link rel="stylesheet" href="../css/categories.css">
     <link rel="stylesheet" href="../css/nav_footer.css">
+    <link rel="stylesheet" href="../css/view_all.css">
 </head>
 
 <body>
@@ -69,53 +70,73 @@
         </div></a>
     </div>
     <div class="top-main">
-        <div class="top-deal-text-main1">Top Deals On Grocery</div>
+        <div class="product-name-main1">Top Deals On Grocery</div>
         <div  class="view_all"><a href="view_all.html">View all</a></div>
     </div>
     <div class="top-deal">
-        <div class="top-deal-product"><img src="../images/categories/top-deals/maggi.webp" class="top-deal-img">
-            <span class="top-deal-text">Maggi 2-Minute Instant Noodles
+        <div class="product-card "><img src="../images/categories/top-deals/maggi.webp" class="product-img ">
+            <span class="product-name">Maggi 2-Minute Instant Noodles
             </span>
-            <img src="../images/categories/veg.png" height="20">
+            <div class="quantity-btn-container">
+                <img src="./../images/icons/minus.png "  class="btn-quantity" onclick="plusminus('decrement')"/>
+               <span class="quantity-size"  id="quantity-text">1</span> 
+                  <img src="./../images/icons/plus.png" class="btn-quantity" onclick="plusminus('increment')"/>
+               </div>
             <span class="price">₹71.00 </span>
             <span class="mrp">₹84.00 <button class="off">15 % Off</button></span>
             <button class="button" id="1" onclick="added(1)">Add</button>
         </div>
-        <div class="top-deal-product">
+        <div class="product-card">
             <img src="../images/categories/top-deals/amul_butter.webp" class="top-deal-img">
-            <span class="top-deal-text">Amul Butter 100 (Carton)</span>
-            <img src="../images/categories/veg.png" height="20">
+            <span class="product-name">Amul Butter 100 (Carton)</span>
+            <div class="quantity-btn-container">
+                <img src="./../images/icons/minus.png "  class="btn-quantity" onclick="plusminus('decrement')"/>
+               <span class="quantity-size"  id="quantity-text">1</span> 
+                  <img src="./../images/icons/plus.png" class="btn-quantity" onclick="plusminus('increment')"/>
+               </div>
             <span class="price">₹54.00</span>
             <span class="mrp">₹58.00 <button class="off">6 % Off</button></span>
             <button class="button" id="2" onclick="added(2)">Add</button>
         </div>
-        <div class="top-deal-product"><img src="../images/categories/top-deals/condensed_milk.webp"
-                class="top-deal-img"><span class="top-deal-text">Nestle Milkmaid Condensed Milk 380 g
+        <div class="product-card"><img src="../images/categories/top-deals/condensed_milk.webp"
+                class="top-deal-img"><span class="product-name">Nestle Milkmaid Condensed Milk 380 g
             </span>
-            <img src="../images/categories/veg.png" height="20">
+            <div class="quantity-btn-container">
+                <img src="./../images/icons/minus.png "  class="btn-quantity" onclick="plusminus('decrement')"/>
+               <span class="quantity-size"  id="quantity-text">1</span> 
+                  <img src="./../images/icons/plus.png" class="btn-quantity" onclick="plusminus('increment')"/>
+               </div>
             <span class="price">₹124.00
             </span>
             <span class="mrp">₹147.00 <button class="off">15 % Off</button></span>
             <button class="button"  id="3" onclick="added(3)">Add</button>
         </div>
-        <div class="top-deal-product"><img src="../images/categories/top-deals/kellogs.webp" class="top-deal-img"><span
-                class="top-deal-text">Kellogg's Fruit, Nut & Seeds Muesli 750 g
+        <div class="product-card"><img src="../images/categories/top-deals/kellogs.webp" class="top-deal-img"><span
+                class="product-name">Kellogg's Fruit, Nut & Seeds Muesli 750 g
             </span>
-            <img src="../images/categories/veg.png" height="20"><span class="price">₹359.00</span>
+            <div class="quantity-btn-container">
+                <img src="./../images/icons/minus.png "  class="btn-quantity" onclick="plusminus('decrement')"/>
+               <span class="quantity-size"  id="quantity-text">1</span> 
+                  <img src="./../images/icons/plus.png" class="btn-quantity" onclick="plusminus('increment')"/>
+               </div>
+            <span class="price">₹359.00</span>
             <span class="mrp">₹499.00 <button class="off">28 % Off</button></span>
             <button class="button" id="4" onclick="added(4)">Add</button>
         </div>
-        <div class="top-deal-product"><img src="../images/categories/top-deals/almonds.webp" class="top-deal-img"><span
-                class="top-deal-text">Nutraj Australian Almond Kernels 500g
+        <div class="product-card"><img src="../images/categories/top-deals/almonds.webp" class="top-deal-img"><span
+                class="product-name">Nutraj Australian Almond Kernels 500g
             </span>
-            <img src="../images/categories/veg.png" height="20">
+            <div class="quantity-btn-container">
+                <img src="./../images/icons/minus.png "  class="btn-quantity" onclick="plusminus('decrement')"/>
+               <span class="quantity-size"  id="quantity-text">1</span> 
+                  <img src="./../images/icons/plus.png" class="btn-quantity" onclick="plusminus('increment')"/>
+               </div>
             <span class="price">₹299.00</span>
             <span class="mrp">₹699.00 <button class="off">57 % Off</button></span>
             <button class="button" id="5" onclick="added(5)">Add</button>
         </div>
-        <div class="top-deal-product"><img src="../images/categories/top-deals/lotte_choco_pie.jpg"
-                class="top-deal-img"><span class="top-deal-text"> Lotte Choco Pie 28 g (12 pcs)</span>
-            <img src="../images/categories/veg.png" height="20">
+        <div class="product-card"><img src="../images/categories/top-deals/lotte_choco_pie.jpg"
+                class="top-deal-img"><span class="product-name"> Lotte Choco Pie 28 g (12 pcs)</span>
             <span class="price">₹110.00</span>
             <span class="mrp">₹170.00 <button class="off">35 % Off</button></span>
             <button class="button" id="6" onclick="added(6)">Add</button>
