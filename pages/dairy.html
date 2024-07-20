@@ -37,6 +37,7 @@
     }
 
     .product-img:hover {
+    transition-duration: 0.3s;
     height:170px;
     width: 180px;
     }
@@ -132,9 +133,9 @@
           <img src="../images/dairy-products/milkmaid.jpg" class="product-img">
           <span class="product-name">Nestle Milkmaid Condensed Milk 380 g (Tin)  </span>
           <div class="quantity-btn-container">
-          <img src="./../images/icons/minus.png "  class="btn-quantity" onclick="plusminus('decrement')"/>
-         <span class="quantity-size"  id="quantity-text">1</span> 
-            <img src="./../images/icons/plus.png" class="btn-quantity" onclick="plusminus('increment')"/>
+          <img src="./../images/icons/minus.png "  class="btn-quantity" onclick="plusminus1('decrement')"/>
+         <span class="quantity-size"  id="quantity-text1">1</span> 
+            <img src="./../images/icons/plus.png" class="btn-quantity" onclick="plusminus1('increment')"/>
          </div>
           <span class="price">₹124</span>
           <span class="mrp">₹147<button class="off">-15%</button></span>
@@ -145,7 +146,7 @@
          <span class="product-name">Amul Chocomini Chocolate, 250 g<br></span>
          <div class="quantity-btn-container">
          <img src="./../images/icons/minus.png "  class="btn-quantity" onclick="plusminus('decrement')"/>
-         <span class="quantity-size"  id="quantity-text">1</span> 
+         <span class="quantity-size"  id="quantity-text2">1</span> 
             <img src="./../images/icons/plus.png" class="btn-quantity" onclick="plusminus('increment')"/>
          </div>
             <span class="price">₹135
@@ -158,7 +159,7 @@
          <span class="product-name">Cadbury Dairy Milk Chocolate Bar (52 of pack) </span>
       <div class="quantity-btn-container">
          <img src="./../images/icons/minus.png "  class="btn-quantity" onclick="plusminus('decrement')"/>
-         <span class="quantity-size"  id="quantity-text">1</span> 
+         <span class="quantity-size"  id="quantity-text3">1</span> 
             <img src="./../images/icons/plus.png" class="btn-quantity" onclick="plusminus('increment')"/>
       </div>
             <span class="price"> ₹560</span>
@@ -171,7 +172,7 @@
           
       <div class="quantity-btn-container">
          <img src="./../images/icons/minus.png "  class="btn-quantity" onclick="plusminus('decrement')"/>
-         <span class="quantity-size"  id="quantity-text">1</span> 
+         <span class="quantity-size"  id="quantity-text4">1</span> 
             <img src="./../images/icons/plus.png" class="btn-quantity" onclick="plusminus('increment')"/>
       </div>
           <span class="price">₹345</span>
@@ -183,7 +184,7 @@
          <span class="product-name"> HUMARABAZAR Amul Mithai Mate Sweetened Condensed Milk</span>
       <div class="quantity-btn-container">
          <img src="./../images/icons/minus.png "  class="btn-quantity" onclick="plusminus('decrement')"/>
-         <span class="quantity-size"  id="quantity-text">1</span> 
+         <span class="quantity-size"  id="quantity-text5">1</span> 
             <img src="./../images/icons/plus.png" class="btn-quantity" onclick="plusminus('increment')"/>
       </div>
          <span class="price"> ₹124</span>
@@ -195,7 +196,7 @@
         <span class="product-name"> Everyday Dairy Whitener Milk Powder  </span>
       <div class="quantity-btn-container">
         <img src="./../images/icons/minus.png "  class="btn-quantity" onclick="plusminus('decrement')"/>
-         <span class="quantity-size"  id="quantity-text">1</span> 
+         <span class="quantity-size"  id="quantity-text6">1</span> 
             <img src="./../images/icons/plus.png" class="btn-quantity" onclick="plusminus('increment')"/>
       </div>
         <span class="price">₹579</span>
@@ -207,7 +208,7 @@
         <span class="product-name"> Akshayakalpa Organic Cow Milk (UHT) </span>
      <div class="quantity-btn-container">
         <img src="./../images/icons/minus.png "  class="btn-quantity" onclick="plusminus('decrement')"/>
-         <span class="quantity-size"  id="quantity-text">1</span> 
+         <span class="quantity-size"  id="quantity-text7">1</span> 
             <img src="./../images/icons/plus.png" class="btn-quantity" onclick="plusminus('increment')"/>
      </div>
         <span class="price"> ₹474</span>
@@ -219,7 +220,7 @@
         <span class="product-name"> Kridhay Pure Ghee in Tetrapack</span>
      <div class="quantity-btn-container">
         <img src="./../images/icons/minus.png "  class="btn-quantity" onclick="plusminus('decrement')"/>
-         <span class="quantity-size"  id="quantity-text">1</span> 
+         <span class="quantity-size"  id="quantity-text8">1</span> 
             <img src="./../images/icons/plus.png" class="btn-quantity" onclick="plusminus('increment')"/>
      </div>
         <span class="price"> ₹1,780</span>
@@ -231,7 +232,7 @@
         <span class="product-name"> Plant Based Millet Mlk with goodness of Ragi, Jowar, Bajra & Oats </span>
      <div class="quantity-btn-container">
         <img src="./../images/icons/minus.png "  class="btn-quantity" onclick="plusminus('decrement')"/>
-         <span class="quantity-size"  id="quantity-text">1</span> 
+         <span class="quantity-size"  id="quantity-text9">1</span> 
             <img src="./../images/icons/plus.png" class="btn-quantity" onclick="plusminus('increment')"/>
      </div>
         <span class="price">₹313</span>
@@ -244,6 +245,29 @@
    function plusminus(action)
    {
       const quantitytext =document.getElementById("quantity-text")
+      let quantity = parseInt(quantitytext.innerText);
+      if(quantity==1 && action=='decrement')
+      {
+       alert('Quantity cannot be less than 1')
+       return
+      }
+      else if (quantity==5 && action =='increment')
+      {
+        alert('Quantity cannot be greater then 5')
+        return
+       }
+      
+      if (action == 'increment'){
+       quantitytext.innerText =++quantity;
+      }
+      else{
+       quantitytext.innerText =--quantity;
+      }
+      
+   }
+   function plusminus1(action)
+   {
+      const quantitytext =document.getElementById("quantity-text1")
       let quantity = parseInt(quantitytext.innerText);
       if(quantity==1 && action=='decrement')
       {
