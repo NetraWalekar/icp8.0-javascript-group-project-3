@@ -49,14 +49,14 @@ body {
 }
 
 .nav-links a:hover {
-    background-color: #0c0c0c;
+    background-color: #093505;
     border-radius: 5px;
 }
 
 .signin-button {
     background-color: #365E32;
-    height: 50px;
-    width: 100px;
+    height: 40px;
+    width: 90px;
     margin-bottom: 10px;
     margin-top: 10px;
     border: none;
@@ -92,12 +92,12 @@ body {
 
 .sidebar {
     width: 250px;
-    background-color: #81A263;
+    background-color: #365E32;
     height: 100vh;
     padding-top: 100px;
     box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
     position: fixed;
-    top: 70px; /* Adjusted to be below the navbar */
+    top: 60px; /* Adjusted to be below the navbar */
 }
 
 .sidebar ul {
@@ -111,7 +111,7 @@ body {
 }
 
 .sidebar ul li a {
-    color: black;
+    color: white;
     text-decoration: none;
     display: flex;
     align-items: center;
@@ -124,7 +124,7 @@ body {
 }
 
 .sidebar ul li a:hover {
-    background-color: #0c0c0c;
+    background-color: #093505;
     color: white;
     border-radius: 10px;
     padding: 10px;
