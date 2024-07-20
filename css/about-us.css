@@ -3,7 +3,7 @@
 }
 .title h4{
     background: -webkit-linear-gradient(#f42222, #813df8);
-    -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 .title h3{
@@ -58,7 +58,7 @@
 }
 .container h1 {
     padding-top: 7px;
-    color: rgb(68, 108, 134);
+    color: rgb(62, 150, 38);
     text-align: center;
 }
 .container p {
@@ -79,10 +79,56 @@
     color: palevioletred;
 }
 .heading span {
-    background-color:rgb(252, 202, 39);
+    background-color:rgb(62, 125, 17);
     color: rgb(255, 255, 255);
     display: inline-block;
     padding: 10px;
     border-radius: 15px 0px 15px 0px;
 
+}
+/*CUSTOMRE REVIEW FORM SECTION*/
+.container {
+    width: 50%;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+h2 {
+    text-align: center;
+    color: #333;
+}
+label {
+    display: block;
+    margin-top: 10px;
+    color: #333;
+}
+input, select, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+}
+button:hover {
+    background-color: #218838;
+}
+.hidden {
+    display: none;
+}
+#successMessage {
+    margin-top: 20px;
+    text-align: center;
+    color: #28a745;
 }
