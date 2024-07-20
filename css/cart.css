@@ -49,6 +49,9 @@
     color: var(--main-color);
     cursor: pointer;
 }
+.cart-remove:hover {
+    color: red;
+}
 .total {
     display: flex;
     justify-content: flex-end;
@@ -84,11 +87,16 @@
 }
 #close-cart {
     position: absolute;
-    top: 1rem;
+    top: 0.1rem;
     right: 0.8rem;
     font-size: 2rem;
     color: var(--text-color);
     cursor: pointer;
+}
+#close-cart:hover {
+    border: 1px solid rgb(220, 211, 211);
+    background-color: rgb(241, 238, 238);
+    color: red;
 }
 .cart.active {
     right: 0;
