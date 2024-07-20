@@ -39,6 +39,7 @@
 }
 
 .signin-button {
+    height: 50px;
     background-color:#365E32;
     border: none;
     color: white;
