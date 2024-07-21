@@ -397,7 +397,7 @@ footer.copyright .footer-text {
     text-align: center;
 }
 
-/* Responsive styles */
+
 @media (max-width: 1200px) {
     .nav-links {
         flex-direction: column;
@@ -531,7 +531,7 @@ footer.copyright .footer-text {
         width: 100%;
     }
 
-    /* Hide text on mobile screens */
+   
     .nav-links a span, .signin-button span {
         display: none;
     }
