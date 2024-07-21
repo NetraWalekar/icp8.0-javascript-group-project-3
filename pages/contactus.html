@@ -4,8 +4,33 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Us</title>
+    <link rel="stylesheet" href="../css/contactus.css">
 </head>
 <body>
+    <nav class="navbar">
+        <div class="navdiv">
+            <div class="logo">
+                <a href="../index.html"><img src="../images/icons/home-logo/head-logo.png" alt="Logo"></a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../pages/categories.html">Categories</a></li>
+                <li><a href="../pages/about-us.html">About Us</a></li>
+                <li><a href="../pages/contactus.html">Contact Us</a></li>
+            </ul>
+        <div class="sign">
+            <button class="signin-button"><a href="../pages/signin.html">Sign In</a></button>
+            <div class="profile-container" id="profile-container">
+                <a href="/pages/user-account.html"><img src="../images/icons/home-logo/user.png" height="33px" alt="Profile" class="profile-icon" id="profile-icon"></a>
+                <span class="profile-text" id="profile-text">User Account</span>
+            </div>
+            <div class="cart-container" id="cart-container">
+                <a href="#"><img src="../images/icons/home-logo/shopping-cart.png" height="33px" alt="Cart" class="cart-icon" id="cart-icon"></a>
+                <span class="cart-text" id="cart-text">Cart</span>
+            </div>
+        </div>
+        </div>
+    </nav>
     <header>
         <h1>Contact Us</h1>
     </header>
@@ -26,7 +51,7 @@
                     <label for="message">Message</label>
                     <textarea id="message" name="message" rows="4" required></textarea>
                 </div>
-                <button type="submit">Send Message</button>
+                <button type="submit" onclick="change()">Send Message</button>
             </form>
         </div>
         <div class="contact-info-cards">
@@ -44,9 +69,9 @@
             </div>
         </div>
         <div>
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3770.8035429730303!2d72.83238523582925!3d19.072373362777252!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c90e6740a08b%3A0x17eb1ecd5461f9d3!2sLinking%20Rd%2C%20Mumbai%2C%20Maharashtra!5e0!3m2!1sen!2sin!4v1721377713805!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7545.974521862726!2d72.807803!3d18.97617!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7cf7ca0877183%3A0x9a76a630762dadd5!2sNature&#39;s%20Basket!5e0!3m2!1sen!2sin!4v1721481693969!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
-        <script src="./contactus.js"></script>
+        <script src="../js/contactus.js"></script>
     </div>
 </body>
 </html>
