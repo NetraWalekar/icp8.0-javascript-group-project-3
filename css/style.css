@@ -337,6 +337,9 @@ footer.copyright .footer-text {
     line-height: 30px; 
     margin-top: -5px; 
 }
+.copyright{
+    text-align: center;
+}
 
 /* Responsive styles */
 @media (max-width: 1200px) {

@@ -5,19 +5,104 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vegetable And Fruits</title>
     <style>
-    .body{
-            padding: 0%;
-            margin: 0%;
-        }
-    .product-container{
+    .body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: rgb(255,250,250);
+    }
+
+    .navbar {
+    background-color: #81A263;
+     }
+
+    .navdiv {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    }
+
+    .logo img {
+    height: 50px;
+    }
+
+    .nav-links {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    }
+
+   .nav-links li {
+    margin: 0 15px;
+    }
+
+   .nav-links a {
+    color: white;
+    text-decoration: none;
+    padding: 14px 20px;
+    display: block;
+    font-size: large;
+    }
+
+    .nav-links a:hover {
+    background-color: #0c0c0c;
+    border-radius: 5px;
+     }
+
+    .signin-button {
+    background-color: #365E32;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin-right: 15px;
+    border-radius: 5px;
+    }
+
+    .signin-button a {
+    color: white;
+    text-decoration: none;
+    }
+
+    .signin-button:hover {
+    background-color: #093505;
+     }
+
+   .sign {
+    display: flex;
+    justify-content: space-between;
+    }
+
+   .profile-container, .cart-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 15px;
+    }
+
+   .profile-text, .cart-text {
+    display: none;
+    position: absolute;
+    top: 50px; 
+    color: white;
+    font-size: 12px;
+    background-color: #333;
+    padding: 5px;
+    border-radius: 3px;
+     }
+
+   .product-container{
      display: flex;
      flex-direction: row;
      flex-wrap: wrap;
      justify-content: center;
-
-     }
+     margin-top: 25px;
+    }
 
    .product-card {
+    background-color:rgb(253,246,234);
     height: 390px;
     width: 230px;
     margin: 25px;
@@ -25,8 +110,7 @@
     box-shadow:0px 0px 10px 0px grey;
     border-radius: 15px;
     position: relative;
-   
-    }
+   }
 
    .product-img {
     height:180px;
@@ -34,11 +118,15 @@
     border-radius: 25px;
     margin-top: 10px;
     object-fit: cover;
-    padding-left: 13px;
+    padding-left: 18px ;
+    transition: 0.2s;
+   
     }
+
     .product-img:hover{
         height: 170px;
         width: 180px;
+        transition: 0.3s;
     }
 
    .product-name{
@@ -53,8 +141,7 @@
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    
-     }
+    }
 
     .quantity-size{
     font-size:18px ;
@@ -74,6 +161,7 @@
     top: 270px;
     left: 10px;
     }
+
    .mrp{
     text-decoration: line-through;
     margin-top: 10px;
@@ -92,12 +180,17 @@
     border-radius: 18px;
     width: 120px;
     height: 40px;
-    color: #0c5273;
-    background-color: white;
+    color:white;
+    background-color:#365E32;
     font-size: 16px;
     text-align: center;
     cursor: pointer;
      } 
+
+     .button:hover{
+        background-color: #093505;
+
+     }
 
     .off{
     color:#03753c;
@@ -106,131 +199,246 @@
     font-weight: bold;
     margin-left: 5px;
      }
+  @media screen and (min-width:400px) and (max-width:600px){
+   .product-card {
+    height: 360px;
+    width: 200px;
+    margin: 20px;
+   }
+
+   .product-img {
+    height:130px;
+    width: 150px;
+   }
+
+   .product-name{
+    position: absolute;
+    top: 200px;
+    left: 5px;
+    right:5px;
+    
+   }
+   .button{
+    position: absolute;
+    left:52px;
+    bottom: 15px;
+    width: 100px;
+    height: 30px;
+   }
+   .price{
+      position: absolute;
+    top: 250px;
+    left: 10px;
+   }
+
+   .mrp{
+      position: absolute;
+    top: 270px;
+    left: 10px;
+   }
+
+   .product-img:hover {
+      transition-duration: 0.3s;
+    height:150px;
+    width: 160px;
+    }
+   
+}
+  @media screeen and (min-width:601px) and (max-width:992px){
+   .product-card {
+    height: 370px;
+    width: 210px;
+    margin: 20px;
+   }
+
+   .product-img {
+    height:150px;
+    width: 160px;
+   }
+}
+
+
+
+   @media screen and (min-width: 993px ) and (max-width:1200px){
+   .product-card {
+    height: 380px;
+    width: 220px;
+    margin: 20px;
+   }
+
+   .product-img {
+    height:160px;
+    width: 170px;
+   }
+}
+
+
+   @media screen and (min-width:1201px) and (max-width:1285px) {
+   .product-card {
+    height: 390px;
+    width: 230px;
+    margin: 20px;
+   }
+
+   .product-img {
+    height:170px;
+    width: 180px;
+   }
+
+}
         </style>
 </head>
 <body>
-    <h1>Vegetable & Fruits</h1>
+    <nav class="navbar">
+        <div class="navdiv">
+            <div class="logo">
+                <a href="./index.html"><img src="../images/icons/home-logo/head-logo.png" alt="Logo"></a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="./pages/categories.html">Categories</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        <div class="sign">
+            <button class="signin-button"><a href="./pages/signin.html">Sign In</a></button>
+            <div class="profile-container" id="profile-container">
+                <a href="/pages/user-account.html"><img src="../images/icons/home-logo/user.png" height="33px" alt="Profile" class="profile-icon" id="profile-icon"></a>
+            </div>
+            <div class="cart-container" id="cart-container">
+                <a href="#"><img src="../images/icons/home-logo/shopping-cart.png" height="33px" alt="Cart" class="cart-icon" id="cart-icon"></a>
+             </div>
+        </div>
+        </div>
+    </nav>
+
+   
+
     <div class="product-container">
-      <div class="product-card"><img src="../images/vegetable/ladyfinger.jpeg" class="product-img">
+      <div class="product-card"  data-id="1" data-name="Fresh bhendi 500gm" data-price="49" data-mrp="80" data-discount="15%">
+        <img src="../images/vegetable/ladyfinger.jpeg" class="product-img">
           <span class="product-name">Fresh bhendi 500gm</span>
           <div class="quantity-btn-container">
-          <img src="./../images/icons/minus.png "  class="btn-quantity" onclick="plusminus('decrement')"/>
+          <img src="./../images/icons/minus.png "  class="btn-quantity" onclick="handleQuantityChange('dec')"/>
          <span class="quantity-size"  id="quantity-text">1</span> 
-          <img src="./../images/icons/plus.png" class="btn-quantity" onclick="plusminus('increment')"/>
+          <img src="./../images/icons/plus.png" class="btn-quantity" onclick="handleQuantityChange('inc')"/>
           </div>
           <span class="price">₹49.00 </span>
           <span class="mrp">₹80.00 <button class="off">15 % Off</button></span>
-          <button class="button">Add Cart</button>
+          <button class="button" id="btn" onclick="textChange()" onclick="addToCart(1)">Add To Cart</button>
       </div>
       <div class="product-card">
           <img src="../images/fruits/apple.jpeg" class="product-img">
           <span class="product-name">Fresh Apple Red Delicious</span>
           <div class="quantity-btn-container">
-          <img src="./../images/icons/minus.png "  class="btn-quantity" onclick="plusminus('decrement')"/>
-          <span class="quantity-size"  id="quantity-text">1</span> 
-          <img src="./../images/icons/plus.png" class="btn-quantity" onclick="plusminus('increment')"/>
+          <img src="./../images/icons/minus.png "  class="btn-quantity" onclick="handleQuantityChange1('dec')"/>
+          <span class="quantity-size"  id="quantity-text1">1</span> 
+          <img src="./../images/icons/plus.png" class="btn-quantity" onclick="handleQuantityChange1('inc')"/>
            </div>
           <span class="price">₹47.00</span>
           <span class="mrp">₹58.00 <button class="off">20 % Off</button></span>
-          <button class="button">Add Cart</button>
+          <button class="button" id="btn1" onclick="textChange1()">Add To Cart</button>
       </div>
       <div class="product-card">
-         <img src="../images/vegetable/cauliflower.jpeg"class="product-img">
-         <span class="product-name">Fresh Cauliflower 1pc<br>(400gm-600gm)</span>
-         <div class="quantity-btn-container">
-         <img src="./../images/icons/minus.png"  class="btn-quantity" onclick="plusminus('decrement')"/>
-         <span class="quantity-size"  id="quantity-text">1</span> 
-         <img src="./../images/icons/plus.png" class="btn-quantity" onclick="plusminus('increment')"/>
-         </div>
+          <img src="../images/vegetable/cauliflower.jpeg"class="product-img">
+          <span class="product-name">Fresh Cauliflower 1pc<br>(400gm-600gm)</span>
+          <div class="quantity-btn-container">
+          <img src="./../images/icons/minus.png"  class="btn-quantity" onclick="handleQuantityChange2('dec')"/>
+          <span class="quantity-size"  id="quantity-text2">1</span> 
+          <img src="./../images/icons/plus.png" class="btn-quantity" onclick="handleQuantityChange2('inc')"/>
+          </div>
           <span class="price">₹49.00
           </span>
           <span class="mrp">₹80.00 <button class="off">39 % Off</button></span>
-          <button class="button">Add Cart</button>
+          <button class="button" id="btn2" onclick="textChange2()">Add To Cart</button>
       </div>
       <div class="product-card">
          <img src="../images/vegetable/ginger.jpeg" class="product-img">
          <span class="product-name">Fresh Ginger,100g</span>
          <div class="quantity-btn-container">
-        <img src="./../images/icons/minus.png "  class="btn-quantity" onclick="plusminus('decrement')"/>
-        <span class="quantity-size"  id="quantity-text">1</span> 
-        <img src="./../images/icons/plus.png" class="btn-quantity" onclick="plusminus('increment')"/>
-        </div>
+         <img src="./../images/icons/minus.png "  class="btn-quantity" onclick="handleQuantityChange3('dec')"/>
+         <span class="quantity-size"  id="quantity-text3">1</span> 
+         <img src="./../images/icons/plus.png" class="btn-quantity" onclick="handleQuantityChange3('inc')"/>
+         </div>
          <span class="price">₹20.00</span>
          <span class="mrp">₹50.00 <button class="off">55 % Off</button></span>
-         <button class="button">Add Cart</button>
+         <button class="button" id="btn3" onclick="textChange3()">Add To Cart</button>
       </div>
       <div class="product-card">
           <img src="../images/fruits/cherry.jpeg" class="product-img">
           <span class="product-name">Fresh Indian Cherry,250g</span>
-        <div class="quantity-btn-container">
-        <img src="./../images/icons/minus.png "  class="btn-quantity" onclick="plusminus('decrement')"/>
-        <span class="quantity-size"  id="quantity-text">1</span> 
-        <img src="./../images/icons/plus.png" class="btn-quantity" onclick="plusminus('increment')"/>
-        </div>
+          <div class="quantity-btn-container">
+          <img src="./../images/icons/minus.png "  class="btn-quantity" onclick="handleQuantityChange4('dec')"/>
+          <span class="quantity-size"  id="quantity-text4">1</span> 
+          <img src="./../images/icons/plus.png" class="btn-quantity" onclick="handleQuantityChange4('inc')"/>
+          </div>
           <span class="price">₹159.00</span>
           <span class="mrp">₹190.00 <button class="off">18% Off</button></span>
-          <button class="button">Add Cart</button>
+          <button class="button" id="btn4" onclick="textChange4()">Add To Cart</button>
       </div>
       <div class="product-card">
          <img src="../images/fruits/banana.jpeg" class="product-img">
          <span class="product-name"> Fresh Banana,500g</span>
          <div class="quantity-btn-container">
-        <img src="./../images/icons/minus.png "  class="btn-quantity" onclick="plusminus('decrement')"/>
-        <span class="quantity-size"  id="quantity-text">1</span> 
-        <img src="./../images/icons/plus.png" class="btn-quantity" onclick="plusminus('increment')"/>
-        </div>
+         <img src="./../images/icons/minus.png "  class="btn-quantity" onclick="handleQuantityChange5('dec')"/>
+         <span class="quantity-size"  id="quantity-text5">1</span> 
+         <img src="./../images/icons/plus.png" class="btn-quantity" onclick="handleQuantityChange5('inc')"/>
+         </div>
          <span class="price">₹105.00</span>
          <span class="mrp">₹112.00 <button class="off">30 % Off</button></span>
-         <button class="button">Add Cart</button>
+         <button class="button" id="btn5" onclick="textChange5()">Add To Cart</button>
       </div>
       <div class="product-card">
         <img src="../images/vegetable/cabbage.jpeg" class="product-img">
         <span class="product-name">Fresh Organic Cabbage,1 Piece Pack(500gm-800gm)</span>
         <div class="quantity-btn-container">
-        <img src="./../images/icons/minus.png "  class="btn-quantity" onclick="plusminus('decrement')"/>
-           <span class="quantity-size"  id="quantity-text">1</span> 
-            <img src="./../images/icons/plus.png" class="btn-quantity" onclick="plusminus('increment')"/>
-            </div>
+        <img src="./../images/icons/minus.png "  class="btn-quantity" onclick="handleQuantityChange6('dec')"/>
+        <span class="quantity-size"  id="quantity-text6">1</span> 
+        <img src="./../images/icons/plus.png" class="btn-quantity" onclick="handleQuantityChange6('inc')"/>
+        </div>
         <span class="price">₹43.00</span>
         <span class="mrp">₹55.00 <button class="off">25 % Off</button></span>
-        <button class="button">Add Cart</button>
+        <button class="button" id="btn6" onclick="textChange6()">Add To Cart</button>
         </div>
      <div class="product-card">
         <img src="../images/vegetable/tomato.jpeg" class="product-img">
         <span class="product-name"> Fresh Organic Tomatto,1kg</span>
         <div class="quantity-btn-container">
-        <img src="./../images/icons/minus.png "  class="btn-quantity" onclick="plusminus('decrement')"/>
-        <span class="quantity-size"  id="quantity-text">1</span> 
-        <img src="./../images/icons/plus.png" class="btn-quantity" onclick="plusminus('increment')"/>
+        <img src="./../images/icons/minus.png "  class="btn-quantity" onclick="handleQuantityChange7('dec')"/>
+        <span class="quantity-size"  id="quantity-text7">1</span> 
+        <img src="./../images/icons/plus.png" class="btn-quantity" onclick="handleQuantityChange7('inc')"/>
         </div>
         <span class="price">₹99.00</span>
         <span class="mrp">₹150.00 <button class="off">37 % Off</button></span>
-        <button class="button">Add Cart</button> 
+        <button class="button" id="btn7" onclick="textChange7()">Add To Cart</button> 
         </div>
     <div class="product-card">
         <img src="../images/vegetable/onion.jpeg" class="product-img">
         <span class="product-name"> Fresh Onion,1kg</span>
         <div class="quantity-btn-container">
-        <img src="./../images/icons/minus.png"  class="btn-quantity" onclick="plusminus('decrement')"/>
-        <span class="quantity-size"  id="quantity-text">1</span> 
-        <img src="./../images/icons/plus.png" class="btn-quantity" onclick="plusminus('increment')"/>
+        <img src="./../images/icons/minus.png "  class="btn-quantity" onclick="handleQuantityChange8('dec')"/>
+        <span class="quantity-size"  id="quantity-text8">1</span> 
+        <img src="./../images/icons/plus.png" class="btn-quantity" onclick="handleQuantityChange8('inc')"/>
         </div>
         <span class="price">₹47.00</span>
         <span class="mrp">₹67.00 <button class="off">30 % Off</button></span>
-        <button class="button">Add Cart</button>      
+        <button class="button" id="btn8" onclick="textChange8()">Add To Cart</button>      
     </div>
     <div class="product-card">
         <img src="../images/fruits/orange.jpeg" class="product-img">
         <span class="product-name"> Fresh Orange valencia,4 Pca</span>
         <div class="quantity-btn-container">
-        <img src="./../images/icons/minus.png "  class="btn-quantity" onclick="plusminus('decrement')"/>
-        <span class="quantity-size"  id="quantity-text">1</span> 
-        <img src="./../images/icons/plus.png" class="btn-quantity" onclick="plusminus('increment')"/>
+        <img src="./../images/icons/minus.png "  class="btn-quantity" onclick="handleQuantityChange9('dec')"/>
+        <span class="quantity-size"  id="quantity-text9">1</span> 
+        <img src="./../images/icons/plus.png" class="btn-quantity" onclick="handleQuantityChange9('inc')"/>
         </div>
         <span class="price">₹107.00</span>
         <span class="mrp">₹140.00 <button class="off">28 % Off</button></span>
-        <button class="button">Add Cart</button>
+        <button class="button" id="btn9" onclick="textChange9()" >Add To Cart</button>
   </div>
   </div>
+  
+  <script src="../js/vegetable-fruit.js"></script>
+  
 </body>
 </html>
