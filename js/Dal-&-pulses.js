@@ -297,3 +297,20 @@ function textChange9(){
       textElement.innerText="Added";
 
     }
+
+function add_cart(num){
+   const res = document.getElementById("ac");
+   if (res) { // Ensure the element exists
+       res.style.visibility = 'visible';
+       console.log("Item number " + num + " added to cart."); 
+       setTimeout(() => {
+       document.getElementById('ac').style.display = 'none';
+       }, 3000);
+       setTimeout(function(){
+         location.reload();
+        }, 3000);
+      // Example use of num
+   } else {
+       console.error("Element with id 'ac' not found.");
+   }
+}

@@ -44,7 +44,7 @@
           </div>
           <span class="price">    ₹1,059 </span>
           <span class="mrp"> ₹1,200<button class="off">12%</button></span>
-          <button class="button" id="btn" onclick="textChange()" type="button">Add to Cart</button>
+          <button class="button" id="btn" onclick="textChange();add_cart(0)" type="button">Add to Cart</button>
       </div>
       <div class="product-card">
           <img src="../images/edibal-oil/emami.jpg" class="product-img">
@@ -56,7 +56,7 @@
          </div>
           <span class="price">  ₹235</span>
           <span class="mrp">₹350<button class="off">33%</button></span>
-          <button class="button" id="btn1" onclick="textChange1()" type="button">Add to Cart</button>
+          <button class="button" id="btn1" onclick="textChange1();add_cart(1)" type="button">Add to Cart</button>
       </div>
       <div class="product-card">
          <img src="../images/edibal-oil/fortune.jpg"  class="product-img">
@@ -69,7 +69,7 @@
             <span class="price">   ₹135
           </span>
           <span class="mrp">  ₹145<button class="off">7%</button></span>
-          <button class="button" id="btn2" onclick="textChange2()" type="button">Add to Cart</button>
+          <button class="button" id="btn2" onclick="textChange2();add_cart(2)" type="button">Add to Cart</button>
       </div>
       <div class="product-card">
          <img src="../images/edibal-oil/gramiyaa.jpg" class="product-img">
@@ -81,7 +81,7 @@
       </div>
             <span class="price"> ₹489 </span>
             <span class="mrp">  ₹550<button class="off">11%</button></span>
-         <button class="button" id="btn3" onclick="textChange3()" type="button">Add to Cart</button>
+         <button class="button" id="btn3" onclick="textChange3();add_cart(3)" type="button">Add to Cart</button>
       </div>
       <div class="product-card">
           <img src="../images/edibal-oil/jivo.jpg" class="product-img">
@@ -94,7 +94,7 @@
       </div>
           <span class="price"> ₹689</span>
           <span class="mrp">  ₹1,350 <button class="off">49%</button></span>
-          <button class="button" id="btn4" onclick="textChange4()" type="button">Add to Cart</button>
+          <button class="button" id="btn4" onclick="textChange4();add_cart(4)" type="button">Add to Cart</button>
       </div>
       <div class="product-card">
          <img src="../images/edibal-oil/mr.-gold.jpg" class="product-img">
@@ -106,7 +106,7 @@
       </div>
          <span class="price"> ₹885 </span>
          <span class="mrp">  ₹1,425 <button class="off">38%</button></span>
-         <button class="button" id="btn5" onclick="textChange5()" type="button">Add to Cart</button>
+         <button class="button" id="btn5" onclick="textChange5();add_cart(5)" type="button">Add to Cart</button>
       </div>
       <div class="product-card">
         <img src="../images/edibal-oil/jivo-gold.jpg" class="product-img">
@@ -118,7 +118,7 @@
       </div>
         <span class="price">₹219 </span>
         <span class="mrp"> ₹225<button class="off">3%</button></span>
-        <button class="button" id="btn6" onclick="textChange6()" type="button">Add to Cart</button>
+        <button class="button" id="btn6" onclick="textChange6();add_cart(6)" type="button">Add to Cart</button>
      </div>
      <div class="product-card">
         <img src="../images/edibal-oil/saffola.jpg" class="product-img">
@@ -130,7 +130,7 @@
      </div>
         <span class="price">  ₹145</span>
         <span class="mrp"> ₹160<button class="off">9%</button></span>
-        <button class="button" id="btn7" onclick="textChange7()" type="button">Add to Cart</button>
+        <button class="button" id="btn7" onclick="textChange7();add_cart(7)" type="button">Add to Cart</button>
      </div>
      <div class="product-card">
         <img src="../images/edibal-oil/sunrich.jpg" class="product-img">
@@ -142,7 +142,7 @@
      </div>
         <span class="price"> ₹225 </span>
         <span class="mrp">₹350 <button class="off">36%</button></span>
-        <button class="button" id="btn8" onclick="textChange8()" type="button">Add to Cart</button>
+        <button class="button" id="btn8" onclick="textChange8();add_cart(8)" type="button">Add to Cart</button>
      </div>
      <div class="product-card">
         <img src="../images/edibal-oil/tata-simply.jpg" class="product-img">
@@ -154,10 +154,76 @@
      </div>
         <span class="price"> ₹380</span>
         <span class="mrp">₹500<button class="off">24%</button></span>
-        <button class="button" id="btn9" onclick="textChange9()" type="button">Add to Cart</button>
+        <button class="button" id="btn9" onclick="textChange9();add_cart(9)" type="button">Add to Cart</button>
      </div>
   </div>
 
-  
+  <div class="added" id="ac">
+   <div class="item">Item Added to Cart&ensp;&ensp;| </div>
+   <div class="item">&ensp;&ensp;View Cart</div>
+</div>
+  <footer>
+   <div class="footer-container">
+       <div class="footer-section">
+           <div class="footer-logo-description">
+               <img src="../images/icons/home-logo/footer-logo.png" alt="Logo" class="footer-logo">
+               <p>Natures Basket is your online destination for fresh and quality groceries. We provide a wide
+                   range of products to meet all your grocery needs.</p>
+           </div> <br> <br>
+           <h3 class="connect">Connect with us</h3>
+           <div class="social-media-icons">
+               <a href="https://www.facebook.com/NaturesBasket"><img
+                       src="../images/icons/home-logo/facebook (4).png" alt="Facebook"></a>
+               <a href="https://x.com/NaturesBasket"><img src="../images/icons/home-logo/twitter (2).png"
+                       alt="Twitter"></a>
+               <a href="https://youtube.com/@naturesbasketrp-sg?si=geZQ2tTgiUefGg4S"><img
+                       src="../images/icons/home-logo/youtube (1).png" alt="YouTube"></a>
+               <a href="https://www.instagram.com/naturesbasket?igsh=bjcxbXcxdjQ1NGpl"><img
+                       src="../images/icons/home-logo/instagram (3).png" alt="Instagram"></a>
+           </div>
+       </div>
+
+       <div class="footer-section">
+           <br> <br>
+           <div class="contact-details">
+               <h3>Contact Us</h3>
+               <p><b>Email</b>: cs@naturesbasket.co.in</p>
+               <p><b>Phone</b>: 8880077745</p>
+               <p><b>Address</b>: Krishna Curve, Linking Road, Mumbai, India</p>
+           </div> <br> <br>
+
+           <div class="payment-methods">
+               <br>
+               <h3>We Accept</h3>
+               <div class="payment-icons">
+                   <img src="../images/icons/home-logo/visa.png" alt="Visa">
+                   <img src="../images/icons/home-logo/master card.png" alt="MasterCard">
+                   <img src="../images/icons/home-logo/rupay.png" alt="RuPay">
+                   <img src="../images/icons/home-logo/paytm.png" alt="Paytm">
+               </div>
+
+           </div>
+
+
+       </div>
+       <div class="footer-section">
+           <br> <br>
+           <div class="footer-links">
+               <h3>Quick Links</h3>
+               <a href="../pages/about-us.html">About Us</a>
+               <a href="#">Contact Us</a>
+               <a href="../pages/privacy-policy.html">Privacy Policy</a>
+               <a href="../pages/terms-condition.html">Terms and Conditions</a>
+           </div>
+       </div>
+   </div>
+   <div class="footer-bottom">
+
+   </div>
+</footer>
+
+<footer class="copyright">
+   <p id="footer-text">&copy; 2024 Grocery Shopping. All rights reserved.</p>
+</footer>
 </body>
 </html>
