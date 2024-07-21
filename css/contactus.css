@@ -197,3 +197,10 @@ footer {
     width: 150px;
     margin-bottom: 2px;
 }
+.contact-details, .payment-methods, .quick-links {
+    margin-bottom: 10px;
+}
+
+.contact-details h3, .payment-methods h3, .quick-links h3 {
+    margin-bottom: 5px;
+}
