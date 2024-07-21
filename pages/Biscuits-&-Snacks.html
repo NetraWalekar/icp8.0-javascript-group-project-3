@@ -40,11 +40,11 @@
           <span class="product-name">Lotte Choco Pie - Soft Biscuits coated with Premium Chocolate
           </span>
           <div class="quantity-btn-container">
-            <img src="./../images/icons/minus.png "  class="btn-quantity" onclick="plusminus('decrement')"/>
+            <img src="./../images/icons/minus.png "  class="btn-quantity" onclick="plusminus('decrement');decreaseprice()" />
          <span class="quantity-size"  id="quantity-text">1</span> 
-            <img src="./../images/icons/plus.png" class="btn-quantity" onclick="plusminus('increment')"/>
+            <img src="./../images/icons/plus.png" class="btn-quantity" onclick="plusminus('increment');increaseprice()" />
           </div>
-          <span class="price"> ₹110 </span>
+          <span class="price" id="price"> ₹110 </span>
           <span class="mrp"> ₹170 <button class="off">35%</button></span>
           <button class="button" id="btn" onclick="textChange();add_cart(0)" type="button">Add to Cart</button>
       </div>
