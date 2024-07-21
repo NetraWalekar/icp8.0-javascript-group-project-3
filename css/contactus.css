@@ -193,3 +193,7 @@ footer {
 .footer-logo-description {
     margin-bottom: 10px;
 }
+.footer-logo {
+    width: 150px;
+    margin-bottom: 2px;
+}
