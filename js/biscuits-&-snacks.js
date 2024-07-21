@@ -299,26 +299,7 @@ function textChange9(){
     }
 
 
-function darklighton(){
-   const mainBody =  document.getElementById("main-body")
-   mainBody.classList.remove("bg-light")
-   mainBody.classList.add("bg-dark")
- 
 
-   const togglebutton  = document.getElementById("btn-toggle")
-   togglebutton.classList.remove("btn-light")
-    togglebutton.classList.add("btn-dark")
- }
-
-function darklightoff(){
-   const mainBody =  document.getElementById("main-body")
-   mainBody.classList.remove("bg-dark")
-   mainBody.classList.add("bg-light")
- 
-   const togglebutton  = document.getElementById("btn-toggle")
-   togglebutton.classList.remove("btn-dark")
-    togglebutton.classList.add("btn-light")
- }
 
  function add_cart(num){
    const res = document.getElementById("ac");
