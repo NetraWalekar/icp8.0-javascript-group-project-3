@@ -89,6 +89,7 @@ body {
     width: 80%;
     margin: auto;
     overflow: hidden;
+
 }
 
 
@@ -98,7 +99,7 @@ body {
 
 
 .main-content {
-    background: #fff;
+    background: rgb(253, 246, 234);;
     padding: 20px;
     margin-top: 20px;
     border-radius: 5px;
