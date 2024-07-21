@@ -49,14 +49,14 @@ body {
 }
 
 .nav-links a:hover {
-    background-color: #0c0c0c;
+    background-color: #093505;
     border-radius: 5px;
 }
 
 .signin-button {
     background-color: #365E32;
-    height: 50px;
-    width: 100px;
+    height: 40px;
+    width: 90px;
     margin-bottom: 10px;
     margin-top: 10px;
     border: none;
@@ -92,12 +92,12 @@ body {
 
 .sidebar {
     width: 250px;
-    background-color: #81A263;
+    background-color: #365E32;
     height: 100vh;
     padding-top: 100px;
     box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
     position: fixed;
-    top: 70px; /* Adjusted to be below the navbar */
+    top: 60px; /* Adjusted to be below the navbar */
 }
 
 .sidebar ul {
@@ -111,7 +111,7 @@ body {
 }
 
 .sidebar ul li a {
-    color: black;
+    color: white;
     text-decoration: none;
     display: flex;
     align-items: center;
@@ -124,13 +124,21 @@ body {
 }
 
 .sidebar ul li a:hover {
-    background-color: #0c0c0c;
+    background-color: #093505;
     color: white;
     border-radius: 10px;
     padding: 10px;
     transform: scale(1.05);
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
 }
+/* 
+.content {
+    flex-grow: 1;
+    padding: 20px;
+    text-align: center;
+    margin-left: 250px; 
+    margin-top: 70px; 
+} */
 
 .content {
     flex-grow: 1;
@@ -139,6 +147,25 @@ body {
     margin-left: 250px; /* Adjust margin to account for the fixed sidebar */
     margin-top: 70px; /* Adjust margin to account for the fixed navbar */
 }
+
+.user-info-table {
+    margin: 20px auto;
+    border-collapse: collapse;
+    width: 40%;
+    max-width: 800px;
+    text-align: left;
+    font-size: 19px;
+}
+
+.user-info-table td {
+    padding: 10px 20px;
+    border: 1px solid gray;
+}
+
+.user-info-table b {
+    font-size: 19px;
+}
+
 
 h1 {
     color: #093505;
@@ -179,3 +206,4 @@ h1 {
 #saveInfoButton:hover, #savePasswordButton:hover {
     background-color: #093505;
 }
+
