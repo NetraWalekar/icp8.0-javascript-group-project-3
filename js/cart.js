@@ -1,6 +1,6 @@
-let Cart = document.querySelector('.cart');
+let cartIcon = document.querySelector('.cart');
 
 document.querySelector('#cart-icon').onclick = () =>
 {
-    Cart.classList.toggle('active');
+    cartIcon.classList.toggle('active');
 }
