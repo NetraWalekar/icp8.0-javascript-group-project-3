@@ -10,23 +10,25 @@
     <nav class="navbar">
         <div class="navdiv">
             <div class="logo">
-                <a href="#"><img src="./../images/icons/home-logo/final logo.png" alt="Logo"></a>
+                <a href="./../index.html"><img src="./../images/icons/home-logo/head-logo.png" alt="Logo"></a>
             </div>
             <ul class="nav-links">
                 <li><a href="./../index.html">Home</a></li>
                 <li><a href="./pages/categories.html">Categories</a></li>
-                <li><a href="#">About Us</a></li>
-                <li><a href="./pages/faq.html">FAQ</a></li>
-               
+                <li><a href="./pages/about-us.html">About Us</a></li>
+                <li><a href="#">Contact Us</a></li>
             </ul>
-            <div class="profile-menu">
-                <a href="#"><img src="./../images/icons/home-logo/user (2).png" height="40px" alt="Profile"></a>
-                <div class="profile-dropdown">
-                    <a href="#">Sign In</a>
-                    <a href="#">User Account</a>
-                </div>
+        <div class="sign">
+            <button class="signin-button"><a href="./pages/signin.html">Sign In</a></button>
+            <div class="profile-container" id="profile-container">
+                <a href="/pages/user-account.html"><img src="./../images/icons/home-logo/user.png" height="33px" alt="Profile" class="profile-icon" id="profile-icon"></a>
+               
             </div>
-            <a href="#"><img src="./../images/icons/home-logo/cart.png" height="40px" alt="Cart"></a>
+            <div class="cart-container" id="cart-container">
+                <a href="#"><img src="./../images/icons/home-logo/shopping-cart.png" height="33px" alt="Cart" class="cart-icon" id="cart-icon"></a>
+               
+            </div>
+        </div>
         </div>
     </nav>
     
@@ -129,7 +131,7 @@
             <div class="footer-section">
                 <div class="footer-logo-description">
                     <img src="./../images/icons/home-logo/footer-logo.png" alt="Logo" class="footer-logo">
-                    <p class="logo-info">Natures Basket is your online destination for fresh and quality groceries. We provide a wide range of products to meet all your grocery needs.</p>
+                    <p class="para">Natures Basket is your online destination for fresh and quality groceries. We provide a wide range of products to meet all your grocery needs.</p>
                 </div> <br> <br>
                 <h3 class="connect">Connect with us</h3>
                 <div class="social-media-icons">
@@ -143,11 +145,14 @@
             <div class="footer-section">
                 <br> <br>
                 <div class="contact-details">
-                    <h3>Contact Us</h3>
-                    <p class="contact-details"><b>Email</b>: cs@naturesbasket.co.in</p>
-                    <p class="contact-details"><b>Phone</b>: 8880077745</p>
-                    <p class="contact-details"><b>Address</b>: Krishna Curve, Linking Road, Mumbai, India</p>
+                    <h3 class="cotact">Contact Us</h3>
+                    <p class="c-details"><b>Email</b>: cs@naturesbasket.co.in</p>
+                    <p class="c-details"><b>Phone</b>: 8880077745</p>
+                    <p class="c-details"><b>Phone</b>: 8880077745</p>
+                    <p class="c-details"><b>Phone</b>: 8880077745</p>
+                    <p><b>Address</b>: Krishna Curve, Linking Road, Mumbai, India</p>
                 </div> <br> <br>
+            
                 <div class="payment-methods">
                     <br>
                     <h3>We Accept</h3>
@@ -157,16 +162,19 @@
                         <img src="./../images/icons/home-logo/Rupay.png" alt="RuPay">
                         <img src="./../images/icons/home-logo/paytm.png" alt="Paytm">
                     </div>
-                </div>
+               
+              </div>
+             
+            
             </div>
             <div class="footer-section">
                 <br> <br>
                 <div class="footer-links">
-                    <h3 class="quick-link">Quick Links</h3>
+                    <h3>Quick Links</h3>
                     <a href="./about-us.html">About Us</a>
-                    <a href="./faq.html">FAQ</a>
+                    <a href="./contactus.html">Contact Us</a>
                     <a href="./privacy-policy.html">Privacy Policy</a>
-                    <a href="#">Terms and Conditions</a>
+                    <a href="./terms-condition.html">Terms and Conditions</a>
                 </div>
             </div>
         </div>
@@ -176,8 +184,10 @@
     </footer>
     
     <footer class="copyright">
-        <p>&copy; 2024 Grocery Shopping. All rights reserved.</p>
+        <p id="footer-text">&copy; 2024 Grocery Shopping. All rights reserved.</p>
     </footer>
+    
+   
 
 </body>
 </html>
