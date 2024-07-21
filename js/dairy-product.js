@@ -207,4 +207,20 @@ function handleQuantityChange(action)
       const textElement=document.getElementById("btn9")
       textElement.innerText="Added"; 
     }
+      function add_cart(num){
+      const res = document.getElementById("display-msg");
+       if (res) { // Ensure the element exists
+           res.style.visibility = 'visible';
+           console.log("Item number " + num + " added to cart."); 
+           setTimeout(() => {
+           document.getElementById('ac').style.display = 'none';
+           }, 2000);
+           setTimeout(function(){
+             location.reload();
+            }, 2000);
+          // Example use of num
+       } else {
+           console.error("Element with id 'ac' not found.");
+       }
+     }
     
