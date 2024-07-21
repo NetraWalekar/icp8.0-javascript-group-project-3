@@ -45,7 +45,7 @@
       </div>
           <span class="price"> ₹499 </span>
           <span class="mrp"> ₹580 <button class="off">14%</button></span>
-          <button class="button" id="btn" onclick="textChange()">Add to Cart</button>
+          <button class="button" id="btn" onclick="textChange();add_cart(0)">Add to Cart</button>
       </div>
       <div class="product-card">
           <img src="../images/dal-&-pulses/black-urad-dal.jpg" class="product-img">
@@ -57,7 +57,7 @@
       </div>
           <span class="price">₹217</span>
           <span class="mrp"> ₹239 <button class="off">9%</button></span>
-          <button class="button" id="btn1" onclick="textChange1()">Add to Cart</button>
+          <button class="button" id="btn1" onclick="textChange1();add_cart(1)">Add to Cart</button>
       </div>
       <div class="product-card">
          <img src="../images/dal-&-pulses/kabuli-chana.jpg"class="product-img">
@@ -70,7 +70,7 @@
           <span class="price">₹145
           </span>
           <span class="mrp"> ₹239 <button class="off">14%</button></span>
-          <button class="button" id="btn2" onclick="textChange2()">Add to Cart</button>
+          <button class="button" id="btn2" onclick="textChange2();add_cart(2)">Add to Cart</button>
       </div>
       <div class="product-card">
          <img src="../images/dal-&-pulses/kala-chana.jpg" class="product-img">
@@ -82,7 +82,7 @@
       </div>
             <span class="price">₹160</span>
             <span class="mrp"> ₹249 <button class="off">15%</button></span>
-         <button class="button" id="btn3" onclick="textChange3()">Add to Cart</button>
+         <button class="button" id="btn3" onclick="textChange3();add_cart(3)">Add to Cart</button>
       </div>
       <div class="product-card">
           <img src="../images/dal-&-pulses/mix-dal.jpg" class="product-img">
@@ -94,7 +94,7 @@
       </div>
             <span class="price">₹160</span>
           <span class="mrp"> ₹230 <button class="off">12%</button></span>
-          <button class="button" id="btn4" onclick="textChange4()">Add to Cart</button>
+          <button class="button" id="btn4" onclick="textChange4();add_cart(4)">Add to Cart</button>
       </div>
       <div class="product-card">
          <img src="../images/dal-&-pulses/organic-panchratna-dal.jpg" class="product-img">
@@ -106,7 +106,7 @@
       </div>
             <span class="price">₹144.</span>
          <span class="mrp"> ₹152 <button class="off">5%</button></span>
-         <button class="button" id="btn5" onclick="textChange5()">Add to Cart</button>
+         <button class="button" id="btn5" onclick="textChange5();add_cart(5)">Add to Cart</button>
       </div>
       <div class="product-card">
         <img src="../images/dal-&-pulses/pancharatna-dal.jpg" class="product-img">
@@ -118,7 +118,7 @@
       </div>
             <span class="price">₹128</span>
         <span class="mrp"> ₹130 <button class="off">2%</button></span>
-        <button class="button" id="btn6" onclick="textChange6()">Add to Cart</button>
+        <button class="button" id="btn6" onclick="textChange6();add_cart(6)">Add to Cart</button>
      </div>
      <div class="product-card">
         <img src="../images/dal-&-pulses/panchrangi-dal.jpg" class="product-img">
@@ -130,7 +130,7 @@
      </div>
             <span class="price"> ₹234</span>
         <span class="mrp">₹245 <button class="off">4%</button></span>
-        <button class="button" id="btn7" onclick="textChange7()">Add to Cart</button>
+        <button class="button" id="btn7" onclick="textChange7();add_cart(7)">Add to Cart</button>
      </div>
      <div class="product-card">
         <img src="../images/dal-&-pulses/kali-urad.jpg" class="product-img">
@@ -142,7 +142,7 @@
      </div>
             <span class="price"> ₹53</span>
         <span class="mrp">₹112 <button class="off">53%</button></span>
-        <button class="button" id="btn8" onclick="textChange8()">Add to Cart</button>
+        <button class="button" id="btn8" onclick="textChange8();add_cart(8)">Add to Cart</button>
      </div>
      <div class="product-card">
         <img src="../images/dal-&-pulses/urad-dal.jpg" class="product-img">
@@ -154,9 +154,14 @@
      </div>
             <span class="price">₹236.</span>
         <span class="mrp">₹249<button class="off">5%</button></span>
-        <button class="button" id="btn9" onclick="textChange9()">Add to Cart</button>
+        <button class="button" id="btn9" onclick="textChange9();add_cart(9)">Add to Cart</button>
      </div>
   </div>
+
+  <div class="added" id="ac">
+    <div class="item">Item Added to Cart&ensp;&ensp;| </div>
+    <div class="item">&ensp;&ensp;View Cart</div>
+ </div>
   <footer>
     <div class="footer-container">
         <div class="footer-section">
