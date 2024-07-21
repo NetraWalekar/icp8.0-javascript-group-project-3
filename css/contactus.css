@@ -247,3 +247,7 @@ footer.copyright {
     background-color: #f8f8f8; 
     color: #0c0c0c;
 }
+footer.copyright .footer-text {
+    line-height: 30px; 
+    margin-top: -5px; 
+}
