@@ -172,3 +172,9 @@ iframe {
     border-radius: 8px;
     margin-top: 20px;
 }
+footer {
+    background-color: #365E32;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
