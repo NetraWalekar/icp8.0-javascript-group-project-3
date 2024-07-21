@@ -91,6 +91,7 @@
 }
 .btn-buy:hover {
     background: var(--text-color);
+    color: white;
     background-color: green;
     transition: 0.2s;
     border-radius: 0 5px 0 5px;
