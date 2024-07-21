@@ -63,7 +63,6 @@ body {
 }
 
 .top-deal-text-main1 {
-    padding-left: 10px;
     font-size: 30px;
     font-weight: bold;
 }
@@ -71,7 +70,7 @@ body {
 .view_all {
     color: #0c5273;
     right: 55px;
-    font-size: 20px;
+    font-size: 25px;
 }
 
 .top-deal {
