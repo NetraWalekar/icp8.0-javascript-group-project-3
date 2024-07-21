@@ -1,6 +1,34 @@
-let cartIcon = document.querySelector('.cart');
+let cartIcon = document.querySelector("#cart-icon");
+let cart = document.querySelector('.cart');
+let closeCart = document.querySelector('#close-cart');
 
-document.querySelector('#cart-icon').onclick = () =>
-{
-    cartIcon.classList.toggle('.active');
+cartIcon.onclick() 
+    cart.classList.add('active');
+
+closeCart.onclick() 
+    cart.classList.remove('active');
+
+if (document.readyState == "loading") {
+    document.addEventListener('DOMContentLoaded', ready);
+} else {
+    ready();
+}
+
+function ready() {
+    var removeCartButtons = document.getElementsByClassName('cart-remove');
+    console.log(removeCartButtons);
+    for (var i = 0; i < removeCartButtons.length; i++) {
+        var button = removeCartButtons[i];
+        button.addEventListener('click', removeCartItem());
+    }
+}
+
+function removeCartItem(event) {
+    var buttonClicked = event.target;
+    buttonClicked.parentElement.remove();
+}
+
+function updatetotal(){
+    var cartContect = document.getElementsByClassName('cart-content')[0]
+    var cartBoxes = cartContent.getElementsByClassName
 }
