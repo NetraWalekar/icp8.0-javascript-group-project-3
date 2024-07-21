@@ -228,3 +228,7 @@ footer {
 .connect {
     text-align: left;
 }
+.footer-links {
+    display: flex;
+    flex-direction: column;
+}
