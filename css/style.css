@@ -1,15 +1,39 @@
 * {
     text-decoration: none;
 }
-
-body {
+/* Reset some default browser styles */
+body, h1, h2, h3, p, ul, li, a, img {
     margin: 0;
-    font-family: Arial, sans-serif;
-    background-color: rgb(255, 250, 250);
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
 }
+
+/* General body styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: rgb(255, 250, 250);;
+    margin-top: 60px; /* Add top margin to compensate for fixed navbar */
+}
+
+/* Navbar styling */
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #333;
+    z-index: 1000; /* Ensure the navbar is on top */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+
 
 .navbar {
     background-color: #81A263;
+    z-index: 1000;
+    position: fixed;
+    top: 0;
+    width: 100%;
 }
 
 .navdiv {
@@ -101,14 +125,22 @@ body {
     border: 2px solid #365E32;
     background-color: #ddd;
 }
-
 .card-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 20px auto;
+    max-width: 1200px;
+    gap: 20px;
+}
+
+/**.card-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin: 0 10px;
     flex-wrap: wrap;
-}
+}**/
 
 .card {
     border-radius: 10px;
@@ -141,6 +173,14 @@ body {
 .top-deals {
     text-align: center;
 }
+.discount-card-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 20px;
+}/**
 
 .discount-card-container {
     display: flex;
@@ -149,6 +189,7 @@ body {
     gap: 15px;
 }
 
+**/
 .discount-card {
     background-color: rgb(253, 246, 234);
     border: 1px solid grey;
@@ -213,6 +254,15 @@ body {
     text-align: center;
     color: rgb(36, 35, 35);
 }
+.video-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 20px;
+}
+/**
 
 .video-container {
     display: flex;
@@ -222,6 +272,7 @@ body {
     margin-top: 20px;
     padding: 20px; 
 }
+    **/
 
 .video-wrapper {
     flex: 0 0 auto;
@@ -396,6 +447,10 @@ footer.copyright .footer-text {
 
     .footer-section {
         text-align: center;
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        background-color: #ece7e7;
     }
 
     .payment-icons {
