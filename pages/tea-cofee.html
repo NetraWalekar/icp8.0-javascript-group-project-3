@@ -5,19 +5,104 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tea & Coffee</title>
     <style>
-    .body{
-            padding: 0%;
-            margin: 0%;
-        }
-    .product-container{
+    .body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: rgb(255,250,250);
+    }
+
+    .navbar {
+    background-color: #81A263;
+     }
+
+    .navdiv {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    }
+
+    .logo img {
+    height: 50px;
+    }
+
+    .nav-links {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    }
+
+   .nav-links li {
+    margin: 0 15px;
+    }
+
+   .nav-links a {
+    color: white;
+    text-decoration: none;
+    padding: 14px 20px;
+    display: block;
+    font-size: large;
+    }
+
+    .nav-links a:hover {
+    background-color: #0c0c0c;
+    border-radius: 5px;
+     }
+
+    .signin-button {
+    background-color: #365E32;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin-right: 15px;
+    border-radius: 5px;
+    }
+
+    .signin-button a {
+    color: white;
+    text-decoration: none;
+    }
+
+    .signin-button:hover {
+    background-color: #093505;
+     }
+
+   .sign {
+    display: flex;
+    justify-content: space-between;
+    }
+
+   .profile-container, .cart-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 15px;
+    }
+
+   .profile-text, .cart-text {
+    display: none;
+    position: absolute;
+    top: 50px; 
+    color: white;
+    font-size: 12px;
+    background-color: #333;
+    padding: 5px;
+    border-radius: 3px;
+     }
+
+   .product-container{
      display: flex;
      flex-direction: row;
      flex-wrap: wrap;
      justify-content: center;
-
-     }
+     margin-top: 25px;
+    }
 
    .product-card {
+    background-color:rgb(253,246,234);
     height: 390px;
     width: 230px;
     margin: 25px;
@@ -25,8 +110,7 @@
     box-shadow:0px 0px 10px 0px grey;
     border-radius: 15px;
     position: relative;
-   
-    }
+   }
 
    .product-img {
     height:180px;
@@ -34,18 +118,21 @@
     border-radius: 25px;
     margin-top: 10px;
     object-fit: cover;
-    padding-left: 13px;
+    padding-left: 18px ;
+    transition: 0.2s;
+   
     }
+
     .product-img:hover{
         height: 170px;
         width: 180px;
+        transition: 0.3s;
     }
 
    .product-name{
     position: absolute;
     top: 230px;
-    left: 5px;
-    right:5px;
+    left: 10px;
     font-weight: bold;
     text-align: center;
      }
@@ -54,12 +141,11 @@
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    
-     }
+    }
 
     .quantity-size{
     font-size:18px ;
-    }
+        }
     .btn-quantity{
     height: 18px;
     margin-top: 5px;
@@ -75,6 +161,7 @@
     top: 270px;
     left: 10px;
     }
+
    .mrp{
     text-decoration: line-through;
     margin-top: 10px;
@@ -93,12 +180,17 @@
     border-radius: 18px;
     width: 120px;
     height: 40px;
-    color: #0c5273;
-    background-color: white;
+    color:white;
+    background-color:#365E32;
     font-size: 16px;
     text-align: center;
     cursor: pointer;
      } 
+
+     .button:hover{
+        background-color: #093505;
+
+     }
 
     .off{
     color:#03753c;
@@ -107,135 +199,240 @@
     font-weight: bold;
     margin-left: 5px;
      }
+     @media screen and (min-width:400px) and (max-width:600px){
+   .product-card {
+    height: 360px;
+    width: 200px;
+    margin: 20px;
+   }
+
+   .product-img {
+    height:130px;
+    width: 150px;
+   }
+
+   .product-name{
+    position: absolute;
+    top: 200px;
+    left: 5px;
+    right:5px;
+    
+   }
+   .button{
+    position: absolute;
+    left:52px;
+    bottom: 15px;
+    width: 100px;
+    height: 30px;
+   }
+   .price{
+      position: absolute;
+    top: 250px;
+    left: 10px;
+   }
+
+   .mrp{
+      position: absolute;
+    top: 270px;
+    left: 10px;
+   }
+
+   .product-img:hover {
+      transition-duration: 0.3s;
+    height:150px;
+    width: 160px;
+    }
+   
+}
+   @media screeen and (min-width:601px) and (max-width:992px){
+   .product-card {
+    height: 370px;
+    width: 210px;
+    margin: 20px;
+   }
+
+   .product-img {
+    height:150px;
+    width: 160px;
+   }
+}
+   @media screen and (min-width: 993px ) and (max-width:1200px){
+   .product-card {
+    height: 380px;
+    width: 220px;
+    margin: 20px;
+   }
+
+   .product-img {
+    height:160px;
+    width: 170px;
+   }
+}
+  @media screen and (min-width:1201px) and (max-width:1285px) {
+   .product-card {
+    height: 390px;
+    width: 230px;
+    margin: 20px;
+   }
+
+   .product-img {
+    height:170px;
+    width: 180px;
+   }
+
+}
         </style>
 </head>
 <body>
-    <h1>Tea & Coffee</h1>
+    <nav class="navbar">
+        <div class="navdiv">
+            <div class="logo">
+                <a href="./index.html"><img src="../images/icons/home-logo/head-logo.png" alt="Logo"></a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="./pages/categories.html">Categories</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        <div class="sign">
+            <button class="signin-button"><a href="./pages/signin.html">Sign In</a></button>
+            <div class="profile-container" id="profile-container">
+                <a href="/pages/user-account.html"><img src="../images/icons/home-logo/user.png" height="33px" alt="Profile" class="profile-icon" id="profile-icon"></a>
+            </div>
+            <div class="cart-container" id="cart-container">
+                <a href="#"><img src="../images/icons/home-logo/shopping-cart.png" height="33px" alt="Cart" class="cart-icon" id="cart-icon"></a>
+             </div>
+        </div>
+        </div>
+        </nav>
     <div class="product-container">
       <div class="product-card"><img src="../images/tea-coffee/cofee.jpg" class="product-img">
           <span class="product-name">Cafe N Tea Instant Cappuccino Coffee- 16G [Pack Of 20]</span>
           <div class="quantity-btn-container">
-          <img src="./../images/icons/minus.png "  class="btn-quantity" onclick="plusminus('decrement')"/>
+          <img src="./../images/icons/minus.png "  class="btn-quantity" onclick="handleQuantityChange('dec')"/>
          <span class="quantity-size"  id="quantity-text">1</span> 
-          <img src="./../images/icons/plus.png" class="btn-quantity" onclick="plusminus('increment')"/>
+          <img src="./../images/icons/plus.png" class="btn-quantity" onclick="handleQuantityChange('inc')"/>
           </div>
           <span class="price">₹400.00 </span>
           <span class="mrp">₹100.00 <button class="off">30 % Off</button></span>
-          <button class="button">Add Cart</button>
+          <button class="button" id="btn" onclick="textChange()">Add To Cart</button> 
       </div>
       <div class="product-card">
           <img src="../images/tea-coffee/tea.jpg" class="product-img">
           <span class="product-name">
             Tata Tea Premium | Desh Ki Chai |  Black Tea | 1.5kg Powder</span>
           <div class="quantity-btn-container">
-          <img src="./../images/icons/minus.png "  class="btn-quantity" onclick="plusminus('decrement')"/>
-          <span class="quantity-size"  id="quantity-text">1</span> 
-          <img src="./../images/icons/plus.png" class="btn-quantity" onclick="plusminus('increment')"/>
+          <img src="./../images/icons/minus.png "  class="btn-quantity" onclick="handleQuantityChange1('dec')"/>
+          <span class="quantity-size"  id="quantity-text1">1</span> 
+          <img src="./../images/icons/plus.png" class="btn-quantity" onclick="handleQuantityChange1('inc')"/>
            </div>
           <span class="price">₹451.00</span>
           <span class="mrp">₹705.00 <button class="off">37% Off</button></span>
-          <button class="button">Add Cart</button>
+          <button class="button" id="btn1" onclick="textChange1()">Add To Cart</button> 
       </div>
       <div class="product-card">
          <img src="../images/tea-coffee/tata-tea.jpg"class="product-img">
          <span class="product-name">Tata Tea Gold Premium Assam & Aromatic Black Tea 1 Kg</span>
          <div class="quantity-btn-container">
-         <img src="./../images/icons/minus.png"  class="btn-quantity" onclick="plusminus('decrement')"/>
-         <span class="quantity-size"  id="quantity-text">1</span> 
-         <img src="./../images/icons/plus.png" class="btn-quantity" onclick="plusminus('increment')"/>
+         <img src="./../images/icons/minus.png"  class="btn-quantity" onclick="handleQuantityChange2('dec')"/>
+         <span class="quantity-size"  id="quantity-text2">1</span> 
+         <img src="./../images/icons/plus.png" class="btn-quantity" onclick="handleQuantityChange2('inc')"/>
          </div>
           <span class="price">₹392.00
           </span>
           <span class="mrp">₹570.00 <button class="off">32 % Off</button></span>
-          <button class="button">Add Cart</button>
+          <button class="button" id="btn2" onclick="textChange2()">Add To Cart</button> 
       </div>
       <div class="product-card">
          <img src="../images/tea-coffee/bru-instant-coffee.jpg" class="product-img">
          <span class="product-name">
             Bru Instant | Aromatic Coffee From South Indian Plantations| 200g</span>
          <div class="quantity-btn-container">
-        <img src="./../images/icons/minus.png "  class="btn-quantity" onclick="plusminus('decrement')"/>
-        <span class="quantity-size"  id="quantity-text">1</span> 
-        <img src="./../images/icons/plus.png" class="btn-quantity" onclick="plusminus('increment')"/>
+        <img src="./../images/icons/minus.png "  class="btn-quantity" onclick="handleQuantityChange3('dec')"/>
+        <span class="quantity-size"  id="quantity-text3">1</span> 
+        <img src="./../images/icons/plus.png" class="btn-quantity" onclick="handleQuantityChange3('inc')"/>
         </div>
          <span class="price">₹320.00</span>
          <span class="mrp">₹400.00 <button class="off">20% Off</button></span>
-         <button class="button">Add Cart</button>
+         <button class="button" id="btn3" onclick="textChange3()">Add To Cart</button> 
       </div>
       <div class="product-card">
           <img src="../images/tea-coffee/green-tea.jpg" class="product-img">
           <span class="product-name">Girnar Food &  Green Tea - Desi Kahwa  90 gm</span>
         <div class="quantity-btn-container">
-        <img src="./../images/icons/minus.png "  class="btn-quantity" onclick="plusminus('decrement')"/>
-        <span class="quantity-size"  id="quantity-text">1</span> 
-        <img src="./../images/icons/plus.png" class="btn-quantity" onclick="plusminus('increment')"/>
+        <img src="./../images/icons/minus.png "  class="btn-quantity" onclick="handleQuantityChange4('dec')"/>
+        <span class="quantity-size"  id="quantity-text4">1</span> 
+        <img src="./../images/icons/plus.png" class="btn-quantity" onclick="handleQuantityChange4('inc')"/>
         </div>
           <span class="price">₹340.00</span>
           <span class="mrp">₹.370 <button class="off">18% Off</button></span>
-          <button class="button">Add Cart</button>
+          <button class="button" id="btn4" onclick="textChange4()">Add To Cart</button> 
       </div>
       <div class="product-card">
          <img src="../images/tea-coffee/coffe-powder.jpg" class="product-img">
          <span class="product-name">
             NESCAFE Classic Instant Coffee Powder | 45 grams Pouch</span>
          <div class="quantity-btn-container">
-        <img src="./../images/icons/minus.png "  class="btn-quantity" onclick="plusminus('decrement')"/>
-        <span class="quantity-size"  id="quantity-text">1</span> 
-        <img src="./../images/icons/plus.png" class="btn-quantity" onclick="plusminus('increment')"/>
+        <img src="./../images/icons/minus.png "  class="btn-quantity" onclick="handleQuantityChange5('dec')"/>
+        <span class="quantity-size"  id="quantity-text5">1</span> 
+        <img src="./../images/icons/plus.png" class="btn-quantity" onclick="handleQuantityChange5('inc')"/>
         </div>
          <span class="price">₹175.00</span>
          <span class="mrp">₹185.00 <button class="off">5 % Off</button></span>
-         <button class="button">Add Cart</button>
+         <button class="button" id="btn5" onclick="textChange5()">Add To Cart</button> 
       </div>
       <div class="product-card">
         <img src="../images/tea-coffee/lipton-green-tea.jpg" class="product-img">
         <span class="product-name">
             Lipton Honey Lemon Green Tea Bags, 25 Pieces</span>
         <div class="quantity-btn-container">
-        <img src="./../images/icons/minus.png "  class="btn-quantity" onclick="plusminus('decrement')"/>
-           <span class="quantity-size"  id="quantity-text">1</span> 
-            <img src="./../images/icons/plus.png" class="btn-quantity" onclick="plusminus('increment')"/>
+        <img src="./../images/icons/minus.png "  class="btn-quantity" onclick="handleQuantityChange6('dec')"/>
+           <span class="quantity-size"  id="quantity-text6">1</span> 
+            <img src="./../images/icons/plus.png" class="btn-quantity" onclick="handleQuantityChange6('inc')"/>
             </div>
         <span class="price">₹149.00</span>
         <span class="mrp">₹170.00 <button class="off">17 % Off</button></span>
-        <button class="button">Add Cart</button>
+        <button class="button" id="btn6" onclick="textChange6()">Add To Cart</button> 
         </div>
      <div class="product-card">
         <img src="../images/tea-coffee/red-label-tea.jpg" class="product-img">
         <span class="product-name"> Red Label Tea, With 5 Ayurvedic Ingredients, 500 gm</span>
         <div class="quantity-btn-container">
-        <img src="./../images/icons/minus.png "  class="btn-quantity" onclick="plusminus('decrement')"/>
-        <span class="quantity-size"  id="quantity-text">1</span> 
-        <img src="./../images/icons/plus.png" class="btn-quantity" onclick="plusminus('increment')"/>
+        <img src="./../images/icons/minus.png "  class="btn-quantity" onclick="handleQuantityChange7('dec')"/>
+        <span class="quantity-size"  id="quantity-text7">1</span> 
+        <img src="./../images/icons/plus.png" class="btn-quantity" onclick="handleQuantityChange7('inc')"/>
         </div>
         <span class="price">₹272.00</span>
         <span class="mrp">₹300.00 <button class="off">9 % Off</button></span>
-        <button class="button">Add Cart</button> 
+        <button class="button" id="btn7" onclick="textChange7()">Add To Cart</button>  
         </div>
     <div class="product-card">
         <img src="../images/tea-coffee/chai-masala-powder.jpg" class="product-img">
         <span class="product-name">Desire instant premix Chai Masala Tea Powder 1Kg</span>
         <div class="quantity-btn-container">
-        <img src="./../images/icons/minus.png "  class="btn-quantity" onclick="plusminus('decrement')"/>
-        <span class="quantity-size"  id="quantity-text">1</span> 
-        <img src="./../images/icons/plus.png" class="btn-quantity" onclick="plusminus('increment')"/>
+        <img src="./../images/icons/minus.png "  class="btn-quantity" onclick="handleQuantityChange8('dec')"/>
+        <span class="quantity-size"  id="quantity-text8">1</span> 
+        <img src="./../images/icons/plus.png" class="btn-quantity" onclick="handleQuantityChange8('inc')"/>
         </div>
         <span class="price">₹535.00</span>
         <span class="mrp">₹600.00 <button class="off">11 % Off</button></span>
-        <button class="button">Add Cart</button>      
+        <button class="button" id="btn8" onclick="textChange8()">Add To Cart</button>      
     </div>
     <div class="product-card">
         <img src="../images/tea-coffee/lemon-tea.jpg" class="product-img">
         <span class="product-name"> Coffee day beverages Zest Lemon Tea - Pack Of 4, 200 gm</span>
         <div class="quantity-btn-container">
-        <img src="./../images/icons/minus.png "  class="btn-quantity" onclick="plusminus('decrement')"/>
-        <span class="quantity-size"  id="quantity-text">1</span> 
-        <img src="./../images/icons/plus.png" class="btn-quantity" onclick="plusminus('increment')"/>
+        <img src="./../images/icons/minus.png "  class="btn-quantity" onclick="handleQuantityChange9('dec')"/>
+        <span class="quantity-size"  id="quantity-text9">1</span> 
+        <img src="./../images/icons/plus.png" class="btn-quantity" onclick="handleQuantityChange9('inc')"/>
         </div>
         <span class="price">₹480.00</span>
         <span class="mrp"> <button class="off">No Offer</button></span>
-        <button class="button">Add Cart</button>
+        <button class="button" id="btn9" onclick="textChange9()">Add To Cart</button> 
   </div>
   </div>
+  <script src="../js/tea-cofee.js"></script>
+  
 </body>
 </html>
