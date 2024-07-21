@@ -1,4 +1,4 @@
-<style>
+
     .body{
       padding: 0%;
       margin:0%;
@@ -221,6 +221,10 @@ body {
     border-radius: 3px;
 }
 
+.link-names{
+    height:30px;
+}
+
 @media screen and (min-width:400px) and (max-width:600px){
    .product-card {
     height: 360px;
@@ -235,7 +239,7 @@ body {
 
    .product-name{
     position: absolute;
-    top: 200px;
+    top: 190px;
     left: 5px;
     right:5px;
     
@@ -265,9 +269,11 @@ body {
     width: 160px;
     }
    
+
+
+
+
 }
-
-
 
 
 @media screeen and (min-width:601px) and (max-width:992px){
@@ -281,6 +287,8 @@ body {
     height:150px;
     width: 160px;
    }
+
+   
 }
 
 
@@ -296,6 +304,8 @@ body {
     height:160px;
     width: 170px;
    }
+
+  
 }
 
 
@@ -311,7 +321,8 @@ body {
     width: 180px;
    }
 
+   
 }
 
     
-        </style>
+       
