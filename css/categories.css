@@ -1,8 +1,9 @@
-body{
+body {
     background-color: rgb(255, 250, 250);
     margin: 0;
     padding: 0;
 }
+
 .cat-text {
     font-size: 30px;
     font-weight: bold;
@@ -24,7 +25,7 @@ body{
     box-shadow: 2px 2px 5px rgb(131, 124, 124);
     border-radius: 10px;
     cursor: pointer;
-    background-color:  rgb(253, 246, 234);
+    background-color: rgb(253, 246, 234);
 }
 
 .img {
@@ -52,28 +53,32 @@ body{
         width: 270px;
     }
 }
-.top-main{
+
+.top-main {
     margin-top: 20px;
     margin-bottom: 20px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
 }
-.top-deal-text-main1{
+
+.top-deal-text-main1 {
     padding-left: 10px;
     font-size: 30px;
     font-weight: bold;
 }
-.view_all{
-    color:#0c5273;
+
+.view_all {
+    color: #0c5273;
     right: 55px;
     font-size: 20px;
 }
+
 .top-deal {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content:center;
+    justify-content: center;
 
 }
 
@@ -103,13 +108,14 @@ body{
     font-weight: bold;
 }
 
-.price{
+.price {
     font-weight: bold;
     position: absolute;
     top: 300px;
     left: 10px;
 }
-.mrp{
+
+.mrp {
     text-decoration: line-through;
     position: absolute;
     top: 320px;
@@ -117,6 +123,7 @@ body{
     color: rgb(140, 139, 139);
 }
 
+/* 
 .button{
     position: absolute;
     bottom: 0px;
@@ -126,13 +133,13 @@ body{
     width: 200px;
     left: 1px;
     height: 50px;
-    color: #0c5273;
-    background-color: white;
+    color: white;
+    background-color: #03753c;
     font-size: 16px;
-}
+} */
 
-.off{
-    color:#03753c;
+.off {
+    color: #03753c;
     background-color: #e5f7ee;
     border: none;
     font-weight: bold;
