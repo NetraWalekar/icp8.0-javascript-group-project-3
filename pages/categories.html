@@ -113,9 +113,9 @@
             <img src="../images/categories/top-deals/amul_butter.webp" class="product-img ">
             <span class="product-name">Amul Butter 100 (Carton)</span>
             <div class="quantity-btn-container">
-                <img src="./../images/icons/minus.png " class="btn-quantity" onclick="plusminus('decrement')" />
+                <img src="./../images/icons/minus.png " class="btn-quantity" onclick="plusminus1('decrement')" />
                 <span class="quantity-size" id="quantity-text">1</span>
-                <img src="./../images/icons/plus.png" class="btn-quantity" onclick="plusminus('increment')" />
+                <img src="./../images/icons/plus.png" class="btn-quantity" onclick="plusminus1('increment')" />
             </div>
             <span class="price">₹54.00</span>
             <span class="mrp">₹58.00 <button class="off">6 % Off</button></span>
@@ -125,9 +125,9 @@
                 class="product-img "><span class="product-name">Nestle Milkmaid Condensed Milk 380 g
             </span>
             <div class="quantity-btn-container">
-                <img src="./../images/icons/minus.png " class="btn-quantity" onclick="plusminus('decrement')" />
+                <img src="./../images/icons/minus.png " class="btn-quantity" onclick="plusminus2('decrement')" />
                 <span class="quantity-size" id="quantity-text">1</span>
-                <img src="./../images/icons/plus.png" class="btn-quantity" onclick="plusminus('increment')" />
+                <img src="./../images/icons/plus.png" class="btn-quantity" onclick="plusminus2('increment')" />
             </div>
             <span class="price">₹124.00
             </span>
@@ -138,25 +138,25 @@
                 class="product-name">Kellogg's Fruit, Nut & Seeds Muesli 750 g
             </span>
             <div class="quantity-btn-container">
-                <img src="./../images/icons/minus.png " class="btn-quantity" onclick="plusminus('decrement')" />
+                <img src="./../images/icons/minus.png " class="btn-quantity" onclick="plusminus3('decrement')" />
                 <span class="quantity-size" id="quantity-text">1</span>
-                <img src="./../images/icons/plus.png" class="btn-quantity" onclick="plusminus('increment')" />
+                <img src="./../images/icons/plus.png" class="btn-quantity" onclick="plusminus3('increment')" />
             </div>
             <span class="price">₹359.00</span>
             <span class="mrp">₹499.00 <button class="off">28 % Off</button></span>
-            <button class="button" id="4" onclick="added(4)">Add</button>
+            <button class="button" id="btn3" onclick="textChange3(); add_cart(3)">Add</button>
         </div>
         <div class="product-card"><img src="../images/categories/top-deals/almonds.webp" class="product-img "><span
                 class="product-name">Nutraj Australian Almond Kernels 500g
             </span>
             <div class="quantity-btn-container">
-                <img src="./../images/icons/minus.png " class="btn-quantity" onclick="plusminus('decrement')" />
+                <img src="./../images/icons/minus.png " class="btn-quantity" onclick="plusminus4('decrement')" />
                 <span class="quantity-size" id="quantity-text">1</span>
-                <img src="./../images/icons/plus.png" class="btn-quantity" onclick="plusminus('increment')" />
+                <img src="./../images/icons/plus.png" class="btn-quantity" onclick="plusminus4('increment')" />
             </div>
             <span class="price">₹299.00</span>
             <span class="mrp">₹699.00 <button class="off">57 % Off</button></span>
-            <button class="button" id="5" onclick="added(5)">Add</button>
+            <button class="button" id="btn4" onclick="textChange4(); add_cart(4)">Add</button>
         </div>
         <!-- <div class="product-card"><img src="../images/categories/top-deals/lotte_choco_pie.jpg"
                 class="product-img "><span class="product-name"> Lotte Choco Pie 28 g (12 pcs)</span>
@@ -170,7 +170,6 @@
             <button class="button" id="6" onclick="added(6)">Add</button>
         </div> -->
     </div>
-    <script src="../js/categories.js"></script>
 
 
     <footer>
@@ -236,6 +235,7 @@
     <footer class="copyright">
         <p id="footer-text">&copy; 2024 Grocery Shopping. All rights reserved.</p>
     </footer>
+    <script src="../js/categories.js"></script>
 </body>
 
 </html>
