@@ -4,239 +4,159 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Noodles & Pasta</title>
-    <style>
-    .body{
-            padding: 0%;
-            margin: 0%;
-        }
-    .product-container{
-     display: flex;
-     flex-direction: row;
-     flex-wrap: wrap;
-     justify-content: center;
-
-     }
-
-   .product-card {
-    height: 390px;
-    width: 230px;
-    margin: 25px;
-    border: 1px solid gray;
-    box-shadow:0px 0px 10px 0px grey;
-    border-radius: 15px;
-    position: relative;
-   
-    }
-
-   .product-img {
-    height:180px;
-    width: 190px;
-    border-radius: 25px;
-    margin-top: 10px;
-    object-fit: cover;
-    padding-left: 13px;
-    }
-    .product-img:hover{
-        height: 170px;
-        width: 180px;
-    }
-
-   .product-name{
-    position: absolute;
-    top: 230px;
-    left: 5px;
-    right:5px;
-    font-weight: bold;
-    text-align: center;
-     }
-
-    .quantity-btn-container{
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    
-     }
-
-    .quantity-size{
-    font-size:18px ;
-    }
-    .btn-quantity{
-    height: 18px;
-    margin-top: 5px;
-    display: inline-block;
-    cursor: pointer;
-    margin-left: 5px;      
-    }    
-
-   .price{
-    margin-top:10px;
-    font-weight: bold;
-    position: absolute;
-    top: 270px;
-    left: 10px;
-    }
-   .mrp{
-    text-decoration: line-through;
-    margin-top: 10px;
-    position: absolute;
-    top: 290px;
-    left: 10px;
-    color: rgb(140, 139, 139);
-    }
-
-    .button{
-    position: absolute;
-    left:52px;
-    bottom: 15px;
-    border: 1px solid gray;
-    padding: 3px auto;
-    border-radius: 18px;
-    width: 120px;
-    height: 40px;
-    color: #0c5273;
-    background-color: white;
-    font-size: 16px;
-    text-align: center;
-    cursor: pointer;
-     } 
-
-    .off{
-    color:#03753c;
-    background-color: #e5f7ee;
-    border: none;
-    font-weight: bold;
-    margin-left: 5px;
-     }
-        </style>
+    <link rel="stylesheet" href="../css/Product.css">
 </head>
 <body>
-    <h1>Noodles & pasta</h1>
+  <nav class="navbar">
+    <div class="navdiv">
+        <div class="logo">
+            <a href="../index.html"><img src="../images/icons/home-logo/head-logo.png" alt="Logo"></a>
+        </div>
+        <ul class="nav-links">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../pages/categories.html">Categories</a></li>
+            <li><a href="../pages/about-us.html">About Us</a></li>
+            <li><a href="../pages/contactus.html">Contact Us</a></li>
+        </ul>
+    <div class="sign">
+        <button class="signin-button"><a href="../pages/signin.html">Sign In</a></button>
+        <div class="profile-container" id="profile-container">
+            <a href="../pages/user-account.html"><img src="../images/icons/home-logo/user.png" height="33px" alt="Profile" class="profile-icon" id="profile-icon"></a>
+        </div>
+        <div class="cart-container" id="cart-container">
+            <a href="../pages/cart.html"><img src="../images/icons/home-logo/shopping-cart.png" height="33px" alt="Cart" class="cart-icon" id="cart-icon"></a>
+         </div>
+    </div>
+    </div>
+</nav>
     <div class="product-container">
       <div class="product-card"><img src="../images/noodles-pasta/protein-pasta.jpg" class="product-img">
           <span class="product-name">
             Mille High Protein Penne Pasta | 250Gms</span>
           <div class="quantity-btn-container">
-          <img src="./../images/icons/minus.png "  class="btn-quantity" onclick="plusminus('decrement')"/>
+          <img src="./../images/icons/minus.png "  class="btn-quantity" onclick="handleQuantityChange('dec')"/>
          <span class="quantity-size"  id="quantity-text">1</span> 
-          <img src="./../images/icons/plus.png" class="btn-quantity" onclick="plusminus('increment')"/>
+          <img src="./../images/icons/plus.png" class="btn-quantity" onclick="handleQuantityChange('inc')"/>
           </div>
           <span class="price">₹160.00 </span>
           <span class="mrp">₹200.00 <button class="off">20 % Off</button></span>
-          <button class="button">Add Cart</button>
+          <button class="button" id="btn" onclick="textChange()">Add To Cart</button> 
       </div>
       <div class="product-card">
           <img src="../images/noodles-pasta/borgeous-pasta.jpg" class="product-img">
           <span class="product-name">
             Borges Fusilli Pasta - 500 gm| 100% Durum Wheat |</span>
           <div class="quantity-btn-container">
-          <img src="./../images/icons/minus.png "  class="btn-quantity" onclick="plusminus('decrement')"/>
-          <span class="quantity-size"  id="quantity-text">1</span> 
-          <img src="./../images/icons/plus.png" class="btn-quantity" onclick="plusminus('increment')"/>
+          <img src="./../images/icons/minus.png "  class="btn-quantity" onclick="handleQuantityChange1('dec')"/>
+          <span class="quantity-size"  id="quantity-text1">1</span> 
+          <img src="./../images/icons/plus.png" class="btn-quantity" onclick="handleQuantityChange1('inc')"/>
            </div>
           <span class="price">₹190.00</span>
           <span class="mrp">₹299.00 <button class="off">36% Off</button></span>
-          <button class="button">Add Cart</button>
+          <button class="button" id="btn1" onclick="textChange1()">Add To Cart</button> 
       </div>
       <div class="product-card">
          <img src="../images/noodles-pasta/noodles_pasta.jpeg"class="product-img">
          <span class="product-name">Maggi 2-Minute Masala Instant Noodles 420 g</span>
          <div class="quantity-btn-container">
-         <img src="./../images/icons/minus.png"  class="btn-quantity" onclick="plusminus('decrement')"/>
-         <span class="quantity-size"  id="quantity-text">1</span> 
-         <img src="./../images/icons/plus.png" class="btn-quantity" onclick="plusminus('increment')"/>
+         <img src="./../images/icons/minus.png"  class="btn-quantity" onclick="handleQuantityChange2('dec')"/>
+         <span class="quantity-size"  id="quantity-text2">1</span> 
+         <img src="./../images/icons/plus.png" class="btn-quantity" onclick="handleQuantityChange2('inc')"/>
          </div>
           <span class="price">₹71.00
           </span>
           <span class="mrp">₹84.00 <button class="off">15 % Off</button></span>
-          <button class="button">Add Cart</button>
+          <button class="button" id="btn2" onclick="textChange2()">Add To Cart</button> 
       </div>
       <div class="product-card">
          <img src="../images/noodles-pasta/maggie.jpg" class="product-img">
          <span class="product-name">PAZZTA Maggi Instant Pasta - Vegetarians</span>
          <div class="quantity-btn-container">
-        <img src="./../images/icons/minus.png "  class="btn-quantity" onclick="plusminus('decrement')"/>
-        <span class="quantity-size"  id="quantity-text">1</span> 
-        <img src="./../images/icons/plus.png" class="btn-quantity" onclick="plusminus('increment')"/>
+        <img src="./../images/icons/minus.png "  class="btn-quantity" onclick="handleQuantityChange3('dec')"/>
+        <span class="quantity-size"  id="quantity-text3">1</span> 
+        <img src="./../images/icons/plus.png" class="btn-quantity" onclick="handleQuantityChange3('inc')"/>
         </div>
          <span class="price">₹97.00</span>
          <span class="mrp">₹112.00 <button class="off">17% Off</button></span>
-         <button class="button">Add Cart</button>
+         <button class="button" id="btn3" onclick="textChange3()">Add To Cart</button> 
       </div>
       <div class="product-card">
           <img src="../images/noodles-pasta/noodles.jpg" class="product-img">
           <span class="product-name">
             Geki Hot & Spicy Korean Instant Noodles Veg , 400 gm</span>
         <div class="quantity-btn-container">
-        <img src="./../images/icons/minus.png "  class="btn-quantity" onclick="plusminus('decrement')"/>
-        <span class="quantity-size"  id="quantity-text">1</span> 
-        <img src="./../images/icons/plus.png" class="btn-quantity" onclick="plusminus('increment')"/>
+        <img src="./../images/icons/minus.png "  class="btn-quantity" onclick="handleQuantityChange4('dec')"/>
+        <span class="quantity-size"  id="quantity-text4">1</span> 
+        <img src="./../images/icons/plus.png" class="btn-quantity" onclick="handleQuantityChange4('inc')"/>
         </div>
           <span class="price">₹210.00</span>
           <span class="mrp">₹.245 <button class="off">12% Off</button></span>
-          <button class="button">Add Cart</button>
+          <button class="button" id="btn4" onclick="textChange4()">Add To Cart</button> 
       </div>
       <div class="product-card">
          <img src="../images/noodles-pasta/yippe-pasta.jpg" class="product-img">
          <span class="product-name">Sunfeast YiPPee! Pasta Treat | 65 grams Pack</span>
          <div class="quantity-btn-container">
-        <img src="./../images/icons/minus.png "  class="btn-quantity" onclick="plusminus('decrement')"/>
-        <span class="quantity-size"  id="quantity-text">1</span> 
-        <img src="./../images/icons/plus.png" class="btn-quantity" onclick="plusminus('increment')"/>
+        <img src="./../images/icons/minus.png "  class="btn-quantity" onclick="handleQuantityChange5('dec')"/>
+        <span class="quantity-size"  id="quantity-text5">1</span> 
+        <img src="./../images/icons/plus.png" class="btn-quantity" onclick="handleQuantityChange5('inc')"/>
         </div>
          <span class="price">₹28.00</span>
          <span class="mrp">₹32.00 <button class="off">5 % Off</button></span>
-         <button class="button">Add Cart</button>
+         <button class="button" id="btn5" onclick="textChange5()">Add To Cart</button> 
       </div>
       <div class="product-card">
         <img src="../images/noodles-pasta/agnesi-pasta.jpg" class="product-img">
         <span class="product-name">
             Agnesi Tagliatelle Pasta, 500Gram</span>
         <div class="quantity-btn-container">
-        <img src="./../images/icons/minus.png"  class="btn-quantity" onclick="plusminus('decrement')"/>
-           <span class="quantity-size"  id="quantity-text">1</span> 
-            <img src="./../images/icons/plus.png" class="btn-quantity" onclick="plusminus('increment')"/>
+        <img src="./../images/icons/minus.png"  class="btn-quantity" onclick="handleQuantityChange6('dec')"/>
+           <span class="quantity-size"  id="quantity-text6">1</span> 
+            <img src="./../images/icons/plus.png" class="btn-quantity" onclick="handleQuantityChange6('inc')"/>
             </div>
         <span class="price">₹368.00</span>
         <span class="mrp">₹375.00 <button class="off">2 % Off</button></span>
-        <button class="button">Add Cart</button>
+        <button class="button" id="btn6" onclick="textChange6()">Add To Cart</button> 
         </div>
      <div class="product-card">
         <img src="../images/noodles-pasta/cup-noodles.jpg" class="product-img">
         <span class="product-name">Cup Noodles Veggi Manchow, 70g</span>
         <div class="quantity-btn-container">
-        <img src="./../images/icons/minus.png "  class="btn-quantity" onclick="plusminus('decrement')"/>
-        <span class="quantity-size"  id="quantity-text">1</span> 
-        <img src="./../images/icons/plus.png" class="btn-quantity" onclick="plusminus('increment')"/>
+        <img src="./../images/icons/minus.png "  class="btn-quantity" onclick="handleQuantityChange7('dec')"/>
+        <span class="quantity-size"  id="quantity-text7">1</span> 
+        <img src="./../images/icons/plus.png" class="btn-quantity" onclick="handleQuantityChange7('inc')"/>
         </div>
         <span class="price">₹220.00</span>
         <span class="mrp">₹2500.00 <button class="off">27 % Off</button></span>
-        <button class="button">Add Cart</button> 
+        <button class="button" id="btn7" onclick="textChange7()">Add To Cart</button>  
         </div>
     <div class="product-card">
         <img src="../images/noodles-pasta/damati-pasta.jpg" class="product-img">
         <span class="product-name">
             Damati Pasta Toscana| 100% Durum Wheat - Bronze Cut | </span>
         <div class="quantity-btn-container">
-        <img src="./../images/icons/minus.png"  class="btn-quantity" onclick="plusminus('decrement')"/>
-        <span class="quantity-size"  id="quantity-text">1</span> 
-        <img src="./../images/icons/plus.png" class="btn-quantity" onclick="plusminus('increment')"/>
+        <img src="./../images/icons/minus.png"  class="btn-quantity" onclick="handleQuantityChange8('dec')"/>
+        <span class="quantity-size"  id="quantity-text8">1</span> 
+        <img src="./../images/icons/plus.png" class="btn-quantity" onclick="handleQuantityChange8('inc')"/>
         </div>
         <span class="price">₹295.00</span>
         <span class="mrp">₹310.00 <button class="off">5 % Off</button></span>
-        <button class="button">Add Cart</button>      
+        <button class="button" id="btn8" onclick="textChange8()">Add To Cart</button>     
     </div>
     <div class="product-card">
         <img src="../images/noodles-pasta/pasta.jpg" class="product-img">
         <span class="product-name"> Sugar Watchers Low GI Millet Pasta, No Maida, Macaroni</span>
         <div class="quantity-btn-container">
-        <img src="./../images/icons/minus.png "  class="btn-quantity" onclick="plusminus('decrement')"/>
-        <span class="quantity-size"  id="quantity-text">1</span> 
-        <img src="./../images/icons/plus.png" class="btn-quantity" onclick="plusminus('increment')"/>
+        <img src="./../images/icons/minus.png "  class="btn-quantity" onclick="handleQuantityChange9('dec')"/>
+        <span class="quantity-size"  id="quantity-text9">1</span> 
+        <img src="./../images/icons/plus.png" class="btn-quantity" onclick="handleQuantityChange9('inc')"/>
         </div>
         <span class="price">₹197.00</span>
         <span class="mrp">₹219.00  <button class="off">27% Offer</button></span>
-        <button class="button">Add Cart</button>
+        <button class="button" id="btn9" onclick="textChange9()">Add To Cart</button> 
   </div>
   </div>
+  <script src="../js/noodles-pasta.js"></script>
+
 </body>
 </html>

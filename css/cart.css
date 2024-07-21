@@ -1,11 +1,15 @@
 .cart {
     position: fixed;
     top: 0;
-    right: 0;
+    right: -110%;
     width: 360px;
     height: 500px;
     background: var(--bg-color);
     box-shadow: -12px 0 8px hsl(0 4% 15% / 10%  );
+}
+.cart.active {
+    right: 2rem;
+    transition: .4s linear;
 }
 .cart-title {
     text-align: center;
@@ -70,21 +74,29 @@
     margin-left: 0.5rem;
 }
 .btn-buy {
-    display: flex;
-    margin: 0.2rem auto 0 auto;
+    border: 1px solid black;
+    margin-top: 1rem;
+    margin-left: 100px;
+    display: inline-block;
+    padding: .3rem 4rem;
+    border-radius: 5px;
+    color: black;
+    cursor: pointer;
+    text-decoration: none;
+    /*margin: 0.2rem auto 0 auto;
     padding: 12px 20px;
     border: none;
     border-radius: 5px;
     background: var(--bg-color);
     font-size: 1rem;
     font-weight: 600;
-    cursor: pointer;
+    cursor: pointer; */
 }
 .btn-buy:hover {
-    background: var(--text-color);
-    background-color: tomato;
+    background-color: green;
+    color: white;
     transition: 0.2s;
-    border-radius: 0 5px 0 5px;
+    border-radius: 10px 0 10px 0;
 }
 #close-cart {
     position: absolute;
@@ -99,9 +111,9 @@
     background-color: rgb(241, 238, 238);
     color: red;
 }
-.cart.active {
+/*.cart.active {
     right: 0;
-}
+}*/
 .cart-title {
     text-align: center;
     font-size: 1.5rem;

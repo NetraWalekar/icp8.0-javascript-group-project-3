@@ -1,588 +1,160 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vegetable And Fruits</title>
-    <style>
-    .body{
-            padding: 0%;
-            margin: 0%;
-        }
-    .product-container{
-     display: flex;
-     flex-direction: row;
-     flex-wrap: wrap;
-     justify-content: center;
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Dairy & Product</title>
+   <link rel="stylesheet" href="../css/Product.css">
 
-     }
-
-   .product-card {
-    height: 390px;
-    width: 230px;
-    margin: 25px;
-    border: 0px solid gray;
-    border-radius: 15px;
-    position: relative;
-    box-shadow: 0px 0px 10px 0px grey;
-    }
-
-   .product-img {
-    height:180px;
-    width: 190px;
-    border-radius: 25px;
-    margin-top: 10px;
-    object-fit: cover;
-    padding-left: 13px;
-    }
-
-    .product-img:hover {
-    transition-duration: 0.3s;
-    height:170px;
-    width: 180px;
-    }
-
-   .product-name{
-    position: absolute;
-    top: 230px;
-    left: 5px;
-    right:5px;
-    font-weight: bold;
-    text-align: center;
-    margin-top: 7px;
-     }
-
-   .price{
-    margin-top:10px;
-    font-weight: bold;
-    position: absolute;
-    top: 270px;
-    left: 10px;
-    }
-   .mrp{
-    text-decoration: line-through;
-    margin-top: 10px;
-    position: absolute;
-    top: 290px;
-    left: 10px;
-    color: rgb(140, 139, 139);
-    }
-
-    .button{
-    position: absolute;
-    left:52px;
-    bottom: 15px;
-    border: 1px solid gray;
-    padding: 3px auto;
-    border-radius: 19px;
-    width: 120px;
-    height: 40px;
-    color: white;
-    background-color: #365E32;
-    font-size: 16px;
-    text-align: center;
-    cursor: pointer;
-    
-     } 
-
-    .off{
-    color:#03753c;
-    background-color: #e5f7ee;
-    border: none;
-    font-weight: bold;
-    margin-left: 5px;
-     }
-
-     .quantity-btn-container{
-            display: flex;
-            justify-content: space-evenly;
-            align-items: center;
-            margin-top: 7px;
-           
-        }
-
-        .quantity-size{
-            font-size:18px ;
-        }
-        .btn-quantity{
-            height: 18px;
-            margin-top: 7px;
-            display: inline-block;
-            cursor: pointer;
-            margin-left: 5px;
-            
-        }
-
-        .navbar {
-    background-color: #81A263;
-    
-    
-    ;
-    
-}
-
-.navdiv {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0px 20px;
-    z-index: 1;
-
-}
-
-.logo img {
-    height: 50px;
-}
-
-.nav-links {
-    list-style: none;
-    display: flex;
-    margin: 0;
-    padding: 0;
-}
-
-.nav-links li {
-    margin: 0 15px;
-}
-
-.nav-links a {
-    color: white;
-    text-decoration: none;
-    padding: 14px 20px;
-    display: block;
-}
-
-.nav-links a:hover {
-    background-color: #0c0c0c;
-    border-radius: 5px;
-}
-
-.signin-button {
-    background-color: #FF6969;
-    border: none;
-    color: white;
-    padding: 10px 20px;
-    cursor: pointer;
-    margin-right: 15px;
-    border-radius: 5px;
-}
-
-.signin-button a {
-    color: white;
-    text-decoration: none;
-}
-.sign{
-    display: flex;
-    justify-content: space-between;
-
-}
-
-.signin-button:hover {
-    background-color: #f81a1a;
-}
-
-.profile-container, .cart-container {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-left: 15px;
-}
-    
-        </style>
 </head>
 <body>
-
-   <nav class="navbar">
-      <div class="navdiv">
-          <div class="logo">
-              <a href="./index.html"><img src="./../images/icons/home-logo/head-logo.png" alt="Logo"></a>
-          </div>
-          <ul class="nav-links">
-              <li><a href="#">Home</a></li>
-              <li><a href="./pages/categories.html">Categories</a></li>
-              <li><a href="#">About Us</a></li>
-              <li><a href="#">Contact Us</a></li>
-          </ul>
-      <div class="sign">
-          <button class="signin-button"><a href="./pages/signin.html">Sign In</a></button>
-          <div class="profile-container" id="profile-container">
-              <a href="/pages/user-account.html"><img src="./../images/icons/home-logo/user.png" height="33px" alt="Profile" class="profile-icon" id="profile-icon"></a>
-              <span class="profile-text" id="profile-text">User Account</span>
-          </div>
-          <div class="cart-container" id="cart-container">
-              <a href="#"><img src="./../images/icons/home-logo/shopping-cart.png" height="33px" alt="Cart" class="cart-icon" id="cart-icon"></a>
-              <span class="cart-text" id="cart-text">Cart</span>
-          </div>
-      </div>
-      </div>
-  </nav>
-
-    <h1>Dairy product</h1>
-    <div class="product-container">
-      <div class="product-card"><img src="../images/categories/top-deals/amul_butter.webp" class="product-img">
-          <span class="product-name">Amul Butter 100 (carton)
-          </span>
-          <div class="quantity-btn-container">
-            <img src="./../images/icons/minus.png "  class="btn-quantity" onclick="plusminus('decrement')"/>
-         <span class="quantity-size"  id="quantity-text">1</span> 
-            <img src="./../images/icons/plus.png" class="btn-quantity" onclick="plusminus('increment')"/>
-          </div>
-          <span class="price"> ₹54 </span>
-          <span class="mrp"> ₹58 <button class="off">6%</button></span>
-          <button class="button">Add to Cart</button>
-      </div>
-      <div class="product-card">
-          <img src="../images/dairy-products/milkmaid.jpg" class="product-img">
-          <span class="product-name">Nestle Milkmaid Condensed Milk 380 g (Tin)  </span>
-          <div class="quantity-btn-container">
-          <img src="./../images/icons/minus.png "  class="btn-quantity" onclick="plusminus1('decrement')"/>
+    <nav class="navbar">
+        <div class="navdiv">
+            <div class="logo">
+                <a href="../index.html"><img src="../images/icons/home-logo/head-logo.png" alt="Logo"></a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../pages/categories.html">Categories</a></li>
+                <li><a href="../pages/about-us.html">About Us</a></li>
+                <li><a href="../pages/contactus.html">Contact Us</a></li>
+            </ul>
+        <div class="sign">
+            <button class="signin-button"><a href="../pages/signin.html">Sign In</a></button>
+            <div class="profile-container" id="profile-container">
+                <a href="../pages/user-account.html"><img src="../images/icons/home-logo/user.png" height="33px" alt="Profile" class="profile-icon" id="profile-icon"></a>
+            </div>
+            <div class="cart-container" id="cart-container">
+                <a href="../pages/cart.html"><img src="../images/icons/home-logo/shopping-cart.png" height="33px" alt="Cart" class="cart-icon" id="cart-icon"></a>
+             </div>
+        </div>
+        </div>
+    </nav>
+  <div class="product-container">
+   <div class="product-card"><img src="../images/categories/top-deals/amul_butter.webp" class="product-img">
+       <span class="product-name">Amul Butter 100 (carton)
+       </span>
+       <div class="quantity-btn-container">
+         <img src="./../images/icons/minus.png "  class="btn-quantity" onclick="handleQuantityChange('dec')"/>
+     <span class="quantity-size"  id="quantity-text">1</span> 
+     <img src="./../images/icons/plus.png" class="btn-quantity" onclick="handleQuantityChange('inc')"/>
+       </div>
+       <span class="price"> ₹54 </span>
+       <span class="mrp"> ₹58 <button class="off">6%</button></span>
+       <button class="button" id="btn" onclick="textChange()">Add To Cart</button> 
+   </div>
+   <div class="product-card">
+       <img src="../images/dairy-products/milkmaid.jpg" class="product-img">
+       <span class="product-name">Nestle Milkmaid Condensed Milk 380 g (Tin)  </span>
+       <div class="quantity-btn-container">
+         <img src="./../images/icons/minus.png "  class="btn-quantity" onclick="handleQuantityChange1('dec')"/>
          <span class="quantity-size"  id="quantity-text1">1</span> 
-            <img src="./../images/icons/plus.png" class="btn-quantity" onclick="plusminus1('increment')"/>
-         </div>
-          <span class="price">₹124</span>
-          <span class="mrp">₹147<button class="off">15%</button></span>
-          <button class="button">Add to Cart</button>
+         <img src="./../images/icons/plus.png" class="btn-quantity" onclick="handleQuantityChange1('inc')"/>
       </div>
-      <div class="product-card">
-         <img src="../images/dairy-products/amul.jpg"class="product-img">
-         <span class="product-name">Amul Chocomini Chocolate, 250 g<br></span>
-         <div class="quantity-btn-container">
-         <img src="./../images/icons/minus.png "  class="btn-quantity" onclick="plusminus2('decrement')"/>
+       <span class="price">₹124</span>
+       <span class="mrp">₹147<button class="off">15%</button></span>
+       <button class="button" id="btn1" onclick="textChange1()">Add To Cart</button> 
+   </div>
+   <div class="product-card">
+      <img src="../images/dairy-products/amul.jpg"class="product-img">
+      <span class="product-name">Amul Chocomini Chocolate, 250 g<br></span>
+      <div class="quantity-btn-container">
+         <img src="./../images/icons/minus.png "  class="btn-quantity" onclick="handleQuantityChange2('dec')"/>
          <span class="quantity-size"  id="quantity-text2">1</span> 
-            <img src="./../images/icons/plus.png" class="btn-quantity" onclick="plusminus2('increment')"/>
-         </div>
-            <span class="price">₹135
-          </span>
-          <span class="mrp">  ₹140<button class="off">4%</button></span>
-          <button class="button">Add to Cart</button>
+         <img src="./../images/icons/plus.png" class="btn-quantity" onclick="handleQuantityChange2('inc')"/>
       </div>
-      <div class="product-card">
-         <img src="../images/dairy-products/cadbury.jpg" class="product-img">
-         <span class="product-name">Cadbury Dairy Milk Chocolate Bar (52 of pack) </span>
-      <div class="quantity-btn-container">
-         <img src="./../images/icons/minus.png "  class="btn-quantity" onclick="plusminus3('decrement')"/>
-         <span class="quantity-size"  id="quantity-text3">1</span> 
-            <img src="./../images/icons/plus.png" class="btn-quantity" onclick="plusminus3('increment')"/>
-      </div>
-            <span class="price"> ₹560</span>
-            <span class="mrp"> ₹570<button class="off">1%</button></span>
-         <button class="button">Add to Cart</button>
-      </div>
-      <div class="product-card">
-          <img src="../images/dairy-products/carnation-milk.jpg" class="product-img">
-          <span class="product-name">Carnation Milk Product for Cooking Bakery</span>
-          
-      <div class="quantity-btn-container">
-         <img src="./../images/icons/minus.png "  class="btn-quantity" onclick="plusminus4('decrement')"/>
-         <span class="quantity-size"  id="quantity-text4">1</span> 
-            <img src="./../images/icons/plus.png" class="btn-quantity" onclick="plusminus4('increment')"/>
-      </div>
-          <span class="price">₹345</span>
-          <span class="mrp">  ₹390 <button class="off">12%</button></span>
-          <button class="button">Add to Cart</button>
-      </div>
-      <div class="product-card">
-         <img src="../images/dairy-products/condensed-milk" class="product-img">
-         <span class="product-name"> HUMARABAZAR Amul Mithai Mate Sweetened Condensed Milk</span>
-      <div class="quantity-btn-container">
-         <img src="./../images/icons/minus.png "  class="btn-quantity" onclick="plusminus5('decrement')"/>
-         <span class="quantity-size"  id="quantity-text5">1</span> 
-            <img src="./../images/icons/plus.png" class="btn-quantity" onclick="plusminus5('increment')"/>
-      </div>
-         <span class="price"> ₹124</span>
-         <span class="mrp">  ₹126<button class="off">1%</button></span>
-         <button class="button">Add to Cart</button>
-      </div>
-      <div class="product-card">
-        <img src="../images/dairy-products/neste.jpg" class="product-img">
-        <span class="product-name"> Everyday Dairy Whitener Milk Powder  </span>
-      <div class="quantity-btn-container">
-        <img src="./../images/icons/minus.png "  class="btn-quantity" onclick="plusminus6('decrement')"/>
-         <span class="quantity-size"  id="quantity-text6">1</span> 
-            <img src="./../images/icons/plus.png" class="btn-quantity" onclick="plusminus6('increment')"/>
-      </div>
-        <span class="price">₹579</span>
-        <span class="mrp"> ₹605 <button class="off">4%</button></span>
-        <button class="button">Add to Cart</button>
-     </div>
-     <div class="product-card">
-        <img src="../images/dairy-products/organic-cow-milk.jpg" class="product-img">
-        <span class="product-name"> Akshayakalpa Organic Cow Milk (UHT) </span>
-     <div class="quantity-btn-container">
-        <img src="./../images/icons/minus.png "  class="btn-quantity" onclick="plusminus7('decrement')"/>
-         <span class="quantity-size"  id="quantity-text7">1</span> 
-            <img src="./../images/icons/plus.png" class="btn-quantity" onclick="plusminus7('increment')"/>
-     </div>
-        <span class="price"> ₹474</span>
-        <span class="mrp">₹500 <button class="off">5%</button></span>
-        <button class="button">Add to Cart</button>
-     </div>
-     <div class="product-card">
-        <img src="../images/dairy-products/pure-ghee.jpg" class="product-img">
-        <span class="product-name"> Kridhay Pure Ghee in Tetrapack</span>
-     <div class="quantity-btn-container">
-        <img src="./../images/icons/minus.png "  class="btn-quantity" onclick="plusminus8('decrement')"/>
-         <span class="quantity-size"  id="quantity-text8">1</span> 
-            <img src="./../images/icons/plus.png" class="btn-quantity" onclick="plusminus8('increment')"/>
-     </div>
-        <span class="price"> ₹1,780</span>
-        <span class="mrp">₹2,320 <button class="off">23%</button></span>
-        <button class="button">Add to Cart</button>
-     </div>
-     <div class="product-card">
-        <img src="../images/dairy-products/vegan-creamy.jpg" class="product-img">
-        <span class="product-name"> Plant Based Millet Mlk with goodness of Ragi, Jowar, Bajra & Oats </span>
-     <div class="quantity-btn-container">
-        <img src="./../images/icons/minus.png "  class="btn-quantity" onclick="plusminus9('decrement')"/>
-         <span class="quantity-size"  id="quantity-text9">1</span> 
-            <img src="./../images/icons/plus.png" class="btn-quantity" onclick="plusminus9('increment')"/>
-     </div>
-        <span class="price">₹313</span>
-        <span class="mrp">₹354<button class="off">12%</button></span>
-        <button class="button">Add to Cart</button>
-     </div>
+         <span class="price">₹135
+       </span>
+       <span class="mrp">  ₹140<button class="off">4%</button></span>
+       <button class="button" id="btn2" onclick="textChange2()">Add To Cart</button> 
+   </div>
+   <div class="product-card">
+      <img src="../images/dairy-products/cadbury.jpg" class="product-img">
+      <span class="product-name">Cadbury Dairy Milk Chocolate Bar (52 of pack) </span>
+   <div class="quantity-btn-container">
+      <img src="./../images/icons/minus.png "  class="btn-quantity" onclick="handleQuantityChange3('dec')"/>
+     <span class="quantity-size"  id="quantity-text3">1</span> 
+     <img src="./../images/icons/plus.png" class="btn-quantity" onclick="handleQuantityChange3('inc')"/>
+   </div>
+         <span class="price"> ₹560</span>
+         <span class="mrp"> ₹570<button class="off">1%</button></span>
+         <button class="button" id="btn3" onclick="textChange3()">Add To Cart</button> 
+   </div>
+   <div class="product-card">
+      <img src="../images/dairy-products/carnation-milk.jpg" class="product-img">
+      <span class="product-name">Carnation Milk Product for Cooking Bakery</span>
+      
+  <div class="quantity-btn-container">
+     <img src="./../images/icons/minus.png "  class="btn-quantity" onclick="handleQuantityChange4('dec')"/>
+     <span class="quantity-size"  id="quantity-text4">1</span> 
+     <img src="./../images/icons/plus.png" class="btn-quantity" onclick="handleQuantityChange4('inc')"/>
   </div>
-
-  <script>
-   function plusminus(action)
-   {
-      const quantitytext =document.getElementById("quantity-text")
-      let quantity = parseInt(quantitytext.innerText);
-      if(quantity==1 && action=='decrement')
-      {
-       alert('Quantity cannot be less than 1')
-       return
-      }
-      else if (quantity==5 && action =='increment')
-      {
-        alert('Quantity cannot be greater then 5')
-        return
-       }
-      
-      if (action == 'increment'){
-       quantitytext.innerText =++quantity;
-      }
-      else{
-       quantitytext.innerText =--quantity;
-      }
-      
-   }
-   function plusminus1(action)
-   {
-      const quantitytext =document.getElementById("quantity-text1")
-      let quantity = parseInt(quantitytext.innerText);
-      if(quantity==1 && action=='decrement')
-      {
-       alert('Quantity cannot be less than 1')
-       return
-      }
-      else if (quantity==5 && action =='increment')
-      {
-        alert('Quantity cannot be greater then 5')
-        return
-       }
-      
-      if (action == 'increment'){
-       quantitytext.innerText =++quantity;
-      }
-      else{
-       quantitytext.innerText =--quantity;
-      }
-      
-   }
-
-   function plusminus2(action)
-   {
-      const quantitytext =document.getElementById("quantity-text2")
-      let quantity = parseInt(quantitytext.innerText);
-      if(quantity==1 && action=='decrement')
-      {
-       alert('Quantity cannot be less than 1')
-       return
-      }
-      else if (quantity==5 && action =='increment')
-      {
-        alert('Quantity cannot be greater then 5')
-        return
-       }
-      
-      if (action == 'increment'){
-       quantitytext.innerText =++quantity;
-      }
-      else{
-       quantitytext.innerText =--quantity;
-      }
-      
-   }
-
-   function plusminus3(action)
-   {
-      const quantitytext =document.getElementById("quantity-text3")
-      let quantity = parseInt(quantitytext.innerText);
-      if(quantity==1 && action=='decrement')
-      {
-       alert('Quantity cannot be less than 1')
-       return
-      }
-      else if (quantity==5 && action =='increment')
-      {
-        alert('Quantity cannot be greater then 5')
-        return
-       }
-      
-      if (action == 'increment'){
-       quantitytext.innerText =++quantity;
-      }
-      else{
-       quantitytext.innerText =--quantity;
-      }
-      
-   }
-
-   function plusminus4(action)
-   {
-      const quantitytext =document.getElementById("quantity-text4")
-      let quantity = parseInt(quantitytext.innerText);
-      if(quantity==1 && action=='decrement')
-      {
-       alert('Quantity cannot be less than 1')
-       return
-      }
-      else if (quantity==5 && action =='increment')
-      {
-        alert('Quantity cannot be greater then 5')
-        return
-       }
-      
-      if (action == 'increment'){
-       quantitytext.innerText =++quantity;
-      }
-      else{
-       quantitytext.innerText =--quantity;
-      }
-      
-   }
-
-   function plusminus5(action)
-   {
-      const quantitytext =document.getElementById("quantity-text5")
-      let quantity = parseInt(quantitytext.innerText);
-      if(quantity==1 && action=='decrement')
-      {
-       alert('Quantity cannot be less than 1')
-       return
-      }
-      else if (quantity==5 && action =='increment')
-      {
-        alert('Quantity cannot be greater then 5')
-        return
-       }
-      
-      if (action == 'increment'){
-       quantitytext.innerText =++quantity;
-      }
-      else{
-       quantitytext.innerText =--quantity;
-      }
-      
-   }
-
-   function plusminus6(action)
-   {
-      const quantitytext =document.getElementById("quantity-text6")
-      let quantity = parseInt(quantitytext.innerText);
-      if(quantity==1 && action=='decrement')
-      {
-       alert('Quantity cannot be less than 1')
-       return
-      }
-      else if (quantity==5 && action =='increment')
-      {
-        alert('Quantity cannot be greater then 5')
-        return
-       }
-      
-      if (action == 'increment'){
-       quantitytext.innerText =++quantity;
-      }
-      else{
-       quantitytext.innerText =--quantity;
-      }
-      
-   }
-
-   function plusminus7(action)
-   {
-      const quantitytext =document.getElementById("quantity-text7")
-      let quantity = parseInt(quantitytext.innerText);
-      if(quantity==1 && action=='decrement')
-      {
-       alert('Quantity cannot be less than 1')
-       return
-      }
-      else if (quantity==5 && action =='increment')
-      {
-        alert('Quantity cannot be greater then 5')
-        return
-       }
-      
-      if (action == 'increment'){
-       quantitytext.innerText =++quantity;
-      }
-      else{
-       quantitytext.innerText =--quantity;
-      }
-      
-   }
-
-   function plusminus8(action)
-   {
-      const quantitytext =document.getElementById("quantity-text8")
-      let quantity = parseInt(quantitytext.innerText);
-      if(quantity==1 && action=='decrement')
-      {
-       alert('Quantity cannot be less than 1')
-       return
-      }
-      else if (quantity==5 && action =='increment')
-      {
-        alert('Quantity cannot be greater then 5')
-        return
-       }
-      
-      if (action == 'increment'){
-       quantitytext.innerText =++quantity;
-      }
-      else{
-       quantitytext.innerText =--quantity;
-      }
-      
-   }
-
-   function plusminus9(action)
-   {
-      const quantitytext =document.getElementById("quantity-text9")
-      let quantity = parseInt(quantitytext.innerText);
-      if(quantity==1 && action=='decrement')
-      {
-       alert('Quantity cannot be less than 1')
-       return
-      }
-      else if (quantity==5 && action =='increment')
-      {
-        alert('Quantity cannot be greater then 5')
-        return
-       }
-      
-      if (action == 'increment'){
-       quantitytext.innerText =++quantity;
-      }
-      else{
-       quantitytext.innerText =--quantity;
-      }
-      
-   }
-</script>
+      <span class="price">₹345</span>
+      <span class="mrp">  ₹390 <button class="off">12%</button></span>
+      <button class="button" id="btn4" onclick="textChange4()">Add To Cart</button> 
+  </div>
+  <div class="product-card">
+     <img src="../images/dairy-products/condensed-milk" class="product-img">
+     <span class="product-name"> HUMARABAZAR Amul Mithai Mate Sweetened Condensed Milk</span>
+  <div class="quantity-btn-container">
+     <img src="./../images/icons/minus.png "  class="btn-quantity" onclick="handleQuantityChange5('dec')"/>
+    <span class="quantity-size"  id="quantity-text5">1</span> 
+    <img src="./../images/icons/plus.png" class="btn-quantity" onclick="handleQuantityChange5('inc')"/>
+  </div>
+     <span class="price"> ₹124</span>
+     <span class="mrp">  ₹126<button class="off">1%</button></span>
+     <button class="button" id="btn5" onclick="textChange5()">Add To Cart</button> 
+  </div>
+  <div class="product-card">
+    <img src="../images/dairy-products/neste.jpg" class="product-img">
+    <span class="product-name"> Everyday Dairy Whitener Milk Powder  </span>
+  <div class="quantity-btn-container">
+     <img src="./../images/icons/minus.png "  class="btn-quantity" onclick="handleQuantityChange6('dec')"/>
+     <span class="quantity-size"  id="quantity-text6">1</span> 
+     <img src="./../images/icons/plus.png" class="btn-quantity" onclick="handleQuantityChange6('inc')"/>
+  </div>
+    <span class="price">₹579</span>
+    <span class="mrp"> ₹605 <button class="off">4%</button></span>
+    <button class="button" id="btn6" onclick="textChange6()">Add To Cart</button> 
+ </div>
+ <div class="product-card">
+    <img src="../images/dairy-products/organic-cow-milk.jpg" class="product-img">
+    <span class="product-name"> Akshayakalpa Organic Cow Milk (UHT) </span>
+ <div class="quantity-btn-container">
+  <img src="./../images/icons/minus.png "  class="btn-quantity" onclick="handleQuantityChange7('dec')"/>
+  <span class="quantity-size"  id="quantity-text7">1</span> 
+  <img src="./../images/icons/plus.png" class="btn-quantity" onclick="handleQuantityChange7('inc')"/>
+ </div>
+    <span class="price"> ₹474</span>
+    <span class="mrp">₹500 <button class="off">-5%</button></span>
+    <button class="button" id="btn7" onclick="textChange7()">Add To Cart</button> 
+ </div>
+ <div class="product-card">
+    <img src="../images/dairy-products/pure-ghee.jpg" class="product-img">
+    <span class="product-name"> Kridhay Pure Ghee in Tetrapack</span>
+ <div class="quantity-btn-container">
+  <img src="./../images/icons/minus.png "  class="btn-quantity" onclick="handleQuantityChange8('dec')"/>
+  <span class="quantity-size"  id="quantity-text8">1</span> 
+  <img src="./../images/icons/plus.png" class="btn-quantity" onclick="handleQuantityChange8('inc')"/>
+ </div>
+    <span class="price"> ₹1,780</span>
+    <span class="mrp">₹2,320 <button class="off">23%</button></span>
+    <button class="button" id="btn8" onclick="textChange8()">Add To Cart</button> 
+ </div>
+ <div class="product-card">
+    <img src="../images/dairy-products/vegan-creamy.jpg" class="product-img">
+    <span class="product-name"> Plant Based Millet Mlk with goodness of Ragi, Jowar, Bajra & Oats </span>
+ <div class="quantity-btn-container">
+  <img src="./../images/icons/minus.png "  class="btn-quantity" onclick="handleQuantityChange9('dec')"/>
+  <span class="quantity-size"  id="quantity-text9">1</span> 
+  <img src="./../images/icons/plus.png" class="btn-quantity" onclick="handleQuantityChange9('inc')"/>
+ </div>
+    <span class="price">₹313</span>
+    <span class="mrp">₹354<button class="off">12%</button></span>
+    <button class="button" id="btn9" onclick="textChange9()">Add To Cart</button> 
+ </div>
+ </div>
+ <script src="../js/dairy-product.js"></script> 
+   
 </body>
 </html>
