@@ -246,17 +246,7 @@ body {
     margin: 0 auto;
     gap: 20px;
 }
-/**
 
-.video-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    align-items: center; 
-    margin-top: 20px;
-    padding: 20px; 
-}
-    **/
 
 .video-wrapper {
     flex: 0 0 auto;
@@ -405,7 +395,7 @@ footer.copyright .footer-text {
         text-align: center;
         width: 100%;
         margin: 10px 0;
-        background-color: #365E32; /* Ensuring background color remains the same */
+        background-color: #365E32; 
     }
 
     .payment-icons, .social-media-icons {
@@ -434,7 +424,7 @@ footer.copyright .footer-text {
         text-align: center;
         width: 100%;
         margin: 10px 0;
-        background-color: #365E32; /* Ensuring background color remains the same */
+        background-color: #365E32; 
     }
 
     .payment-icons, .social-media-icons {
