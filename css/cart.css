@@ -90,7 +90,6 @@
     cursor: pointer; */
 }
 .btn-buy:hover {
-    background: var(--text-color);
     color: white;
     background-color: green;
     transition: 0.2s;
