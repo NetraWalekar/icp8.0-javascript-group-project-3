@@ -6,10 +6,10 @@
     <title>Biscuit-&-snacks</title>
     <link rel="stylesheet" href="./../css/product1.css"/>
 </head>
-<body>
+<body class="bg-light" id="main-body" >
 
    <nav class="navbar">
-      <div class="navdiv">
+      <div class="navdiv" >
           <div class="logo">
               <a href="./../index.html"><img src="./../images/icons/home-logo/head-logo.png" alt="Logo"></a>
           </div>
@@ -46,7 +46,7 @@
           </div>
           <span class="price"> ₹110 </span>
           <span class="mrp"> ₹170 <button class="off">35%</button></span>
-          <button class="button" id="btn" onclick="textChange()" type="button">Add to Cart</button>
+          <button class="button" id="btn" onclick="textChange();add_cart(0)" type="button">Add to Cart</button>
       </div>
       <div class="product-card">
           <img src="../images/biscuit-snacks/coconut-cookies.jpg" class="product-img">
@@ -160,6 +160,10 @@
      </div>
   </div>
 
+  <div class="added" id="ac">
+   <div class="item">Item Added to Cart&ensp;&ensp;| </div>
+   <div class="item">&ensp;&ensp;View Cart</div>
+</div>
 
   <footer>
    <div class="footer-container">
