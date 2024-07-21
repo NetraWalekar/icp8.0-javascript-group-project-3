@@ -220,3 +220,8 @@ footer {
     align-items: center;
     text-align: left;
 }
+.social-media-icons img {
+    margin: 5px;
+    width: 25px;
+    height: auto;
+}
