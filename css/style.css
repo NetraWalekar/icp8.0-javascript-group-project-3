@@ -16,13 +16,13 @@ body {
     margin-top: 60px; /* Add top margin to compensate for fixed navbar */
 }
 
-/* Navbar styling */
+
 .navbar {
     position: fixed;
     top: 0;
     width: 100%;
     background-color: #333;
-    z-index: 1000; /* Ensure the navbar is on top */
+    z-index: 1000; 
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
@@ -468,6 +468,9 @@ footer.copyright .footer-text {
     .signin-button {
         width: 100%;
         margin: 10px 0;
+    }
+    .head-img{
+        margin-top: 2000px;
     }
 
     .card-container {
