@@ -89,8 +89,8 @@
     cursor: pointer; */
 }
 .btn-buy:hover {
-    color: white;
     background-color: green;
+    color: white;
     transition: 0.2s;
     border-radius: 10px 0 10px 0;
 }
