@@ -45,7 +45,7 @@ margin-top: 7px;
 }
 
 .price{
-margin-top:10px;
+margin-top:5px;
 font-weight: bold;
 position: absolute;
 top: 270px;
@@ -53,7 +53,7 @@ left: 10px;
 }
 .mrp{
 text-decoration: line-through;
-margin-top: 10px;
+margin-top: 5px;
 position: absolute;
 top: 290px;
 left: 10px;
@@ -103,4 +103,28 @@ margin-left: 5px;
     cursor: pointer;
     margin-left: 5px;
     
+}
+
+
+.added{
+    display: flex;
+    background-color: rgb(42, 40, 40);
+    color: white;
+    width: 300px;
+    height: 50px;
+    flex-direction: row;
+    justify-content: center;
+    padding: 20px auto;
+    border-radius: 25px;
+    position: fixed;
+    bottom: 30px;
+    top: 95%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.item{
+    padding-top: 15px;
+}
+#ac{
+   visibility: hidden;
 }
