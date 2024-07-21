@@ -112,9 +112,14 @@ body {
     padding: 5px;
     border-radius: 3px;
 }
-
+/**
 .head-img {
     padding: 20px; 
+    text-align: center;
+}
+    **/
+.head-img {
+    padding-top: 60px; /* Adjust this value if your navbar height changes */
     text-align: center;
 }
 
