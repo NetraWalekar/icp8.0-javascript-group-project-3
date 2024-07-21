@@ -139,13 +139,6 @@ body {
     gap: 20px;
 }
 
-/**.card-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin: 0 10px;
-    flex-wrap: wrap;
-}**/
 
 .card {
     border-radius: 10px;
@@ -185,16 +178,7 @@ body {
     max-width: 1200px;
     margin: 0 auto;
     gap: 20px;
-}/**
-
-.discount-card-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    gap: 15px;
 }
-
-**/
 .discount-card {
     background-color: rgb(253, 246, 234);
     border: 1px solid grey;
