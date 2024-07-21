@@ -1,7 +1,7 @@
 .cart {
     position: fixed;
     top: 0;
-    right: -110%;
+    right: 2rem;
     width: 360px;
     height: 500px;
     background: var(--bg-color);
