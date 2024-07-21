@@ -1,11 +1,15 @@
 .cart {
     position: fixed;
     top: 0;
-    right: 0;
+    right: -110%;
     width: 360px;
     height: 500px;
     background: var(--bg-color);
     box-shadow: -12px 0 8px hsl(0 4% 15% / 10%  );
+}
+.cart.active {
+    right: 2rem;
+    transition: .4s linear;
 }
 .cart-title {
     text-align: center;
@@ -107,9 +111,9 @@
     background-color: rgb(241, 238, 238);
     color: red;
 }
-.cart.active {
+/*.cart.active {
     right: 0;
-}
+}*/
 .cart-title {
     text-align: center;
     font-size: 1.5rem;
