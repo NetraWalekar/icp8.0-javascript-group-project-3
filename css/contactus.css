@@ -178,3 +178,10 @@ footer {
     padding: 10px 0;
     text-align: center;
 }
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    padding: 10px 20px;
+}
