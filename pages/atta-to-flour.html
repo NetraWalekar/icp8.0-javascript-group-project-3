@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vegetable And Fruits</title>
+    <style>
+    .body{
+            padding: 0%;
+            margin: 0%;
+        }
+    .product-container{
+     display: flex;
+     flex-direction: row;
+     flex-wrap: wrap;
+     justify-content: center;
+
+     }
+
+   .product-card {
+    height: 390px;
+    width: 230px;
+    margin: 25px;
+    border: 0px solid gray;
+    border-radius: 15px;
+    position: relative;
+    box-shadow: 0px 0px 10px 0px grey;
+    }
+
+   .product-img {
+    height:180px;
+    width: 190px;
+    border-radius: 25px;
+    margin-top: 10px;
+    object-fit: cover;
+    padding-left: 13px;
+    }
+
+    .product-img:hover {
+    height:170px;
+    width: 180px;
+    }
+
+   .product-name{
+    position: absolute;
+    top: 230px;
+    left: 5px;
+    right:5px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 7px;
+     }
+
+   .price{
+    margin-top:10px;
+    font-weight: bold;
+    position: absolute;
+    top: 270px;
+    left: 10px;
+    }
+   .mrp{
+    text-decoration: line-through;
+    margin-top: 10px;
+    position: absolute;
+    top: 290px;
+    left: 10px;
+    color: rgb(140, 139, 139);
+    }
+
+    .button{
+    position: absolute;
+    left:52px;
+    bottom: 15px;
+    border: 1px solid gray;
+    padding: 3px auto;
+    border-radius: 19px;
+    width: 120px;
+    height: 40px;
+    color: #0c5273;
+    background-color: white;
+    font-size: 16px;
+    text-align: center;
+    cursor: pointer;
+    
+     } 
+
+    .off{
+    color:#03753c;
+    background-color: #e5f7ee;
+    border: none;
+    font-weight: bold;
+    margin-left: 5px;
+     }
+
+     .quantity-btn-container{
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            margin-top: 7px;
+           
+        }
+
+        .quantity-size{
+            font-size:18px ;
+        }
+        .btn-quantity{
+            height: 18px;
+            margin-top: 7px;
+            display: inline-block;
+            cursor: pointer;
+            margin-left: 5px;
+            
+        }
+        </style>
+</head>
+<body>
+    <h1>Atta & Flour </h1>
+    <div class="product-container">
+      <div class="product-card"><img src="../images/atta-flour/bajra-atta.jpg" class="product-img">
+          <span class="product-name">Vedaka Bajra Atta | Millet Flour | Naturally Gluten Free 
+          </span>
+          <div class="quantity-btn-container">
+            <img src="./../images/icons/minus.png "  class="btn-quantity" onclick="plusminus('decrement')"/>
+         <span class="quantity-size"  id="quantity-text">1</span> 
+            <img src="./../images/icons/plus.png" class="btn-quantity" onclick="plusminus('increment')"/>
+          </div>
+          <span class="price">  ₹75 </span>
+          <span class="mrp"> ₹125 <button class="off">-40%</button></span>
+          <button class="button">Add Cart</button>
+      </div>
+      <div class="product-card">
+          <img src="../images/atta-flour/beetroot-atta.jpg" class="product-img">
+          <span class="product-name">The Better Flour – Iron Rich Beetroot Atta   </span>
+          <div class="quantity-btn-container">
+          <img src="./../images/icons/minus.png "  class="btn-quantity" onclick="plusminus('decrement')"/>
+         <span class="quantity-size"  id="quantity-text">1</span> 
+            <img src="./../images/icons/plus.png" class="btn-quantity" onclick="plusminus('increment')"/>
+         </div>
+          <span class="price">₹249</span>
+          <span class="mrp">₹295<button class="off">-16%</button></span>
+          <button class="button">Add Cart</button>
+      </div>
+      <div class="product-card">
+         <img src="../images/atta-flour/chakki-atta.jpg"class="product-img">
+         <span class="product-name">Fresh Chakki Atta, 15kg Wheat Flour Sudh Atta<br></span>
+         <div class="quantity-btn-container">
+         <img src="./../images/icons/minus.png "  class="btn-quantity" onclick="plusminus('decrement')"/>
+         <span class="quantity-size"  id="quantity-text">1</span> 
+            <img src="./../images/icons/plus.png" class="btn-quantity" onclick="plusminus('increment')"/>
+         </div>
+            <span class="price"> ₹925
+          </span>
+          <span class="mrp">  ₹975<button class="off">-5%</button></span>
+          <button class="button">Add Cart</button>
+      </div>
+      <div class="product-card">
+         <img src="../images/atta-flour/wheafree.jpg" class="product-img">
+         <span class="product-name">Wheafree Multigrain Gluten Free Flour (5Kg)  </span>
+      <div class="quantity-btn-container">
+         <img src="./../images/icons/minus.png "  class="btn-quantity" onclick="plusminus('decrement')"/>
+         <span class="quantity-size"  id="quantity-text">1</span> 
+            <img src="./../images/icons/plus.png" class="btn-quantity" onclick="plusminus('increment')"/>
+      </div>
+            <span class="price">₹790 </span>
+            <span class="mrp">  ₹800<button class="off">-1%</button></span>
+         <button class="button">Add Cart</button>
+      </div>
+      <div class="product-card">
+          <img src="../images/atta-flour/khapli-flour.jpg" class="product-img">
+          <span class="product-name"> Khapli Wheat Flour (2 kg) | High Dietary Fiber |</span>
+          
+      <div class="quantity-btn-container">
+         <img src="./../images/icons/minus.png "  class="btn-quantity" onclick="plusminus('decrement')"/>
+         <span class="quantity-size"  id="quantity-text">1</span> 
+            <img src="./../images/icons/plus.png" class="btn-quantity" onclick="plusminus('increment')"/>
+      </div>
+          <span class="price"> ₹459</span>
+          <span class="mrp">  ₹499 <button class="off">-8%</button></span>
+          <button class="button">Add Cart</button>
+      </div>
+      <div class="product-card">
+         <img src="../images/atta-flour/multigrain-atta.jpg" class="product-img">
+         <span class="product-name">Jiwa Cold Pressed Multigrain Flour / Atta| Soft Fluffy Rotis | </span>
+      <div class="quantity-btn-container">
+         <img src="./../images/icons/minus.png "  class="btn-quantity" onclick="plusminus('decrement')"/>
+         <span class="quantity-size"  id="quantity-text">1</span> 
+            <img src="./../images/icons/plus.png" class="btn-quantity" onclick="plusminus('increment')"/>
+      </div>
+         <span class="price">₹130 </span>
+         <span class="mrp">  ₹199 <button class="off">-35%</button></span>
+         <button class="button">Add Cart</button>
+      </div>
+      <div class="product-card">
+        <img src="../images/atta-flour/ragi-flour.jpg" class="product-img">
+        <span class="product-name"> Pure & Sure Organic Ragi Flour 1Kg | 100% Natural   </span>
+      <div class="quantity-btn-container">
+        <img src="./../images/icons/minus.png "  class="btn-quantity" onclick="plusminus('decrement')"/>
+         <span class="quantity-size"  id="quantity-text">1</span> 
+            <img src="./../images/icons/plus.png" class="btn-quantity" onclick="plusminus('increment')"/>
+      </div>
+        <span class="price">₹129</span>
+        <span class="mrp"> ₹140 <button class="off">-8%</button></span>
+        <button class="button">Add Cart</button>
+     </div>
+     <div class="product-card">
+        <img src="../images/atta-flour/rye-flour.jpg" class="product-img">
+        <span class="product-name"> Josef Marc Coarse Rye Flour for Baking Purpose </span>
+     <div class="quantity-btn-container">
+        <img src="./../images/icons/minus.png "  class="btn-quantity" onclick="plusminus('decrement')"/>
+         <span class="quantity-size"  id="quantity-text">1</span> 
+            <img src="./../images/icons/plus.png" class="btn-quantity" onclick="plusminus('increment')"/>
+     </div>
+        <span class="price"> ₹549</span>
+        <span class="mrp">₹550 <button class="off">-0%</button></span>
+        <button class="button">Add Cart</button>
+     </div>
+     <div class="product-card">
+        <img src="../images/atta-flour/sugar-control-atta.jpg" class="product-img">
+        <span class="product-name"> Active Sugar Control Atta-5Kg, Diabetic Friendly</span>
+     <div class="quantity-btn-container">
+        <img src="./../images/icons/minus.png "  class="btn-quantity" onclick="plusminus('decrement')"/>
+         <span class="quantity-size"  id="quantity-text">1</span> 
+            <img src="./../images/icons/plus.png" class="btn-quantity" onclick="plusminus('increment')"/>
+     </div>
+        <span class="price">₹799 </span>
+        <span class="mrp">₹1,500 <button class="off">-47%</button></span>
+        <button class="button">Add Cart</button>
+     </div>
+     <div class="product-card">
+        <img src="../images/atta-flour/wheat-flour.jpg" class="product-img">
+        <span class="product-name"> Natureland Organics Whole Wheat Flour 5 Kg </span>
+     <div class="quantity-btn-container">
+        <img src="./../images/icons/minus.png "  class="btn-quantity" onclick="plusminus('decrement')"/>
+         <span class="quantity-size"  id="quantity-text">1</span> 
+            <img src="./../images/icons/plus.png" class="btn-quantity" onclick="plusminus('increment')"/>
+     </div>
+        <span class="price"> ₹235</span>
+        <span class="mrp">₹330<button class="off">-29%</button></span>
+        <button class="button">Add Cart</button>
+     </div>
+  </div>
+
+  <script>
+   function plusminus(action)
+   {
+      const quantitytext =document.getElementById("quantity-text")
+      let quantity = parseInt(quantitytext.innerText);
+      if(quantity==1 && action=='decrement')
+      {
+       alert('Quantity cannot be less than 1')
+       return
+      }
+      else if (quantity==5 && action =='increment')
+      {
+        alert('Quantity cannot be greater then 5')
+        return
+       }
+      
+      if (action == 'increment'){
+       quantitytext.innerText =++quantity;
+      }
+      else{
+       quantitytext.innerText =--quantity;
+      }
+      
+   }
+</script>
+</body>
+</html>
