@@ -188,6 +188,99 @@
     align-items: center;
     margin-left: 15px;
 }
+
+@media screen and (min-width:400px) and (max-width:600px){
+   .product-card {
+    height: 360px;
+    width: 200px;
+    margin: 20px;
+   }
+
+   .product-img {
+    height:130px;
+    width: 150px;
+   }
+
+   .product-name{
+    position: absolute;
+    top: 200px;
+    left: 5px;
+    right:5px;
+    
+   }
+   .button{
+    position: absolute;
+    left:52px;
+    bottom: 15px;
+    width: 100px;
+    height: 30px;
+   }
+   .price{
+      position: absolute;
+    top: 250px;
+    left: 10px;
+   }
+
+   .mrp{
+      position: absolute;
+    top: 270px;
+    left: 10px;
+   }
+
+   .product-img:hover {
+      transition-duration: 0.3s;
+    height:150px;
+    width: 160px;
+    }
+   
+}
+
+
+
+
+@media screeen and (min-width:601px) and (max-width:992px){
+   .product-card {
+    height: 370px;
+    width: 210px;
+    margin: 20px;
+   }
+
+   .product-img {
+    height:150px;
+    width: 160px;
+   }
+}
+
+
+
+@media screen and (min-width: 993px ) and (max-width:1200px){
+   .product-card {
+    height: 380px;
+    width: 220px;
+    margin: 20px;
+   }
+
+   .product-img {
+    height:160px;
+    width: 170px;
+   }
+}
+
+
+@media screen and (min-width:1201px) and (max-width:1285px) {
+   .product-card {
+    height: 390px;
+    width: 230px;
+    margin: 20px;
+   }
+
+   .product-img {
+    height:170px;
+    width: 180px;
+   }
+
+}
+
     
         </style>
 </head>
@@ -216,7 +309,7 @@
       </div>
       </div>
   </nav>
-
+  <script src="../js/edibal-oil.js"></script>
     <h1>Edibal oil</h1>
     <div class="product-container">
       <div class="product-card"><img src="../images/edibal-oil/fortune1.jpg" class="product-img">
@@ -229,7 +322,7 @@
           </div>
           <span class="price">    ₹1,059 </span>
           <span class="mrp"> ₹1,200<button class="off">12%</button></span>
-          <button class="button">Add to Cart</button>
+          <button class="button" id="btn" onclick="textChange()" type="button">Add to Cart</button>
       </div>
       <div class="product-card">
           <img src="../images/edibal-oil/emami.jpg" class="product-img">
@@ -241,7 +334,7 @@
          </div>
           <span class="price">  ₹235</span>
           <span class="mrp">₹350<button class="off">33%</button></span>
-          <button class="button">Add to Cart</button>
+          <button class="button" id="btn" onclick="textChange()" type="button">Add to Cart</button>
       </div>
       <div class="product-card">
          <img src="../images/edibal-oil/fortune.jpg"  class="product-img">
@@ -254,7 +347,7 @@
             <span class="price">   ₹135
           </span>
           <span class="mrp">  ₹145<button class="off">7%</button></span>
-          <button class="button">Add to Cart</button>
+          <button class="button" id="btn" onclick="textChange()" type="button">Add to Cart</button>
       </div>
       <div class="product-card">
          <img src="../images/edibal-oil/gramiyaa.jpg" class="product-img">
@@ -266,7 +359,7 @@
       </div>
             <span class="price"> ₹489 </span>
             <span class="mrp">  ₹550<button class="off">11%</button></span>
-         <button class="button">Add to Cart</button>
+         <button class="button" id="btn" onclick="textChange()" type="button">Add to Cart</button>
       </div>
       <div class="product-card">
           <img src="../images/edibal-oil/jivo.jpg" class="product-img">
@@ -279,7 +372,7 @@
       </div>
           <span class="price"> ₹689</span>
           <span class="mrp">  ₹1,350 <button class="off">49%</button></span>
-          <button class="button">Add to Cart</button>
+          <button class="button" id="btn" onclick="textChange()" type="button">Add to Cart</button>
       </div>
       <div class="product-card">
          <img src="../images/edibal-oil/mr.-gold.jpg" class="product-img">
@@ -291,7 +384,7 @@
       </div>
          <span class="price"> ₹885 </span>
          <span class="mrp">  ₹1,425 <button class="off">38%</button></span>
-         <button class="button">Add to Cart</button>
+         <button class="button" id="btn" onclick="textChange()" type="button">Add to Cart</button>
       </div>
       <div class="product-card">
         <img src="../images/edibal-oil/jivo-gold.jpg" class="product-img">
@@ -303,7 +396,7 @@
       </div>
         <span class="price">₹219 </span>
         <span class="mrp"> ₹225<button class="off">3%</button></span>
-        <button class="button">Add to Cart</button>
+        <button class="button" id="btn" onclick="textChange()" type="button">Add to Cart</button>
      </div>
      <div class="product-card">
         <img src="../images/edibal-oil/saffola.jpg" class="product-img">
@@ -315,7 +408,7 @@
      </div>
         <span class="price">  ₹145</span>
         <span class="mrp"> ₹160<button class="off">9%</button></span>
-        <button class="button">Add to Cart</button>
+        <button class="button" id="btn" onclick="textChange()" type="button">Add to Cart</button>
      </div>
      <div class="product-card">
         <img src="../images/edibal-oil/sunrich.jpg" class="product-img">
@@ -327,7 +420,7 @@
      </div>
         <span class="price"> ₹225 </span>
         <span class="mrp">₹350 <button class="off">36%</button></span>
-        <button class="button">Add to Cart</button>
+        <button class="button" id="btn" onclick="textChange()" type="button">Add to Cart</button>
      </div>
      <div class="product-card">
         <img src="../images/edibal-oil/tata-simply.jpg" class="product-img">
@@ -339,250 +432,10 @@
      </div>
         <span class="price"> ₹380</span>
         <span class="mrp">₹500<button class="off">24%</button></span>
-        <button class="button">Add to Cart</button>
+        <button class="button" id="btn" onclick="textChange()" type="button">Add to Cart</button>
      </div>
   </div>
 
-  <script>
-   function plusminus(action)
-   {
-      const quantitytext =document.getElementById("quantity-text")
-      let quantity = parseInt(quantitytext.innerText);
-      if(quantity==1 && action=='decrement')
-      {
-       alert('Quantity cannot be less than 1')
-       return
-      }
-      else if (quantity==5 && action =='increment')
-      {
-        alert('Quantity cannot be greater then 5')
-        return
-       }
-      
-      if (action == 'increment'){
-       quantitytext.innerText =++quantity;
-      }
-      else{
-       quantitytext.innerText =--quantity;
-      }
-      
-   }
-
-   function plusminus1(action)
-   {
-      const quantitytext =document.getElementById("quantity-text1")
-      let quantity = parseInt(quantitytext.innerText);
-      if(quantity==1 && action=='decrement')
-      {
-       alert('Quantity cannot be less than 1')
-       return
-      }
-      else if (quantity==5 && action =='increment')
-      {
-        alert('Quantity cannot be greater then 5')
-        return
-       }
-      
-      if (action == 'increment'){
-       quantitytext.innerText =++quantity;
-      }
-      else{
-       quantitytext.innerText =--quantity;
-      }
-      
-   }
-
-   function plusminus2(action)
-   {
-      const quantitytext =document.getElementById("quantity-text2")
-      let quantity = parseInt(quantitytext.innerText);
-      if(quantity==1 && action=='decrement')
-      {
-       alert('Quantity cannot be less than 1')
-       return
-      }
-      else if (quantity==5 && action =='increment')
-      {
-        alert('Quantity cannot be greater then 5')
-        return
-       }
-      
-      if (action == 'increment'){
-       quantitytext.innerText =++quantity;
-      }
-      else{
-       quantitytext.innerText =--quantity;
-      }
-      
-   }
-
-   function plusminus3(action)
-   {
-      const quantitytext =document.getElementById("quantity-text3")
-      let quantity = parseInt(quantitytext.innerText);
-      if(quantity==1 && action=='decrement')
-      {
-       alert('Quantity cannot be less than 1')
-       return
-      }
-      else if (quantity==5 && action =='increment')
-      {
-        alert('Quantity cannot be greater then 5')
-        return
-       }
-      
-      if (action == 'increment'){
-       quantitytext.innerText =++quantity;
-      }
-      else{
-       quantitytext.innerText =--quantity;
-      }
-      
-   }
-
-   function plusminus4(action)
-   {
-      const quantitytext =document.getElementById("quantity-text4")
-      let quantity = parseInt(quantitytext.innerText);
-      if(quantity==1 && action=='decrement')
-      {
-       alert('Quantity cannot be less than 1')
-       return
-      }
-      else if (quantity==5 && action =='increment')
-      {
-        alert('Quantity cannot be greater then 5')
-        return
-       }
-      
-      if (action == 'increment'){
-       quantitytext.innerText =++quantity;
-      }
-      else{
-       quantitytext.innerText =--quantity;
-      }
-      
-   }
-
-   function plusminus5(action)
-   {
-      const quantitytext =document.getElementById("quantity-text5")
-      let quantity = parseInt(quantitytext.innerText);
-      if(quantity==1 && action=='decrement')
-      {
-       alert('Quantity cannot be less than 1')
-       return
-      }
-      else if (quantity==5 && action =='increment')
-      {
-        alert('Quantity cannot be greater then 5')
-        return
-       }
-      
-      if (action == 'increment'){
-       quantitytext.innerText =++quantity;
-      }
-      else{
-       quantitytext.innerText =--quantity;
-      }
-      
-   }
-
-   function plusminus6(action)
-   {
-      const quantitytext =document.getElementById("quantity-text6")
-      let quantity = parseInt(quantitytext.innerText);
-      if(quantity==1 && action=='decrement')
-      {
-       alert('Quantity cannot be less than 1')
-       return
-      }
-      else if (quantity==5 && action =='increment')
-      {
-        alert('Quantity cannot be greater then 5')
-        return
-       }
-      
-      if (action == 'increment'){
-       quantitytext.innerText =++quantity;
-      }
-      else{
-       quantitytext.innerText =--quantity;
-      }
-      
-   }
-
-   function plusminus7(action)
-   {
-      const quantitytext =document.getElementById("quantity-text7")
-      let quantity = parseInt(quantitytext.innerText);
-      if(quantity==1 && action=='decrement')
-      {
-       alert('Quantity cannot be less than 1')
-       return
-      }
-      else if (quantity==5 && action =='increment')
-      {
-        alert('Quantity cannot be greater then 5')
-        return
-       }
-      
-      if (action == 'increment'){
-       quantitytext.innerText =++quantity;
-      }
-      else{
-       quantitytext.innerText =--quantity;
-      }
-      
-   }
-
-   function plusminus8(action)
-   {
-      const quantitytext =document.getElementById("quantity-text8")
-      let quantity = parseInt(quantitytext.innerText);
-      if(quantity==1 && action=='decrement')
-      {
-       alert('Quantity cannot be less than 1')
-       return
-      }
-      else if (quantity==5 && action =='increment')
-      {
-        alert('Quantity cannot be greater then 5')
-        return
-       }
-      
-      if (action == 'increment'){
-       quantitytext.innerText =++quantity;
-      }
-      else{
-       quantitytext.innerText =--quantity;
-      }
-      
-   }
-
-   function plusminus9(action)
-   {
-      const quantitytext =document.getElementById("quantity-text9")
-      let quantity = parseInt(quantitytext.innerText);
-      if(quantity==1 && action=='decrement')
-      {
-       alert('Quantity cannot be less than 1')
-       return
-      }
-      else if (quantity==5 && action =='increment')
-      {
-        alert('Quantity cannot be greater then 5')
-        return
-       }
-      
-      if (action == 'increment'){
-       quantitytext.innerText =++quantity;
-      }
-      else{
-       quantitytext.innerText =--quantity;
-      }
-      
-   }
-</script>
+  
 </body>
 </html>
