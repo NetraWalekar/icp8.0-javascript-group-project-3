@@ -297,3 +297,25 @@ function textChange9(){
       textElement.innerText="Added";
 
     }
+
+
+function darklighton(){
+   const mainBody =  document.getElementById("main-body")
+   mainBody.classList.remove("bg-light")
+   mainBody.classList.add("bg-dark")
+ 
+
+   const togglebutton  = document.getElementById("btn-toggle")
+   togglebutton.classList.remove("btn-light")
+    togglebutton.classList.add("btn-dark")
+ }
+
+function darklightoff(){
+   const mainBody =  document.getElementById("main-body")
+   mainBody.classList.remove("bg-dark")
+   mainBody.classList.add("bg-light")
+ 
+   const togglebutton  = document.getElementById("btn-toggle")
+   togglebutton.classList.remove("btn-dark")
+    togglebutton.classList.add("btn-light")
+ }
