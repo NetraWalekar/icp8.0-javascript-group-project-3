@@ -297,3 +297,46 @@ function textChange9(){
       textElement.innerText="Added";
 
     }
+
+
+
+
+ function add_cart(num){
+   const res = document.getElementById("ac");
+   if (res) { // Ensure the element exists
+       res.style.visibility = 'visible';
+       console.log("Item number " + num + " added to cart."); 
+       setTimeout(() => {
+       document.getElementById('ac').style.display = 'none';
+       }, 3000);
+       setTimeout(function(){
+         location.reload();
+        }, 3000);
+      // Example use of num
+   } else {
+       console.error("Element with id 'ac' not found.");
+   }
+}
+
+let currentPrice = 110;
+
+    // Function to increase price
+    function increasePrice() {
+      const currentPrice =document.getElementById("price")
+      currentPrice += 110; // Increase by $10 (you can change this value)
+      updatePrice();
+    }
+
+    // Function to decrease price
+    function decreasePrice() {
+      const currentPrice =document.getElementById("price")
+      currentPrice -= 110; // Decrease by $10 (you can change this value)
+      updatePrice();
+    }
+
+    // Function to update the price display
+    function updatePrice() {
+      document.getElementById('price').innerText = '$' + currentPrice;
+    }
+
+    
