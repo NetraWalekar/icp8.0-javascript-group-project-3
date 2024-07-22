@@ -77,6 +77,10 @@ body {
     background: rgb(253, 246, 234);;
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
+.head-title{
+    text-align: center;
+    color: #365E32;
+}
 
 h1, h2 {
     color: #444;
