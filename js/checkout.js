@@ -32,6 +32,7 @@ document.getElementById('back-to-cart-button').addEventListener('click', () => {
 
 document.getElementById('place-order-button').addEventListener('click', () => {
     const shippingName = document.getElementById('shipping-name').value;
+    const shippingNo = document.getElementById('shipping-no').value;
     
 });
 
