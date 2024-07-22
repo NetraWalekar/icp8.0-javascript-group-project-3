@@ -77,6 +77,10 @@ body {
     background: rgb(253, 246, 234);;
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
+.head-title{
+    text-align: center;
+    color: #365E32;
+}
 
 h1, h2 {
     color: #444;
@@ -98,4 +102,86 @@ p {
 .copyright{
     text-align: center;
     align-items: center;
+}
+
+
+@media (max-width: 1200px) {
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-section {
+        width: 100%;
+        text-align: center;
+    }
+
+    .payment-icons, .social-media-icons {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-section {
+        text-align: center;
+        width: 100%;
+        margin: 10px 0;
+        background-color: #365E32; 
+    }
+
+    .payment-icons, .social-media-icons {
+        justify-content: center;
+        width: 100%;
+    }
+
+    .connect {
+        text-align: center;
+    }
+
+    .social-media-icons {
+        justify-content: center;
+        margin-top: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+    }
+
+    .footer-section {
+        text-align: center;
+        width: 100%;
+        margin: 10px 0;
+        background-color: #365E32; 
+    }
+
+    .payment-icons, .social-media-icons {
+        justify-content: center;
+        width: 100%;
+    }
+
+    .connect {
+        text-align: center;
+    }
+
+    .social-media-icons {
+        justify-content: center;
+        margin-top: 10px;
+    }
+
+    .footer-links a span {
+        display: none;
+    }
+
+    .footer-links a i {
+        display: inline-block;
+    }
 }
