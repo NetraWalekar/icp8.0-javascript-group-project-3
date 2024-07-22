@@ -348,3 +348,65 @@ footer.copyright .footer-text {
         align-items: center;
     }
 }
+
+@media (max-width: 768px) {
+    .container {
+        width: 95%;
+        padding: 15px;
+    }
+
+    .navbar .navdiv {
+        flex-direction: column;
+        padding: 10px 0;
+    }
+
+    .nav-links {
+        width: 100%;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .signin-button {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    .sidebar {
+        width: 180px;
+        padding-top: 60px;
+    }
+
+    .content {
+        margin-left: 180px;
+    }
+
+    .profile-container, .cart-container {
+        width: 100%;
+        margin-top: 15px;
+    }
+
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-section {
+        width: 100%;
+        margin: 10px 0;
+        text-align: center;
+    }
+
+    .footer-logo {
+        margin-bottom: 10px;
+    }
+
+    .footer-links {
+        align-items: center;
+    }
+
+    .payment-icons img, .social-media-icons img {
+        width: 40px;
+    }
+}
