@@ -1,0 +1,488 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(255, 250, 250);
+    min-height: 100vh;
+    position: relative;
+}
+
+.navbar {
+    background-color: #81A263;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+}
+
+.navdiv {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    height: 50px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li {
+    margin: 0 15px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    padding: 14px 20px;
+    display: block;
+}
+
+.nav-links a:hover {
+    background-color: #093505;
+    border-radius: 5px;
+}
+
+.signin-button {
+    background-color: #365E32;
+    height: 40px;
+    width: 90px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin-right: 15px;
+    border-radius: 5px;
+}
+
+.signin-button a {
+    color: white;
+    text-decoration: none;
+}
+
+.sign {
+    display: flex;
+    justify-content: space-between;
+}
+
+.signin-button:hover {
+    background-color: #093505;
+}
+
+.profile-container, .cart-container {
+    margin-top: 10px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 15px;
+}
+
+.sidebar {
+    width: 250px;
+    background-color: #4E763B;
+    /* height: calc(100vh - 60px);  */
+    height: 1000px;
+    padding-top: 60px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+    position: static;
+    top: 0px; /* Adjusted to be below the navbar */
+    /* bottom: 0; */
+    overflow-y: auto;
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 80px;
+}
+
+.sidebar ul li {
+    padding: 20px;
+    text-align: left;
+}
+
+.sidebar ul li a {
+    color: white;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    transition: all 0.3s ease;
+}
+
+.sidebar ul li a img {
+    width: 20px;
+    margin-right: 10px;
+}
+
+.sidebar ul li a:hover {
+    background-color: #093505;
+    color: white;
+    border-radius: 10px;
+    padding: 10px;
+    transform: scale(1.05);
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.content {
+    flex-grow: 1;
+    padding: 20px;
+    text-align: center;
+    margin-left: 250px; /* Adjust margin to account for the fixed sidebar */
+    margin-top: -1000px; /* Adjust margin to account for the fixed navbar */
+    margin-bottom: 100px;
+}
+
+.user-info-table {
+    margin: 20px auto;
+    border-collapse: collapse;
+    width: 40%;
+    max-width: 800px;
+    text-align: left;
+    font-size: 19px;
+}
+
+.user-info-table td {
+    padding: 10px 20px;
+    border: 1px solid gray;
+}
+
+.user-info-table b {
+    font-size: 19px;
+}
+
+h1 {
+    color: #093505;
+}
+
+#userImage {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-top: 20px;
+}
+
+#changeInfoForm, #changePasswordForm {
+    margin-top: 20px;
+    width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#changeInfoForm input, #changePasswordForm input {
+    display: block;
+    margin-bottom: 10px;
+    padding: 10px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+#saveInfoButton, #savePasswordButton {
+    padding: 10px 20px;
+    background-color: #365E32;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#saveInfoButton:hover, #savePasswordButton:hover {
+    background-color: #093505;
+}
+
+footer {
+    background-color: #365E32;
+    color: white;
+    padding: 0px 0;
+    text-align: center;
+    position: sticky;
+    width: 100%;
+    /* top: 100px; */
+   
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    padding: 10px 20px;
+}
+
+.footer-section {
+    flex: 1;
+    margin: 10px;
+    text-align: left;
+}
+
+.footer-logo-description {
+    margin-bottom: 10px;
+}
+
+.footer-logo {
+    width: 150px;
+    margin-bottom: 2px;
+}
+
+.contact-details, .payment-methods, .quick-links {
+    margin-bottom: 10px;
+}
+
+.contact-details h3, .payment-methods h3, .quick-links h3 {
+    margin-bottom: 5px;
+}
+
+.payment-icons {
+    display: flex;
+    text-align: left;
+    align-items: center;
+}
+
+.payment-icons img {
+    margin: 3px;
+    width: 50px;
+    height: auto;
+    vertical-align: middle;
+}
+
+.social-media-icons {
+    display: flex;
+    align-items: center;
+    text-align: left;
+}
+
+.social-media-icons img {
+    margin: 5px;
+    width: 25px;
+    height: auto;
+}
+
+.connect {
+    text-align: left;
+}
+
+.footer-links {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-links a {
+    text-decoration: none;
+    color: #ece7e7;
+    padding: 5px 0;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}
+
+footer.copyright {
+    width: 100%;
+    height: 30px;
+    text-align: center;
+    background-color: #f8f8f8;
+    color: #0c0c0c;
+}
+
+footer.copyright .footer-text {
+    line-height: 30px;
+    margin-top: -5px;
+}
+
+/* Media Queries */
+@media (max-width: 1200px) {
+    .content {
+        margin-left: 220px; /* Adjusted for smaller sidebar */
+    }
+}
+
+@media (max-width: 992px) {
+    .navbar .navdiv {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .signin-button {
+        margin: 10px 0;
+    }
+
+    .sidebar {
+        width: 200px;
+    }
+
+    .content {
+        margin-left: 200px;
+    }
+
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-section {
+        width: 100%;
+        margin: 10px 0;
+        text-align: center;
+    }
+
+    .footer-links {
+        align-items: center;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        width: 95%;
+        padding: 15px;
+    }
+
+    .navbar .navdiv {
+        flex-direction: column;
+        padding: 10px 0;
+    }
+
+    .nav-links {
+        width: 100%;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .signin-button {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    .sidebar {
+        width: 180px;
+        padding-top: 60px;
+    }
+
+    .content {
+        margin-left: 180px;
+    }
+
+    .profile-container, .cart-container {
+        width: 100%;
+        margin-top: 15px;
+    }
+
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-section {
+        width: 100%;
+        margin: 10px 0;
+        text-align: center;
+    }
+
+    .footer-logo {
+        margin-bottom: 10px;
+    }
+
+    .footer-links {
+        align-items: center;
+    }
+
+    .payment-icons img, .social-media-icons img {
+        width: 40px;
+    }
+}
+
+@media (max-width: 576px) {
+    .container {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .navbar .navdiv {
+        flex-direction: column;
+        align-items: center;
+        padding: 10px 0;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .signin-button {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    .sidebar {
+        width: 100%;
+        height: auto;
+        position: static;
+        padding-top: 0;
+    }
+
+    .sidebar ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .sidebar ul li {
+        width: 100%;
+        text-align: center;
+    }
+
+    .content {
+        margin: 0;
+        padding: 20px;
+        text-align: center;
+    }
+
+    .profile-container, .cart-container {
+        width: 100%;
+        margin-top: 15px;
+    }
+
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-section {
+        width: 100%;
+        margin: 10px 0;
+        text-align: center;
+    }
+
+    .footer-logo {
+        margin-bottom: 10px;
+    }
+
+    .footer-links {
+        align-items: center;
+    }
+
+    .payment-icons img, .social-media-icons img {
+        width: 30px;
+    }
+}

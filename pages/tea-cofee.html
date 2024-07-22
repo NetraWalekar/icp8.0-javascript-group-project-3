@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tea & Coffee</title>
+    <link rel="stylesheet" href="../css/Product.css">
+    <link rel="stylesheet" href="../css/style.css">
+   
+</head>
+<body>
+  <nav class="navbar">
+    <div class="navdiv">
+        <div class="logo">
+            <a href="../index.html"><img src="../images/icons/home-logo/head-logo.png" alt="Logo"></a>
+        </div>
+        <ul class="nav-links">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../pages/categories.html">Categories</a></li>
+            <li><a href="../pages/about-us.html">About Us</a></li>
+            <li><a href="../pages/contactus.html">Contact Us</a></li>
+        </ul>
+    <div class="sign">
+        <button class="signin-button"><a href="../pages/signin.html">Sign In</a></button>
+        <div class="profile-container" id="profile-container">
+            <a href="../pages/user-account.html"><img src="../images/icons/home-logo/user.png" height="33px" alt="Profile" class="profile-icon" id="profile-icon"></a>
+        </div>
+        <div class="cart-container" id="cart-container">
+            <a href="../pages/cart.html"><img src="../images/icons/home-logo/shopping-cart.png" height="33px" alt="Cart" class="cart-icon" id="cart-icon"></a>
+         </div>
+    </div>
+    </div>
+</nav>
+      <h1 class="title">Tea & Cofee</h1>
+    <div class="product-container">
+      <div class="product-card"><img src="../images/tea-coffee/cofee.jpg" class="product-img">
+          <span class="product-name">Cafe N Tea Instant Cappuccino Coffee- 16G [Pack Of 20]</span>
+          <div class="quantity-btn-container">
+          <img src="./../images/icons/minus.png "  class="btn-quantity" onclick="handleQuantityChange('dec')"/>
+         <span class="quantity-size"  id="quantity-text">1</span> 
+          <img src="./../images/icons/plus.png" class="btn-quantity" onclick="handleQuantityChange('inc')"/>
+          </div>
+          <span class="price">₹400.00 </span>
+          <span class="mrp">₹100.00 <button class="off">30 % Off</button></span>
+          <button class="button" id="btn" onclick="textChange();add_cart(0)">Add To Cart</button> 
+      </div>
+      <div class="product-card">
+          <img src="../images/tea-coffee/tea.jpg" class="product-img">
+          <span class="product-name">
+            Tata Tea Premium | Desh Ki Chai |  Black Tea | 1.5kg Powder</span>
+          <div class="quantity-btn-container">
+          <img src="./../images/icons/minus.png "  class="btn-quantity" onclick="handleQuantityChange1('dec')"/>
+          <span class="quantity-size"  id="quantity-text1">1</span> 
+          <img src="./../images/icons/plus.png" class="btn-quantity" onclick="handleQuantityChange1('inc')"/>
+           </div>
+          <span class="price">₹451.00</span>
+          <span class="mrp">₹705.00 <button class="off">37% Off</button></span>
+          <button class="button" id="btn1" onclick="textChange1();add_cart(1)">Add To Cart</button> 
+      </div>
+      <div class="product-card">
+         <img src="../images/tea-coffee/tata-tea.jpg"class="product-img">
+         <span class="product-name">Tata Tea Gold Premium Assam & Aromatic Black Tea 1 Kg</span>
+         <div class="quantity-btn-container">
+         <img src="./../images/icons/minus.png"  class="btn-quantity" onclick="handleQuantityChange2('dec')"/>
+         <span class="quantity-size"  id="quantity-text2">1</span> 
+         <img src="./../images/icons/plus.png" class="btn-quantity" onclick="handleQuantityChange2('inc')"/>
+         </div>
+          <span class="price">₹392.00
+          </span>
+          <span class="mrp">₹570.00 <button class="off">32 % Off</button></span>
+          <button class="button" id="btn2" onclick="textChange2();add_cart(2)">Add To Cart</button> 
+      </div>
+      <div class="product-card">
+         <img src="../images/tea-coffee/bru-instant-coffee.jpg" class="product-img">
+         <span class="product-name">
+            Bru Instant | Aromatic Coffee From South Indian Plantations| 200g</span>
+         <div class="quantity-btn-container">
+        <img src="./../images/icons/minus.png "  class="btn-quantity" onclick="handleQuantityChange3('dec')"/>
+        <span class="quantity-size"  id="quantity-text3">1</span> 
+        <img src="./../images/icons/plus.png" class="btn-quantity" onclick="handleQuantityChange3('inc')"/>
+        </div>
+         <span class="price">₹320.00</span>
+         <span class="mrp">₹400.00 <button class="off">20% Off</button></span>
+         <button class="button" id="btn3" onclick="textChange3();add_cart(3)">Add To Cart</button> 
+      </div>
+      <div class="product-card">
+          <img src="../images/tea-coffee/green-tea.jpg" class="product-img">
+          <span class="product-name">Girnar Food &  Green Tea - Desi Kahwa  90 gm</span>
+        <div class="quantity-btn-container">
+        <img src="./../images/icons/minus.png "  class="btn-quantity" onclick="handleQuantityChange4('dec')"/>
+        <span class="quantity-size"  id="quantity-text4">1</span> 
+        <img src="./../images/icons/plus.png" class="btn-quantity" onclick="handleQuantityChange4('inc')"/>
+        </div>
+          <span class="price">₹340.00</span>
+          <span class="mrp">₹.370 <button class="off">18% Off</button></span>
+          <button class="button" id="btn4" onclick="textChange4();add_cart(4)">Add To Cart</button> 
+      </div>
+      <div class="product-card">
+         <img src="../images/tea-coffee/coffe-powder.jpg" class="product-img">
+         <span class="product-name">
+            NESCAFE Classic Instant Coffee Powder | 45 grams Pouch</span>
+         <div class="quantity-btn-container">
+        <img src="./../images/icons/minus.png "  class="btn-quantity" onclick="handleQuantityChange5('dec')"/>
+        <span class="quantity-size"  id="quantity-text5">1</span> 
+        <img src="./../images/icons/plus.png" class="btn-quantity" onclick="handleQuantityChange5('inc')"/>
+        </div>
+         <span class="price">₹175.00</span>
+         <span class="mrp">₹185.00 <button class="off">5 % Off</button></span>
+         <button class="button" id="btn5" onclick="textChange5();add_cart(5)">Add To Cart</button> 
+      </div>
+      <div class="product-card">
+        <img src="../images/tea-coffee/lipton-green-tea.jpg" class="product-img">
+        <span class="product-name">
+            Lipton Honey Lemon Green Tea Bags, 25 Pieces</span>
+        <div class="quantity-btn-container">
+        <img src="./../images/icons/minus.png "  class="btn-quantity" onclick="handleQuantityChange6('dec')"/>
+           <span class="quantity-size"  id="quantity-text6">1</span> 
+            <img src="./../images/icons/plus.png" class="btn-quantity" onclick="handleQuantityChange6('inc')"/>
+            </div>
+        <span class="price">₹149.00</span>
+        <span class="mrp">₹170.00 <button class="off">17 % Off</button></span>
+        <button class="button" id="btn6" onclick="textChange6();add_cart(6)">Add To Cart</button> 
+        </div>
+     <div class="product-card">
+        <img src="../images/tea-coffee/red-label-tea.jpg" class="product-img">
+        <span class="product-name"> Red Label Tea, With 5 Ayurvedic Ingredients, 500 gm</span>
+        <div class="quantity-btn-container">
+        <img src="./../images/icons/minus.png "  class="btn-quantity" onclick="handleQuantityChange7('dec')"/>
+        <span class="quantity-size"  id="quantity-text7">1</span> 
+        <img src="./../images/icons/plus.png" class="btn-quantity" onclick="handleQuantityChange7('inc')"/>
+        </div>
+        <span class="price">₹272.00</span>
+        <span class="mrp">₹300.00 <button class="off">9 % Off</button></span>
+        <button class="button" id="btn7" onclick="textChange7();add_cart(7)">Add To Cart</button>  
+        </div>
+    <div class="product-card">
+        <img src="../images/tea-coffee/chai-masala-powder.jpg" class="product-img">
+        <span class="product-name">Desire instant premix Chai Masala Tea Powder 1Kg</span>
+        <div class="quantity-btn-container">
+        <img src="./../images/icons/minus.png "  class="btn-quantity" onclick="handleQuantityChange8('dec')"/>
+        <span class="quantity-size"  id="quantity-text8">1</span> 
+        <img src="./../images/icons/plus.png" class="btn-quantity" onclick="handleQuantityChange8('inc')"/>
+        </div>
+        <span class="price">₹535.00</span>
+        <span class="mrp">₹600.00 <button class="off">11 % Off</button></span>
+        <button class="button" id="btn8" onclick="textChange8();add_cart(8)">Add To Cart</button>      
+    </div>
+    <div class="product-card">
+        <img src="../images/tea-coffee/lemon-tea.jpg" class="product-img">
+        <span class="product-name"> Coffee day beverages Zest Lemon Tea - Pack Of 4, 200 gm</span>
+        <div class="quantity-btn-container">
+        <img src="./../images/icons/minus.png "  class="btn-quantity" onclick="handleQuantityChange9('dec')"/>
+        <span class="quantity-size"  id="quantity-text9">1</span> 
+        <img src="./../images/icons/plus.png" class="btn-quantity" onclick="handleQuantityChange9('inc')"/>
+        </div>
+        <span class="price">₹480.00</span>
+        <span class="mrp"> <button class="off">No Offer</button></span>
+        <button class="button" id="btn9" onclick="textChange9();add_cart(9)">Add To Cart</button> 
+  </div>
+  </div>
+  <div class="display" id="display-msg">
+    <div class="item">Item Added to Cart&ensp;&ensp;| </div>
+    <div class="item">&ensp;&ensp;View Cart</div>
+    </div>
+  <script src="../js/tea-cofee.js"></script>
+  <footer>
+    <div class="footer-container">
+        <div class="footer-section">
+            <div class="footer-logo-description">
+                <img src="../images/icons/home-logo/footer-logo.png" alt="Logo" class="footer-logo">
+                <p>Natures Basket is your online destination for fresh and quality groceries. We provide a wide
+                    range of products to meet all your grocery needs.</p>
+            </div> <br> <br>
+            <h3 class="connect">Connect with us</h3>
+            <div class="social-media-icons">
+                <a href="https://www.facebook.com/NaturesBasket"><img
+                        src="../images/icons/home-logo/facebook (4).png" alt="Facebook"></a>
+                <a href="https://x.com/NaturesBasket"><img src="../images/icons/home-logo/twitter (2).png"
+                        alt="Twitter"></a>
+                <a href="https://youtube.com/@naturesbasketrp-sg?si=geZQ2tTgiUefGg4S"><img
+                        src="../images/icons/home-logo/youtube (1).png" alt="YouTube"></a>
+                <a href="https://www.instagram.com/naturesbasket?igsh=bjcxbXcxdjQ1NGpl"><img
+                        src="../images/icons/home-logo/instagram (3).png" alt="Instagram"></a>
+            </div>
+        </div>
+
+        <div class="footer-section">
+            <br> <br>
+            <div class="contact-details">
+                <h3>Contact Us</h3>
+                <p><b>Email</b>: cs@naturesbasket.co.in</p>
+                <p><b>Phone</b>: 8880077745</p>
+                <p><b>Address</b>: Krishna Curve, Linking Road, Mumbai, India</p>
+            </div> <br> <br>
+
+            <div class="payment-methods">
+                <br>
+                <h3>We Accept</h3>
+                <div class="payment-icons">
+                    <img src="../images/icons/home-logo/visa.png" alt="Visa">
+                    <img src="../images/icons/home-logo/master card.png" alt="MasterCard">
+                    <img src="../images/icons/home-logo/rupay.png" alt="RuPay">
+                    <img src="../images/icons/home-logo/paytm.png" alt="Paytm">
+                </div>
+
+            </div>
+
+
+        </div>
+        <div class="footer-section">
+            <br> <br>
+            <div class="footer-links">
+                <h3>Quick Links</h3>
+                <a href="../pages/about-us.html">About Us</a>
+                <a href="#">Contact Us</a>
+                <a href="../pages/privacy-policy.html">Privacy Policy</a>
+                <a href="../pages/terms-condition.html">Terms and Conditions</a>
+            </div>
+        </div>
+    </div>
+    <div class="footer-bottom">
+
+    </div>
+</footer>
+
+<footer class="copyright">
+    <p id="footer-text">&copy; 2024 Grocery Shopping. All rights reserved.</p>
+</footer>
+  
+</body>
+</html>
