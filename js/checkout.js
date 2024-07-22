@@ -29,3 +29,18 @@ document.getElementById('back-to-cart-button').addEventListener('click', () => {
 
     window.location.href = 'cart.html';
 });
+
+document.getElementById('place-order-button').addEventListener('click', () => {
+    const shippingName = document.getElementById('shipping-name').value;
+    const shippingNo = document.getElementById('shipping-no').value;
+    const shippingAddress = document.getElementById('shipping-address').value;
+    const shippingCity = document.getElementById('shipping-city').value;
+    const shippingPinCode = document.getElementById('shipping-pincode').value;
+
+    
+
+    
+    
+});
+
+updateOrderSummary();
