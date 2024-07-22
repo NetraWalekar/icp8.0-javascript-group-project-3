@@ -45,6 +45,7 @@ document.getElementById('place-order-button').addEventListener('click', () => {
 
     const paymentMethod = document.getElementById('payment-method').value;
    
+    // Example validation and submission logic
     
     
 });
