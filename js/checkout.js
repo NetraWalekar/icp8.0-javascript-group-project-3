@@ -41,8 +41,8 @@ document.getElementById('place-order-button').addEventListener('click', () => {
     const billingNo = document.getElementById('billing-no').value;
     const billingAddress = document.getElementById('billing-address').value;
     const billingCity = document.getElementById('billing-city').value;
-   
-   
+    const billingPinCode = document.getElementById('billing-pincode').value;
+
     
     
 });
