@@ -43,5 +43,8 @@ body{
 }
 
 .billing-info {
-   
+    margin: 20px;
+    border: double #082c05;
+    border-radius: 10px;
+    padding: 20px;
 }
