@@ -59,3 +59,54 @@ body{
     margin-bottom: 20px;
     margin-top: 20px;
 }
+
+.billing-title
+{
+    color: #073104;
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.shipping-title
+{
+    color: #073104;
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.payment-title
+{
+    color: #073104;
+    text-align: center;
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+
+label 
+{
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input
+{
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+select
+{
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
