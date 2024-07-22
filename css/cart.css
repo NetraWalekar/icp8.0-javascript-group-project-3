@@ -1,19 +1,12 @@
-#{
-    background-color:#f7ddaa;
-}
 .cart {
-    margin-left: 600px;
+    position: absolute;
     background-color: rgb(230, 220, 220);
     border-radius: 5px;
-    margin-top:.8rem;
+    margin-top:10px;
     right: 2rem;
     width: 360px;
-    height: 680px;
+    height: 720px;
     box-shadow: -12px 0 8px hsl(0 4% 15% / 10%  );
-}
-.cart.active {
-    right: 2rem;
-    transition: .4s linear;
 }
 .cart-title {
     text-align: center;
@@ -81,7 +74,7 @@
 .btn-buy {
     border: 1px solid black;
     margin-top: 1rem;
-    margin-left: 100px;
+    margin-left: 80px;
     display: inline-block;
     padding: .3rem 4rem;
     border-radius: 5px;
@@ -116,7 +109,7 @@ body{
     padding: 0;
     font-family: Arial, sans-serif;
     line-height: 1.6;
-    background-color: rgb(255, 250, 250);
+    background-color:#f7ddaa;
     color: #333;
 }
 .navbar {
