@@ -15,6 +15,12 @@ function updateOrderSummary()
     let totalPrice = 0;
 
     cartItems.forEach(item => {
-       
-    
+        const itemElement = document.createElement('li');
+        itemElement.textContent = `${item.name} - ₹${item.price} x ${item.quantity}`;
+        cartList.appendChild(itemElement);
+
+        totalPrice += item.price * item.quantity;
+    });
+
+   
 }
