@@ -22,5 +22,9 @@ body{
 }
 
 .headline {
-   
+    color: #093a05;
+    background-color: #57723e; 
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 50px;
 }
