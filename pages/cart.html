@@ -10,8 +10,30 @@
     <!--Box Icons-->
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
-</head>
 <body>
+    <nav class="navbar">
+        <div class="navdiv">
+            <div class="logo">
+                <a href="./index.html"><img src="/images/icons/home-logo/head-logo.png" alt="Logo"></a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="/index.html">Home</a></li>
+                <li><a href="./categories.html">Categories</a></li>
+                <li><a href="./about-us.html">About Us</a></li>
+                <li><a href="./contactus.html">Contact Us</a></li>
+            </ul>
+        <div class="sign">
+            <button class="signin-button"><a href="./signin.html">Sign In</a></button>
+            <div class="profile-container" id="profile-container">
+                <a href="/user-account.html"><img src="/images/icons/home-logo/user.png" height="33px" alt="Profile" class="profile-icon" id="profile-icon"></a>
+            </div>
+            <div class="cart-container" id="cart-container">
+                <a href="#"><img src="/images/icons/home-logo/shopping-cart.png" height="33px" alt="Cart" class="cart-icon" id="cart-icon"></a>
+            </div>
+        </div>
+        </div>
+    </nav>
+    
     <!--Cart-->
     <div class="cart">
         <h2 class="cart-title">Your Cart</h2>
@@ -22,7 +44,23 @@
                         <img src="/images/dryfruit-and-nuts/nutty.jpg" alt="" class="cart-img">
                         <div class="detail-box">
                             <div class="cart-product-title">nutty</div>
-                            <div class="cart-price">$ 350</div>
+                            <div class="cart-price">₹ 350/-</div>
+                            <input type="number" value="1" class="cart-quantity" id="quantity-text">
+                        </div>
+                        <i class='bx bxs-trash cart-remove'></i>
+                    </div>
+                </div>
+                <!--Total-->
+                <div class="total">
+                    <div class="total-title"></div>
+                    <div class="total-price"></div>
+                </div>
+                <div class="cart-content">
+                    <div class="cart-box">
+                        <img src="/images/biscuit-snacks/dark-fantasy.jpg" alt="" class="cart-img">
+                        <div class="detail-box">
+                            <div class="cart-product-title">dark-fantasy</div>
+                            <div class="cart-price">₹ 102 /-</div>
                             <input type="number" value="1" class="cart-quantity">
                         </div>
                         <i class='bx bxs-trash cart-remove'></i>
@@ -35,10 +73,10 @@
                 </div>
                 <div class="cart-content">
                     <div class="cart-box">
-                        <img src="/images/dryfruit-and-nuts/nutty.jpg" alt="" class="cart-img">
+                        <img src="/images/dairy-products/cadbury.jpg" alt="" class="cart-img">
                         <div class="detail-box">
-                            <div class="cart-product-title">nutty</div>
-                            <div class="cart-price">$ 350</div>
+                            <div class="cart-product-title">silk cadbury</div>
+                            <div class="cart-price">₹ 100 /-</div>
                             <input type="number" value="1" class="cart-quantity">
                         </div>
                         <i class='bx bxs-trash cart-remove'></i>
@@ -51,26 +89,10 @@
                 </div>
                 <div class="cart-content">
                     <div class="cart-box">
-                        <img src="/images/dryfruit-and-nuts/nutty.jpg" alt="" class="cart-img">
+                        <img src="/images/fruits/cherry.jpeg" alt="" class="cart-img">
                         <div class="detail-box">
-                            <div class="cart-product-title">nutty</div>
-                            <div class="cart-price">$ 350</div>
-                            <input type="number" value="1" class="cart-quantity">
-                        </div>
-                        <i class='bx bxs-trash cart-remove'></i>
-                    </div>
-                </div>
-                <!--Total-->
-                <div class="total">
-                    <div class="total-title"></div>
-                    <div class="total-price"></div>
-                </div>
-                <div class="cart-content">
-                    <div class="cart-box">
-                        <img src="/images/dryfruit-and-nuts/nutty.jpg" alt="" class="cart-img">
-                        <div class="detail-box">
-                            <div class="cart-product-title">nutty</div>
-                            <div class="cart-price"></div>
+                            <div class="cart-product-title">cherry</div>
+                            <div class="cart-price">₹ 159 /-</div>
                             <input type="number" value="1" class="cart-quantity">
                         </div>
                         <i class='bx bxs-trash cart-remove'></i>
@@ -79,13 +101,12 @@
                 <!--Total-->
                 <div class="total">
                     <div class="total-title">Total :</div>
-                    <div class="total-price">$350</div>
+                    <div class="total-price">₹ 711 /-</div>
                 </div>
                 
                 <!--check out link-->
                <a href="#" class="btn-buy">Checkout</a>
                 <!--cart close-->
-                <i class='bx bx-x' id="close-cart"></i>
             </div>
     </div>
     <script src="/js/cart.js"></script>
