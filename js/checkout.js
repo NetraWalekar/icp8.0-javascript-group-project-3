@@ -24,3 +24,8 @@ function updateOrderSummary()
 
     orderTotalElement.textContent = `Total Price: ₹${totalPrice.toFixed(2)}`;
 }
+
+document.getElementById('back-to-cart-button').addEventListener('click', () => {
+
+   
+});
