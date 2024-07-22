@@ -1,56 +1,142 @@
-//cart working js
-if (document.readyState == 'loading'){
-    document.addEventListener("DOMContentLoaded", ready);
-}else{
-    ready();
+const btnCart=document.querySelector('#cart-icon');
+const cart=document.querySelector('.cart');
+const btnClose=document.querySelector('#cart-close');
+
+btnCart.addEventListener('click',()=>{
+  cart.classList.add('cart-active');
+});
+
+btnClose.addEventListener('click',()=>{
+  cart.classList.remove('cart-active');
+});
+
+document.addEventListener('DOMContentLoaded',loadFood);
+
+function loadFood(){
+  loadContent();
+
 }
 
-//making function
-function ready(){
-    // remove Items from cart
-     var reomveCartButtons = document.getElementByClassName('cart-remove')
-     console.log(reomveCartButtons)
-     for (var i = 0; i < reomveCartButtons.length; i++){
-        var button = reomveCartButtons[i]
-        button.addEventListener("click", removeCartItem)
-     }
-     var quantityInputs = document.getElementsByClassName('cart-quantity')
-     for (var i = 0; i < quantityInputs.length; i++){
-        var input = quantityInputs[i];
-        input.addEventListener('change',quantityChanged);
-     }
-    }
+function loadContent(){
+  //Remove Food Items  From Cart
+  let btnRemove=document.querySelectorAll('.cart-remove');
+  btnRemove.forEach((btn)=>{
+    btn.addEventListener('click',removeItem);
+  });
 
-//Remove Items from cart
-function removeCartItem(event) {
-    var buttonClicked = event.target;
-    buttonClicked.parentElement.remove();
-    updatetotal();
-}
+  //Product Item Change Event
+  let qtyElements=document.querySelectorAll('.cart-quantity');
+  qtyElements.forEach((input)=>{
+    input.addEventListener('change',changeQty);
+  });
 
-//quantity change 
-function quantityChanged(event){
-    var input = event.target
-    if(isNaN(input.value) || input.value <= 0){
-        input.value = 1;
-    }
-    updatetotal();
+  //Product Cart
+  
+  let cartBtns=document.querySelectorAll('.add-cart');
+  cartBtns.forEach((btn)=>{
+    btn.addEventListener('click',addCart);
+  });
+
+  updateTotal();
 }
 
 
-//update total
-function updatetotal(){
-    var cartContent = document.getElementsByClassName('cart-content')[0];
-    var cartBoxes = cartContent.getElementsByClassName('cart-box');
-    for (var i = 0; i < cartBoxes.length; i++){
-        var cartBoxes = cartBoxes[i];
-        var priceElement = cartBox.getElementByClassName('cart-price')[0];
-        var quantityElement = cartBox.getElementByClassName('cart-quantity')[0];
-        var quantity = quantityElement.value;
-        var price = parseFloat(priceElement.innerText.replace("₹", ""));
-        total= total + (price * quantity);
+//Remove Item
+function removeItem(){
+  if(confirm('Are Your Sure to Remove')){
+    let title=this.parentElement.querySelector('.cart-food-title').innerHTML;
+    itemList=itemList.filter(el=>el.title!=title);
+    this.parentElement.remove();
+    loadContent();
+  }
+}
+
+//Change Quantity
+function changeQty(){
+  if(isNaN(this.value) || this.value<1){
+    this.value=1;
+  }
+  loadContent();
+}
+
+let itemList=[];
+
+//Add Cart
+function addCart(){
+ let food=this.parentElement;
+ let title=food.querySelector('.food-title').innerHTML;
+ let price=food.querySelector('.food-price').innerHTML;
+ let imgSrc=food.querySelector('.food-img').src;
+ //console.log(title,price,imgSrc);
+ 
+ let newProduct={title,price,imgSrc}
+
+ //Check Product already Exist in Cart
+ if(itemList.find((el)=>el.title==newProduct.title)){
+  alert("Product Already added in Cart");
+  return;
+ }else{
+  itemList.push(newProduct);
+ }
 
 
-        document.getElementsByClassName('tota;-price')[0].innerText = "₹" + total;
-    }
+let newProductElement= createCartProduct(title,price,imgSrc);
+let element=document.createElement('div');
+element.innerHTML=newProductElement;
+let cartBasket=document.querySelector('.cart-content');
+cartBasket.append(element);
+loadContent();
+}
+
+
+function createCartProduct(title,price,imgSrc){
+
+  return `
+  <div class="cart-box">
+  <img src="${imgSrc}" class="cart-img">
+  <div class="detail-box">
+    <div class="cart-food-title">${title}</div>
+    <div class="price-box">
+      <div class="cart-price">${price}</div>
+       <div class="cart-amt">${price}</div>
+   </div>
+    <input type="number" value="1" class="cart-quantity">
+  </div>
+  <ion-icon name="trash" class="cart-remove"></ion-icon>
+</div>
+  `;
+}
+
+function updateTotal()
+{
+  const cartItems=document.querySelectorAll('.cart-box');
+  const totalValue=document.querySelector('.total-price');
+
+  let total=0;
+
+  cartItems.forEach(product=>{
+    let priceElement=product.querySelector('.cart-price');
+    let price=parseFloat(priceElement.innerHTML.replace("Rs.",""));
+    let qty=product.querySelector('.cart-quantity').value;
+    total+=(price*qty);
+    product.querySelector('.cart-amt').innerText="Rs."+(price*qty);
+
+  });
+
+  totalValue.innerHTML='Rs.'+total;
+
+
+  // Add Product Count in Cart Icon
+
+  const cartCount=document.querySelector('.cart-count');
+  let count=itemList.length;
+  cartCount.innerHTML=count;
+
+  if(count==0){
+    cartCount.style.display='none';
+  }else{
+    cartCount.style.display='block';
+  }
+
+
 }
