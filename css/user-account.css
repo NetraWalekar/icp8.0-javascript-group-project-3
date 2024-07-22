@@ -4,6 +4,8 @@ body {
     display: flex;
     flex-direction: column;
     background-color: rgb(255, 250, 250);
+    min-height: 100vh;
+    position: relative;
 }
 
 .navbar {
@@ -92,21 +94,25 @@ body {
 
 .sidebar {
     width: 250px;
-    background-color: #365E32;
-    height: 100vh;
-    padding-top: 100px;
+    background-color: #4E763B;
+    /* height: calc(100vh - 60px);  */
+    height: 1000px;
+    padding-top: 60px;
     box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
-    position: fixed;
-    top: 60px; /* Adjusted to be below the navbar */
+    position: static;
+    top: 0px; /* Adjusted to be below the navbar */
+    /* bottom: 0; */
+    overflow-y: auto;
 }
 
 .sidebar ul {
     list-style-type: none;
     padding: 0;
+    margin-top: 80px;
 }
 
 .sidebar ul li {
-    padding: 15px;
+    padding: 20px;
     text-align: left;
 }
 
@@ -131,21 +137,14 @@ body {
     transform: scale(1.05);
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
 }
-/* 
-.content {
-    flex-grow: 1;
-    padding: 20px;
-    text-align: center;
-    margin-left: 250px; 
-    margin-top: 70px; 
-} */
 
 .content {
     flex-grow: 1;
     padding: 20px;
     text-align: center;
     margin-left: 250px; /* Adjust margin to account for the fixed sidebar */
-    margin-top: 70px; /* Adjust margin to account for the fixed navbar */
+    margin-top: -1000px; /* Adjust margin to account for the fixed navbar */
+    margin-bottom: 100px;
 }
 
 .user-info-table {
@@ -165,7 +164,6 @@ body {
 .user-info-table b {
     font-size: 19px;
 }
-
 
 h1 {
     color: #093505;
@@ -193,7 +191,6 @@ h1 {
     box-sizing: border-box;
 }
 
-
 #saveInfoButton, #savePasswordButton {
     padding: 10px 20px;
     background-color: #365E32;
@@ -207,3 +204,101 @@ h1 {
     background-color: #093505;
 }
 
+footer {
+    background-color: #365E32;
+    color: white;
+    padding: 0px 0;
+    text-align: center;
+    position: sticky;
+    width: 100%;
+    /* top: 100px; */
+   
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    padding: 10px 20px;
+}
+
+.footer-section {
+    flex: 1;
+    margin: 10px;
+    text-align: left;
+}
+
+.footer-logo-description {
+    margin-bottom: 10px;
+}
+
+.footer-logo {
+    width: 150px;
+    margin-bottom: 2px;
+}
+
+.contact-details, .payment-methods, .quick-links {
+    margin-bottom: 10px;
+}
+
+.contact-details h3, .payment-methods h3, .quick-links h3 {
+    margin-bottom: 5px;
+}
+
+.payment-icons {
+    display: flex;
+    text-align: left;
+    align-items: center;
+}
+
+.payment-icons img {
+    margin: 3px;
+    width: 50px;
+    height: auto;
+    vertical-align: middle;
+}
+
+.social-media-icons {
+    display: flex;
+    align-items: center;
+    text-align: left;
+}
+
+.social-media-icons img {
+    margin: 5px;
+    width: 25px;
+    height: auto;
+}
+
+.connect {
+    text-align: left;
+}
+
+.footer-links {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-links a {
+    text-decoration: none;
+    color: #ece7e7;
+    padding: 5px 0;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}
+
+footer.copyright {
+    width: 100%;
+    height: 30px;
+    text-align: center;
+    background-color: #f8f8f8;
+    color: #0c0c0c;
+}
+
+footer.copyright .footer-text {
+    line-height: 30px;
+    margin-top: -5px;
+}
