@@ -302,3 +302,49 @@ footer.copyright .footer-text {
     line-height: 30px;
     margin-top: -5px;
 }
+
+/* Media Queries */
+@media (max-width: 1200px) {
+    .content {
+        margin-left: 220px; /* Adjusted for smaller sidebar */
+    }
+}
+
+@media (max-width: 992px) {
+    .navbar .navdiv {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .signin-button {
+        margin: 10px 0;
+    }
+
+    .sidebar {
+        width: 200px;
+    }
+
+    .content {
+        margin-left: 200px;
+    }
+
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-section {
+        width: 100%;
+        margin: 10px 0;
+        text-align: center;
+    }
+
+    .footer-links {
+        align-items: center;
+    }
+}
