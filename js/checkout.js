@@ -37,10 +37,24 @@ document.getElementById('place-order-button').addEventListener('click', () => {
     const shippingCity = document.getElementById('shipping-city').value;
     const shippingPinCode = document.getElementById('shipping-pincode').value;
 
-    
+    const billingName = document.getElementById('billing-name').value;
+    const billingNo = document.getElementById('billing-no').value;
+    const billingAddress = document.getElementById('billing-address').value;
+   const billingCity = document.getElementById('billing-city').value;
+    const billingPinCode = document.getElementById('billing-pincode').value;
 
-    
-    
+    const paymentMethod = document.getElementById('payment-method').value;
+   
+    // Example validation and submission logic
+
+    if (shippingName && shippingAddress && shippingCity &&  shippingPinCode &&
+    billingName && billing-no && billingAddress && billingCity && billingPinCode && paymentMethod) {
+    alert('Your Order has been placed successfully!');
+       
+    }
+    else {
+        alert('Please fill in all required details..!');
+    }
 });
 
 updateOrderSummary();
