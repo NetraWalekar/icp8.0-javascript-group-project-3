@@ -1,15 +1,12 @@
 .cart {
-    position: fixed;
-    top: 0;
+    position: absolute;
+    background-color: rgb(230, 220, 220);
+    border-radius: 5px;
+    margin-top:10px;
     right: 2rem;
     width: 360px;
-    min-height: 100vh;
-    background: var(--bg-color);
+    height: 720px;
     box-shadow: -12px 0 8px hsl(0 4% 15% / 10%  );
-}
-.cart.active {
-    right: 2rem;
-    transition: .4s linear;
 }
 .cart-title {
     text-align: center;
@@ -22,7 +19,7 @@
     grid-template-columns: 32% 50% 18%;
     align-items: center;
     gap: 1rem;
-    margin-top: 1rem;
+    margin-top: .7rem;
 }
 .cart-img {
     width: 90px;
@@ -77,7 +74,7 @@
 .btn-buy {
     border: 1px solid black;
     margin-top: 1rem;
-    margin-left: 100px;
+    margin-left: 80px;
     display: inline-block;
     padding: .3rem 4rem;
     border-radius: 5px;
@@ -96,29 +93,103 @@
 .btn-buy:hover {
     background-color: green;
     color: white;
-    transition: 0.2s;
+    transition: 0.4s;
     border-radius: 10px 0 10px 0;
 }
-#close-cart {
-    position: absolute;
-    top: 0.1rem;
-    right: 0.1rem;
-    font-size: 2rem;
-    color: var(--text-color);
-    cursor: pointer;
-}
-#close-cart:hover {
-    /*border: 1px solid rgb(220, 211, 211);*/
-    background-color:rgb(221, 209, 209);
-    color: red;
-    transition: 0.3s linear;
-}
-/*.cart.active {
-    right: 0;
-}*/
 .cart-title {
     text-align: center;
     font-size: 1.5rem;
     font-weight: 600;
     margin-top: ;
+}
+
+/*Navkar*/
+body{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color:#f7ddaa;
+    color: #333;
+}
+.navbar {
+    margin: 0;
+    background-color: #81A263;
+}
+
+.navdiv {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+
+.logo img {
+    height: 50px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li {
+    margin: 0 15px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    padding: 14px 20px;
+    display: block;
+}
+
+.nav-links a:hover {
+    background-color: #093505;
+    border-radius: 5px;
+}
+
+.signin-button {
+    background-color: #365E32;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin-right: 15px;
+    border-radius: 5px;
+}
+
+.signin-button a {
+    color: white;
+    text-decoration: none;
+}
+
+.signin-button:hover {
+    background-color: #093505;
+}
+
+.sign {
+    display: flex;
+    justify-content: space-between;
+}
+
+.profile-container, .cart-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 15px;
+}
+
+.profile-text, .cart-text {
+    display: none;
+    position: absolute;
+    top: 50px; 
+    color: white;
+    font-size: 12px;
+    background-color: #333;
+    padding: 5px;
+    border-radius: 3px;
 }
