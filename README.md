@@ -11,6 +11,8 @@ Nature's Basket is an online grocery shopping website designed to provide users 
   - [Categories Page](#categories-page)
   - [About Us Page](#about-us-page)
   - [Contact Us Page](#contact-us-page)
+  - [*Example Screenshot of Website.*](#example-screenshot-of-website)
+  - [*Visite to our website.*](#visite-to-our-website)
   - [Sign In Page](#sign-in-page)
   - [Cart Page](#cart-page)
   - [Discount Cards](#discount-cards)
@@ -46,6 +48,11 @@ Provides information about Nature's Basket, including our mission, vision, and h
 
 ## Contact Us Page
 Allows users to get in touch with us via a contact form. Users can send queries or feedback directly from this page.
+## *Example Screenshot of Website.*
+![Example Screenshot of Website.](./images/home-page-ss.png)
+ 
+## *Visite to our website.*
+[Tap here .](https://naturesbasket.netlify.app/)
 
 ## Sign In Page
 Users can sign in to their account or register for a new account. The page includes forms for entering email and password.
