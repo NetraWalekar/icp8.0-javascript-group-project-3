@@ -111,4 +111,7 @@ select
     box-sizing: border-box;
 }
 
-.buttons 
+.buttons {
+    display: flex;
+    justify-content: space-evenly;
+}
