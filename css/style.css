@@ -1,7 +1,7 @@
 * {
     text-decoration: none;
 }
-/* Reset some default browser styles */
+
 body, h1, h2, h3, p, ul, li, a, img {
     margin: 0;
     padding: 0;
@@ -9,13 +9,12 @@ body, h1, h2, h3, p, ul, li, a, img {
     list-style: none;
 }
 
-/* General body styling */
+
 body {
     font-family: Arial, sans-serif;
     background-color: rgb(255, 250, 250);;
-    margin-top: 60px; /* Add top margin to compensate for fixed navbar */
+    margin-top: 60px; 
 }
-
 
 .navbar {
     position: fixed;
@@ -102,16 +101,9 @@ body {
     margin-left: 15px;
 }
 
-.profile-text, .cart-text {
-    display: none;
-    position: absolute;
-    top: 50px; 
-    color: white;
-    font-size: 12px;
-    background-color: #333;
-    padding: 5px;
-    border-radius: 3px;
-}
+
+
+
 
 .head-img {
     padding-top: 60px; 
@@ -268,7 +260,7 @@ body {
     padding: 5px; 
 }
 
-/* Base Styles */
+
 footer {
     background-color: #365E32;
     color: white;
