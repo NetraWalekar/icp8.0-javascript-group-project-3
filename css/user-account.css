@@ -96,10 +96,10 @@ body {
     width: 250px;
     background-color: #365E32;
     /* height: calc(100vh - 60px);  */
-    height: 600px;
+    height: 1000px;
     padding-top: 60px;
     box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
-    position: fixed;
+    position: static;
     top: 0px; /* Adjusted to be below the navbar */
     /* bottom: 0; */
     overflow-y: auto;
@@ -142,7 +142,7 @@ body {
     padding: 20px;
     text-align: center;
     margin-left: 250px; /* Adjust margin to account for the fixed sidebar */
-    margin-top: 70px; /* Adjust margin to account for the fixed navbar */
+    margin-top: -1000px; /* Adjust margin to account for the fixed navbar */
     margin-bottom: 100px;
 }
 
