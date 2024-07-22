@@ -39,7 +39,7 @@ document.getElementById('place-order-button').addEventListener('click', () => {
 
     const billingName = document.getElementById('billing-name').value;
     const billingNo = document.getElementById('billing-no').value;
-    
+    const billingAddress = document.getElementById('billing-address').value;
    
    
     
