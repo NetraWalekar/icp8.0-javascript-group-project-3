@@ -1,11 +1,21 @@
+//cart working js
+if (document.readyState == 'loading'){
+    document.addEventListener("DOMContentLoaded", ready);
+}else{
+    ready();
+}
+
+//making function
 function ready(){
     // remove Items from cart
-     var removeCartButtons = document.getElementByClassName('cart-remove');
-     console.log(removeCartButtons);
-     for (var i=0; i < removeCartButtons.length; i++){
-        var button = removeCartButtons[i];
-        button.addEventListener("click", removeCartItem);
+     var reomveCartButtons = document.getElementByClassName('cart-remove');
+     console.log(reomveCartButtons);
+     for (var i=0; i < reomveCartButtons.length; i++){
+        var button = reomveCartButtons[i]
+        button.addEventListener("click", removeCartItem)
      }
+    }
+
      //Quantity Changes
       var quantityInputs = document.getElementsByClassName('cart-quantity');
       for (var i=0; i < quantityInputs.length; i++){
@@ -18,7 +28,6 @@ function ready(){
         var button = addCart[i]
         button.addEventListener("click", addCartClicked);
        }
-}
 
 //Remove Items from cart
 function removeCartItem(event) {
@@ -39,7 +48,7 @@ function quantityChanged(event){
 //Add to cart
  function addCartClicked(event){
     var button = event.target;
-    var shopProducts = button.parentElement:
+    var shopProducts = button.parentElement;
     var title = shop log(...data: any[]): void lassName("product-title")[0].innerText;
     var price = shop log(...data: any[]): void lassName("price")[0].innerText;
     var productImg = shop log(...data: any[]): void lassName('product-img')[0].src;
