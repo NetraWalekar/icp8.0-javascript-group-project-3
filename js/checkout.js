@@ -27,7 +27,7 @@ function updateOrderSummary()
 
 document.getElementById('back-to-cart-button').addEventListener('click', () => {
 
-    window.location.href = 'js/cart.js';
+    window.location.href = 'cart.html';
 });
 
 document.getElementById('place-order-button').addEventListener('click', () => {
