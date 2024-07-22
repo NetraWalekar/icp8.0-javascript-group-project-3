@@ -52,6 +52,9 @@ document.getElementById('place-order-button').addEventListener('click', () => {
     alert('Your Order has been placed successfully!');
        
     }
+    else {
+        alert('Please fill in all required details..!');
+    }
 });
 
 updateOrderSummary();
