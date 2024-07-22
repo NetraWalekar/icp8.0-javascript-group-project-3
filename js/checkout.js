@@ -46,8 +46,12 @@ document.getElementById('place-order-button').addEventListener('click', () => {
     const paymentMethod = document.getElementById('payment-method').value;
    
     // Example validation and submission logic
-    
-    
+
+    if (shippingName && shippingAddress && shippingCity &&  shippingPinCode &&
+    billingName && billing-no && billingAddress && billingCity && billingPinCode && paymentMethod) {
+    alert('Your Order has been placed successfully!');
+       
+    }
 });
 
 updateOrderSummary();
