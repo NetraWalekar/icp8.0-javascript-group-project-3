@@ -38,7 +38,7 @@ document.getElementById('place-order-button').addEventListener('click', () => {
     const shippingPinCode = document.getElementById('shipping-pincode').value;
 
     const billingName = document.getElementById('billing-name').value;
-
+    const billingNo = document.getElementById('billing-no').value;
     
    
    
