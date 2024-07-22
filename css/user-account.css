@@ -95,12 +95,13 @@ body {
 .sidebar {
     width: 250px;
     background-color: #365E32;
-    height: calc(100vh - 60px); /* Adjusted to be below the navbar */
+    /* height: calc(100vh - 60px);  */
+    height: 600px;
     padding-top: 60px;
     box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
     position: fixed;
-    top: 60px; /* Adjusted to be below the navbar */
-    bottom: 0;
+    top: 0px; /* Adjusted to be below the navbar */
+    /* bottom: 0; */
     overflow-y: auto;
 }
 
@@ -205,10 +206,11 @@ h1 {
 footer {
     background-color: #365E32;
     color: white;
-    padding: 10px 0;
+    padding: 0px 0;
     text-align: center;
     position: sticky;
     width: 100%;
+    /* top: 100px; */
    
 }
 
