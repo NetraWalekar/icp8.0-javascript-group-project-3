@@ -12,5 +12,9 @@ function updateOrderSummary()
     const orderTotalElement = document.getElementById('order-total');
     cartList.innerHTML = '';
 
-   
+    let totalPrice = 0;
+
+    cartItems.forEach(item => {
+       
+    
 }
