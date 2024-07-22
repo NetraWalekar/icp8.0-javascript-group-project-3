@@ -37,8 +37,11 @@ document.getElementById('place-order-button').addEventListener('click', () => {
     const shippingCity = document.getElementById('shipping-city').value;
     const shippingPinCode = document.getElementById('shipping-pincode').value;
 
-    
+    const billingName = document.getElementById('billing-name').value;
 
+    
+   
+   
     
     
 });
