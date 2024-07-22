@@ -110,3 +110,8 @@ select
     border-radius: 4px;
     box-sizing: border-box;
 }
+
+.buttons {
+    display: flex;
+    justify-content: space-evenly;
+}
