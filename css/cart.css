@@ -24,6 +24,7 @@
     border:2px solid  rgba(0,0,0,0.1);
     padding: 5px;
   }
+  
   .detail-box{
     display: grid;
     row-gap: 0.5rem;  
@@ -37,7 +38,7 @@
   .cart-food-title{
      font-size: 1rem;
      text-transform: uppercase;
-     color:#ff6348;
+     color:blue;
      font-weight: 500;
   }
   
@@ -54,9 +55,13 @@
   }
   
   .cart-remove{
+    margin-left: 60px;
     font-size: 24px;
-    color:red;
+    color:black;
     cursor: pointer;
+  }
+  .cart-remove:hover{
+    color: red;
   }
   
   .total{
@@ -91,6 +96,7 @@
   .btn:hover {
     color: white;
     background-color: green;
+    border: none;
     transition: 0.3s;
   }
   #cart-close{
@@ -100,11 +106,12 @@
     font-size: 2rem;
     cursor: pointer;
   }
+
 /*Navkar*/
 body{
     margin: 0;
     padding: 0;
-    font-family: Arial, sans-serif;
+   
     line-height: 1.6;
     background-color:#f7ddaa;
     color: #333;
