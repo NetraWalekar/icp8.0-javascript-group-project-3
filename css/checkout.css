@@ -1,0 +1,30 @@
+body{
+    font-family: Arial, sans-serif;
+    background-color: #f7ddaa;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    box-sizing: border-box;
+}
+
+.container {
+    background-color: #ffffff;
+    padding: 20px;
+    border: #082c05 solid;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    max-width: 600px;
+    margin: 20px auto;
+}
+
+.headline {
+    color: #093a05;
+    background-color: #57723e; 
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
