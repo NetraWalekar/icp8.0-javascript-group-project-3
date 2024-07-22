@@ -22,5 +22,5 @@ function updateOrderSummary()
         totalPrice += item.price * item.quantity;
     });
 
-   
+    orderTotalElement.textContent = `Total Price: ₹${totalPrice.toFixed(2)}`;
 }
