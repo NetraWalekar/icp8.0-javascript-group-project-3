@@ -41,3 +41,21 @@ body{
     border-radius: 10px;
     padding: 20px;
 }
+
+.billing-info {
+    margin: 20px;
+    border: double #082c05;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.payment-info {
+    margin: 20px;
+}
+
+.order-title {  
+    color: #073104;
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
