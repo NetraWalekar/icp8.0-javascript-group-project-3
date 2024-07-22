@@ -2,24 +2,18 @@ body{
     margin: 0;
     padding: 0;
 }
-.navbar {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    background-color: #333;
-    z-index: 1000; /* Ensure the navbar is on top */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
 
-.navbar {
+.navbar1 {
     background-color: #81A263;
     z-index: 1000;
     position: fixed;
     top: 0;
     width: 100%;
+    display: flex;
+    justify-content: right;
 }
 
-.navdiv {
+.navdiv1 {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -28,6 +22,9 @@ body{
 
 .logo img {
     height: 50px;
+    position: fixed;
+    left: 0;
+    top: 3px;
 }
 
 .nav-links {
@@ -95,7 +92,7 @@ body{
     padding: 5px;
     border-radius: 3px;
 }
-
+/* 
 .nav-down{
     background-color: #81A263 ;
     position: fixed;
@@ -105,23 +102,112 @@ body{
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-}
+} */
 
 .icon{
     height: 30px;
     padding: 5px;
     margin: 0px;
+    cursor: pointer;
 }
-
+.ref{
+  text-decoration: none;
+  color: white;
+}
+.side_bar{
+    background-color:#81A263;
+    color: white;
+    width: 200px;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    right: 0;
+}
+.side_bar_links{
+    font-size: 20px;
+    padding-left: 10px;
+    margin: 20px;
+    cursor: pointer;
+}
+.menu-left{
+    position: fixed;
+    left: 10px;
+    padding: 10px;
+    visibility: hidden;
+    cursor: pointer;
+}
 @media (max-width: 480px){
+  .nav-links{
+    visibility: hidden;
+  }
+  .sign{
+    visibility: hidden;
+  }
+  .profile-container{
+    visibility: hidden;
+  }
+  .cart-container{
+    visibility: hidden;
+  }
+  .menu{
+    position: fixed;
+    right: 10px;
+  }
+  .side_bar{
+    visibility: hidden;
+  }
+
+}
+@media (max-width: 769px){
     .nav-links{
-        visibility: hidden;
+      visibility: hidden;
     }
     .sign{
-        position: fixed;
-        right: 5px;
+      visibility: hidden;
     }
-    .signin-button{
-        visibility: hidden;
+    .profile-container{
+      visibility: hidden;
     }
-}
+    .cart-container{
+      visibility: hidden;
+    }
+    .menu{
+      position: fixed;
+      right: 10px;
+    }
+    .side_bar{
+      visibility: hidden;
+    }
+  
+  }
+
+  @media (max-width: 951px){
+    .nav-links{
+      visibility: hidden;
+    }
+    .sign{
+      visibility: hidden;
+    }
+    .profile-container{
+      visibility: hidden;
+    }
+    .cart-container{
+      visibility: hidden;
+    }
+    .menu{
+      position: fixed;
+      right: 10px;
+    }
+    .side_bar{
+      visibility: hidden;
+    }
+  
+  }
+ @media screen and (min-width:951px) and (max-width:1900px) {
+     .side_bar{
+      visibility: hidden;
+     }
+    .menu{
+      visibility: hidden;
+    }
+ }
