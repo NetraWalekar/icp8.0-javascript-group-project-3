@@ -1,8 +1,8 @@
 .cart {
-    margin-left: 600px;
+    position: absolute;
     background-color: rgb(230, 220, 220);
     border-radius: 5px;
-    margin-top:0;
+    margin-top:10px;
     right: 2rem;
     width: 360px;
     height: 720px;
