@@ -17,7 +17,7 @@
                 <li><a href="#" class="link-names">Home</a></li>
                 <li><a href="./../pages/categories.html" class="link-names">Categories</a></li>
                 <li><a href="./../pages/about-us.html" class="link-names">About Us</a></li>
-                <li><a href="#" class="link-names">Contact Us</a></li>
+                <li><a href="./../pages/contactus.html" class="link-names">Contact Us</a></li>
             </ul>
         <div class="sign">
             <button class="signin-button"><a href="./../pages/signin.html">Sign In</a></button>
@@ -43,7 +43,7 @@
          <span class="quantity-size"  id="quantity-text">1</span> 
             <img src="./../images/icons/plus.png" class="btn-quantity" onclick="plusminus('increment')"/>
       </div>
-          <span class="price"> ₹499 </span>
+          <span class="price" id="p0"> ₹499 </span>
           <span class="mrp"> ₹580 <button class="off">14%</button></span>
           <button class="button" id="btn" onclick="textChange();add_cart(0)">Add to Cart</button>
       </div>
@@ -55,7 +55,7 @@
          <span class="quantity-size"  id="quantity-text1">1</span> 
             <img src="./../images/icons/plus.png" class="btn-quantity" onclick="plusminus1('increment')"/>
       </div>
-          <span class="price">₹217</span>
+          <span class="price" id="p1">₹217</span>
           <span class="mrp"> ₹239 <button class="off">9%</button></span>
           <button class="button" id="btn1" onclick="textChange1();add_cart(1)">Add to Cart</button>
       </div>
@@ -67,7 +67,7 @@
          <span class="quantity-size"  id="quantity-text2">1</span> 
             <img src="./../images/icons/plus.png" class="btn-quantity" onclick="plusminus2('increment')"/>
       </div>
-          <span class="price">₹145
+          <span class="price" id="p2">₹145
           </span>
           <span class="mrp"> ₹239 <button class="off">14%</button></span>
           <button class="button" id="btn2" onclick="textChange2();add_cart(2)">Add to Cart</button>
@@ -80,7 +80,7 @@
          <span class="quantity-size"  id="quantity-text3">1</span> 
             <img src="./../images/icons/plus.png" class="btn-quantity" onclick="plusminus3('increment')"/>
       </div>
-            <span class="price">₹160</span>
+            <span class="price" id="p3">₹160</span>
             <span class="mrp"> ₹249 <button class="off">15%</button></span>
          <button class="button" id="btn3" onclick="textChange3();add_cart(3)">Add to Cart</button>
       </div>
@@ -92,7 +92,7 @@
          <span class="quantity-size"  id="quantity-text4">1</span> 
             <img src="./../images/icons/plus.png" class="btn-quantity" onclick="plusminus4('increment')"/>
       </div>
-            <span class="price">₹160</span>
+            <span class="price" id="p4">₹160</span>
           <span class="mrp"> ₹230 <button class="off">12%</button></span>
           <button class="button" id="btn4" onclick="textChange4();add_cart(4)">Add to Cart</button>
       </div>
@@ -104,7 +104,7 @@
          <span class="quantity-size"  id="quantity-text5">1</span> 
             <img src="./../images/icons/plus.png" class="btn-quantity" onclick="plusminus5('increment')"/>
       </div>
-            <span class="price">₹144.</span>
+            <span class="price" id="p5">₹144.</span>
          <span class="mrp"> ₹152 <button class="off">5%</button></span>
          <button class="button" id="btn5" onclick="textChange5();add_cart(5)">Add to Cart</button>
       </div>
@@ -116,7 +116,7 @@
          <span class="quantity-size"  id="quantity-text6">1</span> 
             <img src="./../images/icons/plus.png" class="btn-quantity" onclick="plusminus6('increment')"/>
       </div>
-            <span class="price">₹128</span>
+            <span class="price" id="p6">₹128</span>
         <span class="mrp"> ₹130 <button class="off">2%</button></span>
         <button class="button" id="btn6" onclick="textChange6();add_cart(6)">Add to Cart</button>
      </div>
@@ -128,7 +128,7 @@
          <span class="quantity-size"  id="quantity-text7">1</span> 
             <img src="./../images/icons/plus.png" class="btn-quantity" onclick="plusminus7('increment')"/>
      </div>
-            <span class="price"> ₹234</span>
+            <span class="price" id="p7"> ₹234</span>
         <span class="mrp">₹245 <button class="off">4%</button></span>
         <button class="button" id="btn7" onclick="textChange7();add_cart(7)">Add to Cart</button>
      </div>
@@ -140,7 +140,7 @@
          <span class="quantity-size"  id="quantity-text8">1</span> 
             <img src="./../images/icons/plus.png" class="btn-quantity" onclick="plusminus8('increment')"/>
      </div>
-            <span class="price"> ₹53</span>
+            <span class="price" id="p8"> ₹53</span>
         <span class="mrp">₹112 <button class="off">53%</button></span>
         <button class="button" id="btn8" onclick="textChange8();add_cart(8)">Add to Cart</button>
      </div>
@@ -152,7 +152,7 @@
          <span class="quantity-size"  id="quantity-text9">1</span> 
             <img src="./../images/icons/plus.png" class="btn-quantity" onclick="plusminus9('increment')"/>
      </div>
-            <span class="price">₹236.</span>
+            <span class="price" id="p9">₹236.</span>
         <span class="mrp">₹249<button class="off">5%</button></span>
         <button class="button" id="btn9" onclick="textChange9();add_cart(9)">Add to Cart</button>
      </div>
@@ -211,7 +211,7 @@
             <div class="footer-links">
                 <h3>Quick Links</h3>
                 <a href="../pages/about-us.html">About Us</a>
-                <a href="#">Contact Us</a>
+                <a href="../pages/contactus.html">Contact Us</a>
                 <a href="../pages/privacy-policy.html">Privacy Policy</a>
                 <a href="../pages/terms-condition.html">Terms and Conditions</a>
             </div>
