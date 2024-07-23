@@ -2,14 +2,37 @@
     text-decoration: none;
 }
 
-body {
+body, h1, h2, h3, p, ul, li, a, img {
     margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+}
+
+
+body {
     font-family: Arial, sans-serif;
-    background-color: rgb(255, 250, 250);
+    background-color: rgb(255, 250, 250);;
+    margin-top: 60px; 
 }
 
 .navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #333;
+    z-index: 1000; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+
+
+.navbar {
     background-color: #81A263;
+    z-index: 1000;
+    position: fixed;
+    top: 0;
+    width: 100%;
 }
 
 .navdiv {
@@ -78,19 +101,12 @@ body {
     margin-left: 15px;
 }
 
-.profile-text, .cart-text {
-    display: none;
-    position: absolute;
-    top: 50px; 
-    color: white;
-    font-size: 12px;
-    background-color: #333;
-    padding: 5px;
-    border-radius: 3px;
-}
+
+
+
 
 .head-img {
-    padding: 20px; 
+    padding-top: 60px; 
     text-align: center;
 }
 
@@ -101,14 +117,15 @@ body {
     border: 2px solid #365E32;
     background-color: #ddd;
 }
-
 .card-container {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin: 0 10px;
+    justify-content: space-around;
     flex-wrap: wrap;
+    margin: 20px auto;
+    max-width: 1200px;
+    gap: 20px;
 }
+
 
 .card {
     border-radius: 10px;
@@ -141,14 +158,14 @@ body {
 .top-deals {
     text-align: center;
 }
-
 .discount-card-container {
     display: flex;
-    flex-wrap: wrap;
     justify-content: space-around;
-    gap: 15px;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 20px;
 }
-
 .discount-card {
     background-color: rgb(253, 246, 234);
     border: 1px solid grey;
@@ -213,15 +230,15 @@ body {
     text-align: center;
     color: rgb(36, 35, 35);
 }
-
 .video-container {
     display: flex;
-    flex-wrap: wrap;
     justify-content: space-around;
-    align-items: center; 
-    margin-top: 20px;
-    padding: 20px; 
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 20px;
 }
+
 
 .video-wrapper {
     flex: 0 0 auto;
@@ -242,6 +259,7 @@ body {
     font-weight: bold;
     padding: 5px; 
 }
+
 
 footer {
     background-color: #365E32;
@@ -273,11 +291,11 @@ footer {
     margin-bottom: 2px;
 }
 
-.contact-details, .payment-methods, .quick-links {
+.contact-details, .payment-methods, .footer-links {
     margin-bottom: 10px;
 }
 
-.contact-details h3, .payment-methods h3, .quick-links h3 {
+.contact-details h3, .payment-methods h3, .footer-links h3 {
     margin-bottom: 5px;
 }
 
@@ -326,66 +344,40 @@ footer {
 }
 
 footer.copyright {
-    width: 100%; 
-    height: 30px; 
-    text-align: center; 
-    background-color: #f8f8f8; 
+    width: 100%;
+    height: 30px;
+    text-align: center;
+    background-color: #f8f8f8;
     color: #0c0c0c;
 }
 
 footer.copyright .footer-text {
-    line-height: 30px; 
-    margin-top: -5px; 
+    line-height: 30px;
+    margin-top: -5px;
 }
 
-/* Responsive styles */
+.copyright {
+    text-align: center;
+}
+
+/* Media Queries */
 @media (max-width: 1200px) {
-    .nav-links {
+    .footer-container {
         flex-direction: column;
         align-items: center;
     }
 
-    .sign {
-        flex-direction: column;
-        align-items: center;
+    .footer-section {
+        width: 100%;
+        text-align: center;
     }
 
-    .card-container {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .video-container {
-        flex-direction: column;
+    .payment-icons, .social-media-icons {
+        justify-content: center;
     }
 }
 
 @media (max-width: 768px) {
-    .navdiv {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .nav-links {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .sign {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .card-container {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .discount-card-container {
-        flex-direction: column;
-        align-items: center;
-    }
-
     .footer-container {
         flex-direction: column;
         align-items: center;
@@ -393,87 +385,59 @@ footer.copyright .footer-text {
 
     .footer-section {
         text-align: center;
+        width: 100%;
+        margin: 10px 0;
+        background-color: #365E32; 
     }
 
-    .payment-icons {
+    .payment-icons, .social-media-icons {
         justify-content: center;
-    }
-}
-
-@media (max-width: 480px) {
-    .navdiv {
-        flex-direction: column;
-        align-items: center;
-        padding: 10px;
-    }
-
-    .nav-links {
-        flex-direction: column;
-        align-items: center;
         width: 100%;
     }
 
-    .nav-links li {
-        margin: 10px 0;
-    }
-
-    .sign {
-        flex-direction: column;
-        align-items: center;
-        width: 100%;
-    }
-
-    .signin-button {
-        width: 100%;
-        margin: 10px 0;
-    }
-
-    .card-container {
-        flex-direction: column;
-        align-items: center;
-        width: 100%;
-    }
-
-    .discount-card-container {
-        flex-direction: column;
-        align-items: center;
-        width: 100%;
-    }
-
-    .video-container {
-        flex-direction: column;
-        align-items: center;
-        width: 100%;
-    }
-
-    .footer-container {
-        flex-direction: column;
-        align-items: center;
-        padding: 10px;
-    }
-
-    .footer-section {
+    .connect {
         text-align: center;
-        width: 100%;
-        margin: 10px 0;
-    }
-
-    .payment-icons {
-        justify-content: center;
-        width: 100%;
     }
 
     .social-media-icons {
         justify-content: center;
+        margin-top: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+    }
+
+    .footer-section {
+        text-align: center;
+        width: 100%;
+        margin: 10px 0;
+        background-color: #365E32; 
+    }
+
+    .payment-icons, .social-media-icons {
+        justify-content: center;
         width: 100%;
     }
 
-    /* Hide text on mobile screens */
-    .nav-links a span, .signin-button span {
+    .connect {
+        text-align: center;
+    }
+
+    .social-media-icons {
+        justify-content: center;
+        margin-top: 10px;
+    }
+
+    .footer-links a span {
         display: none;
     }
 
-    .nav-links a i, .signin-button i {
+    .footer-links a i {
         display: inline-block;
     }
 }

@@ -18,10 +18,10 @@
             <a href="../index.html"><img src="../images/icons/home-logo/head-logo.png" alt="Logo"></a>
          </div>
          <ul class="nav-links">
-            <li><a href="#">Home</a></li>
+            <li><a href="../index.html">Home</a></li>
             <li><a href="../pages/categories.html">Categories</a></li>
             <li><a href="../pages/about-us.html">About Us</a></li>
-            <li><a href="#">Contact Us</a></li>
+            <li><a href="../pages/contactus.html">Contact Us</a></li>
          </ul>
          <div class="sign">
             <button class="signin-button"><a href="../pages/signin.html">Sign In</a></button>
@@ -33,13 +33,12 @@
             <div class="cart-container">
                <a href="./pages/cart.html"><img src="../images/icons/home-logo/shopping-cart.png" height="33px"
                      alt="Cart" class="cart-icon" id="cart-icon"></a>
-
             </div>
          </div>
       </div>
    </nav>
 
-   <h1 style="color: #093505;">Top Deals On Grocery </h1>
+   <h1 style="color: #093505;text-align: center;">Top Deals On Grocery </h1>
    <div class="product-container">
       <div class="product-card"><img src="../images/categories/top-deals/almonds.webp" class="product-img">
          <span class="product-name"> Nutraj Australian Almonds Kernel 500g
@@ -51,116 +50,116 @@
          </div>
          <span class="price"> ₹359.00</span>
          <span class="mrp"> ₹699.00 <button class="off">75%</button></span>
-         <button class="button" id="1" onclick="add_cart(1)">Add</button>
+         <button class="button" id="btn" onclick="textChange(); add_cart(0)">Add</button>
       </div>
       <div class="product-card">
          <img src="../images/categories/top-deals/amul_butter.webp" class="product-img">
          <span class="product-name">Amul Butter 100 (Carton)</span>
          <div class="quantity-btn-container">
-            <img src="./../images/icons/minus.png " class="btn-quantity" onclick="plusminus('decrement')" />
-            <span class="quantity-size" id="quantity-text">1</span>
-            <img src="./../images/icons/plus.png" class="btn-quantity" onclick="plusminus('increment')" />
+            <img src="./../images/icons/minus.png " class="btn-quantity" onclick="plusminus1('decrement')" />
+            <span class="quantity-size" id="quantity-text1">1</span>
+            <img src="./../images/icons/plus.png" class="btn-quantity" onclick="plusminus1('increment')" />
          </div>
          <span class="price">₹54.00</span>
          <span class="mrp">₹58.00<button class="off">6%</button></span>
-         <button class="button" id="2" onclick="add_cart(2)">Add</button>
+         <button class="button" id="btn1" onclick="textChange1(); add_cart(1)">Add</button>
       </div>
       <div class="product-card">
          <img src="../images/categories/top-deals/condensed_milk.webp" class="product-img">
          <span class="product-name">Nestle Milkmaid Condensed Milk 380 g<br></span>
          <div class="quantity-btn-container">
-            <img src="./../images/icons/minus.png " class="btn-quantity" onclick="plusminus('decrement')" />
-            <span class="quantity-size" id="quantity-text">1</span>
-            <img src="./../images/icons/plus.png" class="btn-quantity" onclick="plusminus('increment')" />
+            <img src="./../images/icons/minus.png " class="btn-quantity" onclick="plusminus2('decrement')" />
+            <span class="quantity-size" id="quantity-text2">1</span>
+            <img src="./../images/icons/plus.png" class="btn-quantity" onclick="plusminus2('increment')" />
          </div>
          <span class="price">₹124.00</span>
          <span class="mrp">₹147.00 <button class="off">15%</button></span>
-         <button class="button" id="3" onclick="add_cart(3)">Add</button>
+         <button class="button" id="btn2" onclick="textChange2(); add_cart(2)">Add</button>
       </div>
       <div class="product-card">
          <img src="../images/categories/top-deals/kellogs.webp" class="product-img">
          <span class="product-name">Kellogg's Muesli Fruit Nut & Seeds 750G | </span>
          <div class="quantity-btn-container">
-            <img src="./../images/icons/minus.png " class="btn-quantity" onclick="plusminus('decrement')" />
-            <span class="quantity-size" id="quantity-text">1</span>
-            <img src="./../images/icons/plus.png" class="btn-quantity" onclick="plusminus('increment')" />
+            <img src="./../images/icons/minus.png " class="btn-quantity" onclick="plusminus3('decrement')" />
+            <span class="quantity-size" id="quantity-text3">1</span>
+            <img src="./../images/icons/plus.png" class="btn-quantity" onclick="plusminus3('increment')" />
          </div>
          <span class="price"> ₹359.00 </span>
          <span class="mrp"> ₹499.00<button class="off">28%</button></span>
-         <button class="button" id="4" onclick="add_cart(4)">Add</button>
+         <button class="button" id="btn3" onclick="textChange3();add_cart(3)">Add</button>
       </div>
       <div class="product-card">
          <img src="../images/categories/top-deals/lotte_choco_pie.jpg" class="product-img">
          <span class="product-name"> Lotte Choco Pie 28 g (12 pcs)</span>
 
          <div class="quantity-btn-container">
-            <img src="./../images/icons/minus.png " class="btn-quantity" onclick="plusminus('decrement')" />
-            <span class="quantity-size" id="quantity-text">1</span>
-            <img src="./../images/icons/plus.png" class="btn-quantity" onclick="plusminus('increment')" />
+            <img src="./../images/icons/minus.png " class="btn-quantity" onclick="plusminus4('decrement')" />
+            <span class="quantity-size" id="quantity-text4">1</span>
+            <img src="./../images/icons/plus.png" class="btn-quantity" onclick="plusminus4('increment')" />
          </div>
          <span class="price">₹110.00</span>
          <span class="mrp">₹170.00<button class="off">35%</button></span>
-         <button class="button" id="5" onclick="add_cart(5)">Add</button>
+         <button class="button" id="btn4" onclick="textChange4();add_cart(4)">Add</button>
       </div>
       <div class="product-card">
          <img src="../images/categories/top-deals/maggi.webp" class="product-img">
          <span class="product-name">Maggi 2-Minute Instant Noodles</span>
          <div class="quantity-btn-container">
-            <img src="./../images/icons/minus.png " class="btn-quantity" onclick="plusminus('decrement')" />
-            <span class="quantity-size" id="quantity-text">1</span>
-            <img src="./../images/icons/plus.png" class="btn-quantity" onclick="plusminus('increment')" />
+            <img src="./../images/icons/minus.png " class="btn-quantity" onclick="plusminus5('decrement')" />
+            <span class="quantity-size" id="quantity-text5">1</span>
+            <img src="./../images/icons/plus.png" class="btn-quantity" onclick="plusminus5('increment')" />
          </div>
          <span class="price">₹71.00 </span>
          <span class="mrp">₹84.00 <button class="off">-11%</button></span>
-         <button class="button" id="6" onclick="add_cart(6)">Add</button>
+         <button class="button" id="btn5" onclick="textChange5();add_cart(5)">Add</button>
       </div>
       <div class="product-card">
          <img src="../images/categories/top-deals/mustard-oil.webp" class="product-img">
          <span class="product-name">Good Life Kachi Ghani Mustard Oil 1 L (Pouch)</span>
          <div class="quantity-btn-container">
-            <img src="./../images/icons/minus.png " class="btn-quantity" onclick="plusminus('decrement')" />
-            <span class="quantity-size" id="quantity-text">1</span>
-            <img src="./../images/icons/plus.png" class="btn-quantity" onclick="plusminus('increment')" />
+            <img src="./../images/icons/minus.png " class="btn-quantity" onclick="plusminus6('decrement')" />
+            <span class="quantity-size" id="quantity-text6">1</span>
+            <img src="./../images/icons/plus.png" class="btn-quantity" onclick="plusminus6('increment')" />
          </div>
          <span class="price">₹129.00</span>
          <span class="mrp">₹170.00<button class="off">24%</button></span>
-         <button class="button" id="7" onclick="add_cart(7)">Add</button>
+         <button class="button" id="btn6" onclick="textChange6();add_cart(6)">Add</button>
       </div>
       <div class="product-card">
          <img src="../images/categories/top-deals/popcorn.webp" class="product-img">
          <span class="product-name">Act II Classic Salted Instant Popcorn 90 g</span>
          <div class="quantity-btn-container">
-            <img src="./../images/icons/minus.png " class="btn-quantity" onclick="plusminus('decrement')" />
-            <span class="quantity-size" id="quantity-text">1</span>
-            <img src="./../images/icons/plus.png" class="btn-quantity" onclick="plusminus('increment')" />
+            <img src="./../images/icons/minus.png " class="btn-quantity" onclick="plusminus7('decrement')" />
+            <span class="quantity-size" id="quantity-text7">1</span>
+            <img src="./../images/icons/plus.png" class="btn-quantity" onclick="plusminus7('increment')" />
          </div>
          <span class="price"> ₹33.00</span>
          <span class="mrp"> ₹36.00<button class="off">8%</button></span>
-         <button class="button" id="8" onclick="add_cart(8)">Add</button>
+         <button class="button" id="btn7" onclick="textChange7();add_cart(7)">Add</button>
       </div>
       <div class="product-card">
          <img src="../images/categories/top-deals/red_label.webp" class="product-img">
          <span class="product-name">Brooke Bond Red Label Strong Blend Tea 1 kg</span>
          <div class="quantity-btn-container">
-            <img src="./../images/icons/minus.png " class="btn-quantity" onclick="plusminus('decrement')" />
-            <span class="quantity-size" id="quantity-text">1</span>
-            <img src="./../images/icons/plus.png" class="btn-quantity" onclick="plusminus('increment')" />
+            <img src="./../images/icons/minus.png " class="btn-quantity" onclick="plusminus8('decrement')" />
+            <span class="quantity-size" id="quantity-text8">1</span>
+            <img src="./../images/icons/plus.png" class="btn-quantity" onclick="plusminus8('increment')" />
          </div>
          <span class="price">₹464.00</span>
          <span class="mrp">₹600.00<button class="off">22%</button></span>
-         <button class="button" id="9" onclick="add_cart(9)">Add</button>
+         <button class="button" id="btn8" onclick="textChange8();add_cart(8)">Add</button>
       </div>
       <div class="product-card">
          <img src="../images/categories/top-deals/taj.webp" class="product-img">
          <span class="product-name">Brooke Bond Taj Mahal Tea 500 g</span>
          <div class="quantity-btn-container">
-            <img src="./../images/icons/minus.png " class="btn-quantity" onclick="plusminus('decrement')" />
-            <span class="quantity-size" id="quantity-text">1</span>
-            <img src="./../images/icons/plus.png" class="btn-quantity" onclick="plusminus('increment')" />
+            <img src="./../images/icons/minus.png " class="btn-quantity" onclick="plusminus9('decrement')" />
+            <span class="quantity-size" id="quantity-text9">1</span>
+            <img src="./../images/icons/plus.png" class="btn-quantity" onclick="plusminus9('increment')" />
          </div>
          <span class="price">₹405.00 </span>
          <span class="mrp">₹450.00<button class="off">10%</button></span>
-         <button class="button" id="10" onclick="add_cart(10)">Add</button>
+         <button class="button" id="btn9" onclick="textChange9();add_cart(9)">Add</button>
       </div>
    </div>
    <div class="added" id="ac">

@@ -1,8 +1,8 @@
 function msg() {
-    var message = document.getElementById('message').value.trim(); 
+    var message = document.getElementById('button').value.trim(); 
     if (message =="") {
-        alert('Fill all Information'); 
+        alert('Please fill all Information'); 
     } else {
-        alert('Message sent');
+        alert('Thank You for feedback...Message sent...');
     }
 }

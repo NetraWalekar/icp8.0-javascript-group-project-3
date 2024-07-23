@@ -5,16 +5,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Categories</title>
+    <link rel="stylesheet" href="../css/navbar.css">
     <link rel="stylesheet" href="../css/categories.css">
-    <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/view_all.css">
+    <link rel="stylesheet" href="../css/style.css">
+   
 </head>
 
 <body>
-    <nav class="navbar">
-        <div class="navdiv">
+    <nav class="navbar1">
+        <div class="navdiv1">
             <div class="logo">
-                <a href="../index.html"><img src="../images/icons/home-logo/head-logo.png" alt="Logo"></a>
+                <a href="../index.html"><img src="../images/icons/home-logo/head-logo.png" alt="Logo" id="logo"></a>
             </div>
             <ul class="nav-links">
                 <li><a href="#">Home</a></li>
@@ -22,23 +24,36 @@
                 <li><a href="../pages/about-us.html">About Us</a></li>
                 <li><a href="../pages/contactus.html">Contact Us</a></li>
             </ul>
-            <div class="sign">
-                <button class="signin-button"><a href="../pages/signin.html">Sign In</a></button>
-                <div class="profile-container" id="profile-container">
-                    <a href="/pages/user-account.html"><img src="../images/icons/home-logo/user.png" height="33px"
-                            alt="Profile" class="profile-icon" id="profile-icon"></a>
-
-                </div>
-                <div class="cart-container">
-                    <a href="./pages/cart.html"><img src="../images/icons/home-logo/shopping-cart.png" height="33px"
-                            alt="Cart" class="cart-icon" id="cart-icon"></a>
-
-                </div>
+        <div class="sign">
+            <button class="signin-button"><a href="../pages/signin.html">Sign In</a></button>
+            <div class="profile-container" id="profile-container">
+                <a href="../pages/user-account.html"><img src="../images/icons/home-logo/user.png" height="33px" alt="Profile" class="profile-icon" id="profile-icon"></a>
+                
+            </div>
+            <div class="cart-container">
+                <a href="../pages/cart.html"><img src="../images/icons/home-logo/shopping-cart.png" height="33px" alt="Cart" class="cart-icon" id="cart-icon"></a>
+               
             </div>
         </div>
-    </nav>
-
-    <h1 class="cat-text" style="padding-left: 10px;color: #093505;">Shop By Categories</h1>
+        <div class="menu">
+            <img src="../images/navbar_icons/menu.png" alt="" id="menu_right" class="icon" onclick="display_menu(); hide_menu();">
+        </div>
+        <div class="menu-left">
+            <img src="../images/navbar_icons/menu.png" alt="" id="menu_left" class="icon" onclick="hide_again()">
+        </div>
+        <div class="side_bar" id="side-bar">
+            <img src="../images/icons/home-logo/head-logo.png" alt="Logo" height="50px" style="padding: 10px;">
+            <a href="../index.html" class="ref"><div class="side_bar_links">Home</div></a>
+            <a href="../pages/categories.html"  class="ref"><div class="side_bar_links">Categories</div></a>
+            <a href="../pages/about-us.html"  class="ref"><div class="side_bar_links">About Us</div></a>
+            <a href="../pages/contactus.html"  class="ref"><div class="side_bar_links">Contact Us</div></a>
+            <a href="../pages/signin.html"  class="ref"><div class="side_bar_links">Sign In <img src="../images/navbar_icons/sign-in.png" alt="" height="20px"></div></a>
+            <div class="side_bar_links" ><a href="../pages/user-account.html"><img src="../images/icons/home-logo/user.png" height="33px" alt="Profile" class="profile-icon" id="profile-icon"></a></div>
+            <div class="side_bar_links"><a href="../pages/cart.html"><img src="../images/icons/home-logo/shopping-cart.png" height="33px" alt="Cart" class="cart-icon" id="cart-icon"></a></div>
+        </div>
+    </div>
+</nav>
+    <h1 class="cat-text" style="padding-left: 10px;color: #093505;text-align: center;margin-top: 80px;">Shop By Categories</h1>
     <div class="main-cat">
         <a href="../pages/atta-to-flour.html" style="color: black;">
             <div class="product-cat"><img src="../images/categories/atta_flour.jpeg" class="img">
@@ -65,6 +80,8 @@
                 <span class="product-cat-text">&ensp;&ensp;Edible oil</span>
             </div>
         </a>
+    </div>
+    <div class="main-cat">
         <a href="../pages/vegetable-fruit.html" style="color: black;">
             <div class="product-cat"><img src="../images/categories/fruits_vegetables.jpeg" class="img">
                 <span class="product-cat-text">Fruits & Vegetable</span>
@@ -92,9 +109,9 @@
         </a>
     </div>
     <div class="top-main">
-        <div class="top-deal-text-main1" style="color: #093505;">Top Deals On Grocery</div>
-        <div class="view_all"><a href="view_all.html" style="color: #093505
-;">View all</a></div>
+        <h1 class="top-deal-text-main1" style="color: #093505;text-align: center;">Top Deals On Grocery</h1>
+        <div><sub><a href="view_all.html"  class="view_all" style="color: #093505
+;">View all</a></sub></div>
     </div>
     <div class="top-deal">
         <div class="product-card "><img src="../images/categories/top-deals/maggi.webp" class="product-img ">
@@ -107,56 +124,56 @@
             </div>
             <span class="price">₹71.00 </span>
             <span class="mrp">₹84.00 <button class="off">15 % Off</button></span>
-            <button class="button" id="1" onclick="added(1)">Add</button>
+            <button class="button" id="btn" onclick="textChange(); add_cart(0)">Add</button>
         </div>
         <div class="product-card">
             <img src="../images/categories/top-deals/amul_butter.webp" class="product-img ">
             <span class="product-name">Amul Butter 100 (Carton)</span>
             <div class="quantity-btn-container">
-                <img src="./../images/icons/minus.png " class="btn-quantity" onclick="plusminus('decrement')" />
+                <img src="./../images/icons/minus.png " class="btn-quantity" onclick="plusminus1('decrement')" />
                 <span class="quantity-size" id="quantity-text">1</span>
-                <img src="./../images/icons/plus.png" class="btn-quantity" onclick="plusminus('increment')" />
+                <img src="./../images/icons/plus.png" class="btn-quantity" onclick="plusminus1('increment')" />
             </div>
             <span class="price">₹54.00</span>
             <span class="mrp">₹58.00 <button class="off">6 % Off</button></span>
-            <button class="button" id="2" onclick="added(2)">Add</button>
+            <button class="button" id="btn1" onclick="textChange1(); add_cart(1)">Add</button>
         </div>
         <div class="product-card"><img src="../images/categories/top-deals/condensed_milk.webp"
                 class="product-img "><span class="product-name">Nestle Milkmaid Condensed Milk 380 g
             </span>
             <div class="quantity-btn-container">
-                <img src="./../images/icons/minus.png " class="btn-quantity" onclick="plusminus('decrement')" />
+                <img src="./../images/icons/minus.png " class="btn-quantity" onclick="plusminus2('decrement')" />
                 <span class="quantity-size" id="quantity-text">1</span>
-                <img src="./../images/icons/plus.png" class="btn-quantity" onclick="plusminus('increment')" />
+                <img src="./../images/icons/plus.png" class="btn-quantity" onclick="plusminus2('increment')" />
             </div>
             <span class="price">₹124.00
             </span>
             <span class="mrp">₹147.00 <button class="off">15 % Off</button></span>
-            <button class="button" id="3" onclick="added(3)">Add</button>
+            <button class="button" id="btn2" onclick="textChange2(); add_cart(2)">Add</button>
         </div>
         <div class="product-card"><img src="../images/categories/top-deals/kellogs.webp" class="product-img "><span
                 class="product-name">Kellogg's Fruit, Nut & Seeds Muesli 750 g
             </span>
             <div class="quantity-btn-container">
-                <img src="./../images/icons/minus.png " class="btn-quantity" onclick="plusminus('decrement')" />
+                <img src="./../images/icons/minus.png " class="btn-quantity" onclick="plusminus3('decrement')" />
                 <span class="quantity-size" id="quantity-text">1</span>
-                <img src="./../images/icons/plus.png" class="btn-quantity" onclick="plusminus('increment')" />
+                <img src="./../images/icons/plus.png" class="btn-quantity" onclick="plusminus3('increment')" />
             </div>
             <span class="price">₹359.00</span>
             <span class="mrp">₹499.00 <button class="off">28 % Off</button></span>
-            <button class="button" id="4" onclick="added(4)">Add</button>
+            <button class="button" id="btn3" onclick="textChange3(); add_cart(3)">Add</button>
         </div>
         <div class="product-card"><img src="../images/categories/top-deals/almonds.webp" class="product-img "><span
                 class="product-name">Nutraj Australian Almond Kernels 500g
             </span>
             <div class="quantity-btn-container">
-                <img src="./../images/icons/minus.png " class="btn-quantity" onclick="plusminus('decrement')" />
+                <img src="./../images/icons/minus.png " class="btn-quantity" onclick="plusminus4('decrement')" />
                 <span class="quantity-size" id="quantity-text">1</span>
-                <img src="./../images/icons/plus.png" class="btn-quantity" onclick="plusminus('increment')" />
+                <img src="./../images/icons/plus.png" class="btn-quantity" onclick="plusminus4('increment')" />
             </div>
             <span class="price">₹299.00</span>
             <span class="mrp">₹699.00 <button class="off">57 % Off</button></span>
-            <button class="button" id="5" onclick="added(5)">Add</button>
+            <button class="button" id="btn4" onclick="textChange4(); add_cart(4)">Add</button>
         </div>
         <!-- <div class="product-card"><img src="../images/categories/top-deals/lotte_choco_pie.jpg"
                 class="product-img "><span class="product-name"> Lotte Choco Pie 28 g (12 pcs)</span>
@@ -170,7 +187,6 @@
             <button class="button" id="6" onclick="added(6)">Add</button>
         </div> -->
     </div>
-    <script src="../js/categories.js"></script>
 
 
     <footer>
@@ -236,6 +252,9 @@
     <footer class="copyright">
         <p id="footer-text">&copy; 2024 Grocery Shopping. All rights reserved.</p>
     </footer>
+    <script src="../js/navbar.js"></script>
+    <script src="../js/categories.js"></script>
+    
 </body>
 
 </html>
