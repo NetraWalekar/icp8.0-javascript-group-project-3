@@ -3,7 +3,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Poppins", sans-serif;
 }
 
 body {
@@ -11,11 +10,6 @@ body {
     width: 100%;
     font-family: Arial, sans-serif;
     background: rgb(255, 250, 250);
-    margin: 0;
-    padding: 0;
-}
-
-body{
     margin: 0;
     padding: 0;
 }
@@ -75,6 +69,7 @@ body{
     cursor: pointer;
     margin-right: 15px;
     border-radius: 5px;
+    font-size: 13.5px;
 }
 
 .signin-button a {
@@ -94,9 +89,10 @@ body{
 .profile-container, .cart-container {
     position: relative;
     display: flex;
+    
     flex-direction: column;
     align-items: center;
-    margin-left: 15px;
+    margin-left: 10px;
 }
 
 .profile-text, .cart-text {
@@ -108,6 +104,9 @@ body{
     background-color: #333;
     padding: 5px;
     border-radius: 3px;
+}
+#cart-container{
+    padding-right: 40px;
 }
 /*FOOTER*/
 footer {
@@ -208,6 +207,7 @@ footer.copyright .footer-text {
 /*MY ABOUT US PAGE CSS*/
 .title{
     text-align: center;
+    margin-top: 100px
 }
 .title h4{
     background: -webkit-linear-gradient(#489d55, #444079);
@@ -218,7 +218,8 @@ footer.copyright .footer-text {
     color: #7e877b;
 }
 .title h1{
-    font-size: 40px;
+    font-size: 35px;
+    margin-bottom: 5px;
     color: #524545;
 }
 .image-container {
@@ -261,8 +262,8 @@ footer.copyright .footer-text {
     transform: translateY(-5px);
 }
 .feature-img {
-    height: 90px;
-    width: 110px;
+    height: 100px;
+    width: 190px;
     padding-left: 90px;
     padding-top: 10px;
 }
@@ -363,7 +364,7 @@ button:hover {
 	border-radius: 10px;
 	padding: 20px;
     transition: transform 0.2s ease-in-out;
-	width: 250px;
+	width: 289px;
 	box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.3);
 }
 .review-card:hover{
