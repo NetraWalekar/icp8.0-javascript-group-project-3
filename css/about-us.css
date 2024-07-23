@@ -416,6 +416,37 @@ button:hover {
 @media screen and (min-width: 769px) and (max-width: 992px) {
 }
 @media screen and (min-width: 600px) and (max-width: 768px) {
+    /*NAVBAR*/
+    
+    .navdiv {
+        flex-direction: column;
+        align-items: center;
+        padding: 5px;
+    }
+    .nav-links {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        font-size: 17px;
+    }
+    .nav-links li {
+        margin: 4px 0;
+    }
+    .sign {
+        flex-direction: column;
+        align-items: center;
+        width: 80%;
+    }
+    .signin-button {
+        width: 27%;
+        margin: 5px 0;
+    }
+    .profile-container, .cart-container{
+        margin-left: 0px;
+        margin-right: 7px;
+        font-size: 9px;
+        padding-top: 3px;
+    }
     .footer-container {
         flex-direction: column;
         align-items: center;
