@@ -17,7 +17,8 @@
      h1{
         text-align: center;
         color:#093505 ;
-        margin-top: 25px;
+        
+        margin-top:90px;
      }
 
    .product-card {
@@ -29,6 +30,7 @@
     position: relative;
     box-shadow: 0px 0px 10px 0px grey;
     background-color: rgb(253, 246, 234);
+    
     
    
     }
@@ -148,90 +150,6 @@ body {
 }
 
     
-        .navbar {
-    background-color: #81A263;
-}
-
-.navdiv {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0 20px;
-}
-
-.logo img {
-    height: 50px;
-}
-
-.nav-links {
-    list-style: none;
-    display: flex;
-    margin: 0;
-    padding: 0;
-}
-
-.nav-links li {
-    margin: 0 15px;
-}
-
-.nav-links a {
-    color: white;
-    text-decoration: none;
-    padding: 14px 20px;
-    display: block;
-}
-
-.nav-links a:hover {
-    background-color: #093505;
-    border-radius: 5px;
-}
-
-.signin-button {
-    background-color: #365E32;
-    border: none;
-    color: white;
-    padding: 10px 20px;
-    cursor: pointer;
-    margin-right: 15px;
-    border-radius: 5px;
-}
-
-.signin-button a {
-    color: white;
-    text-decoration: none;
-}
-
-.signin-button:hover {
-    background-color: #093505;
-}
-
-.sign {
-    display: flex;
-    justify-content: space-between;
-}
-
-.profile-container, .cart-container {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-left: 15px;
-}
-
-.profile-text, .cart-text {
-    display: none;
-    position: absolute;
-    top: 50px; 
-    color: white;
-    font-size: 12px;
-    background-color: #333;
-    padding: 5px;
-    border-radius: 3px;
-}
-
-.link-names{
-    height:30px;
-}
 
 .added{
     display: flex;
@@ -358,6 +276,9 @@ footer.copyright .footer-text {
 
 /* Responsive styles */
 @media (max-width: 1200px) {
+    h1{
+        margin-top: 220px;
+    }
     .nav-links {
         flex-direction: column;
         align-items: center;
@@ -371,28 +292,35 @@ footer.copyright .footer-text {
     .card-container {
         flex-direction: column;
         align-items: center;
+
     }
 
     .video-container {
         flex-direction: column;
     }
+
+    
+}
+
+@media (max-width:950px) 
+{
+    
+   h1{
+    margin-top: 70px;
+   }
+    
+    .navdiv1{
+        height:60px;
+    }
 }
 
 @media (max-width: 768px) {
-    .navdiv {
-        flex-direction: column;
-        align-items: center;
-    }
 
-    .nav-links {
-        flex-direction: column;
-        align-items: center;
+    h1{
+        margin-top: 70px;
     }
-
-    .sign {
-        flex-direction: column;
-        align-items: center;
-    }
+    
+    
 
     .card-container {
         flex-direction: column;
@@ -416,35 +344,24 @@ footer.copyright .footer-text {
     .payment-icons {
         justify-content: center;
     }
+
+    .navdiv1{
+        height:60px;
+    }
 }
 
 @media (max-width: 480px) {
-    .navdiv {
-        flex-direction: column;
-        align-items: center;
-        padding: 10px;
-    }
 
-    .nav-links {
-        flex-direction: column;
-        align-items: center;
-        width: 100%;
+   h1{
+    margin-top: 70px;
+   }
+    
+    .navdiv1{
+        height:60px;
     }
+    
 
-    .nav-links li {
-        margin: 10px 0;
-    }
-
-    .sign {
-        flex-direction: column;
-        align-items: center;
-        width: 100%;
-    }
-
-    .signin-button {
-        width: 100%;
-        margin: 10px 0;
-    }
+    
 
     .card-container {
         flex-direction: column;
