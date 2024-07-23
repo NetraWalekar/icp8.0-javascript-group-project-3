@@ -50,6 +50,7 @@ body {
 .signin-button {
     background-color: #365E32;
     border: none;
+    font-size: 13.5px;
     color: white;
     padding: 10px 20px;
     cursor: pointer;
@@ -330,7 +331,7 @@ footer.copyright .footer-text {
     text-align: center;
 }
 .title h4{
-    background: -webkit-linear-gradient(#f42222, #813df8);
+    background: -webkit-linear-gradient(#489d55, #444079);
     background-clip: text;
     -webkit-text-fill-color: transparent;
 }
@@ -369,13 +370,15 @@ footer.copyright .footer-text {
 }
   .container {
     height: 370px;
+    transition: transform 0.2s ease-in-out;
     width: 270px;
+    border-radius: 10px;
     background-color: rgb(253, 246, 234);
     border: 2px solid rgb(127, 157, 180);
     margin: 10px;
 }
 .container:hover {
-    box-shadow: 0 0 10px 0px rgb(173, 193, 198);
+    box-shadow: 0 0 10px 0px rgb(205, 238, 184);
     transform: translateY(-5px);
 }
 .feature-img {
@@ -420,7 +423,7 @@ footer.copyright .footer-text {
     height: 600px;
     margin: 50px auto;
     padding: 20px;
-    background-color: #fbfec6;
+    background-color: #f7f8ef;
     border-radius: 8px;
     border: 1px solid rgb(176, 176, 201);
     box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
@@ -480,12 +483,13 @@ button:hover {
 	background-image: linear-gradient(120deg, #d4fc79 0%, #96e6a1 100%);
 	border-radius: 10px;
 	padding: 20px;
+    transition: transform 0.2s ease-in-out;
 	width: 250px;
 	box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.3);
 }
 .review-card:hover{
     box-shadow: 0 0 10px 0px rgb(116, 120, 121);
-    transform: translateY(-5px);
+    transform: translateY(-3px);
 }
 .img-area {
 	width: 80px;
