@@ -21,7 +21,7 @@
     100% { transform: rotate(360deg); }
   }
   .content {
-    display: none;
+    display:none;
     text-align: center;
   }
   h1 {
