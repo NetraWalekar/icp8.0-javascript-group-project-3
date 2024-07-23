@@ -94,7 +94,7 @@ function plusminus(action)
        quantitytext.innerText =++quantity;
 
        const priceElement=102
-       const price=document.getElementById("p1")
+       const price=document.getElementById("p2")
        let newprice=priceElement*quantity
        price.innerText=parseInt(newprice)
        
@@ -104,7 +104,7 @@ function plusminus(action)
        quantitytext.innerText =--quantity;
 
        const priceElement=102
-       const price=document.getElementById("p1")
+       const price=document.getElementById("p2")
        let newprice=priceElement*quantity
        price.innerText=parseInt(newprice)
        
@@ -132,7 +132,7 @@ function plusminus(action)
        quantitytext.innerText =++quantity;
 
        const priceElement=349
-       const price=document.getElementById("p1")
+       const price=document.getElementById("p3")
        let newprice=priceElement*quantity
        price.innerText=parseInt(newprice)
        
@@ -142,7 +142,7 @@ function plusminus(action)
        quantitytext.innerText =--quantity;
 
        const priceElement=349
-       const price=document.getElementById("p1")
+       const price=document.getElementById("p3")
        let newprice=priceElement*quantity
        price.innerText=parseInt(newprice)
        
@@ -169,8 +169,8 @@ function plusminus(action)
       if (action == 'increment'){
        quantitytext.innerText =++quantity;
 
-       const priceElement=199
-       const price=document.getElementById("p1")
+       const priceElement=170
+       const price=document.getElementById("p4")
        let newprice=priceElement*quantity
        price.innerText=parseInt(newprice)
        
@@ -179,8 +179,8 @@ function plusminus(action)
       else{
        quantitytext.innerText =--quantity;
 
-       const priceElement=199
-       const price=document.getElementById("p1")
+       const priceElement=170
+       const price=document.getElementById("p4")
        let newprice=priceElement*quantity
        price.innerText=parseInt(newprice)
        
@@ -207,8 +207,8 @@ function plusminus(action)
       if (action == 'increment'){
        quantitytext.innerText =++quantity;
 
-       const priceElement=199
-       const price=document.getElementById("p1")
+       const priceElement=189
+       const price=document.getElementById("p5")
        let newprice=priceElement*quantity
        price.innerText=parseInt(newprice)
        
@@ -217,8 +217,8 @@ function plusminus(action)
       else{
        quantitytext.innerText =--quantity;
 
-       const priceElement=199
-       const price=document.getElementById("p1")
+       const priceElement=189
+       const price=document.getElementById("p5")
        let newprice=priceElement*quantity
        price.innerText=parseInt(newprice)
        
@@ -245,8 +245,8 @@ function plusminus(action)
       if (action == 'increment'){
        quantitytext.innerText =++quantity;
 
-       const priceElement=199
-       const price=document.getElementById("p1")
+       const priceElement=351
+       const price=document.getElementById("p6")
        let newprice=priceElement*quantity
        price.innerText=parseInt(newprice)
        
@@ -255,8 +255,8 @@ function plusminus(action)
       else{
        quantitytext.innerText =--quantity;
 
-       const priceElement=199
-       const price=document.getElementById("p1")
+       const priceElement=351
+       const price=document.getElementById("p6")
        let newprice=priceElement*quantity
        price.innerText=parseInt(newprice)
        
@@ -283,8 +283,8 @@ function plusminus(action)
       if (action == 'increment'){
        quantitytext.innerText =++quantity;
 
-       const priceElement=199
-       const price=document.getElementById("p1")
+       const priceElement=298
+       const price=document.getElementById("p7")
        let newprice=priceElement*quantity
        price.innerText=parseInt(newprice)
        
@@ -293,8 +293,8 @@ function plusminus(action)
       else{
        quantitytext.innerText =--quantity;
 
-       const priceElement=199
-       const price=document.getElementById("p1")
+       const priceElement=298
+       const price=document.getElementById("p7")
        let newprice=priceElement*quantity
        price.innerText=parseInt(newprice)
        
@@ -321,8 +321,8 @@ function plusminus(action)
       if (action == 'increment'){
        quantitytext.innerText =++quantity;
 
-       const priceElement=199
-       const price=document.getElementById("p1")
+       const priceElement=192
+       const price=document.getElementById("p8")
        let newprice=priceElement*quantity
        price.innerText=parseInt(newprice)
        
@@ -331,8 +331,8 @@ function plusminus(action)
       else{
        quantitytext.innerText =--quantity;
 
-       const priceElement=199
-       const price=document.getElementById("p1")
+       const priceElement=192
+       const price=document.getElementById("p8")
        let newprice=priceElement*quantity
        price.innerText=parseInt(newprice)
        
@@ -359,8 +359,8 @@ function plusminus(action)
       if (action == 'increment'){
        quantitytext.innerText =++quantity;
 
-       const priceElement=199
-       const price=document.getElementById("p1")
+       const priceElement=287
+       const price=document.getElementById("p9")
        let newprice=priceElement*quantity
        price.innerText=parseInt(newprice)
        
@@ -369,8 +369,8 @@ function plusminus(action)
       else{
        quantitytext.innerText =--quantity;
 
-       const priceElement=199
-       const price=document.getElementById("p1")
+       const priceElement=287
+       const price=document.getElementById("p9")
        let newprice=priceElement*quantity
        price.innerText=parseInt(newprice)
        
