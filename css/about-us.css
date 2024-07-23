@@ -508,4 +508,51 @@ button:hover {
         display: inline-block;
     }
     /*CUSTOMER REVIEW FORM*/
+    .form-container{
+        width: 50%;
+        height: 400px;
+    }
+    h2{
+        font-size: 13px;
+        margin-top: 5px;
+    }
+    label{
+        font-size: 10px;
+        margin-top: 5px;
+    }
+    input, select, textarea{
+        width: 90%;
+        padding: 5px;
+        margin-top: 10px;
+    }
+    button{
+        padding: 5px;
+        font-size: 12px;
+    }
+    #rating{
+        font-size: 10px;
+    }
+    #successMessage{
+        margin-top: 10px;
+        font-size: 10px;
+    }
+    /*CUSTOMER REVIEW CARD*/
+    .review-card{
+        width: 60%;
+        height: 320px;
+        padding: 15px;
+    }
+    .info h4{
+        font-size: 16px;
+    }
+    .img-area{
+        width: 60px;
+        height: 60px;
+    }
+    .single-review p {
+        font-size: 14px;
+    }
+    .customer-review .tag{
+        font-size: 20px;
+    }
     
