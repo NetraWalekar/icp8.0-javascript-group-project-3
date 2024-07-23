@@ -6,7 +6,7 @@
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-color: blueviolet;
+    background-color:whitesmoke;
   }
   .loader {
     border: 16px solid #f3f3f3;
@@ -25,7 +25,7 @@
     text-align: center;
   }
   h1 {
-    color:whitesmoke;
+    color:black;
   }
   
   p {
