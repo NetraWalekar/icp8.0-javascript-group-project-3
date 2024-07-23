@@ -412,7 +412,114 @@ button:hover {
     .payment-icons, .social-media-icons {
         justify-content: center;
     }
+    /*CUSTOMER REVIEW CARD*/
+    .review-card{
+        width: 40%;
+        height:280px;
+        padding: 14px;
+    }
+    .info h4{
+        font-size: 17px;
+    }
+    .img-area{
+        width: 70px;
+        height: 70px;
+    }
+    .review-footer{
+        font-size: 13px;
+    }
+    .single-review p {
+        font-size: 15px;
+    }
+    .customer-review .tag{
+        font-size: 19px;
+    }
+    .review{
+        padding: 10px;
+    }
+    /*SERVICES SECTION*/
+    .feature{
+        justify-content: space-evenly;
+        padding: 20px;
+    }
+    .container{
+        height: 340px;
+        width: 290px;
+    }
+    .feature-img{
+        height: 90px;
+        width: 90px;
+    }
+    .container h1{
+        font-size: 20px;
+    }
+    .container p {
+        padding: 15px;
+        font-size: 17px;
+    }
+    .heading{
+        font-size: 20px;
+    }
+    /*TITLE IMG*/
+    .title{
+        font-size: 15px;
+    }
+    .title h4{
+        font-size: 13px
+    }
+    .title h1{
+        font-size: 20px;
+    }
+    .image-container{
+        font-size: 26px;
+        padding-left: 0px;
+    }
+    .image-container img {
+        max-width: 100%;
+        height: 370px;
+    }
+    /*SECOND IMAGE INFO*/
+    .info img{
+        max-width: 50%;
+    }
+    .info p{
+        padding-top: 30px;
+        font-size: 15px;
+    }
+    /*CUSTOMER REVIEW FORM*/
+    .form-container{
+        width: 60%;
+        height: 520px;
+    }
+    h2{
+        font-size: 18px;
+        margin-top: 8px;
+    }
+    label{
+        font-size: 15px;
+        margin-top: 8px;
+    }
+    input, select, textarea{
+        width: 95%;
+        padding: 10px;
+        margin-top: 10px;
+    }
+    button{
+        padding: 7px;
+        font-size: 16px;
+    }
+    #rating{
+        font-size: 15px;
+        width: 95%;
+    }
+    #successMessage{
+        margin-top: 10px;
+        font-size: 15px;
+    }
+    
 }
+
+
 @media screen and (min-width: 769px) and (max-width: 992px) {
 /*NAVBAR*/
     .logo img {
