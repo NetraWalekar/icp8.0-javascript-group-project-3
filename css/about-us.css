@@ -456,7 +456,7 @@ button:hover {
     .navdiv {
         flex-direction: column;
         align-items: center;
-        padding: 10px;
+        padding: 5px;
     }
     .nav-links {
         flex-direction: column;
@@ -473,8 +473,13 @@ button:hover {
         width: 100%;
     }
     .signin-button {
-        width: 40%;
+        width: 30%;
         margin: 5px 0;
+    }
+    .profile-container, .cart-container{
+        margin-left: 0px;
+        font-size: 9px;
+        padding-top: 3px;
     }
     /*FOOTER*/
     .footer-container {
@@ -538,22 +543,28 @@ button:hover {
     }
     /*CUSTOMER REVIEW CARD*/
     .review-card{
-        width: 60%;
-        height: 320px;
-        padding: 15px;
+        width: 50%;
+        height: 300px;
+        padding: 14px;
     }
     .info h4{
-        font-size: 16px;
+        font-size: 14px;
     }
     .img-area{
         width: 60px;
         height: 60px;
     }
+    .review-footer{
+        font-size: 10px;
+    }
     .single-review p {
-        font-size: 14px;
+        font-size: 13px;
     }
     .customer-review .tag{
-        font-size: 20px;
+        font-size: 17px;
+    }
+    .review{
+        padding: 10px;
     }
     /*SERVICES SECTION*/
     .container{
