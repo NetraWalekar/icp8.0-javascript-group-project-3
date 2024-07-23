@@ -881,16 +881,23 @@ button:hover {
 
 @media screen and (min-width: 480px) and (max-width: 599px) {
     /*NAVBAR*/
-    
+    .logo img {
+        position: relative;
+        padding-right: 150px;
+    }
     .navdiv {
         flex-direction: column;
         align-items: center;
         padding: 5px;
     }
+    .navbar{
+        position: relative;
+    }
     .nav-links {
         flex-direction: column;
         align-items: center;
         width: 100%;
+        padding-right: 140px;
         font-size: 13px;
     }
     .nav-links li {
@@ -899,11 +906,16 @@ button:hover {
     .sign {
         flex-direction: column;
         align-items: center;
+        padding-right: 140px;
         width: 100%;
     }
     .signin-button {
-        width: 30%;
+        width: 60%;
         margin: 5px 0;
+    }
+    #cart-container{
+        padding-right: 0px;
+
     }
     .profile-container, .cart-container{
         margin-left: 0px;
@@ -943,19 +955,19 @@ button:hover {
     }
     /*CUSTOMER REVIEW FORM*/
     .form-container{
-        width: 50%;
-        height: 400px;
+        width: 60%;
+        height: 450px;
     }
     h2{
-        font-size: 13px;
+        font-size: 11px;
         margin-top: 5px;
     }
     label{
-        font-size: 10px;
+        font-size: 9px;
         margin-top: 5px;
     }
     input, select, textarea{
-        width: 90%;
+        width: 95%;
         padding: 5px;
         margin-top: 10px;
     }
@@ -972,7 +984,7 @@ button:hover {
     }
     /*CUSTOMER REVIEW CARD*/
     .review-card{
-        width: 50%;
+        width: 55%;
         height: 300px;
         padding: 14px;
     }
@@ -980,14 +992,14 @@ button:hover {
         font-size: 14px;
     }
     .img-area{
-        width: 60px;
-        height: 60px;
+        width: 50px;
+        height: 50px;
     }
     .review-footer{
         font-size: 10px;
     }
     .single-review p {
-        font-size: 13px;
+        font-size: 12px;
     }
     .customer-review .tag{
         font-size: 17px;
@@ -1002,13 +1014,13 @@ button:hover {
     }
     .feature-img{
         height: 70px;
-        width: 90px;
+        width: 70px;
     }
     .container h1{
         font-size: 18px;
     }
     .container p {
-        padding: 15px;
+        padding: 10px;
         font-size: 15px;
     }
     .heading{
