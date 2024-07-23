@@ -244,11 +244,11 @@ function plusminus(action)
       if (action == 'increment'){
        quantitytext.innerText =++quantity;
 
-       const priceElement=287
+      const priceElement=287
        const price=document.getElementById("p6")
        let newprice=priceElement*quantity
        price.innerText=parseInt(newprice)
-       
+        
        console.log(newprice)
       }
       else{
