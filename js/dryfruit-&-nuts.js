@@ -15,9 +15,23 @@ function plusminus(action)
       
       if (action == 'increment'){
        quantitytext.innerText =++quantity;
+
+       const priceElement=176
+       const price=document.getElementById("p0")
+       let newprice=priceElement*quantity
+       price.innerText=parseInt(newprice)
+       
+       console.log(newprice)
       }
       else{
        quantitytext.innerText =--quantity;
+
+       const priceElement=176
+       const price=document.getElementById("p0")
+       let newprice=priceElement*quantity
+       price.innerText=parseInt(newprice)
+       
+       console.log(newprice)
       }
       
    }
@@ -39,9 +53,23 @@ function plusminus(action)
       
       if (action == 'increment'){
        quantitytext.innerText =++quantity;
+
+       const priceElement=413
+       const price=document.getElementById("p1")
+       let newprice=priceElement*quantity
+       price.innerText=parseInt(newprice)
+       
+       console.log(newprice)
       }
       else{
        quantitytext.innerText =--quantity;
+
+       const priceElement=413
+       const price=document.getElementById("p1")
+       let newprice=priceElement*quantity
+       price.innerText=parseInt(newprice)
+       
+       console.log(newprice)
       }
       
    }
@@ -63,9 +91,23 @@ function plusminus(action)
       
       if (action == 'increment'){
        quantitytext.innerText =++quantity;
+
+       const priceElement=594
+       const price=document.getElementById("p2")
+       let newprice=priceElement*quantity
+       price.innerText=parseInt(newprice)
+       
+       console.log(newprice)
       }
       else{
        quantitytext.innerText =--quantity;
+
+       const priceElement=594
+       const price=document.getElementById("p2")
+       let newprice=priceElement*quantity
+       price.innerText=parseInt(newprice)
+       
+       console.log(newprice)
       }
       
    }
@@ -87,9 +129,23 @@ function plusminus(action)
       
       if (action == 'increment'){
        quantitytext.innerText =++quantity;
+
+       const priceElement=359
+       const price=document.getElementById("p3")
+       let newprice=priceElement*quantity
+       price.innerText=parseInt(newprice)
+       
+       console.log(newprice)
       }
       else{
        quantitytext.innerText =--quantity;
+
+       const priceElement=359
+       const price=document.getElementById("p3")
+       let newprice=priceElement*quantity
+       price.innerText=parseInt(newprice)
+       
+       console.log(newprice)
       }
       
    }
@@ -111,9 +167,23 @@ function plusminus(action)
       
       if (action == 'increment'){
        quantitytext.innerText =++quantity;
+
+       const priceElement=299
+       const price=document.getElementById("p4")
+       let newprice=priceElement*quantity
+       price.innerText=parseInt(newprice)
+       
+       console.log(newprice)
       }
       else{
        quantitytext.innerText =--quantity;
+
+       const priceElement=299
+       const price=document.getElementById("p4")
+       let newprice=priceElement*quantity
+       price.innerText=parseInt(newprice)
+       
+       console.log(newprice)
       }
       
    }
@@ -135,9 +205,23 @@ function plusminus(action)
       
       if (action == 'increment'){
        quantitytext.innerText =++quantity;
+
+       const priceElement=350
+       const price=document.getElementById("p5")
+       let newprice=priceElement*quantity
+       price.innerText=parseInt(newprice)
+       
+       console.log(newprice)
       }
       else{
        quantitytext.innerText =--quantity;
+
+       const priceElement=350
+       const price=document.getElementById("p5")
+       let newprice=priceElement*quantity
+       price.innerText=parseInt(newprice)
+       
+       console.log(newprice)
       }
       
    }
@@ -159,9 +243,23 @@ function plusminus(action)
       
       if (action == 'increment'){
        quantitytext.innerText =++quantity;
+
+       const priceElement=299
+       const price=document.getElementById("p6")
+       let newprice=priceElement*quantity
+       price.innerText=parseInt(newprice)
+       
+       console.log(newprice)
       }
       else{
        quantitytext.innerText =--quantity;
+
+       const priceElement=299
+       const price=document.getElementById("p6")
+       let newprice=priceElement*quantity
+       price.innerText=parseInt(newprice)
+       
+       console.log(newprice)
       }
       
    }
@@ -183,9 +281,23 @@ function plusminus(action)
       
       if (action == 'increment'){
        quantitytext.innerText =++quantity;
+
+       const priceElement=1098
+       const price=document.getElementById("p7")
+       let newprice=priceElement*quantity
+       price.innerText=parseInt(newprice)
+       
+       console.log(newprice)
       }
       else{
        quantitytext.innerText =--quantity;
+
+       const priceElement=1098
+       const price=document.getElementById("p7")
+       let newprice=priceElement*quantity
+       price.innerText=parseInt(newprice)
+       
+       console.log(newprice)
       }
       
    }
@@ -207,9 +319,23 @@ function plusminus(action)
       
       if (action == 'increment'){
        quantitytext.innerText =++quantity;
+
+       const priceElement=484
+       const price=document.getElementById("p8")
+       let newprice=priceElement*quantity
+       price.innerText=parseInt(newprice)
+       
+       console.log(newprice)
       }
       else{
        quantitytext.innerText =--quantity;
+
+       const priceElement=484
+       const price=document.getElementById("p8")
+       let newprice=priceElement*quantity
+       price.innerText=parseInt(newprice)
+       
+       console.log(newprice)
       }
       
    }
@@ -231,9 +357,23 @@ function plusminus(action)
       
       if (action == 'increment'){
        quantitytext.innerText =++quantity;
+
+       const priceElement=1049
+       const price=document.getElementById("p9")
+       let newprice=priceElement*quantity
+       price.innerText=parseInt(newprice)
+       
+       console.log(newprice)
       }
       else{
        quantitytext.innerText =--quantity;
+
+       const priceElement=1049
+       const price=document.getElementById("p9")
+       let newprice=priceElement*quantity
+       price.innerText=parseInt(newprice)
+       
+       console.log(newprice)
       }
       
    }
