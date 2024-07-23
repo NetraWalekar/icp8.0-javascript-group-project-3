@@ -12,7 +12,20 @@ function handleQuantityChange(action)
      alert('Quantity cannot be greater then 5')
      return
     }
-   quantityElement.innerText= action=='inc'? ++quantity : --quantity
+        
+        if (action == 'inc'){
+       quantityElement.innerText =++quantity;
+       
+        const priceElement=49
+       const price=document.getElementById("p1")
+       let newprice=priceElement*quantity
+       price.innerText=parseInt(newprice)
+       
+       console.log(newprice)
+     }
+      else{
+       quantityElement.innerText =--quantity;
+      }
 }
 
 function handleQuantityChange1(action)
@@ -29,7 +42,18 @@ function handleQuantityChange1(action)
      alert('Quantity cannot be greater then 5')
      return
     }
-   quantityElement.innerText= action=='inc'? ++quantity : --quantity
+    if (action == 'inc'){
+      quantityElement.innerText =++quantity;
+      
+       const priceElement=47
+      const price=document.getElementById("p2")
+      let newprice=priceElement*quantity
+      price.innerText=parseInt(newprice)
+      console.log(newprice)
+    }
+     else{
+      quantityElement.innerText =--quantity;
+     }
 }
 
 function handleQuantityChange2(action)
@@ -46,7 +70,18 @@ function handleQuantityChange2(action)
      alert('Quantity cannot be greater then 5')
      return
     }
-   quantityElement.innerText= action=='inc'? ++quantity : --quantity
+    if (action == 'inc'){
+      quantityElement.innerText =++quantity;
+      
+       const priceElement=49
+      const price=document.getElementById("p3")
+      let newprice=priceElement*quantity
+      price.innerText=parseInt(newprice)
+      console.log(newprice)
+    }
+     else{
+      quantityElement.innerText =--quantity;
+     }
 }
 
 function handleQuantityChange3(action)
@@ -63,7 +98,18 @@ function handleQuantityChange3(action)
      alert('Quantity cannot be greater then 5')
      return
     }
-   quantityElement.innerText= action=='inc'? ++quantity : --quantity
+    if (action == 'inc'){
+      quantityElement.innerText =++quantity;
+      
+       const priceElement=20
+      const price=document.getElementById("p4")
+      let newprice=priceElement*quantity
+      price.innerText=parseInt(newprice)
+      console.log(newprice)
+    }
+     else{
+      quantityElement.innerText =--quantity;
+     }
 }
 
 function handleQuantityChange4(action)
@@ -80,7 +126,18 @@ function handleQuantityChange4(action)
      alert('Quantity cannot be greater then 5')
      return
     }
-   quantityElement.innerText= action=='inc'? ++quantity : --quantity
+    if (action == 'inc'){
+      quantityElement.innerText =++quantity;
+      
+       const priceElement=159
+      const price=document.getElementById("p5")
+      let newprice=priceElement*quantity
+      price.innerText=parseInt(newprice)
+      console.log(newprice)
+    }
+     else{
+      quantityElement.innerText =--quantity;
+     }
 }
 function handleQuantityChange5(action)
 {
@@ -96,7 +153,18 @@ function handleQuantityChange5(action)
      alert('Quantity cannot be greater then 5')
      return
     }
-   quantityElement.innerText= action=='inc'? ++quantity : --quantity
+    if (action == 'inc'){
+      quantityElement.innerText =++quantity;
+      
+       const priceElement=105
+      const price=document.getElementById("p6")
+      let newprice=priceElement*quantity
+      price.innerText=parseInt(newprice)
+      console.log(newprice)
+    }
+     else{
+      quantityElement.innerText =--quantity;
+     }
 }
 
 function handleQuantityChange6(action)
@@ -113,7 +181,18 @@ function handleQuantityChange6(action)
      alert('Quantity cannot be greater then 5')
      return
     }
-   quantityElement.innerText= action=='inc'? ++quantity : --quantity
+    if (action == 'inc'){
+      quantityElement.innerText =++quantity;
+      
+       const priceElement=43
+      const price=document.getElementById("p7")
+      let newprice=priceElement*quantity
+      price.innerText=parseInt(newprice)
+      console.log(newprice)
+    }
+     else{
+      quantityElement.innerText =--quantity;
+     }
 }
 
 function handleQuantityChange7(action)
@@ -130,7 +209,18 @@ function handleQuantityChange7(action)
      alert('Quantity cannot be greater then 5')
      return
     }
-   quantityElement.innerText= action=='inc'? ++quantity : --quantity
+    if (action == 'inc'){
+      quantityElement.innerText =++quantity;
+      
+       const priceElement=99
+      const price=document.getElementById("p8")
+      let newprice=priceElement*quantity
+      price.innerText=parseInt(newprice)
+      console.log(newprice)
+    }
+     else{
+      quantityElement.innerText =--quantity;
+     }
 }
 
 function handleQuantityChange8(action)
@@ -147,7 +237,18 @@ function handleQuantityChange8(action)
      alert('Quantity cannot be greater then 5')
      return
     }
-   quantityElement.innerText= action=='inc'? ++quantity : --quantity
+    if (action == 'inc'){
+      quantityElement.innerText =++quantity;
+      
+       const priceElement=47
+      const price=document.getElementById("p9")
+      let newprice=priceElement*quantity
+      price.innerText=parseInt(newprice)
+      console.log(newprice)
+    }
+     else{
+      quantityElement.innerText =--quantity;
+     }
 }
 
 function handleQuantityChange9(action)
@@ -164,7 +265,18 @@ function handleQuantityChange9(action)
      alert('Quantity cannot be greater then 5')
      return
     }
-   quantityElement.innerText= action=='inc'? ++quantity : --quantity
+    if (action == 'inc'){
+      quantityElement.innerText =++quantity;
+      
+       const priceElement=107
+      const price=document.getElementById("p10")
+      let newprice=priceElement*quantity
+      price.innerText=parseInt(newprice)
+      console.log(newprice)
+    }
+     else{
+      quantityElement.innerText =--quantity;
+     }
 }
 
 //function for changing text on button
@@ -224,7 +336,10 @@ function add_cart(num){
      // Example use of num
   } else {
       console.error("Element with id 'ac' not found.");
+
   }
 }
+
+
 
     
