@@ -555,4 +555,51 @@ button:hover {
     .customer-review .tag{
         font-size: 20px;
     }
+    /*SERVICES SECTION*/
+    .container{
+        height: 300px;
+        width: 240px;
+    }
+    .feature-img{
+        height: 70px;
+        width: 90px;
+    }
+    .container h1{
+        font-size: 18px;
+    }
+    .container p {
+        padding: 15px;
+        font-size: 15px;
+    }
+    .heading{
+        font-size: 20px;
+    }
+    /*TITLE IMG*/
+    .title{
+        font-size: 9px;
+    }
+    .title h4{
+        font-size: 10px
+    }
+    .title h1{
+        font-size: 20px;
+    }
+    .image-container{
+        font-size: 22px;
+        padding-left: 0px;
+    }
+    .image-container img {
+        max-width: 60%;
+        height: 250px;
+    }
+    /*SECOND IMAGE INFO*/
+    .info img{
+        max-width: 50%;
+    }
+    .info p{
+        padding-top: 30px;
+        font-size: 10px;
+    }
     
+}
+
