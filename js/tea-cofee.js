@@ -23,6 +23,11 @@ function handleQuantityChange(action)
         }
          else{
           quantityElement.innerText =--quantity;
+          const priceElement=400
+          const price=document.getElementById("p1")
+          let newprice=priceElement*quantity
+          price.innerText=parseInt(newprice)
+          console.log(newprice)
          }
     }
  
@@ -51,6 +56,11 @@ function handleQuantityChange(action)
         }
          else{
           quantityElement.innerText =--quantity;
+          const priceElement=451
+          const price=document.getElementById("p2")
+          let newprice=priceElement*quantity
+          price.innerText=parseInt(newprice)
+          console.log(newprice)
          }
     }
  
@@ -79,6 +89,11 @@ function handleQuantityChange(action)
         }
          else{
           quantityElement.innerText =--quantity;
+          const priceElement=392
+          const price=document.getElementById("p3")
+          let newprice=priceElement*quantity
+          price.innerText=parseInt(newprice)
+          console.log(newprice)
          }
     }
  
@@ -107,6 +122,11 @@ function handleQuantityChange(action)
         }
          else{
           quantityElement.innerText =--quantity;
+          const priceElement=320
+          const price=document.getElementById("p4")
+          let newprice=priceElement*quantity
+          price.innerText=parseInt(newprice)
+          console.log(newprice)
          }
     }
  
@@ -135,8 +155,13 @@ function handleQuantityChange(action)
         }
          else{
           quantityElement.innerText =--quantity;
-         }
+          const priceElement=340
+          const price=document.getElementById("p5")
+          let newprice=priceElement*quantity
+          price.innerText=parseInt(newprice)
+          console.log(newprice)
     }
+  }
     function handleQuantityChange5(action)
     {
        const quantityElement =document.getElementById("quantity-text5")
@@ -162,6 +187,11 @@ function handleQuantityChange(action)
         }
          else{
           quantityElement.innerText =--quantity;
+          const priceElement=175
+          const price=document.getElementById("p6")
+          let newprice=priceElement*quantity
+          price.innerText=parseInt(newprice)
+          console.log(newprice)
          }
     }
  
@@ -190,8 +220,13 @@ function handleQuantityChange(action)
         }
          else{
           quantityElement.innerText =--quantity;
-         }
+          const priceElement=149
+          const price=document.getElementById("p7")
+          let newprice=priceElement*quantity
+          price.innerText=parseInt(newprice)
+          console.log(newprice)
     }
+  }
  
     function handleQuantityChange7(action)
     {
@@ -218,6 +253,11 @@ function handleQuantityChange(action)
         }
          else{
           quantityElement.innerText =--quantity;
+          const priceElement=272
+          const price=document.getElementById("p8")
+          let newprice=priceElement*quantity
+          price.innerText=parseInt(newprice)
+          console.log(newprice)
          }
     }
  
@@ -246,6 +286,11 @@ function handleQuantityChange(action)
         }
          else{
           quantityElement.innerText =--quantity;
+          const priceElement=535
+          const price=document.getElementById("p9")
+          let newprice=priceElement*quantity
+          price.innerText=parseInt(newprice)
+          console.log(newprice)
          }
     }
  
@@ -274,6 +319,12 @@ function handleQuantityChange(action)
         }
          else{
           quantityElement.innerText =--quantity;
+          
+          const priceElement=480
+          const price=document.getElementById("p10")
+          let newprice=priceElement*quantity
+          price.innerText=parseInt(newprice)
+          console.log(newprice)
          }
     }
       //function for changing text on button
