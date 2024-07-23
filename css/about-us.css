@@ -414,7 +414,179 @@ button:hover {
     }
 }
 @media screen and (min-width: 769px) and (max-width: 992px) {
+/*NAVBAR*/
+    .logo img {
+        height: 30px;
+    }
+    .navdiv {
+        flex-direction: row;
+        align-items: center;
+        padding: 0px;
+    }
+    .nav-links a {
+        padding: 10px 17px;
+    }
+    .nav-links {
+        flex-direction: row;
+        align-items: center;
+        width: 100%;
+        font-size: 12px;
+    }
+    .nav-links li {
+        margin: 0px 0;
+    }
+    .sign {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-evenly;
+        width: 90%;
+    }
+    .signin-button {
+        width: 26%;
+        margin: 13px 0;
+        font-size: 12px;
+    }
+    .profile-container, .cart-container{
+        margin-left: 0px;
+        margin-right: 0px;
+        font-size: 6px;
+        padding-top: 3px;
+    }
+    /*FOOTER*/
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+    }
+     
+    .footer-section {
+        text-align: center;
+        width: 100%;
+        margin: 10px 0;
+        background-color: #365E32; 
+    }
+
+    .payment-icons, .social-media-icons {
+        justify-content: center;
+        width: 100%;
+    }
+
+    .connect {
+        text-align: center;
+    }
+
+    .social-media-icons {
+        justify-content: center;
+        margin-top: 10px;
+    }
+    .wrapper {
+		flex-direction: column;
+		align-items: center;
+	}
+	.review-card {
+		width: 85%;
+	}
+    /*CUSTOMER REVIEW FORM*/
+    .form-container{
+        width: 60%;
+        height: 430px;
+    }
+    h2{
+        font-size: 15px;
+        margin-top: 5px;
+    }
+    label{
+        font-size: 12px;
+        margin-top: 5px;
+    }
+    input, select, textarea{
+        width: 95%;
+        padding: 5px;
+        margin-top: 10px;
+    }
+    button{
+        padding: 7px;
+        font-size: 13px;
+    }
+    #rating{
+        font-size: 10px;
+    }
+    #successMessage{
+        margin-top: 10px;
+        font-size: 12px;
+    }
+    /*CUSTOMER REVIEW CARD*/
+    .review-card{
+        width: 45%;
+        height: 260px;
+        padding: 10px;
+    }
+    .info h4{
+        font-size: 13px;
+    }
+    .img-area{
+        width: 60px;
+        height: 60px;
+    }
+    .review-footer{
+        font-size: 10px;
+    }
+    .single-review p {
+        font-size: 13px;
+    }
+    .customer-review .tag{
+        font-size: 17px;
+    }
+    .review{
+        padding: 6px;
+    }
+    /*SERVICES SECTION*/
+    .container{
+        height: 300px;
+        width: 240px;
+    }
+    .feature-img{
+        height: 70px;
+        width: 90px;
+    }
+    .container h1{
+        font-size: 18px;
+    }
+    .container p {
+        padding: 15px;
+        font-size: 15px;
+    }
+    .heading{
+        font-size: 20px;
+    }
+    /*TITLE IMG*/
+    .title{
+        font-size: 12px;
+    }
+    .title h4{
+        font-size: 15px
+    }
+    .title h1{
+        font-size: 20px;
+    }
+    .image-container{
+        font-size: 18px;
+        padding-left: 0px;
+    }
+    .image-container img {
+        max-width: 60%;
+        height: 250px;
+    }
+    /*SECOND IMAGE INFO*/
+    .info img{
+        max-width: 50%;
+    }
+    .info p{
+        padding-top: 30px;
+        font-size: 10px;
+    }
+    
 }
+
 @media screen and (min-width: 600px) and (max-width: 768px) {
     /*NAVBAR*/
     
@@ -581,8 +753,7 @@ button:hover {
     
 }
 
-
-@media (max-width: 480px) {
+@media screen and (min-width: 480px) and (max-width: 599px) {
     /*NAVBAR*/
     
     .navdiv {
