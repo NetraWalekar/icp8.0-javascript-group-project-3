@@ -481,32 +481,32 @@ button:hover {
 	}
     /*CUSTOMER REVIEW FORM*/
     .form-container{
-        width: 50%;
-        height: 400px;
+        width: 60%;
+        height: 430px;
     }
     h2{
-        font-size: 13px;
+        font-size: 15px;
         margin-top: 5px;
     }
     label{
-        font-size: 10px;
+        font-size: 12px;
         margin-top: 5px;
     }
     input, select, textarea{
-        width: 90%;
+        width: 95%;
         padding: 5px;
         margin-top: 10px;
     }
     button{
-        padding: 5px;
-        font-size: 12px;
+        padding: 7px;
+        font-size: 13px;
     }
     #rating{
         font-size: 10px;
     }
     #successMessage{
         margin-top: 10px;
-        font-size: 10px;
+        font-size: 12px;
     }
     /*CUSTOMER REVIEW CARD*/
     .review-card{
