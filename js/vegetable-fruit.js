@@ -12,7 +12,30 @@ function handleQuantityChange(action)
      alert('Quantity cannot be greater then 5')
      return
     }
-   quantityElement.innerText= action=='inc'? ++quantity : --quantity
+        
+        if (action == 'inc'){
+     
+       quantityElement.innerText =++quantity;
+       const priceElement=49
+       
+       
+       let newprice=priceElement*quantityElement
+       priceElement.innerText=parseInt(newprice)
+       console.log(newprice)
+
+       
+
+      //  const priceElement=document.getElementById("p1")
+      //  let price=parseInt(priceElement.innerText)
+
+      //  const sum=parseInt(priceElement.value)+parseInt(priceElement.value)
+
+      //  priceElement.innerText=sum
+    
+      }
+      else{
+       quantityElement.innerText =--quantity;
+      }
 }
 
 function handleQuantityChange1(action)
@@ -224,7 +247,10 @@ function add_cart(num){
      // Example use of num
   } else {
       console.error("Element with id 'ac' not found.");
+
   }
 }
+
+
 
     
