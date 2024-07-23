@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/navbar.css">
+</head>
+
+<body>
+    <nav class="navbar1">
+        <div class="navdiv1">
+            <div class="logo">
+                <a href="../index.html"><img src="../images/icons/home-logo/head-logo.png" alt="Logo" id="logo"></a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../pages/categories.html">Categories</a></li>
+                <li><a href="../pages/about-us.html">About Us</a></li>
+                <li><a href="../pages/contactus.html">Contact Us</a></li>
+            </ul>
+        <div class="sign">
+            <button class="signin-button"><a href="../pages/signin.html">Sign In</a></button>
+            <div class="profile-container" id="profile-container">
+                <a href="../pages/user-account.html"><img src="../images/icons/home-logo/user.png" height="33px" alt="Profile" class="profile-icon" id="profile-icon"></a>
+                
+            </div>
+            <div class="cart-container">
+                <a href="../pages/cart.html"><img src="../images/icons/home-logo/shopping-cart.png" height="33px" alt="Cart" class="cart-icon" id="cart-icon"></a>
+               
+            </div>
+        </div>
+        <div class="menu">
+            <img src="../images/navbar_icons/menu.png" alt="" id="menu_right" class="icon" onclick="display_menu(); hide_menu();">
+        </div>
+        <div class="menu-left">
+            <img src="../images/navbar_icons/menu.png" alt="" id="menu_left" class="icon" onclick="hide_again()">
+        </div>
+        <div class="side_bar" id="side-bar">
+            <img src="../images/icons/home-logo/head-logo.png" alt="Logo" height="50px" style="padding: 10px;">
+            <a href="../index.html" class="ref"><div class="side_bar_links">Home</div></a>
+            <a href="../pages/categories.html"  class="ref"><div class="side_bar_links">Categories</div></a>
+            <a href="../pages/about-us.html"  class="ref"><div class="side_bar_links">About Us</div></a>
+            <a href="../pages/contactus.html"  class="ref"><div class="side_bar_links">Contact Us</div></a>
+            <a href="../pages/signin.html"  class="ref"><div class="side_bar_links">Sign In <img src="../images/navbar_icons/sign-in.png" alt="" height="20px"></div></a>
+            <div class="side_bar_links" ><a href="../pages/user-account.html"><img src="../images/icons/home-logo/user.png" height="33px" alt="Profile" class="profile-icon" id="profile-icon"></a></div>
+            <div class="side_bar_links"><a href="../pages/cart.html"><img src="../images/icons/home-logo/shopping-cart.png" height="33px" alt="Cart" class="cart-icon" id="cart-icon"></a></div>
+        </div>
+        </div>
+    </nav>
+   
+    <script src="../js/navbar.js">
+    </script>
+</body>
+
+</html>

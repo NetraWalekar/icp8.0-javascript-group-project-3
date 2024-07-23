@@ -1,0 +1,134 @@
+.body{
+    padding: 0%;
+    margin: 0%;
+}
+.product-container{
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+justify-content: center;
+}
+
+.product-card {
+height: 390px;
+width: 230px;
+margin: 25px;
+border: 0px solid gray;
+border-radius: 15px;
+position: relative;
+box-shadow: 0px 0px 10px 0px grey;
+background-color: rgb(253, 246, 234);
+}
+
+.product-img {
+height:180px;
+width: 190px;
+border-radius: 25px;
+margin-top: 10px;
+object-fit: cover;
+padding-left: 13px;
+}
+
+.product-img:hover {
+height:170px;
+width: 180px;
+}
+
+.product-name{
+position: absolute;
+top: 230px;
+left: 5px;
+right:5px;
+font-weight: bold;
+text-align: center;
+margin-top: 7px;
+}
+
+.price{
+margin-top:5px;
+font-weight: bold;
+position: absolute;
+top: 270px;
+left: 10px;
+}
+.mrp{
+text-decoration: line-through;
+margin-top: 5px;
+position: absolute;
+top: 290px;
+left: 10px;
+color: rgb(140, 139, 139);
+}
+
+.button{
+position: absolute;
+left:52px;
+bottom: 15px;
+border: 1px solid gray;
+padding: 3px auto;
+border-radius: 19px;
+width: 120px;
+height: 40px;
+color: white;
+background-color: #365E32;
+font-size: 16px;
+text-align: center;
+cursor: pointer;
+
+}
+
+.button:hover{
+    background-color: #093505;
+}
+
+.off{
+color:#03753c;
+background-color: #e5f7ee;
+border: none;
+font-weight: bold;
+margin-left: 5px;
+}
+
+.quantity-btn-container{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 7px;
+   
+}
+
+.quantity-size{
+    font-size:18px ;
+}
+.btn-quantity{
+    height: 18px;
+    margin-top: 7px;
+    display: inline-block;
+    cursor: pointer;
+    margin-left: 5px;
+    
+}
+
+
+.added{
+    display: flex;
+    background-color: rgb(42, 40, 40);
+    color: white;
+    width: 300px;
+    height: 50px;
+    flex-direction: row;
+    justify-content: center;
+    padding: 20px auto;
+    border-radius: 25px;
+    position: fixed;
+    bottom: 30px;
+    top: 95%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.item{
+    padding-top: 15px;
+}
+#ac{
+   visibility: hidden;
+}

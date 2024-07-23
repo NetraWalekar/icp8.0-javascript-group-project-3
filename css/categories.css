@@ -1,3 +1,9 @@
+body {
+    background-color: rgb(255, 250, 250);
+    margin: 0;
+    padding: 0;
+}
+
 .cat-text {
     font-size: 30px;
     font-weight: bold;
@@ -7,23 +13,26 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-evenly;
 }
 
 .product-cat {
     margin-top: 30px;
-    margin-left: 35px;
-    margin-right: 45px;
+    /* margin-left: 35px;
+    margin-right: 45px; */
     margin-bottom: 50px;
     position: relative;
     box-shadow: 2px 2px 5px rgb(131, 124, 124);
     border-radius: 10px;
     cursor: pointer;
+    background-color: rgb(253, 246, 234);
 }
 
 .img {
     height: 200px;
     width: 220px;
+    border-radius: 10px;
+    object-fit: cover;
 }
 
 .product-cat-text {
@@ -34,24 +43,36 @@
 }
 
 .product-cat:hover {
-    margin-top: 10px;
-    margin-left: 15px;
-    margin-right: 15px;
-    margin-bottom: 10px;
+  
     box-shadow: 5px 5px 15px rgb(131, 124, 124);
     border-radius: 10px;
+    transition: 0.2s;
 
     .img {
-        height: 250px;
-        width: 270px;
+        height: 220px;
+        width: 240px;
     }
 }
-.view_all{
-    color:#0c5273;
-    position: absolute;
-    right: 55px;
-    font-size: 20px;
+
+.top-main {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
+
+.top-deal-text-main1 {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.view_all {
+    color: #0c5273;
+    right: 55px;
+    font-size: 25px;
+}
+
 .top-deal {
     display: flex;
     flex-direction: row;
@@ -63,18 +84,18 @@
 .top-deal-product {
     height: 400px;
     width: 200px;
-    margin: 10px;
+    margin: 20px;
     border: 1px solid gray;
     border-radius: 25px;
     position: relative;
-   
+    box-shadow: 5px 5px 10px rgb(131, 124, 124);
+    background-color: (253, 246, 234)
 }
 
 .top-deal-img {
     height: 180px;
     width: 170px;
     border-radius: 25px;
-    margin-top: 40px;
     object-fit: cover;
     padding-left: 13px;
 }
@@ -86,13 +107,14 @@
     font-weight: bold;
 }
 
-.price{
+.price {
     font-weight: bold;
     position: absolute;
     top: 300px;
     left: 10px;
 }
-.mrp{
+
+.mrp {
     text-decoration: line-through;
     position: absolute;
     top: 320px;
@@ -100,6 +122,7 @@
     color: rgb(140, 139, 139);
 }
 
+/* 
 .button{
     position: absolute;
     bottom: 0px;
@@ -109,13 +132,13 @@
     width: 200px;
     left: 1px;
     height: 50px;
-    color: #0c5273;
-    background-color: white;
+    color: white;
+    background-color: #03753c;
     font-size: 16px;
-}
+} */
 
-.off{
-    color:#03753c;
+.off {
+    color: #03753c;
     background-color: #e5f7ee;
     border: none;
     font-weight: bold;
