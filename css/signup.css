@@ -67,10 +67,12 @@ p a:hover {
     box-sizing: border-box;
 }
 
-/* Navbar Styles */
 .navbar {
     background-color: #81A263;
     width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
 }
 
 .navdiv {
@@ -78,6 +80,11 @@ p a:hover {
     align-items: center;
     justify-content: space-between;
     padding: 0 20px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
 }
 
 .logo img {
@@ -89,6 +96,7 @@ p a:hover {
     display: flex;
     margin: 0;
     padding: 0;
+    margin-left: auto; 
 }
 
 .nav-links li {
@@ -103,7 +111,7 @@ p a:hover {
 }
 
 .nav-links a:hover {
-    background-color: #0c0c0c;
+    background-color: #093505;
     border-radius: 5px;
 }
 
@@ -112,6 +120,7 @@ p a:hover {
     height: 40px;
     width: 90px;
     margin-bottom: 10px;
+    margin-top: 10px;
     border: none;
     color: white;
     padding: 10px 20px;
