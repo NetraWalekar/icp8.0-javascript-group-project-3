@@ -6,12 +6,14 @@
     <title>Vegetable And Fruits</title>
     <link rel="stylesheet" href="../css/Product.css">
     <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/navbar.css">
+
 </head>
 <body>
-    <nav class="navbar">
-        <div class="navdiv">
+    <nav class="navbar1">
+        <div class="navdiv1">
             <div class="logo">
-                <a href="../index.html"><img src="../images/icons/home-logo/head-logo.png" alt="Logo"></a>
+                <a href="../index.html"><img src="../images/icons/home-logo/head-logo.png" alt="Logo" id="logo"></a>
             </div>
             <ul class="nav-links">
                 <li><a href="../index.html">Home</a></li>
@@ -23,13 +25,34 @@
             <button class="signin-button"><a href="../pages/signin.html">Sign In</a></button>
             <div class="profile-container" id="profile-container">
                 <a href="../pages/user-account.html"><img src="../images/icons/home-logo/user.png" height="33px" alt="Profile" class="profile-icon" id="profile-icon"></a>
+                
             </div>
-            <div class="cart-container" id="cart-container">
+            <div class="cart-container">
                 <a href="../pages/cart.html"><img src="../images/icons/home-logo/shopping-cart.png" height="33px" alt="Cart" class="cart-icon" id="cart-icon"></a>
-             </div>
+               
+            </div>
+        </div>
+        <div class="menu">
+            <img src="../images/navbar_icons/menu.png" alt="" id="menu_right" class="icon" onclick="display_menu(); hide_menu();">
+        </div>
+        <div class="menu-left">
+            <img src="../images/navbar_icons/menu.png" alt="" id="menu_left" class="icon" onclick="hide_again()">
+        </div>
+        <div class="side_bar" id="side-bar">
+            <img src="../images/icons/home-logo/head-logo.png" alt="Logo" height="50px" style="padding: 10px;">
+            <a href="../index.html" class="ref"><div class="side_bar_links">Home</div></a>
+            <a href="../pages/categories.html"  class="ref"><div class="side_bar_links">Categories</div></a>
+            <a href="../pages/about-us.html"  class="ref"><div class="side_bar_links">About Us</div></a>
+            <a href="../pages/contactus.html"  class="ref"><div class="side_bar_links">Contact Us</div></a>
+            <a href="../pages/signin.html"  class="ref"><div class="side_bar_links">Sign In <img src="../images/navbar_icons/sign-in.png" alt="" height="20px"></div></a>
+            <div class="side_bar_links" ><a href="../pages/user-account.html"><img src="../images/icons/home-logo/user.png" height="33px" alt="Profile" class="profile-icon" id="profile-icon"></a></div>
+            <div class="side_bar_links"><a href="../pages/cart.html"><img src="../images/icons/home-logo/shopping-cart.png" height="33px" alt="Cart" class="cart-icon" id="cart-icon"></a></div>
         </div>
         </div>
     </nav>
+   
+    <script src="../js/navbar.js">
+    </script>
     <h1 class="title">Vegetable & Fruits</h1>
     <div class="product-container">
       <div class="product-card"  data-id="1" data-name="Fresh bhendi 500gm" data-price="49" data-mrp="80" data-discount="15%">
@@ -40,7 +63,7 @@
          <span class="quantity-size"  id="quantity-text">1</span> 
           <img src="./../images/icons/plus.png" class="btn-quantity" onclick="handleQuantityChange('inc')"/>
           </div>
-          <span class="price">₹49.00 </span>
+          <span class="price" id="p1" >₹49.00 </span>
           <span class="mrp">₹80.00 <button class="off">15 % Off</button></span>
           <button class="button" id="btn" onclick="textChange();add_cart(0)">Add To Cart</button>
       </div>
@@ -52,7 +75,7 @@
           <span class="quantity-size"  id="quantity-text1">1</span> 
           <img src="./../images/icons/plus.png" class="btn-quantity" onclick="handleQuantityChange1('inc')"/>
            </div>
-          <span class="price">₹47.00</span>
+          <span class="price" id="p2">₹47.00</span>
           <span class="mrp">₹58.00 <button class="off">20 % Off</button></span>
           <button class="button" id="btn1" onclick="textChange1();add_cart(1)">Add To Cart</button>
       </div>
@@ -64,8 +87,7 @@
           <span class="quantity-size"  id="quantity-text2">1</span> 
           <img src="./../images/icons/plus.png" class="btn-quantity" onclick="handleQuantityChange2('inc')"/>
           </div>
-          <span class="price">₹49.00
-          </span>
+          <span class="price" id="p3">₹49.00</span>
           <span class="mrp">₹80.00 <button class="off">39 % Off</button></span>
           <button class="button" id="btn2" onclick="textChange2();add_cart(2)">Add To Cart</button>
       </div>
@@ -77,7 +99,7 @@
          <span class="quantity-size"  id="quantity-text3">1</span> 
          <img src="./../images/icons/plus.png" class="btn-quantity" onclick="handleQuantityChange3('inc')"/>
          </div>
-         <span class="price">₹20.00</span>
+         <span class="price" id="p4">₹20.00</span>
          <span class="mrp">₹50.00 <button class="off">55 % Off</button></span>
          <button class="button" id="btn3" onclick="textChange3();add_cart(3)">Add To Cart</button>
       </div>
@@ -89,7 +111,7 @@
           <span class="quantity-size"  id="quantity-text4">1</span> 
           <img src="./../images/icons/plus.png" class="btn-quantity" onclick="handleQuantityChange4('inc')"/>
           </div>
-          <span class="price">₹159.00</span>
+          <span class="price" id="p5">₹159.00</span>
           <span class="mrp">₹190.00 <button class="off">18% Off</button></span>
           <button class="button" id="btn4" onclick="textChange4();add_cart(4)">Add To Cart</button>
       </div>
@@ -101,7 +123,7 @@
          <span class="quantity-size"  id="quantity-text5">1</span> 
          <img src="./../images/icons/plus.png" class="btn-quantity" onclick="handleQuantityChange5('inc')"/>
          </div>
-         <span class="price">₹105.00</span>
+         <span class="price" id="p6">₹105.00</span>
          <span class="mrp">₹112.00 <button class="off">30 % Off</button></span>
          <button class="button" id="btn5" onclick="textChange5();add_cart(5)">Add To Cart</button>
       </div>
@@ -113,7 +135,7 @@
         <span class="quantity-size"  id="quantity-text6">1</span> 
         <img src="./../images/icons/plus.png" class="btn-quantity" onclick="handleQuantityChange6('inc')"/>
         </div>
-        <span class="price">₹43.00</span>
+        <span class="price" id="p7">₹43.00</span>
         <span class="mrp">₹55.00 <button class="off">25 % Off</button></span>
         <button class="button" id="btn6" onclick="textChange6();add_cart(6)">Add To Cart</button>
         </div>
@@ -125,7 +147,7 @@
         <span class="quantity-size"  id="quantity-text7">1</span> 
         <img src="./../images/icons/plus.png" class="btn-quantity" onclick="handleQuantityChange7('inc')"/>
         </div>
-        <span class="price">₹99.00</span>
+        <span class="price" id="p8">₹99.00</span>
         <span class="mrp">₹150.00 <button class="off">37 % Off</button></span>
         <button class="button" id="btn7" onclick="textChange7();add_cart(7) ">Add To Cart</button> 
         </div>
@@ -137,7 +159,7 @@
         <span class="quantity-size"  id="quantity-text8">1</span> 
         <img src="./../images/icons/plus.png" class="btn-quantity" onclick="handleQuantityChange8('inc')"/>
         </div>
-        <span class="price">₹47.00</span>
+        <span class="price" id="p9">₹47.00</span>
         <span class="mrp">₹67.00 <button class="off">30 % Off</button></span>
         <button class="button" id="btn8" onclick="textChange8();add_cart(8)">Add To Cart</button>      
     </div>
@@ -149,7 +171,7 @@
         <span class="quantity-size"  id="quantity-text9">1</span> 
         <img src="./../images/icons/plus.png" class="btn-quantity" onclick="handleQuantityChange9('inc')"/>
         </div>
-        <span class="price">₹107.00</span>
+        <span class="price" id="p10">₹107.00</span>
         <span class="mrp">₹140.00 <button class="off">28 % Off</button></span>
         <button class="button" id="btn9" onclick="textChange9() ; add_cart(9)" >Add To Cart</button>
        
@@ -211,7 +233,7 @@
             <div class="footer-links">
                 <h3>Quick Links</h3>
                 <a href="../pages/about-us.html">About Us</a>
-                <a href="#">Contact Us</a>
+                <a href="../pages/contactus.html">Contact Us</a>
                 <a href="../pages/privacy-policy.html">Privacy Policy</a>
                 <a href="../pages/terms-condition.html">Terms and Conditions</a>
             </div>

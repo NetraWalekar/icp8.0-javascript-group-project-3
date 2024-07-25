@@ -5,6 +5,7 @@
 
 body {
     margin: 0;
+    padding: 0;
     font-family: Arial, sans-serif;
     background-color: rgb(255, 250, 250);
 }
@@ -185,152 +186,12 @@ footer.copyright .footer-text {
     margin-top: -5px; 
 }
 
-/* Responsive styles */
-@media (max-width: 1200px) {
-    .nav-links {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .sign {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .card-container {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .video-container {
-        flex-direction: column;
-    }
-}
-
-@media (max-width: 768px) {
-    .navdiv {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .nav-links {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .sign {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .card-container {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .discount-card-container {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .footer-container {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .footer-section {
-        text-align: center;
-    }
-
-    .payment-icons {
-        justify-content: center;
-    }
-}
-
-@media (max-width: 480px) {
-    .navdiv {
-        flex-direction: column;
-        align-items: center;
-        padding: 10px;
-    }
-
-    .nav-links {
-        flex-direction: column;
-        align-items: center;
-        width: 100%;
-    }
-
-    .nav-links li {
-        margin: 10px 0;
-    }
-
-    .sign {
-        flex-direction: column;
-        align-items: center;
-        width: 100%;
-    }
-
-    .signin-button {
-        width: 100%;
-        margin: 10px 0;
-    }
-
-    .card-container {
-        flex-direction: column;
-        align-items: center;
-        width: 100%;
-    }
-
-    .discount-card-container {
-        flex-direction: column;
-        align-items: center;
-        width: 100%;
-    }
-
-    .video-container {
-        flex-direction: column;
-        align-items: center;
-        width: 100%;
-    }
-
-    .footer-container {
-        flex-direction: column;
-        align-items: center;
-        padding: 10px;
-    }
-
-    .footer-section {
-        text-align: center;
-        width: 100%;
-        margin: 10px 0;
-    }
-
-    .payment-icons {
-        justify-content: center;
-        width: 100%;
-    }
-
-    .social-media-icons {
-        justify-content: center;
-        width: 100%;
-    }
-
-    /* Hide text on mobile screens */
-    .nav-links a span, .signin-button span {
-        display: none;
-    }
-
-    .nav-links a i, .signin-button i {
-        display: inline-block;
-    }
-}
-
 /*MY ABOUT US PAGE CSS*/
 .title{
     text-align: center;
 }
 .title h4{
-    background: -webkit-linear-gradient(#f42222, #813df8);
+    background: -webkit-linear-gradient(#489d55, #444079);
     background-clip: text;
     -webkit-text-fill-color: transparent;
 }
@@ -369,13 +230,15 @@ footer.copyright .footer-text {
 }
   .container {
     height: 370px;
+    transition: transform 0.2s ease-in-out;
     width: 270px;
+    border-radius: 10px;
     background-color: rgb(253, 246, 234);
     border: 2px solid rgb(127, 157, 180);
     margin: 10px;
 }
 .container:hover {
-    box-shadow: 0 0 10px 0px rgb(173, 193, 198);
+    box-shadow: 0 0 10px 0px rgb(205, 238, 184);
     transform: translateY(-5px);
 }
 .feature-img {
@@ -420,7 +283,7 @@ footer.copyright .footer-text {
     height: 600px;
     margin: 50px auto;
     padding: 20px;
-    background-color: #fbfec6;
+    background-color:rgb(253, 246, 234);
     border-radius: 8px;
     border: 1px solid rgb(176, 176, 201);
     box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
@@ -480,12 +343,13 @@ button:hover {
 	background-image: linear-gradient(120deg, #d4fc79 0%, #96e6a1 100%);
 	border-radius: 10px;
 	padding: 20px;
+    transition: transform 0.2s ease-in-out;
 	width: 250px;
 	box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.3);
 }
 .review-card:hover{
     box-shadow: 0 0 10px 0px rgb(116, 120, 121);
-    transform: translateY(-5px);
+    transform: translateY(-3px);
 }
 .img-area {
 	width: 80px;
@@ -531,5 +395,632 @@ button:hover {
 }
 .rating span.active {
 	color: #fbc02d;
+}
+
+/*MEDIA QUERIES*/
+@media screen and (min-width: 993px) and (max-width: 1200px) {
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-section {
+        width: 100%;
+        text-align: center;
+    }
+
+    .payment-icons, .social-media-icons {
+        justify-content: center;
+    }
+    /*CUSTOMER REVIEW CARD*/
+    .review-card{
+        width: 40%;
+        height:280px;
+        padding: 14px;
+    }
+    .info h4{
+        font-size: 17px;
+    }
+    .img-area{
+        width: 70px;
+        height: 70px;
+    }
+    .review-footer{
+        font-size: 13px;
+    }
+    .single-review p {
+        font-size: 15px;
+    }
+    .customer-review .tag{
+        font-size: 19px;
+    }
+    .review{
+        padding: 10px;
+    }
+    /*SERVICES SECTION*/
+    .feature{
+        justify-content: space-evenly;
+        padding: 20px;
+    }
+    .container{
+        height: 340px;
+        width: 290px;
+    }
+    .feature-img{
+        height: 90px;
+        width: 90px;
+    }
+    .container h1{
+        font-size: 20px;
+    }
+    .container p {
+        padding: 15px;
+        font-size: 17px;
+    }
+    .heading{
+        font-size: 20px;
+    }
+    /*TITLE IMG*/
+    .title{
+        font-size: 15px;
+    }
+    .title h4{
+        font-size: 13px
+    }
+    .title h1{
+        font-size: 20px;
+    }
+    .image-container{
+        font-size: 26px;
+        padding-left: 0px;
+    }
+    .image-container img {
+        max-width: 100%;
+        height: 370px;
+    }
+    /*SECOND IMAGE INFO*/
+    .info img{
+        max-width: 50%;
+    }
+    .info p{
+        padding-top: 30px;
+        font-size: 15px;
+    }
+    /*CUSTOMER REVIEW FORM*/
+    .form-container{
+        width: 60%;
+        height: 520px;
+    }
+    h2{
+        font-size: 18px;
+        margin-top: 8px;
+    }
+    label{
+        font-size: 15px;
+        margin-top: 8px;
+    }
+    input, select, textarea{
+        width: 95%;
+        padding: 10px;
+        margin-top: 10px;
+    }
+    button{
+        padding: 7px;
+        font-size: 16px;
+    }
+    #rating{
+        font-size: 15px;
+        width: 95%;
+    }
+    #successMessage{
+        margin-top: 10px;
+        font-size: 15px;
+    }
+    
+}
+
+
+@media screen and (min-width: 769px) and (max-width: 992px) {
+/*NAVBAR*/
+    .logo img {
+        height: 30px;
+    }
+    .navdiv {
+        flex-direction: row;
+        align-items: center;
+        padding: 0px;
+    }
+    .nav-links a {
+        padding: 10px 17px;
+    }
+    .nav-links {
+        flex-direction: row;
+        align-items: center;
+        width: 100%;
+        font-size: 12px;
+    }
+    .nav-links li {
+        margin: 0px 0;
+    }
+    .sign {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-evenly;
+        width: 90%;
+    }
+    .signin-button {
+        width: 26%;
+        margin: 13px 0;
+        font-size: 12px;
+    }
+    .profile-container, .cart-container{
+        margin-left: 0px;
+        margin-right: 0px;
+        font-size: 6px;
+        padding-top: 3px;
+    }
+    /*FOOTER*/
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+    }
+     
+    .footer-section {
+        text-align: center;
+        width: 100%;
+        margin: 10px 0;
+        background-color: #365E32; 
+    }
+
+    .payment-icons, .social-media-icons {
+        justify-content: center;
+        width: 100%;
+    }
+
+    .connect {
+        text-align: center;
+    }
+
+    .social-media-icons {
+        justify-content: center;
+        margin-top: 10px;
+    }
+    .wrapper {
+		flex-direction: column;
+		align-items: center;
+	}
+	.review-card {
+		width: 85%;
+	}
+    /*CUSTOMER REVIEW FORM*/
+    .form-container{
+        width: 60%;
+        height: 430px;
+    }
+    h2{
+        font-size: 15px;
+        margin-top: 5px;
+    }
+    label{
+        font-size: 12px;
+        margin-top: 5px;
+    }
+    input, select, textarea{
+        width: 95%;
+        padding: 5px;
+        margin-top: 10px;
+    }
+    button{
+        padding: 7px;
+        font-size: 13px;
+    }
+    #rating{
+        font-size: 10px;
+    }
+    #successMessage{
+        margin-top: 10px;
+        font-size: 12px;
+    }
+    /*CUSTOMER REVIEW CARD*/
+    .review-card{
+        width: 45%;
+        height: 260px;
+        padding: 10px;
+    }
+    .info h4{
+        font-size: 13px;
+    }
+    .img-area{
+        width: 60px;
+        height: 60px;
+    }
+    .review-footer{
+        font-size: 10px;
+    }
+    .single-review p {
+        font-size: 13px;
+    }
+    .customer-review .tag{
+        font-size: 17px;
+    }
+    .review{
+        padding: 6px;
+    }
+    /*SERVICES SECTION*/
+    .container{
+        height: 300px;
+        width: 240px;
+    }
+    .feature-img{
+        height: 70px;
+        width: 90px;
+    }
+    .container h1{
+        font-size: 18px;
+    }
+    .container p {
+        padding: 15px;
+        font-size: 15px;
+    }
+    .heading{
+        font-size: 20px;
+    }
+    /*TITLE IMG*/
+    .title{
+        font-size: 12px;
+    }
+    .title h4{
+        font-size: 15px
+    }
+    .title h1{
+        font-size: 20px;
+    }
+    .image-container{
+        font-size: 18px;
+        padding-left: 0px;
+    }
+    .image-container img {
+        max-width: 60%;
+        height: 250px;
+    }
+    /*SECOND IMAGE INFO*/
+    .info img{
+        max-width: 50%;
+    }
+    .info p{
+        padding-top: 30px;
+        font-size: 10px;
+    }
+    
+}
+
+@media screen and (min-width: 600px) and (max-width: 768px) {
+    /*NAVBAR*/
+    
+    .navdiv {
+        flex-direction: column;
+        align-items: center;
+        padding: 5px;
+    }
+    .nav-links {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        font-size: 17px;
+    }
+    .nav-links li {
+        margin: 4px 0;
+    }
+    .sign {
+        flex-direction: column;
+        align-items: center;
+        width: 80%;
+    }
+    .signin-button {
+        width: 27%;
+        margin: 5px 0;
+    }
+    .profile-container, .cart-container{
+        margin-left: 0px;
+        margin-right: 7px;
+        font-size: 9px;
+        padding-top: 3px;
+    }
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-section {
+        text-align: center;
+        width: 100%;
+        margin: 10px 0;
+        background-color: #365E32; 
+    }
+
+    .payment-icons, .social-media-icons {
+        justify-content: center;
+        width: 100%;
+    }
+
+    .connect {
+        text-align: center;
+    }
+
+    .social-media-icons {
+        justify-content: center;
+        margin-top: 10px;
+    }
+    .wrapper {
+		flex-direction: column;
+		align-items: center;
+	}
+	.review-card {
+		width: 85%;
+	}
+    /*CUSTOMER REVIEW FORM*/
+    .form-container{
+        width: 60%;
+        height: 430px;
+    }
+    h2{
+        font-size: 15px;
+        margin-top: 5px;
+    }
+    label{
+        font-size: 12px;
+        margin-top: 5px;
+    }
+    input, select, textarea{
+        width: 95%;
+        padding: 5px;
+        margin-top: 10px;
+    }
+    button{
+        padding: 7px;
+        font-size: 13px;
+    }
+    #rating{
+        font-size: 10px;
+    }
+    #successMessage{
+        margin-top: 10px;
+        font-size: 12px;
+    }
+    /*CUSTOMER REVIEW CARD*/
+    .review-card{
+        width: 45%;
+        height: 260px;
+        padding: 10px;
+    }
+    .info h4{
+        font-size: 13px;
+    }
+    .img-area{
+        width: 60px;
+        height: 60px;
+    }
+    .review-footer{
+        font-size: 10px;
+    }
+    .single-review p {
+        font-size: 13px;
+    }
+    .customer-review .tag{
+        font-size: 17px;
+    }
+    .review{
+        padding: 6px;
+    }
+    /*SERVICES SECTION*/
+    .container{
+        height: 300px;
+        width: 240px;
+    }
+    .feature-img{
+        height: 70px;
+        width: 90px;
+    }
+    .container h1{
+        font-size: 18px;
+    }
+    .container p {
+        padding: 15px;
+        font-size: 15px;
+    }
+    .heading{
+        font-size: 20px;
+    }
+    /*TITLE IMG*/
+    .title{
+        font-size: 12px;
+    }
+    .title h4{
+        font-size: 15px
+    }
+    .title h1{
+        font-size: 20px;
+    }
+    .image-container{
+        font-size: 18px;
+        padding-left: 0px;
+    }
+    .image-container img {
+        max-width: 60%;
+        height: 250px;
+    }
+    /*SECOND IMAGE INFO*/
+    .info img{
+        max-width: 50%;
+    }
+    .info p{
+        padding-top: 30px;
+        font-size: 10px;
+    }
+    
+}
+
+@media screen and (min-width: 480px) and (max-width: 599px) {
+    /*NAVBAR*/
+    
+    .navdiv {
+        flex-direction: column;
+        align-items: center;
+        padding: 5px;
+    }
+    .nav-links {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        font-size: 13px;
+    }
+    .nav-links li {
+        margin: 4px 0;
+    }
+    .sign {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+    .signin-button {
+        width: 30%;
+        margin: 5px 0;
+    }
+    .profile-container, .cart-container{
+        margin-left: 0px;
+        font-size: 9px;
+        padding-top: 3px;
+    }
+    /*FOOTER*/
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+    }
+
+    .footer-section {
+        text-align: center;
+        width: 100%;
+        margin: 10px 0;
+        background-color: #365E32; 
+    }
+    .payment-icons, .social-media-icons {
+        justify-content: center;
+        width: 100%;
+    }
+    .connect {
+        text-align: center;
+    }
+    .social-media-icons {
+        justify-content: center;
+        margin-top: 10px;
+    }
+    .footer-links a span {
+        display: none;
+    }
+
+    .footer-links a i {
+        display: inline-block;
+    }
+    /*CUSTOMER REVIEW FORM*/
+    .form-container{
+        width: 50%;
+        height: 400px;
+    }
+    h2{
+        font-size: 13px;
+        margin-top: 5px;
+    }
+    label{
+        font-size: 10px;
+        margin-top: 5px;
+    }
+    input, select, textarea{
+        width: 90%;
+        padding: 5px;
+        margin-top: 10px;
+    }
+    button{
+        padding: 5px;
+        font-size: 12px;
+    }
+    #rating{
+        font-size: 10px;
+    }
+    #successMessage{
+        margin-top: 10px;
+        font-size: 10px;
+    }
+    /*CUSTOMER REVIEW CARD*/
+    .review-card{
+        width: 50%;
+        height: 300px;
+        padding: 14px;
+    }
+    .info h4{
+        font-size: 14px;
+    }
+    .img-area{
+        width: 60px;
+        height: 60px;
+    }
+    .review-footer{
+        font-size: 10px;
+    }
+    .single-review p {
+        font-size: 13px;
+    }
+    .customer-review .tag{
+        font-size: 17px;
+    }
+    .review{
+        padding: 10px;
+    }
+    /*SERVICES SECTION*/
+    .container{
+        height: 300px;
+        width: 240px;
+    }
+    .feature-img{
+        height: 70px;
+        width: 90px;
+    }
+    .container h1{
+        font-size: 18px;
+    }
+    .container p {
+        padding: 15px;
+        font-size: 15px;
+    }
+    .heading{
+        font-size: 20px;
+    }
+    /*TITLE IMG*/
+    .title{
+        font-size: 9px;
+    }
+    .title h4{
+        font-size: 10px
+    }
+    .title h1{
+        font-size: 20px;
+    }
+    .image-container{
+        font-size: 22px;
+        padding-left: 0px;
+    }
+    .image-container img {
+        max-width: 60%;
+        height: 250px;
+    }
+    /*SECOND IMAGE INFO*/
+    .info img{
+        max-width: 50%;
+    }
+    .info p{
+        padding-top: 30px;
+        font-size: 10px;
+    }
+    
 }
 
