@@ -33,3 +33,24 @@ function next() {
 document.addEventListener("DOMContentLoaded", () => {
     showImage(imgIndex);
 });
+
+const greetings = [
+    "Welcome to Nature's Basket! Fresh finds await you!",
+    "Hi there! Enjoy our fresh selections!",
+    "Welcome back! Let’s fill your basket with goodness!",
+    "Hello! Discover deliciousness at Nature's Basket!",
+    "Hey there! Fresh, healthy, and delightful options await!"
+];
+
+function displayGreeting() {
+    const greetingText = document.getElementById('greeting-text');
+    const randomIndex = Math.floor(Math.random() * greetings.length);
+    greetingText.textContent = greetings[randomIndex];
+}
+
+
+document.addEventListener("DOMContentLoaded", () => {
+    displayGreeting();
+    showImage(currentIndex); 
+});
+
