@@ -1,6 +1,6 @@
 let images = [
     "./images/icons/home-logo/head-img.jpg",
-    "./images/icons/home-logo/img5.jpg",
+   
     "./images/icons/home-logo/img6.jpeg",
     "./images/icons/home-logo/img7.jpeg"
 ];
