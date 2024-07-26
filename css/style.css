@@ -100,22 +100,58 @@ body {
     align-items: center;
     margin-left: 15px;
 }
+/* Add these styles to your CSS file */
+
+.head-img-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 60px;
+}
+
+.arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 24px;
+    z-index: 10;
+}
+
+.left-arrow {
+    left: 10px;
+}
+
+.right-arrow {
+    right: 10px;
+}
+
+
+
 
 
 
 
 
 .head-img {
-    padding-top: 60px; 
-    text-align: center;
+    width: 100%;
+    
+    max-width: 1150px;
+    height: auto;
+    border-radius: 10px; 
+    border: 2px solid #365E32; 
 }
 
-.head-img img {
+.head-img-container{
     max-width: 100%;
     height: auto;
     border-radius: 10px; 
-    border: 2px solid #365E32;
-    background-color: #ddd;
+    
 }
 .card-container {
     display: flex;
