@@ -11,18 +11,19 @@ function updateOrderSummary()
     const cartList = document.getElementById('cart-items');
     const orderTotalElement = document.getElementById('order-total');
     cartList.innerHTML = '';
+    const rs="₹";
 
     let totalPrice = 0;
 
     cartItems.forEach(item => {
         const itemElement = document.createElement('li');
-        itemElement.textContent = `${item.name} - ₹${item.price} x ${item.quantity}`;
+        itemElement.textContent = `${item.name} - ${rs} ${item.price} x ${item.quantity}`;
         cartList.appendChild(itemElement);
 
         totalPrice += item.price * item.quantity;
     });
 
-    orderTotalElement.textContent = `Total Price: ₹${totalPrice.toFixed(2)}`;
+    orderTotalElement.textContent = `Total Price: ${rs} ${totalPrice.toFixed(2)}`;
 }
 
 document.getElementById('back-to-cart-button').addEventListener('click', () => {
