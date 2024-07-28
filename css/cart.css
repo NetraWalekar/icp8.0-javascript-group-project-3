@@ -198,5 +198,7 @@ body{
     border-radius: 3px;
 }
 
-
-
+.theme-select-icon{
+  height: 30px;
+  cursor: pointer;
+}
