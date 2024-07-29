@@ -152,6 +152,20 @@ footer.copyright .footer-text {
     .container {
         width: 80%;
     }
+    .navdiv1 {
+        height: 60px;
+        flex-direction: column;
+        padding: 10px 0;
+    }
+    .signin-button{
+        display: none;
+    }
+    .cart-icon{
+        display: none;
+    }
+    .profile-icon{
+        display: none;
+    }
 }
 
 @media (max-width: 992px) {
