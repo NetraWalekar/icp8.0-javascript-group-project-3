@@ -443,6 +443,7 @@ button:hover {
 }
 .rating span {
 	color: #000;
+    
 	font-size: 18px;
 }
 .rating span.active {
