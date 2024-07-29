@@ -1,124 +1,122 @@
-body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    margin: 0;
-    padding: 0;
-    background-color: #f9f9f9;
-    color: #333;
-}
-.navbar {
-    background-color: #81A263;
-}
-
-.navdiv {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0 20px;
-}
-
-.logo img {
-    height: 50px;
-}
-
-.nav-links {
-    list-style: none;
-    display: flex;
-    margin: 0;
-    padding: 0;
-}
-
-.nav-links li {
-    margin: 0 15px;
-}
-
-.nav-links a {
-    color: white;
-    text-decoration: none;
-    padding: 14px 20px;
-    display: block;
-}
-
-.nav-links a:hover {
-    background-color: #093505;
-    border-radius: 5px;
-}
-
-.signin-button {
-    background-color: #365E32;
-    border: none;
-    color: white;
-    padding: 10px 20px;
-    cursor: pointer;
-    margin-right: 15px;
-    border-radius: 5px;
-}
-
-.signin-button a {
-    color: white;
-    text-decoration: none;
-}
-
-.signin-button:hover {
-    background-color: #093505;
-}
-
-.sign {
-    display: flex;
-    justify-content: space-between;
-}
-
-
 
 .container {
-    width: 80%;
-    margin: 20px auto;
+    max-width: 900px;
+    margin: 0 auto;
     padding: 20px;
-    background: rgb(253, 246, 234);;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
-}
-.head-title{
-    text-align: center;
-    color: #365E32;
+    line-height: 1.6;
+    background-color: rgb(253, 246, 234);;
 }
 
-h1, h2 {
-    color: #444;
-}
-
-h1 {
+.head-title {
     text-align: center;
-    margin-bottom: 20px;
+    margin: 50px;
+    color: #093505;
 }
 
 h2 {
     margin-top: 20px;
 }
-
-p {
-    margin: 10px 0;
-    text-align: justify;
+#side-bar {
+    background-color: #fff; 
+    color: #333; 
+    visibility: hidden;
+    transition: visibility 0.3s ease-in-out;
+    background-color:#81A263;
+   
 }
-.copyright{
-    text-align: center;
+
+#logo {
+    transition: visibility 0.3s ease-in-out;
+}
+
+#menu {
+    display: none; 
+    cursor: pointer;
+   
+}
+
+
+
+
+@media (max-width: 768px) {
+    .container {
+        padding: 10px;
+    }
+}
+
+
+footer {
+    background-color: #f8f8f8;
+    padding: 20px 0;
+}
+
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 0 10px;
+}
+
+.footer-section {
+    flex: 1;
+    min-width: 220px;
+    margin: 10px;
+}
+
+.footer-logo {
+    width: 100px;
+}
+
+.footer-logo-description {
+    display: flex;
+    flex-direction: column;
     align-items: center;
 }
 
+.para {
+    margin-left: 10px;
+    font-size: 14px;
+}
 
-@media (max-width: 1200px) {
-    .footer-container {
-        flex-direction: column;
-        align-items: center;
-    }
+.connect {
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
 
-    .footer-section {
-        width: 100%;
-        text-align: center;
-    }
+.social-media-icons a {
+    margin: 0 10px;
+}
 
-    .payment-icons, .social-media-icons {
-        justify-content: center;
-    }
+.quick-links {
+    list-style: none;
+    padding: 0;
+}
+
+.quick-links li {
+    margin: 5px 0;
+}
+
+.quick-links a {
+    text-decoration: none;
+    color: #333;
+}
+
+.quick-links a:hover {
+    text-decoration: underline;
+}
+
+.footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid #ddd;
+    padding-top: 10px;
+    margin-top: 10px;
+}
+
+.payment-methods img {
+    margin: 0 5px;
 }
 
 @media (max-width: 768px) {
@@ -127,61 +125,12 @@ p {
         align-items: center;
     }
 
-    .footer-section {
-        text-align: center;
-        width: 100%;
-        margin: 10px 0;
-        background-color: #365E32; 
-    }
-
-    .payment-icons, .social-media-icons {
-        justify-content: center;
-        width: 100%;
-    }
-
-    .connect {
-        text-align: center;
-    }
-
-    .social-media-icons {
-        justify-content: center;
-        margin-top: 10px;
-    }
-}
-
-@media (max-width: 480px) {
-    .footer-container {
+    .footer-bottom {
         flex-direction: column;
-        align-items: center;
-        padding: 10px;
     }
 
-    .footer-section {
-        text-align: center;
-        width: 100%;
-        margin: 10px 0;
-        background-color: #365E32; 
-    }
-
-    .payment-icons, .social-media-icons {
-        justify-content: center;
-        width: 100%;
-    }
-
-    .connect {
-        text-align: center;
-    }
-
-    .social-media-icons {
-        justify-content: center;
+    .footer-bottom p,
+    .payment-methods {
         margin-top: 10px;
-    }
-
-    .footer-links a span {
-        display: none;
-    }
-
-    .footer-links a i {
-        display: inline-block;
     }
 }
