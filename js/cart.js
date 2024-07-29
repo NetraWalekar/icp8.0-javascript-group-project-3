@@ -132,5 +132,4 @@ function updateTotal()
     cartCount.style.display='block';
   }
 
-
 }
