@@ -364,7 +364,7 @@ footer.copyright .footer-text {
     }
 }
 
-@media (max-width: 850px) {
+@media (max-width: 1010px) {
     .container {
         width: 95%;
         padding: 15px;
