@@ -35,11 +35,11 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 const greetings = [
-    "Welcome to Nature's Basket! Fresh finds await you!",
-    "Hi there! Enjoy our fresh selections!",
-    "Welcome back! Let’s fill your basket with goodness!",
-    "Hello! Discover deliciousness at Nature's Basket!",
-    "Hey there! Fresh, healthy, and delightful options await!"
+   "<strong>Welcome to Nature's Basket! Fresh finds await you!</strong>",
+    "<strong>Hi there! Enjoy our fresh selections! </strong>",
+    "<strong>Welcome back! Let’s fill your basket with goodness! </strong>",
+    "<strong>Hello! Discover deliciousness at Nature's Basket!</strong>",
+    "<strong>Hey there! Fresh, healthy, and delightful options await!</strong>"
 ];
 
 function displayGreeting() {
