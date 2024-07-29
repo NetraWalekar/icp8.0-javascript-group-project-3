@@ -1,6 +1,7 @@
 .cart-title{
     text-align: center;
     font-size: 1.5rem;
+    margin-top: 4rem;
     font-weight: 500;
     margin-bottom: 1rem;
     padding-bottom:20px ;
@@ -38,7 +39,7 @@
   .cart-food-title{
      font-size: 1rem;
      text-transform: uppercase;
-     color:blue;
+     color:black;
      font-weight: 500;
   }
   
@@ -85,7 +86,7 @@
     margin: 650px;
     padding: 8px 60px;
     border: 1px solid black;
-    background-color:#f7ddaa;
+    background-color:#98c296;
     border-radius: 5px;
     color:black;
     font-size: 1rem;
@@ -95,7 +96,7 @@
   }
   .btn:hover {
     color: white;
-    background-color: green;
+    background-color: #093505;
     border: none;
     transition: 0.3s;
   }
@@ -111,17 +112,21 @@
 body{
     margin: 0;
     padding: 0;
-   
     line-height: 1.6;
-    background-color:#f7ddaa;
+    background-color:rgb(255, 250, 250);
     color: #333;
 }
-.navbar {
-    margin: 0;
+  .navbar1 {
     background-color: #81A263;
+    z-index: 1000;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: right;
 }
 
-.navdiv {
+.navdiv1 {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -130,6 +135,9 @@ body{
 
 .logo img {
     height: 50px;
+    position: fixed;
+    left: 0;
+    top: 3px;
 }
 
 .nav-links {
@@ -198,5 +206,328 @@ body{
     border-radius: 3px;
 }
 
+.icon{
+    height: 30px;
+    padding: 5px;
+    margin: 0px;
+    cursor: pointer;
+}
+.ref{
+  text-decoration: none;
+  color: white;
+}
+.side_bar{
+    background-color:#81A263;
+    color: white;
+    width: 200px;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    right: 0;
+}
+.side_bar_links{
+    font-size: 20px;
+    padding-left: 10px;
+    margin: 20px;
+    cursor: pointer;
+}
+.menu-left{
+    position: fixed;
+    left: 10px;
+    padding: 10px;
+    visibility: hidden;
+    cursor: pointer;
+}
+@media (max-width: 480px){
+  .nav-links{
+    visibility: hidden;
+  }
+  .sign{
+    visibility: hidden;
+  }
+  .profile-container{
+    visibility: hidden;
+  }
+  .cart-container{
+    visibility: hidden;
+  }
+  .menu{
+    position: fixed;
+    right: 10px;
+  }
+  .side_bar{
+    visibility: hidden;
+  }
+
+}
+@media (max-width: 769px){
+    .nav-links{
+      visibility: hidden;
+    }
+    .sign{
+      visibility: hidden;
+    }
+    .profile-container{
+      visibility: hidden;
+    }
+    .cart-container{
+      visibility: hidden;
+    }
+    .menu{
+      position: fixed;
+      right: 10px;
+    }
+    .side_bar{
+      visibility: hidden;
+    }
+  
+  }
+
+  @media (max-width: 951px){
+    .nav-links{
+      visibility: hidden;
+    }
+    .sign{
+      visibility: hidden;
+    }
+    .profile-container{
+      visibility: hidden;
+    }
+    .cart-container{
+      visibility: hidden;
+    }
+    .menu{
+      position: fixed;
+      right: 10px;
+    }
+    .side_bar{
+      visibility: hidden;
+    }
+  
+  }
+ @media screen and (min-width:951px) and (max-width:1900px) {
+     .side_bar{
+      visibility: hidden;
+     }
+    .menu{
+      visibility: hidden;
+    }
+ }
+
+ /*Footer*/
+ footer 
+{
+    background-color: #365E32;
+    color: white;
+    margin-top: 3rem;
+    padding: 10px 0;
+    text-align: center;
+}
+
+.footer-container 
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    padding: 10px 20px;
+}
+
+.footer-section 
+{
+    flex: 1;
+    margin: 10px;
+    text-align: left;
+}
+
+.footer-logo-description 
+{
+    margin-bottom: 10px;
+}
+
+.footer-logo 
+{
+    width: 150px;
+    margin-bottom: 2px;
+}
+
+.contact-details, .payment-methods, .footer-links 
+{
+    margin-bottom: 10px;
+    color: white;
+}
+
+.contact-details h3, .payment-methods h3, .footer-links h3
+{
+    margin-bottom: 5px;
+}
+.info{
+    color: white;
+}
+.contact{
+    color: white;
+}
+
+.payment-icons 
+{
+    display: flex;
+    text-align: left;
+    align-items: center;
+}
+
+.payment-icons img 
+{
+    margin: 3px;
+    width: 50px;
+    height: auto;
+    vertical-align: middle;
+}
+
+.social-media-icons 
+{
+    display: flex;
+    align-items: center;
+    text-align: left;
+}
+
+.social-media-icons img 
+{
+    margin: 5px;
+    width: 25px;
+    height: auto;
+}
+
+.connect 
+{
+    text-align: left;
+}
+
+.footer-links 
+{
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-links a 
+{
+    text-decoration: none;
+    color: #ece7e7;
+    padding: 5px 0;
+}
+
+.footer-links a:hover 
+{
+    text-decoration: underline;
+}
+
+footer.copyright 
+{
+    width: 100%;
+    height: 30px;
+    text-align: center;
+    background-color: #f8f8f8;
+    color: #0c0c0c;
+}
+
+footer.copyright .footer-text 
+{
+    line-height: 30px;
+    margin-top: -5px;
+}
+
+.copyright 
+{
+    text-align: center;
+    margin-top: 0;
+}
 
 
+@media (max-width: 1200px) {
+    .head-img-container {
+        width: 100%; 
+        padding-left: 0; 
+    }
+
+    .head-img {
+        width: 100%; 
+        height: auto; 
+    }
+}
+
+@media (max-width: 768px) {
+    .head-img-container {
+        height: 250px; 
+    }
+
+    .head-img {
+        object-fit: cover; 
+    }
+}
+
+@media (max-width: 480px) {
+    .head-img-container {
+        height: 200px; 
+    }
+
+    .head-img {
+        object-fit: cover; 
+    }
+}
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column; 
+        align-items: center; 
+    }
+
+    .footer-section {
+        width: 100%; 
+        text-align: center; 
+        margin: 10px 0; 
+        background-color: #365E32; 
+    }
+
+    .payment-icons, .social-media-icons {
+        justify-content: center; 
+        width: 100%;
+    }
+
+    .connect {
+        text-align: center;
+    }
+
+    .social-media-icons {
+        justify-content: center; 
+        margin-top: 10px; 
+    }
+
+    .footer-links a span {
+        display: none; 
+    }
+
+    .footer-links a i {
+        display: inline-block; 
+    }
+}
+
+@media (max-width: 480px) {
+    .footer-section {
+        text-align: center; 
+        width: 100%; 
+        margin: 10px 0; 
+        background-color: #365E32; 
+    }
+
+    .payment-icons, .social-media-icons {
+        justify-content: center; 
+        width: 100%; 
+    }
+
+    .connect {
+        text-align: center; 
+    }
+
+    .social-media-icons {
+        justify-content: center; 
+        margin-top: 10px; 
+    }
+}

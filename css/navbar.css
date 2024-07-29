@@ -92,17 +92,6 @@ body{
     padding: 5px;
     border-radius: 3px;
 }
-/* 
-.nav-down{
-    background-color: #81A263 ;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    height: 40px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-} */
 
 .icon{
     height: 30px;

@@ -2,13 +2,6 @@ const btnCart=document.querySelector('#cart-icon');
 const cart=document.querySelector('.cart');
 const btnClose=document.querySelector('#cart-close');
 
-btnCart.addEventListener('click',()=>{
-  cart.classList.add('cart-active');
-});
-
-btnClose.addEventListener('click',()=>{
-  cart.classList.remove('cart-active');
-});
 
 document.addEventListener('DOMContentLoaded',loadFood);
 
@@ -55,6 +48,7 @@ function removeItem(){
 function changeQty(){
   if(isNaN(this.value) || this.value<1){
     this.value=1;
+    alert('Quantity cannot be less than 1')
   }
   loadContent();
 }
@@ -137,6 +131,5 @@ function updateTotal()
   }else{
     cartCount.style.display='block';
   }
-
 
 }
