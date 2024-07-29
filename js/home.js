@@ -1,3 +1,11 @@
+setTimeout(function(){
+
+let loader=document.getElementById('loader')
+let mainContent=document.getElementById('main-content')
+loader.style.display="none";
+mainContent.style.display="block";
+},5000)
+
 let images = [
     "./images/icons/home-logo/head-img.jpg",
    
@@ -35,8 +43,8 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 const greetings = [
-    "Welcome to Nature's Basket! Fresh finds await you!",
-    "Hi there! Enjoy our fresh selections!",
+   "Welcome to Nature's Basket! Fresh finds await you!",
+    "Hi there! Enjoy our fresh selections! ",
     "Welcome back! Let’s fill your basket with goodness!",
     "Hello! Discover deliciousness at Nature's Basket!",
     "Hey there! Fresh, healthy, and delightful options await!"
@@ -53,4 +61,3 @@ document.addEventListener("DOMContentLoaded", () => {
     displayGreeting();
     showImage(currentIndex); 
 });
-
