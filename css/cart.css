@@ -39,7 +39,7 @@
   .cart-food-title{
      font-size: 1rem;
      text-transform: uppercase;
-     color:blue;
+     color:black;
      font-weight: 500;
   }
   
@@ -86,7 +86,7 @@
     margin: 650px;
     padding: 8px 60px;
     border: 1px solid black;
-    background-color:#e0dace;
+    background-color:#98c296;
     border-radius: 5px;
     color:black;
     font-size: 1rem;
@@ -96,7 +96,7 @@
   }
   .btn:hover {
     color: white;
-    background-color: green;
+    background-color: #093505;
     border: none;
     transition: 0.3s;
   }
@@ -113,7 +113,7 @@ body{
     margin: 0;
     padding: 0;
     line-height: 1.6;
-    background-color:#e0dace;
+    background-color:rgb(255, 250, 250);
     color: #333;
 }
   .navbar1 {
