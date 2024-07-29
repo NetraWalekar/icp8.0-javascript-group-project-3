@@ -4,7 +4,7 @@ let loader=document.getElementById('loader')
 let mainContent=document.getElementById('main-content')
 loader.style.display="none";
 mainContent.style.display="block";
-},5000)
+},4000)
 
 let images = [
     "./images/icons/home-logo/head-img.jpg",

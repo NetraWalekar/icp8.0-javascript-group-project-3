@@ -10,7 +10,7 @@ body, h1, h2, h3, p, ul, li, a, img {
 }
 .loader{
     position: fixed;
-    left: 50%;
+    left: 45%;
     top: 30%;
     transform: translate (-50%,-50%);
     width: 100vh;
@@ -115,6 +115,7 @@ body {
     margin-top: 70px; 
     font-size: 1.5em; 
     color: #365E32; 
+    background-color: rgb(253, 246, 234);;
     
 }
 .greeting-text{
@@ -173,14 +174,7 @@ body {
 {
     right: 10px;
 }
-/*.head-img {
-    width: 100%;
-    max-width: 1150px;
-    height: auto;
-    border-radius: 10px; 
-    border: 2px solid #365E32; 
-}
-*/
+
 
 .head-img-container
 {
@@ -232,6 +226,7 @@ body {
 .top-deals 
 {
     text-align: center;
+    color: #093505;
 }
 .discount-card-container 
 {
@@ -313,7 +308,7 @@ body {
 .head1 
 {
     text-align: center;
-    color: rgb(36, 35, 35);
+    color: #093505;
 }
 .video-container 
 {
