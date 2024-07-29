@@ -453,3 +453,5 @@ function add_cart(num){
        console.error("Element with id 'ac' not found.");
    }
 }
+
+

@@ -459,25 +459,3 @@ function textChange9(){
    }
 }
 
-let currentPrice = 110;
-
-    // Function to increase price
-    function increasePrice() {
-      const currentPrice =document.getElementById("price")
-      currentPrice += 110; // Increase by $10 (you can change this value)
-      updatePrice();
-    }
-
-    // Function to decrease price
-    function decreasePrice() {
-      const currentPrice =document.getElementById("price")
-      currentPrice -= 110; // Decrease by $10 (you can change this value)
-      updatePrice();
-    }
-
-    // Function to update the price display
-    function updatePrice() {
-      document.getElementById('price').innerText = '$' + currentPrice;
-    }
-
-    
