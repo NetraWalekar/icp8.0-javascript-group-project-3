@@ -117,6 +117,9 @@ body {
     color: #365E32; 
     
 }
+.greeting-text{
+    color: #093505;
+}
 .head-img-container 
 {
     position: relative;
@@ -385,11 +388,18 @@ footer
 .contact-details, .payment-methods, .footer-links 
 {
     margin-bottom: 10px;
+    color: white;
 }
 
 .contact-details h3, .payment-methods h3, .footer-links h3
 {
     margin-bottom: 5px;
+}
+.info{
+    color: white;
+}
+.contact{
+    color: white;
 }
 
 .payment-icons 
