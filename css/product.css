@@ -10,8 +10,6 @@
  justify-content: center;
  background-color: rgb(255, 250, 250);
  margin: 20px  0px;
- 
-
  }
 
  .title{
@@ -44,9 +42,6 @@ padding-left: 13px;
 height:170px;
 width: 180px;
 }
-
-
-
 .product-name{
 position: absolute;
 top: 230px;
@@ -261,8 +256,6 @@ margin-top: -5px;
 .copyright{
 text-align: center;
 }
-
-
 
 /* Responsive styles */
 @media (max-width: 1200px) {
