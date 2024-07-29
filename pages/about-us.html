@@ -4,33 +4,51 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ABOUT US</title>
-    <link rel="stylesheet" href="./../css/about-us.css">
+    <link rel="stylesheet" href="../css/about-us.css">
+    <link rel="stylesheet" href="../css/navbar.css">
 </head>
 <body>
-  <nav class="navbar">
-    <div class="navdiv">
+  <nav class="navbar1">
+    <div class="navdiv1">
         <div class="logo">
-            <a href="./../index.html"><img src="./../images/icons/home-logo/head-logo.png" alt="Logo"></a>
+            <a href="../index.html"><img src="../images/icons/home-logo/head-logo.png" alt="Logo" id="logo"></a>
         </div>
         <ul class="nav-links">
-            <li><a href="./../index.html">Home</a></li>
-            <li><a href="./../pages/categories.html">Categories</a></li>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../pages/categories.html">Categories</a></li>
             <li><a href="../pages/about-us.html">About Us</a></li>
-            <li><a href="./../pages/contactus.html">Contact Us</a></li>
+            <li><a href="../pages/contactus.html">Contact Us</a></li>
         </ul>
     <div class="sign">
-        <button class="signin-button"><a href="./../pages/signin.html">Sign In</a></button>
+        <button class="signin-button"><a href="../pages/signin.html">Sign In</a></button>
         <div class="profile-container" id="profile-container">
-            <a href="./../pages/user-account.html"><img src="./../images/icons/home-logo/user.png" height="33px" alt="Profile" class="profile-icon" id="profile-icon"></a>
-            <span class="profile-text" id="profile-text">User Account</span>
+            <a href="../pages/user-account.html"><img src="../images/icons/home-logo/user.png" height="33px" alt="Profile" class="profile-icon" id="profile-icon"></a>
+            
         </div>
-        <div class="cart-container" id="cart-container">
-            <a href="./../pages/cart.html"><img src="./../images/icons/home-logo/shopping-cart.png" height="33px" alt="Cart" class="cart-icon" id="cart-icon"></a>
-            <span class="cart-text" id="cart-text">Cart</span>
+        <div class="cart-container">
+            <a href="../pages/cart.html"><img src="../images/icons/home-logo/shopping-cart.png" height="33px" alt="Cart" class="cart-icon" id="cart-icon"></a>
+           
         </div>
+    </div>
+    <div class="menu">
+        <img src="../images/navbar_icons/menu.png" alt="" id="menu_right" class="icon" onclick="display_menu(); hide_menu();">
+    </div>
+    <div class="menu-left">
+        <img src="../images/navbar_icons/menu.png" alt="" id="menu_left" class="icon" onclick="hide_again()">
+    </div>
+    <div class="side_bar" id="side-bar">
+        <img src="../images/icons/home-logo/head-logo.png" alt="Logo" height="50px" style="padding: 10px;">
+        <a href="../index.html" class="ref"><div class="side_bar_links">Home</div></a>
+        <a href="../pages/categories.html"  class="ref"><div class="side_bar_links">Categories</div></a>
+        <a href="../pages/about-us.html"  class="ref"><div class="side_bar_links">About Us</div></a>
+        <a href="../pages/contactus.html"  class="ref"><div class="side_bar_links">Contact Us</div></a>
+        <a href="../pages/signin.html"  class="ref"><div class="side_bar_links">Sign In <img src="../images/navbar_icons/sign-in.png" alt="" height="20px"></div></a>
+        <div class="side_bar_links" ><a href="../pages/user-account.html"><img src="../images/icons/home-logo/user.png" height="33px" alt="Profile" class="profile-icon" id="profile-icon"></a></div>
+        <div class="side_bar_links"><a href="../pages/cart.html"><img src="../images/icons/home-logo/shopping-cart.png" height="33px" alt="Cart" class="cart-icon" id="cart-icon"></a></div>
     </div>
     </div>
 </nav>
+
   <section class="title">
     <h1>ABOUT US</h1>
     <h4> WE ❤️ WHAT WE DO</h4>
@@ -72,8 +90,8 @@
       </div>
       <div class="info">
         <img src="./../images/about/base.webp">
-        <p><span style="font-size: 15px; color: rgb(191, 176, 61);">NATURE'S BASKET ABOUT US</span><br>
-          <span style="font-size: 20px; color: chocolate;" >NATURE'S BASKET • PUNE • PRODUCE</span> <br><br>
+        <p><span style="font-size: 15px; color: rgb(191, 176, 61); " class="info-title">NATURE'S BASKET ABOUT US</span><br>
+          <span style="font-size: 20px; color: chocolate; " class="info-nature" >NATURE'S BASKET • PUNE • PRODUCE</span> <br><br>
           Nature's Basket blends contemporary functionality with traditional values brushed metal 
           butcher's light and nostalgic subway tiles pay homepage to a mid-century neighbourhood shopping
           experience when customers had a personal relationship with their loacl grocer.
@@ -190,7 +208,6 @@
           </div>
         </div>
     </section>
-    </section>
       <div class="form-container">
         <h2>⭐⭐Customer Review Form⭐⭐</h2>
         <form id="reviewForm">
@@ -270,5 +287,7 @@
         <p id="footer-text">&copy; 2024 Grocery Shopping. All rights reserved.</p>
     </footer>
       <script src="./../js/about-us.js"></script>
+      <script src="../js/navbar.js"></script>
+      <script src="../js/about-us1.js"></script>
 </body>
 </html>
