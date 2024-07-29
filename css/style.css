@@ -100,24 +100,83 @@ body {
     align-items: center;
     margin-left: 15px;
 }
-
-
-
-
-
-.head-img {
-    padding-top: 60px; 
+.greetings {
     text-align: center;
+    margin-top: 70px; 
+    font-size: 1.5em; 
+    color: #365E32; 
+}
+.head-img-container 
+{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 30px; 
+    width: 100%; 
+    height: 380px; 
+    overflow: hidden; 
+    padding-left: 10px;
+}
+.head-img 
+{
+    width: 1150px; 
+    height: 380px;
+    object-fit: cover; 
+    border-radius: 10px; 
+    border: 2px solid #365E32;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
 }
 
-.head-img img {
+.image-wrapper 
+{
+    width: 1150px;
+    height: 380px; 
+    overflow: hidden;
+    border-radius: 10px;
+    border: 2px solid #365E32;
+}
+.arrow 
+{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 24px;
+    z-index: 10;
+}
+
+.left-arrow 
+{
+    left: 10px;
+}
+
+.right-arrow 
+{
+    right: 10px;
+}
+/*.head-img {
+    width: 100%;
+    max-width: 1150px;
+    height: auto;
+    border-radius: 10px; 
+    border: 2px solid #365E32; 
+}
+*/
+
+.head-img-container
+{
     max-width: 100%;
     height: auto;
     border-radius: 10px; 
-    border: 2px solid #365E32;
-    background-color: #ddd;
+    
 }
-.card-container {
+.card-container 
+{
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
@@ -125,9 +184,8 @@ body {
     max-width: 1200px;
     gap: 20px;
 }
-
-
-.card {
+.card 
+{
     border-radius: 10px;
     overflow: hidden;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -138,27 +196,31 @@ body {
     text-align: center; 
 }
 
-.card:hover {
+.card:hover
+{
     transform: translateY(-5px);
 }
 
-.card img {
+.card img 
+{
     width: 100%;
     height: auto;
     border-radius: 10px;
 }
-
-.card-caption {
+.card-caption 
+{
     margin-top: 10px;
     font-size: 16px;
     font-weight: bold;
     color: #365E32;
 }
 
-.top-deals {
+.top-deals 
+{
     text-align: center;
 }
-.discount-card-container {
+.discount-card-container 
+{
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
@@ -166,7 +228,8 @@ body {
     margin: 0 auto;
     gap: 20px;
 }
-.discount-card {
+.discount-card 
+{
     background-color: rgb(253, 246, 234);
     border: 1px solid grey;
     border-radius: 8px;
@@ -181,35 +244,41 @@ body {
     transition: transform 0.2s, box-shadow 0.2s; 
 }
 
-.discount-card:hover {
+.discount-card:hover 
+{
     transform: scale(1.03); 
     box-shadow: 0 3px 8px rgba(0, 0, 0, 0.15); 
 }
 
-.discount-card img {
+.discount-card img 
+{
     max-width: 100%;
     height: auto;
     border-radius: 8px 8px 0 0;
     margin-bottom: 16px;
 }
 
-.discount-card h2 {
+.discount-card h2 
+{
     font-size: 1.5em;
     margin: 16px 0 8px;
 }
 
-.discount-card p {
+.discount-card p 
+{
     font-size: 1.2em;
     color: #555;
     margin-bottom: 16px;
 }
 
-.shop-now-section {
+.shop-now-section 
+{
     margin-top: auto;
     width: 100%;
 }
 
-.shop-now {
+.shop-now 
+{
     display: block;
     background-color: #365E32;
     color: #fff;
@@ -222,15 +291,18 @@ body {
     transition: background-color 0.3s;
 }
 
-.shop-now:hover {
+.shop-now:hover 
+{
     background-color: #0f480a;
 }
 
-.head1 {
+.head1 
+{
     text-align: center;
     color: rgb(36, 35, 35);
 }
-.video-container {
+.video-container 
+{
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
@@ -240,13 +312,15 @@ body {
 }
 
 
-.video-wrapper {
+.video-wrapper 
+{
     flex: 0 0 auto;
     text-align: center;
     padding: 10px; 
 }
 
-.video-wrapper iframe {
+.video-wrapper iframe
+ {
     width: 100%;
     max-width: 300px;
     height: 200px;
@@ -254,21 +328,24 @@ body {
     border-radius: 10px;
 }
 
-.video-title {
+.video-title 
+{
     margin-top: 10px;
     font-weight: bold;
     padding: 5px; 
 }
 
 
-footer {
+footer 
+{
     background-color: #365E32;
     color: white;
     padding: 10px 0;
     text-align: center;
 }
 
-.footer-container {
+.footer-container 
+{
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
@@ -276,74 +353,88 @@ footer {
     padding: 10px 20px;
 }
 
-.footer-section {
+.footer-section 
+{
     flex: 1;
     margin: 10px;
     text-align: left;
 }
 
-.footer-logo-description {
+.footer-logo-description 
+{
     margin-bottom: 10px;
 }
 
-.footer-logo {
+.footer-logo 
+{
     width: 150px;
     margin-bottom: 2px;
 }
 
-.contact-details, .payment-methods, .footer-links {
+.contact-details, .payment-methods, .footer-links 
+{
     margin-bottom: 10px;
 }
 
-.contact-details h3, .payment-methods h3, .footer-links h3 {
+.contact-details h3, .payment-methods h3, .footer-links h3
+{
     margin-bottom: 5px;
 }
 
-.payment-icons {
+.payment-icons 
+{
     display: flex;
     text-align: left;
     align-items: center;
 }
 
-.payment-icons img {
+.payment-icons img 
+{
     margin: 3px;
     width: 50px;
     height: auto;
     vertical-align: middle;
 }
 
-.social-media-icons {
+.social-media-icons 
+{
     display: flex;
     align-items: center;
     text-align: left;
 }
 
-.social-media-icons img {
+.social-media-icons img 
+{
     margin: 5px;
     width: 25px;
     height: auto;
 }
 
-.connect {
+.connect 
+{
     text-align: left;
 }
 
-.footer-links {
+.footer-links 
+{
     display: flex;
     flex-direction: column;
 }
 
-.footer-links a {
+.footer-links a 
+{
     text-decoration: none;
     color: #ece7e7;
     padding: 5px 0;
 }
 
-.footer-links a:hover {
+.footer-links a:hover 
+{
     text-decoration: underline;
 }
 
-footer.copyright {
+footer.copyright 
+{
     width: 100%;
     height: 30px;
     text-align: center;
@@ -351,76 +442,64 @@ footer.copyright {
     color: #0c0c0c;
 }
 
-footer.copyright .footer-text {
+footer.copyright .footer-text 
+{
     line-height: 30px;
     margin-top: -5px;
 }
 
-.copyright {
+.copyright 
+{
     text-align: center;
 }
 
-/* Media Queries */
+
 @media (max-width: 1200px) {
-    .footer-container {
-        flex-direction: column;
-        align-items: center;
+    .head-img-container {
+        width: 100%; 
+        padding-left: 0; 
     }
 
-    .footer-section {
-        width: 100%;
-        text-align: center;
-    }
-
-    .payment-icons, .social-media-icons {
-        justify-content: center;
+    .head-img {
+        width: 100%; 
+        height: auto; 
     }
 }
 
 @media (max-width: 768px) {
-    .footer-container {
-        flex-direction: column;
-        align-items: center;
+    .head-img-container {
+        height: 250px; 
     }
 
-    .footer-section {
-        text-align: center;
-        width: 100%;
-        margin: 10px 0;
-        background-color: #365E32; 
-    }
-
-    .payment-icons, .social-media-icons {
-        justify-content: center;
-        width: 100%;
-    }
-
-    .connect {
-        text-align: center;
-    }
-
-    .social-media-icons {
-        justify-content: center;
-        margin-top: 10px;
+    .head-img {
+        object-fit: cover; 
     }
 }
 
 @media (max-width: 480px) {
+    .head-img-container {
+        height: 200px; 
+    }
+
+    .head-img {
+        object-fit: cover; 
+    }
+}
+@media (max-width: 768px) {
     .footer-container {
-        flex-direction: column;
-        align-items: center;
-        padding: 10px;
+        flex-direction: column; 
+        align-items: center; 
     }
 
     .footer-section {
-        text-align: center;
-        width: 100%;
-        margin: 10px 0;
+        width: 100%; 
+        text-align: center; 
+        margin: 10px 0; 
         background-color: #365E32; 
     }
 
     .payment-icons, .social-media-icons {
-        justify-content: center;
+        justify-content: center; 
         width: 100%;
     }
 
@@ -429,15 +508,38 @@ footer.copyright .footer-text {
     }
 
     .social-media-icons {
-        justify-content: center;
-        margin-top: 10px;
+        justify-content: center; 
+        margin-top: 10px; 
     }
 
     .footer-links a span {
-        display: none;
+        display: none; 
     }
 
     .footer-links a i {
-        display: inline-block;
+        display: inline-block; 
+    }
+}
+
+@media (max-width: 480px) {
+    .footer-section {
+        text-align: center; 
+        width: 100%; 
+        margin: 10px 0; 
+        background-color: #365E32; 
+    }
+
+    .payment-icons, .social-media-icons {
+        justify-content: center; 
+        width: 100%; 
+    }
+
+    .connect {
+        text-align: center; 
+    }
+
+    .social-media-icons {
+        justify-content: center; 
+        margin-top: 10px; 
     }
 }

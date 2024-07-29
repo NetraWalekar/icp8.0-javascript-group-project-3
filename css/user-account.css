@@ -37,6 +37,7 @@ body {
     display: flex;
     margin: 0;
     padding: 0;
+    margin-left: auto; 
 }
 
 .nav-links li {
@@ -100,7 +101,7 @@ body {
     padding-top: 60px;
     box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
     position: static;
-    top: 0px; /* Adjusted to be below the navbar */
+    top: 0px; 
     /* bottom: 0; */
     overflow-y: auto;
 }
@@ -142,8 +143,8 @@ body {
     flex-grow: 1;
     padding: 20px;
     text-align: center;
-    margin-left: 250px; /* Adjust margin to account for the fixed sidebar */
-    margin-top: -1000px; /* Adjust margin to account for the fixed navbar */
+    margin-left: 250px; 
+    margin-top: -1000px; 
     margin-bottom: 100px;
 }
 

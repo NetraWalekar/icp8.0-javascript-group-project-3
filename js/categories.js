@@ -1,7 +1,4 @@
-function added(no) {
-    const btn = document.getElementById(no)
-    btn.style.backgroundColor = "green"
-}
+
 
 function add_cart(num){
     const res = document.getElementById("ac");
@@ -319,3 +316,175 @@ function textChange9(){
       textElement.innerText="Added";
 
     }
+
+
+
+
+function plusminus01(action)
+   {
+      const quantitytext =document.getElementById("quantity-text")
+      let quantity = parseInt(quantitytext.innerText);
+      if(quantity==1 && action=='decrement')
+      {
+       alert('Quantity cannot be less than 1')
+       return
+      }
+      else if (quantity==5 && action =='increment')
+      {
+        alert('Quantity cannot be greater then 5')
+        return
+       }
+      
+      if (action == 'increment'){
+       quantitytext.innerText =++quantity;
+      }
+      else{
+       quantitytext.innerText =--quantity;
+      }
+      
+   }
+
+   function plusminus02(action)
+   {
+      const quantitytext =document.getElementById("quantity-text1")
+      let quantity = parseInt(quantitytext.innerText);
+      if(quantity==1 && action=='decrement')
+      {
+       alert('Quantity cannot be less than 1')
+       return
+      }
+      else if (quantity==5 && action =='increment')
+      {
+        alert('Quantity cannot be greater then 5')
+        return
+       }
+      
+      if (action == 'increment'){
+       quantitytext.innerText =++quantity;
+      }
+      else{
+       quantitytext.innerText =--quantity;
+      }
+      
+   }
+
+   function plusminus03(action)
+   {
+      const quantitytext =document.getElementById("quantity-text2")
+      let quantity = parseInt(quantitytext.innerText);
+      if(quantity==1 && action=='decrement')
+      {
+       alert('Quantity cannot be less than 1')
+       return
+      }
+      else if (quantity==5 && action =='increment')
+      {
+        alert('Quantity cannot be greater then 5')
+        return
+       }
+      
+      if (action == 'increment'){
+       quantitytext.innerText =++quantity;
+      }
+      else{
+       quantitytext.innerText =--quantity;
+      }
+      
+   }
+
+   function plusminus04(action)
+   {
+      const quantitytext =document.getElementById("quantity-text3")
+      let quantity = parseInt(quantitytext.innerText);
+      if(quantity==1 && action=='decrement')
+      {
+       alert('Quantity cannot be less than 1')
+       return
+      }
+      else if (quantity==5 && action =='increment')
+      {
+        alert('Quantity cannot be greater then 5')
+        return
+       }
+      
+      if (action == 'increment'){
+       quantitytext.innerText =++quantity;
+      }
+      else{
+       quantitytext.innerText =--quantity;
+      }
+      
+   }
+
+   function plusminus05(action)
+   {
+      const quantitytext =document.getElementById("quantity-text4")
+      let quantity = parseInt(quantitytext.innerText);
+      if(quantity==1 && action=='decrement')
+      {
+       alert('Quantity cannot be less than 1')
+       return
+      }
+      else if (quantity==5 && action =='increment')
+      {
+        alert('Quantity cannot be greater then 5')
+        return
+       }
+      
+      if (action == 'increment'){
+       quantitytext.innerText =++quantity;
+      }
+      else{
+       quantitytext.innerText =--quantity;
+      }
+      
+   }
+
+   
+   function textChange01(){
+      const textElement=document.getElementById("btn01")
+      textElement.innerText="Added";
+
+    }
+
+function textChange02(){
+      const textElement=document.getElementById("btn02")
+      textElement.innerText="Added";
+
+    }
+
+function textChange03(){
+      const textElement=document.getElementById("btn03")
+      textElement.innerText="Added";
+
+    }
+
+function textChange04(){
+      const textElement=document.getElementById("btn04")
+      textElement.innerText="Added";
+
+    }
+
+function textChange05(){
+      const textElement=document.getElementById("btn05")
+      textElement.innerText="Added";
+
+    }
+
+
+function add_cart1(num){
+   const res = document.getElementById("ac");
+   if (res) { // Ensure the element exists
+       res.style.visibility = 'visible';
+       console.log("Item number " + num + " added to cart."); 
+       setTimeout(() => {
+       document.getElementById('ac').style.display = 'none';
+       }, 2000);
+       setTimeout(function(){
+         location.reload();
+        }, 2000);
+      // Example use of num
+   } else {
+       console.error("Element with id 'ac' not found.");
+   }
+}
