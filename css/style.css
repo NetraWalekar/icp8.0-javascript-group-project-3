@@ -10,7 +10,7 @@ body, h1, h2, h3, p, ul, li, a, img {
 }
 .loader{
     position: fixed;
-    left: 50%;
+    left: 45%;
     top: 30%;
     transform: translate (-50%,-50%);
     width: 100vh;
