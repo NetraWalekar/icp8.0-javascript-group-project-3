@@ -6,12 +6,23 @@
     <title>Grocery Shopping</title>
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/navbar.css">
+    <link rel="stylesheet" href="./css/grocery-loader.css">
     
     <script src="./js/home.js"></script>
-    <script src="./js/java.js"></script>
-
+    
 </head>
+
 <body>
+    <div class="loader" id="loader">
+        <div id="loader" class="loader"></div>
+  <div id="content" class="content">
+    <h1>Welcome to Grocery Shopping</h1>
+    <img src="../images/icons/cart.png" height="33px" alt="Cart" class="cart-icon" id="cart-icon">
+    <p class="text">Find the best groceries here!</p>
+  </div>
+      
+</div>
+<div class="main-content" id="main-content">
     <nav class="navbar1">
         <div class="navdiv1">
             <div class="logo">
@@ -52,9 +63,8 @@
         </div>
         </div>
     </nav>
-    <script src="./js/navbar.js"></script>
-    <script src="./js/home.js"></script>
-
+    
+   
     <div class="greetings">
         <p id="greeting-text"></p>
     </div>
@@ -215,6 +225,11 @@
     <footer class="copyright">
         <p id="footer-text">&copy; 2024 Grocery Shopping. All rights reserved.</p>
     </footer>
+</div>
+    
+    <script src="./js/home.js"></script>
+    <script src="./js/navbar.js"></script>
+
 </body>
 
 </html>

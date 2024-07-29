@@ -8,7 +8,17 @@ body, h1, h2, h3, p, ul, li, a, img {
     text-decoration: none;
     list-style: none;
 }
-
+.loader{
+    position: fixed;
+    left: 50%;
+    top: 30%;
+    transform: translate (-50%,-50%);
+    width: 100vh;
+    height: 100vh;
+}
+.main-content{
+    display: none;
+}
 
 body {
     font-family: Arial, sans-serif;
