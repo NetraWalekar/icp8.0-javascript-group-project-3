@@ -275,6 +275,14 @@ body{
     text-align: center;
     padding: 10px;
     box-shadow: 0 0 10px 0px rgb(173, 193, 198);
+    cursor: pointer;
+}
+
+.container .content .left-side .details:hover{
+    box-shadow: 0 0 15px 0px rgb(173, 193, 198);
+    border-radius: 10px;
+    transition: 0.2s;
+
 }
 
 .container .content .left-side .details i {
@@ -283,7 +291,7 @@ body{
     margin-bottom: 10px;
 }
 
-.container .content .left-side .details .topic {
+.container .content .left-side .details . {
     font-size: 18px;
     font-weight: 500;
 }
@@ -297,12 +305,14 @@ body{
 .container .content .right-side {
     width: 100%;
     margin-top: 20px;
+    text-align: center;
 }
 
 .container .content .right-side .topic-text {
     font-size: 23px;
     font-weight: 600;
     color: black;
+    text-align: center;
 }
 
 .right-side .input-box {
