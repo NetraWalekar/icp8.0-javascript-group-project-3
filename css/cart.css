@@ -100,6 +100,7 @@
     background-color: #093505;
     border: none;
     transition: 0.3s;
+    box-shadow: 2px 3px 2px rgb(123, 138, 154);
   }
   #cart-close{
     position: absolute;
