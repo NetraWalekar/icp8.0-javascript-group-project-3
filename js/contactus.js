@@ -47,6 +47,6 @@ function msg() {
     if (message =="") {
         alert('Please fill all Information'); 
     } else {
-        alert('Thank You for feedback...Message sent...');
+        alert('Thank You...Message sent...');
     }
 }
