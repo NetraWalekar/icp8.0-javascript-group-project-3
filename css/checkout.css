@@ -250,11 +250,13 @@ button:hover {
     border-radius: 5px;
 }
 
-.signin-button {
+.signin-button a {
     color: white;
     text-decoration: none;
 }
-
+.signin-button:hover {
+    background-color: #093505;
+}
 .sign {
     display: flex;
     justify-content: space-between;
