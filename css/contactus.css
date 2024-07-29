@@ -291,7 +291,7 @@ body{
     margin-bottom: 10px;
 }
 
-.container .content .left-side .details . {
+.container .content .left-side .details  {
     font-size: 18px;
     font-weight: 500;
 }
@@ -299,7 +299,7 @@ body{
 .container .content .left-side .details .text-one,
 .container .content .left-side .details .text-two {
     font-size: 14px;
-    color: #afafb6;
+    color: black;
 }
 
 .container .content .right-side {
