@@ -35,8 +35,8 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 const greetings = [
-    "Welcome to Nature's Basket! Fresh finds await you!",
-    "Hi there! Enjoy our fresh selections!",
+   "Welcome to Nature's Basket! Fresh finds await you!",
+    "Hi there! Enjoy our fresh selections! ",
     "Welcome back! Let’s fill your basket with goodness!",
     "Hello! Discover deliciousness at Nature's Basket!",
     "Hey there! Fresh, healthy, and delightful options await!"
